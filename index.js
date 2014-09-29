@@ -30,5 +30,5 @@ function onDeviceReady() {
 	// Now safe to use device APIs
 	alert('CARICAMENTO TERMINATO');
 }
-alert('caricato su GITHUB tramite visualstudio');
+alert('caricato su GITHUB tramite visualstudio PIPPO');
 document.location='http://demo2010.ncconline.it';	
