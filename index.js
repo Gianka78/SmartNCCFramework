@@ -37,10 +37,11 @@ function onDeviceReady() {
 
 function apriUrlPredefinito() {
     var xhr = new XMLHttpRequest();
+    alert('dentro apriurl');
     xhr.addEventListener("load", function () {
         var parser = new DOMParser();
         var doc = parser.parseFromString(xhr.responseText, "application/xml");
-        //alert(doc.getElementsByTagName("dominio_gestionale").item(0).textContent);
+        alert(doc.getElementsByTagName("dominio_gestionale").item(0).textContent);
         document.location = doc.getElementsByTagName("dominio_gestionale").item(0).textContent;
     });
     xhr.open("get", "config.xml", true);
