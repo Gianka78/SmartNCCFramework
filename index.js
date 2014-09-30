@@ -22,11 +22,11 @@ function onLoad() {
 	document.addEventListener("deviceready", onDeviceReady, false);
 }
 
-var db = window.openDatabase("Database", "1.0", "PhoneGap Demo", 200000);
 
 function onDeviceReady() {
 
     checkConnection();
+    var db = window.openDatabase("Database", "1.0", "PhoneGap Demo", 200000);
     db.transaction(populateDB, errorCB, successCB);
 
     var applaunchCount = window.localStorage.getItem('launchCount');
@@ -80,6 +80,7 @@ function errorCB(err) {
 
 function successCB() {
     alert("populate success!");
+    var db = window.openDatabase("Database", "1.0", "PhoneGap Demo", 200000);
     db.transaction(queryDB, errorCB);
 }
 
@@ -94,8 +95,4 @@ function querySuccess(tx, results) {
     console.log("Rows Affected = " + results.rowAffected);
     // the number of rows returned by the select statement
     console.log("Number of rows = " + results.rows.length);
-}
-
-function errorCB(err) {
-    alert("Error processing SQL: " + err.code);
 }
