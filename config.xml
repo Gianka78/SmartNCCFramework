@@ -16,10 +16,10 @@ versionCode = "10" >
   <scheme>pgbw</scheme>
 </gap:url-scheme>
   
-  <name>SmartNCC Framework</name>
+  <name>SmartNCCFramework</name>
 
 <description>
-SmartNCC GD-Soft per APP online
+Piattaforma mobile per la suite SmartNCC
 </description>
 <dominio_gestionale>http://demo2010.ncconline.it</dominio_gestionale>
   
