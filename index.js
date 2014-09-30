@@ -35,6 +35,16 @@ function onDeviceReady() {
     } else {
         window.alert('onDeviceReady: no invokeString');
     }*/
+    var applaunchCount = window.localStorage.getItem('launchCount');
+    if (applaunchCount) {
+        alert('apertura successiva');
+    } else {
+        //Local storage is not set, hence first time launch. set the local storage item
+        window.localStorage.setItem('launchCount', 1);
+        alert('primo avvio');
+
+        //Do the other stuff related to first time launch
+    }
 }
 
 function handleOpenURL(url) {
@@ -45,3 +55,4 @@ function handleOpenURL(url) {
 
 alert('caricato su GITHUB tramite visualstudio PIPPO');
 //document.location='http://demo2010.ncconline.it';	
+
