@@ -22,10 +22,11 @@ function onLoad() {
 	document.addEventListener("deviceready", onDeviceReady, false);
 }
 
+var db = window.openDatabase("Database", "1.0", "PhoneGap Demo", 200000);
+
 function onDeviceReady() {
 
     checkConnection();
-    var db = window.openDatabase("Database", "1.0", "PhoneGap Demo", 200000);
     db.transaction(populateDB, errorCB, successCB);
 
     var applaunchCount = window.localStorage.getItem('launchCount');
@@ -79,6 +80,10 @@ function errorCB(err) {
 
 function successCB() {
     alert("populate success!");
+    db.transaction(queryDB, errorCB);
+}
+
+function queryDB(tx) {
     tx.executeSql('SELECT * FROM DEMO', [], querySuccess, errorCB);
 }
 
