@@ -28,7 +28,19 @@ function onLoad() {
 
 function onDeviceReady() {
 	// Now safe to use device APIs
-	alert('CARICAMENTO TERMINATO');
+    alert('CARICAMENTO TERMINATO');
+    if ('invokeString' in window) {
+        window.alert('onDeviceReady: ' + invokeString);
+    } else {
+        window.alert('onDeviceReady: no invokeString');
+    }
 }
+
+function handleOpenURL(url) {
+    window.setTimeout(function () {
+        window.alert('handleOpenURL: ' + url);
+    }, 1000);
+}
+
 alert('caricato su GITHUB tramite visualstudio PIPPO');
 document.location='http://demo2010.ncconline.it';	
