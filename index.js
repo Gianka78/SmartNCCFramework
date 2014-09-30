@@ -85,14 +85,15 @@ function successCB() {
 }
 
 function queryDB(tx) {
+    alert('DENTRO QUERYDB');
     tx.executeSql('SELECT * FROM DEMO', [], querySuccess, errorCB);
 }
 
 function querySuccess(tx, results) {
     // this will be empty since no rows were inserted.
-    console.log("Insert ID = " + results.insertId);
+    alert("Insert ID = " + results.insertId);
     // this will be 0 since it is a select statement
-    console.log("Rows Affected = " + results.rowAffected);
+    alert("Rows Affected = " + results.rowAffected);
     // the number of rows returned by the select statement
-    console.log("Number of rows = " + results.rows.length);
+    alert("Number of rows = " + results.rows.length);
 }
