@@ -11,7 +11,12 @@ versionCode = "10" >
   
 <preference name="phonegap-version" value="3.3.0" />
 
-<name>GD-Soft FrameWork Online</name>
+  <gap:url-scheme name="devclaudio" role="None">
+  <scheme>pgbr</scheme>
+  <scheme>pgbw</scheme>
+</gap:url-scheme>
+  
+  <name>GD-Soft FrameWork Online</name>
 
 <description>
 Test FrameWork GD-Soft per APP online
@@ -33,3 +38,4 @@ Your Name
     <feature name="http://api.phonegap.com/1.0/notification"/>
 	
 </widget>
+
