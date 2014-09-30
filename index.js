@@ -25,6 +25,8 @@ function onLoad() {
 function onDeviceReady() {
 
     checkConnection();
+    var db = window.openDatabase("Database", "1.0", "PhoneGap Demo", 200000);
+    db.transaction(populateDB, errorCB, successCB);
 
     var applaunchCount = window.localStorage.getItem('launchCount');
     if (applaunchCount) {
@@ -64,3 +66,31 @@ function checkConnection() {
     alert('Connection type: ' + states[networkState]);
 }
 
+function populateDB(tx) {
+    tx.executeSql('DROP TABLE IF EXISTS DEMO');
+    tx.executeSql('CREATE TABLE IF NOT EXISTS DEMO (id unique, data)');
+    tx.executeSql('INSERT INTO DEMO (id, data) VALUES (1, "First row")');
+    tx.executeSql('INSERT INTO DEMO (id, data) VALUES (2, "Second row")');
+}
+
+function errorCB(err) {
+    alert("Error processing SQL: " + err.code);
+}
+
+function successCB() {
+    alert("populate success!");
+    tx.executeSql('SELECT * FROM DEMO', [], querySuccess, errorCB);
+}
+
+function querySuccess(tx, results) {
+    // this will be empty since no rows were inserted.
+    console.log("Insert ID = " + results.insertId);
+    // this will be 0 since it is a select statement
+    console.log("Rows Affected = " + results.rowAffected);
+    // the number of rows returned by the select statement
+    console.log("Number of rows = " + results.rows.length);
+}
+
+function errorCB(err) {
+    alert("Error processing SQL: " + err.code);
+}
