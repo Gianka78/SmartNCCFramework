@@ -21,12 +21,13 @@ versionCode = "10" >
 <description>
 Test FrameWork GD-Soft per APP online
 </description>
-
+<dominio_gestionale>http://demo2010.ncconline.it</dominio_gestionale>
+  
 <author href="http://www.gd-soft.it" email="info@gd-soft.it">
 Your Name
 </author>
 <preference name="permissions" value="none"/>
-
+  
     <!-- to enable individual permissions use the following examples -->
     <feature name="http://api.phonegap.com/1.0/battery"/>
     <feature name="http://api.phonegap.com/1.0/camera"/>

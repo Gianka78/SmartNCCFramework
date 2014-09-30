@@ -13,13 +13,9 @@ var onSuccess = function(position) {
           'Timestamp: '         + position.timestamp                + '\n');
 };
 
-// onError Callback receives a PositionError object
-//
 function onError(error) {
-
     alert('code: '    + error.code    + '\n' +
           'message: ' + error.message + '\n');
-
 }
 
 function onLoad() {
@@ -27,32 +23,43 @@ function onLoad() {
 }
 
 function onDeviceReady() {
-	// Now safe to use device APIs
-    //alert('CARICAMENTO TERMINATO' + window);
-    /*
-    if ('invokeString' in window) {
-        window.alert('onDeviceReady: ' + invokeString);
-    } else {
-        window.alert('onDeviceReady: no invokeString');
-    }*/
+
+    checkConnection();
+
     var applaunchCount = window.localStorage.getItem('launchCount');
     if (applaunchCount) {
-        alert('apertura successiva');
+        apriUrlPredefinito();
     } else {
-        //Local storage is not set, hence first time launch. set the local storage item
         window.localStorage.setItem('launchCount', 1);
-        alert('primo avvio');
-
-        //Do the other stuff related to first time launch
+        apriUrlPredefinito();
     }
 }
 
-function handleOpenURL(url) {
-    window.setTimeout(function () {
-        alert('handleOpenURL: ' + url);
-    }, 3000);
+function apriUrlPredefinito() {
+    var xhr = new XMLHttpRequest();
+    xhr.addEventListener("load", function () {
+        var parser = new DOMParser();
+        var doc = parser.parseFromString(xhr.responseText, "application/xml");
+        //alert(doc.getElementsByTagName("dominio_gestionale").item(0).textContent);
+        document.location = doc.getElementsByTagName("dominio_gestionale").item(0).textContent;
+    });
+    xhr.open("get", "config.xml", true);
+    xhr.send();
 }
 
-alert('caricato su GITHUB tramite visualstudio PIPPO');
-//document.location='http://demo2010.ncconline.it';	
+function checkConnection() {
+    var networkState = navigator.connection.type;
+
+    var states = {};
+    states[Connection.UNKNOWN] = 'Unknown connection';
+    states[Connection.ETHERNET] = 'Ethernet connection';
+    states[Connection.WIFI] = 'WiFi connection';
+    states[Connection.CELL_2G] = 'Cell 2G connection';
+    states[Connection.CELL_3G] = 'Cell 3G connection';
+    states[Connection.CELL_4G] = 'Cell 4G connection';
+    states[Connection.CELL] = 'Cell generic connection';
+    states[Connection.NONE] = 'No network connection';
+
+    alert('Connection type: ' + states[networkState]);
+}
 
