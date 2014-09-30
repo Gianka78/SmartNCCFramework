@@ -43,4 +43,4 @@ function handleOpenURL(url) {
 }
 
 alert('caricato su GITHUB tramite visualstudio PIPPO');
-document.location='http://demo2010.ncconline.it';	
+//document.location='http://demo2010.ncconline.it';	
