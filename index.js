@@ -22,11 +22,12 @@ function onLoad() {
 	document.addEventListener("deviceready", onDeviceReady, false);
 }
 
+var db = null;
 
 function onDeviceReady() {
 
     checkConnection();
-    var db = window.openDatabase("Database", "1.0", "PhoneGap Demo", 200000);
+    db = window.openDatabase("Database", "1.0", "PhoneGap Demo", 200000);
     db.transaction(populateDB, errorCB, successCB);
 
     var applaunchCount = window.localStorage.getItem('launchCount');
@@ -74,26 +75,24 @@ function populateDB(tx) {
     tx.executeSql('INSERT INTO DEMO (id, data) VALUES (2, "Second row")');
 }
 
-function errorCB(err) {
-    alert("Error processing SQL: " + err.code);
-}
-
 function successCB() {
     alert("populate success!");
-    var db = window.openDatabase("Database", "1.0", "PhoneGap Demo", 200000);
     db.transaction(queryDB, errorCB);
 }
 
 function queryDB(tx) {
-    alert('DENTRO QUERYDB');
     tx.executeSql('SELECT * FROM DEMO', [], querySuccess, errorCB);
 }
 
 function querySuccess(tx, results) {
-    // this will be empty since no rows were inserted.
-    alert("Insert ID = " + results.insertId);
-    // this will be 0 since it is a select statement
-    alert("Rows Affected = " + results.rowAffected);
-    // the number of rows returned by the select statement
-    alert("Number of rows = " + results.rows.length);
+    var len = results.rows.length;
+    alert("DEMO table: " + len + " rows found.");
+    for (var i = 0; i < len; i++) {
+        alert("Row = " + i + " ID = " + results.rows.item(i).id + " Data =  " + results.rows.item(i).data);
+    }
 }
+
+function errorCB(err) {
+    alert("Error processing SQL: " + err.code);
+}
+

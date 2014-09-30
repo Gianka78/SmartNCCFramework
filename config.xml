@@ -9,7 +9,7 @@ versionCode = "10" >
 <!-- versionCode is optional and Android only -->
 
   
-<preference name="phonegap-version" value="3.3.0" />
+<preference name="phonegap-version" value="3.5.0" />
 
   <gap:url-scheme name="devclaudio" role="None">
   <scheme>pgbr</scheme>
