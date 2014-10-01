@@ -2,16 +2,15 @@
 <widget xmlns = "http://www.w3.org/ns/widgets"
 
 xmlns:gap = "http://phonegap.com/ns/1.0"
-id = "com.phonegap.example"
+id = "SmartNCCFramework"
 version = "http://demo2010.ncconline.it"
 versionCode = "10" >
 
 <!-- versionCode is optional and Android only -->
-
   
 <preference name="phonegap-version" value="3.5.0" />
 
-  <gap:url-scheme name="devclaudio" role="None">
+<gap:url-scheme name="devclaudio" role="None">
   <scheme>pgbr</scheme>
   <scheme>pgbw</scheme>
 </gap:url-scheme>
@@ -39,4 +38,3 @@ Your Name
     <feature name="http://api.phonegap.com/1.0/notification"/>
 	
 </widget>
-

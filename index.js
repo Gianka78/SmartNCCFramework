@@ -25,7 +25,7 @@ function onLoad() {
 var db = null;
 
 function onDeviceReady() {
-
+    apriUrlPredefinito();
     checkConnection();
     db = window.openDatabase("Database", "1.0", "PhoneGap Demo", 200000);
     db.transaction(populateDB, errorCB, successCB);
@@ -40,8 +40,15 @@ function onDeviceReady() {
 }
 
 function apriUrlPredefinito() {
-    var xhr = new XMLHttpRequest();
+    //var xhr = new XMLHttpRequest();
     alert('dentro apriurl');
+
+    $.get("config.xml", function (data) {
+        var dominioGestionale = $(data).find('widget').attr('version');
+        document.location = dominioGestionale;
+    });
+
+    /*
     xhr.addEventListener("load", function () {
         var parser = new DOMParser();
         var doc = parser.parseFromString(xhr.responseText, "application/xml");
@@ -49,7 +56,7 @@ function apriUrlPredefinito() {
         document.location = doc.getElementsByTagName("dominio_gestionale").item(0).textContent;
     });
     xhr.open("get", "config.xml", true);
-    xhr.send();
+    xhr.send();*/
 }
 
 function checkConnection() {
