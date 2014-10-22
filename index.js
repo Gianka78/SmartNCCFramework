@@ -40,27 +40,10 @@ function onDeviceReady() {
 }
 
 function apriUrlPredefinito() {
-    //var xhr = new XMLHttpRequest();
-    alert('dentro apriurl 22-10');
     getAppVersion(function (version) {
         alert('Native App Version: ' + version);
+        document.location = version;
     });
-
-    /*
-    $.get("config.xml", function (data) {
-        var dominioGestionale = $(data).find('widget').attr('version');
-        document.location = dominioGestionale;
-    });*/
-
-    /*
-    xhr.addEventListener("load", function () {
-        var parser = new DOMParser();
-        var doc = parser.parseFromString(xhr.responseText, "application/xml");
-        alert(doc.getElementsByTagName("dominio_gestionale").item(0).textContent);
-        document.location = doc.getElementsByTagName("dominio_gestionale").item(0).textContent;
-    });
-    xhr.open("get", "config.xml", true);
-    xhr.send();*/
 }
 
 function checkConnection() {
