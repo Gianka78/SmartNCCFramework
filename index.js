@@ -41,7 +41,7 @@ function onDeviceReady() {
 
 function apriUrlPredefinito() {
     //var xhr = new XMLHttpRequest();
-    alert('dentro apriurl');
+    alert('dentro apriurl 22-10');
     cordova.require('cordova/plugin/appinfo').GetVersion(
                 function (version) {
                     alert(version);
