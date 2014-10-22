@@ -42,14 +42,10 @@ function onDeviceReady() {
 function apriUrlPredefinito() {
     //var xhr = new XMLHttpRequest();
     alert('dentro apriurl 22-10');
-    cordova.require('cordova/plugin/appinfo').GetVersion(
-                function (version) {
-                    alert(version);
-                },
-                function (error) {
-                    console.error("Error retrieving app version: " + error);
-                }
-            );
+    getAppVersion(function (version) {
+        alert('Native App Version: ' + version);
+    });
+
     /*
     $.get("config.xml", function (data) {
         var dominioGestionale = $(data).find('widget').attr('version');

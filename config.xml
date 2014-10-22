@@ -15,7 +15,8 @@ versionCode = "10" >
   <scheme>pgbw</scheme>
 </gap:url-scheme>
   <gap:plugin name="net.bgta.phonegap.plugin.appversion" version="1.1.1" />
-  
+
+
   <name>SmartNCCMobile</name>
 
 <description>
