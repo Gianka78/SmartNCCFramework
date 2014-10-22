@@ -41,7 +41,6 @@ function onDeviceReady() {
 
 function apriUrlPredefinito() {
     getAppVersion(function (version) {
-        alert('Native App Version: ' + version);
         document.location = version;
     });
 }
