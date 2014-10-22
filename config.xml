@@ -30,8 +30,12 @@
   <feature name="http://api.phonegap.com/1.0/notification"/>
 
   <icon src="images/icona_smartncc_mobile.png" />
-  <icon src="images/icona_smartncc_mobile.png" width="72" height="72" />
-  <icon src="images/icona_smartncc_mobile.png" width="48" height="48" />
-  <icon src="images/icona_smartncc_mobile.png" width="36" height="36" />
+
+  <icon src="icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="ldpi" />
+  <icon src="icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="mdpi" />
+  <icon src="icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="hdpi" />
+  <icon src="icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="xhdpi" />
+  <icon src="icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="xxhdpi" />
+  <icon src="icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="fr-xxhdpi" />
   
 </widget>
