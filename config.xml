@@ -31,11 +31,11 @@
 
   <icon src="images/icona_smartncc_mobile.png" />
 
-  <icon src="icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="ldpi" />
-  <icon src="icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="mdpi" />
-  <icon src="icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="hdpi" />
-  <icon src="icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="xhdpi" />
-  <icon src="icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="xxhdpi" />
-  <icon src="icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="fr-xxhdpi" />
+  <icon src="images/icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="ldpi" />
+  <icon src="images/icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="mdpi" />
+  <icon src="images/icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="hdpi" />
+  <icon src="images/icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="xhdpi" />
+  <icon src="images/icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="xxhdpi" />
+  <icon src="images/icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="fr-xxhdpi" />
   
 </widget>
