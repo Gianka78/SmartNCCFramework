@@ -29,8 +29,6 @@
   <feature name="http://api.phonegap.com/1.0/network"/>
   <feature name="http://api.phonegap.com/1.0/notification"/>
 
-  <icon src="images/icona_smartncc_mobile.png" />
-
   <icon src="images/icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="ldpi" />
   <icon src="images/icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="mdpi" />
   <icon src="images/icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="hdpi" />
