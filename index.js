@@ -42,11 +42,19 @@ function onDeviceReady() {
 function apriUrlPredefinito() {
     //var xhr = new XMLHttpRequest();
     alert('dentro apriurl');
-
+    cordova.require('cordova/plugin/appinfo').GetVersion(
+                function (version) {
+                    alert(version);
+                },
+                function (error) {
+                    console.error("Error retrieving app version: " + error);
+                }
+            );
+    /*
     $.get("config.xml", function (data) {
         var dominioGestionale = $(data).find('widget').attr('version');
         document.location = dominioGestionale;
-    });
+    });*/
 
     /*
     xhr.addEventListener("load", function () {
