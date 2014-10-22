@@ -29,6 +29,6 @@
   <feature name="http://api.phonegap.com/1.0/network"/>
   <feature name="http://api.phonegap.com/1.0/notification"/>
 
-  <icon src="images/icon.png" />
+  <icon src="images/icona_smartncc_mobile.png" />
 
 </widget>
