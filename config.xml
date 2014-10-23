@@ -1,21 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <widget xmlns = "http://www.w3.org/ns/widgets"  xmlns:gap = "http://phonegap.com/ns/1.0"
-        id = "SmartNCC"
+        id = "SmartNCCMobile"
         version = "https://gd-soft.smartncc.it"
         versionCode = "10" >
 
   <preference name="phonegap-version" value="3.6.3" />
 
-  <gap:url-scheme name="devclaudio" role="None">
-    <scheme>pgbr</scheme>
-    <scheme>pgbw</scheme>
-  </gap:url-scheme>
   <gap:plugin name="net.bgta.phonegap.plugin.appversion" version="1.1.1" />
 
-
-  <name>SmartNCC</name>
-  <description>Piattaforma BACKOFFICE per la suite SmartNCC</description>
+  <name>SmartNCCMobile</name>
+  <description>Piattaforma MOBILE per la suite SmartNCC</description>
   <author href="http://www.gd-soft.it" email="info@gd-soft.it">GD-SOFT S.R.L.</author>
 
   <preference name="permissions" value="none"/>
@@ -29,11 +24,11 @@
   <feature name="http://api.phonegap.com/1.0/network"/>
   <feature name="http://api.phonegap.com/1.0/notification"/>
 
-  <icon src="images/icona_smartncc_desktop.png" gap:platform="android" gap:qualifier="ldpi" />
-  <icon src="images/icona_smartncc_desktop.png" gap:platform="android" gap:qualifier="mdpi" />
-  <icon src="images/icona_smartncc_desktop.png" gap:platform="android" gap:qualifier="hdpi" />
-  <icon src="images/icona_smartncc_desktop.png" gap:platform="android" gap:qualifier="xhdpi" />
-  <icon src="images/icona_smartncc_desktop.png" gap:platform="android" gap:qualifier="xxhdpi" />
-  <icon src="images/icona_smartncc_desktop.png" gap:platform="android" gap:qualifier="fr-xxhdpi" />
+  <icon src="images/icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="ldpi" />
+  <icon src="images/icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="mdpi" />
+  <icon src="images/icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="hdpi" />
+  <icon src="images/icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="xhdpi" />
+  <icon src="images/icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="xxhdpi" />
+  <icon src="images/icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="fr-xxhdpi" />
   
 </widget>
