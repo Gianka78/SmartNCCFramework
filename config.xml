@@ -5,7 +5,7 @@
         version = "https://gd-soft.smartncc.it"
         versionCode = "10" >
 
-  <preference name="phonegap-version" value="3.5.0" />
+  <preference name="phonegap-version" value="3.6.3" />
 
   <gap:url-scheme name="devclaudio" role="None">
     <scheme>pgbr</scheme>
