@@ -22,4 +22,6 @@
   <icon src="images/icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="xxhdpi" />
   <icon src="images/icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="fr-xxhdpi" />
   <icon src="images/icon.png"/>
+  <icon src="images/icon.png" gap:platform="ios" width="50" height="50" /> 
+  <icon src="images/icon.png" gap:platform="ios" width="40" height="40" /> 
 </widget>
