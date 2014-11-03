@@ -24,4 +24,5 @@
   <icon src="images/icon.png"/>
   <icon src="images/icon.png" gap:platform="ios" width="50" height="50" /> 
   <icon src="images/icon.png" gap:platform="ios" width="40" height="40" /> 
+  <icon src="images/icon57X57.png" gap:platform="ios" width="57" height="57" /> 
 </widget>
