@@ -7,6 +7,15 @@
 <style type="text/css">
 </style>
 </head>
+
 <body onload="onLoad()">
 	
+    <div>
+        <input id="tfCodiceNoleggiatore" type="text" />
+        <input id="btAggiungiNoleggiatore" type="button" value="AGGIUNGI" onclick="aggiungiNoleggiatore()" />
+        <input id="btClearAll" type="button" value="SVUOTA" onclick="svuotaElenco()" />
+        <input id="btScan" type="button" value="SCAN" onclick="scanNewCode()" />
+        <div id="divElencoNoleggiatori">
+        </div>
+    </div>
 </body>

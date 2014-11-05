@@ -23,20 +23,21 @@ function onLoad() {
 }
 
 var db = null;
+var token = '';
 
 function onDeviceReady() {
-    apriUrlPredefinito();
-    checkConnection();
-    db = window.openDatabase("Database", "1.0", "PhoneGap Demo", 200000);
+    db = window.openDatabase("smartnccmobile_localdb", "1.0", "SmartNCCMobile Local Database", 200000);
+
     db.transaction(populateDB, errorCB, successCB);
 
-    var applaunchCount = window.localStorage.getItem('launchCount');
-    if (applaunchCount) {
-        apriUrlPredefinito();
-    } else {
-        window.localStorage.setItem('launchCount', 1);
-        apriUrlPredefinito();
+    $.get(
+    "//localhost/progettogestionale/wssmartncc/wsgd.asmx/login_ASCII?username=API-MILTR01-2014&password=guest",
+    function (data) {
+        if (data.indexOf("+OK:") == 0) {
+            token = data.replace("+OK:", "");
+        }
     }
+    );
 }
 
 function apriUrlPredefinito() {
@@ -62,30 +63,106 @@ function checkConnection() {
 }
 
 function populateDB(tx) {
-    tx.executeSql('DROP TABLE IF EXISTS DEMO');
-    tx.executeSql('CREATE TABLE IF NOT EXISTS DEMO (id unique, data)');
-    tx.executeSql('INSERT INTO DEMO (id, data) VALUES (1, "First row")');
-    tx.executeSql('INSERT INTO DEMO (id, data) VALUES (2, "Second row")');
+    tx.executeSql('CREATE TABLE IF NOT EXISTS elenco (id unique, codice, url_ncconline, username, password)');
+    aggiornaElencoNoleggiatori(tx);
+}
+
+function aggiornaElencoNoleggiatori(tx) {
+    tx.executeSql('SELECT * FROM elenco', [], okLetturaElenco, errorCB);
 }
 
 function successCB() {
-    alert("populate success!");
-    db.transaction(queryDB, errorCB);
 }
 
-function queryDB(tx) {
-    tx.executeSql('SELECT * FROM DEMO', [], querySuccess, errorCB);
-}
 
-function querySuccess(tx, results) {
+function okLetturaElenco(tx, results)
+{
     var len = results.rows.length;
-    alert("DEMO table: " + len + " rows found.");
+    $("#divElencoNoleggiatori").html("<lu>");
     for (var i = 0; i < len; i++) {
-        alert("Row = " + i + " ID = " + results.rows.item(i).id + " Data =  " + results.rows.item(i).data);
+        var htmlLU = "<li><a href='"+results.rows.item(i).url_ncconline+"'>Noleggiatore n. = " + i + " id = " + results.rows.item(i).id 
+                    + " codice =  " + results.rows.item(i).codice+"</a>"
+                    + "<input id='tfUsername_" + results.rows.item(i).codice + "' type='text' value='" + results.rows.item(i).username + "'></input>"
+                    + "<input id='tfPassword_" + results.rows.item(i).codice + "' type='password' value='" + results.rows.item(i).password + "'></input>"
+                    + "<input id='btSalvaCredenziali_" + results.rows.item(i).codice + "' type='button' value='SALVA' onclick='salvaCredenziali(\"" + results.rows.item(i).codice + "\")' />"
+                    + "</li>";
+        $("#divElencoNoleggiatori").html($("#divElencoNoleggiatori").html() + htmlLU);
     }
+    $("#divElencoNoleggiatori").html($("#divElencoNoleggiatori").html()+"</lu>");
 }
 
 function errorCB(err) {
-    alert("Error processing SQL: " + err.code);
+    alert("SQLError: " + err.code);
 }
 
+function aggiungiNoleggiatore() {
+    db.transaction(okAggiungiNoleggiatore, errorCB, successCB);
+}
+
+function okAggiungiNoleggiatore(tx) {
+    var codice = $("#tfCodiceNoleggiatore").val();
+    if (codice != "") {
+        $.get(
+            "//localhost/progettogestionale/wssmartncc/ws_ncc.asmx/get_ncconline_url_bycode_ASCIIJSON?token="+token+"&code=" + codice,
+            function (data) {
+                db.transaction(
+                    function (tx) {
+                        if (data + "" != "-Err") {
+                            var str = eval(JSON.parse(data).obj);
+                            var query = 'INSERT INTO elenco (codice, url_ncconline,username,password) VALUES ("' + str.split("|")[0] + '","' + str.split("|")[1] + '","","")';
+                            tx.executeSql(query);
+                            aggiornaElencoNoleggiatori(tx);
+                        }
+                        else {
+                            alert('Codice non valido');
+                            aggiornaElencoNoleggiatori(tx);
+                        }
+
+                    }
+                    , errorCB, successCB);
+            }
+        );
+    }
+    else {
+        alert("inserire prima il codice");
+    }
+}
+
+function svuotaElenco() {
+    db.transaction(okSvuotaelenco, errorCB, successCB);
+}
+function okSvuotaelenco(tx) {
+    tx.executeSql('delete from elenco');
+    aggiornaElencoNoleggiatori(tx);
+}
+
+function salvaCredenziali(codice)
+{
+    db.transaction(
+        function (tx)
+        {
+            var query = "update elenco set username = '" + $("#tfUsername_" + codice).val() + "', password = '" + $("#tfPassword_" + codice).val() + "' where codice = '" + codice + "'";
+            tx.executeSql(query);
+            aggiornaElencoNoleggiatori(tx);
+
+        }
+        , errorCB, successCB);
+
+}
+
+
+function scanNewCode() {
+    cordova.plugins.barcodeScanner.scan(
+      function (result) {
+          alert("We got a barcode\n" +
+                "Result: " + result.text + "\n" +
+                "Format: " + result.format + "\n" +
+                "Cancelled: " + result.cancelled);
+          $("#tfCodiceNoleggiatore").val(result.text);
+          
+      },
+      function (error) {
+          alert("Scanning failed: " + error);
+      }
+   );
+}
