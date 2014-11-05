@@ -31,10 +31,14 @@ function onDeviceReady() {
     db.transaction(populateDB, errorCB, successCB);
 
     $.get(
-    "//localhost/progettogestionale/wssmartncc/wsgd.asmx/login_ASCII?username=API-MILTR01-2014&password=guest",
+    "http://demo2010.smartncc.it/progettogestionale/wssmartncc/wsgd.asmx/login_ASCII?username=ncc_online_guest_api&password=ncc_guest",
     function (data) {
         if (data.indexOf("+OK:") == 0) {
             token = data.replace("+OK:", "");
+            alert(token);
+        }
+        else {
+            alert('errore login webservice');
         }
     }
     );
@@ -92,7 +96,7 @@ function okLetturaElenco(tx, results)
 }
 
 function errorCB(err) {
-    alert("SQLError: " + err.code);
+    alert("SQLError (" + err.code + "): " + err.message);
 }
 
 function aggiungiNoleggiatore() {
