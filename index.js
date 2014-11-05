@@ -2,6 +2,9 @@
 // This method accepts a Position object, which contains the
 // current GPS coordinates
 //
+
+var hostWS = "demo2010.smartncc.it";
+
 var onSuccess = function(position) {
     alert('Latitude: '          + position.coords.latitude          + '\n' +
           'Longitude: '         + position.coords.longitude         + '\n' +
@@ -31,7 +34,7 @@ function onDeviceReady() {
     db.transaction(populateDB, errorCB, successCB);
 
     $.get(
-    "http://demo2010.smartncc.it/progettogestionale/wssmartncc/wsgd.asmx/login_ASCII?username=ncc_online_guest_api&password=ncc_guest",
+    "http://" + hostWS + "/progettogestionale/wssmartncc/wsgd.asmx/login_ASCII?username=ncc_online_guest_api&password=ncc_guest",
     function (data) {
         if (data.indexOf("+OK:") == 0) {
             token = data.replace("+OK:", "");
@@ -77,6 +80,7 @@ function aggiornaElencoNoleggiatori(tx) {
 }
 
 function successCB() {
+    return true;
 }
 
 
@@ -98,6 +102,8 @@ function okLetturaElenco(tx, results)
 
 function errorCB(err) {
     alert("SQLError (" + err.code + "): " + err.message);
+    return false;
+
 }
 
 function aggiungiNoleggiatore() {
@@ -108,7 +114,7 @@ function okAggiungiNoleggiatore(tx) {
     var codice = $("#tfCodiceNoleggiatore").val();
     if (codice != "") {
         $.get(
-            "//localhost/progettogestionale/wssmartncc/ws_ncc.asmx/get_ncconline_url_bycode_ASCIIJSON?token="+token+"&code=" + codice,
+            "http://" + hostWS + "/progettogestionale/wssmartncc/ws_ncc.asmx/get_ncconline_url_bycode_ASCIIJSON?token=" + token + "&code=" + codice,
             function (data) {
                 db.transaction(
                     function (tx) {
