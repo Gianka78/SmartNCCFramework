@@ -88,19 +88,22 @@ function successCB() {
 function okLetturaElenco(tx, results)
 {
     alert('dentro ok lettura elenco')
-    var len = results.rows.length;
-    $("#divElencoNoleggiatori").html("<lu>");
-    for (var i = 0; i < len; i++) {
-        var htmlLU = "<li><a href='"+results.rows.item(i).url_ncconline+"'>Noleggiatore n. = " + i + " id = " + results.rows.item(i).id 
-                    + " codice =  " + results.rows.item(i).codice+"</a>"
-                    + "<input id='tfUsername_" + results.rows.item(i).codice + "' type='text' value='" + results.rows.item(i).username + "'></input>"
-                    + "<input id='tfPassword_" + results.rows.item(i).codice + "' type='password' value='" + results.rows.item(i).password + "'></input>"
-                    + "<input id='btSalvaCredenziali_" + results.rows.item(i).codice + "' type='button' value='SALVA' onclick='salvaCredenziali(\"" + results.rows.item(i).codice + "\")' />"
-                    + "</li>";
-        $("#divElencoNoleggiatori").html($("#divElencoNoleggiatori").html() + htmlLU);
-    }
-    $("#divElencoNoleggiatori").html($("#divElencoNoleggiatori").html()+"</lu>");
-    alert('fine lettura elenco [trovati: ' + len + ']');
+    try
+    {
+        var len = results.rows.length;
+        $("#divElencoNoleggiatori").html("<lu>");
+        for (var i = 0; i < len; i++) {
+            var htmlLU = "<li><a href='"+results.rows.item(i).url_ncconline+"'>Noleggiatore n. = " + i + " id = " + results.rows.item(i).id 
+                        + " codice =  " + results.rows.item(i).codice+"</a>"
+                        + "<input id='tfUsername_" + results.rows.item(i).codice + "' type='text' value='" + results.rows.item(i).username + "'></input>"
+                        + "<input id='tfPassword_" + results.rows.item(i).codice + "' type='password' value='" + results.rows.item(i).password + "'></input>"
+                        + "<input id='btSalvaCredenziali_" + results.rows.item(i).codice + "' type='button' value='SALVA' onclick='salvaCredenziali(\"" + results.rows.item(i).codice + "\")' />"
+                        + "</li>";
+            $("#divElencoNoleggiatori").html($("#divElencoNoleggiatori").html() + htmlLU);
+        }
+        $("#divElencoNoleggiatori").html($("#divElencoNoleggiatori").html()+"</lu>");
+        alert('fine lettura elenco [trovati: ' + len + ']');
+    } catch (e) { alert('eccezione: '+e);}
     return false;
 }
 
