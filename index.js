@@ -75,6 +75,7 @@ function checkConnection() {
 
 
 function aggiornaElencoNoleggiatori(tx) {
+    alert('dentro aggiorna elenco')
     tx.executeSql('SELECT * FROM elenco', [], okLetturaElenco, errorCB);
 }
 
@@ -85,6 +86,7 @@ function successCB() {
 
 function okLetturaElenco(tx, results)
 {
+    alert('dentro ok lettura elenco')
     var len = results.rows.length;
     $("#divElencoNoleggiatori").html("<lu>");
     for (var i = 0; i < len; i++) {
