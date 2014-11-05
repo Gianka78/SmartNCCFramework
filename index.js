@@ -175,7 +175,7 @@ function scanNewCode() {
                 "Result: " + result.text + "\n" +
                 "Format: " + result.format + "\n" +
                 "Cancelled: " + result.cancelled);
-          $("#tfCodiceNoleggiatore").val("result.text");
+          $("#tfCodiceNoleggiatore").val(result.text);
           
       },
       function (error) {
