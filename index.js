@@ -80,7 +80,8 @@ function aggiornaElencoNoleggiatori(tx) {
 }
 
 function successCB() {
-    return true;
+    alert('successCB');
+    return false;
 }
 
 
