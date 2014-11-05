@@ -100,6 +100,8 @@ function okLetturaElenco(tx, results)
         $("#divElencoNoleggiatori").html($("#divElencoNoleggiatori").html() + htmlLU);
     }
     $("#divElencoNoleggiatori").html($("#divElencoNoleggiatori").html()+"</lu>");
+    alert('fine lettura elenco [trovati: ' + len + ']');
+    return false;
 }
 
 function errorCB(err) {
