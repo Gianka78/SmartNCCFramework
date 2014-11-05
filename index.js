@@ -29,13 +29,13 @@ var db = null;
 var token = '';
 
 function onDeviceReady() {
-    db = window.openDatabase("smartnccmobile_localdb", "1.0", "SmartNCCMobile Local Database", 200000);
+    db = window.openDatabase("ncconlinedb", "1.0", "SmartNCCMobile", 200000);
 
     db.transaction(function (tx) {
-                tx.executeSql('CREATE TABLE IF NOT EXISTS elenco (id unique, codice, url_ncconline, username, password)');
+        tx.executeSql("CREATE TABLE IF NOT EXISTS elenco(id INTEGER PRIMARY KEY ASC, codice, url_ncconline, username, password)");
                 aggiornaElencoNoleggiatori(tx);
-            }
-            , errorCB, successCB);
+        }
+        , errorCB, successCB);
 
     $.get(
     "http://" + hostWS + "/progettogestionale/wssmartncc/wsgd.asmx/login_ASCII?username=ncc_online_guest_api&password=ncc_guest",
