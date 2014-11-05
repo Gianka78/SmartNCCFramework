@@ -42,7 +42,7 @@ function onDeviceReady() {
     function (data) {
         if (data.indexOf("+OK:") == 0) {
             token = data.replace("+OK:", "");
-            alert(token);
+            //alert(token);
         }
         else {
             alert('errore login webservice');
@@ -75,19 +75,19 @@ function checkConnection() {
 
 
 function aggiornaElencoNoleggiatori(tx) {
-    alert('dentro aggiorna elenco')
+    //alert('dentro aggiorna elenco')
     tx.executeSql('SELECT * FROM elenco', [], okLetturaElenco, errorCB);
 }
 
 function successCB() {
-    alert('successCB');
+    //alert('successCB');
     return false;
 }
 
 
 function okLetturaElenco(tx, results)
 {
-    alert('dentro ok lettura elenco')
+    //alert('dentro ok lettura elenco')
     try
     {
         var len = results.rows.length;
@@ -102,7 +102,7 @@ function okLetturaElenco(tx, results)
             $("#divElencoNoleggiatori").html($("#divElencoNoleggiatori").html() + htmlLU);
         }
         $("#divElencoNoleggiatori").html($("#divElencoNoleggiatori").html()+"</lu>");
-        alert('fine lettura elenco [trovati: ' + len + ']');
+        //alert('fine lettura elenco [trovati: ' + len + ']');
     } catch (e) { alert('eccezione: '+e);}
     return false;
 }
@@ -171,10 +171,10 @@ function salvaCredenziali(codice)
 function scanNewCode() {
     cordova.plugins.barcodeScanner.scan(
       function (result) {
-          alert("We got a barcode\n" +
+          /*alert("We got a barcode\n" +
                 "Result: " + result.text + "\n" +
                 "Format: " + result.format + "\n" +
-                "Cancelled: " + result.cancelled);
+                "Cancelled: " + result.cancelled);*/
           $("#tfCodiceNoleggiatore").val(result.text);
           
       },
