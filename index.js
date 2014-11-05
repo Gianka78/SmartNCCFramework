@@ -67,6 +67,7 @@ function checkConnection() {
 }
 
 function populateDB(tx) {
+    alert('dentro populate');
     tx.executeSql('CREATE TABLE IF NOT EXISTS elenco (id unique, codice, url_ncconline, username, password)');
     aggiornaElencoNoleggiatori(tx);
 }
@@ -162,7 +163,7 @@ function scanNewCode() {
                 "Result: " + result.text + "\n" +
                 "Format: " + result.format + "\n" +
                 "Cancelled: " + result.cancelled);
-          $("#tfCodiceNoleggiatore").val(result.text);
+          $("#tfCodiceNoleggiatore").val("result.text");
           
       },
       function (error) {
