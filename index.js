@@ -132,7 +132,7 @@ function okAggiungiNoleggiatore(tx) {
                         function (data) {
                             db.transaction(
                                 function (tx) {
-                                    if (data + "" != "-Err") {
+                                    if ((data + "").indexOf("-Err") == -1) {
                                         var str = eval(JSON.parse(data).obj);
                                         var query = 'INSERT INTO elenco (codice, url_ncconline,username,password) VALUES ("' + str.split("|")[0] + '","' + str.split("|")[1] + '","","")';
                                         tx.executeSql(query);
@@ -150,7 +150,7 @@ function okAggiungiNoleggiatore(tx) {
                 }
                 else
                 {
-                    alert("Il noleggiatore risulta già in elenco");
+                    alert("Il noleggiatore risulta in elenco");
                 }
             }
             , errorCB);
