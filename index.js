@@ -59,12 +59,6 @@ function onDeviceReady() {
     
 }
 
-function apriUrlPredefinito() {
-    getAppVersion(function (version) {
-        document.location = version;
-    });
-}
-
 function checkConnection() {
     var networkState = navigator.connection.type;
 
