@@ -6,7 +6,8 @@
         versionCode = "ALL" >
 
   <preference name="phonegap-version" value="3.6.3" />
-
+  <preference name="SplashScreen" value="screen"/>
+  
   <gap:plugin name="com.phonegap.plugins.barcodescanner" version="2.0.0" />
   <plugin name="Storage" value="org.apache.cordova.Storage" />
 
@@ -15,6 +16,8 @@
   <author href="http://www.gd-soft.it" email="info@gd-soft.it">GD-SOFT S.R.L.</author>
 
   <preference name="permissions" value="none"/>
+
+  <icon src="images/icon.png"/>
   
   <icon src="images/icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="ldpi" />
   <icon src="images/icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="mdpi" />
@@ -22,12 +25,14 @@
   <icon src="images/icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="xhdpi" />
   <icon src="images/icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="xxhdpi" />
   <icon src="images/icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="fr-xxhdpi" />
-  <icon src="images/icon.png"/>
+  
   <icon src="images/icon.png" gap:platform="ios" width="50" height="50" /> 
   <icon src="images/icon.png" gap:platform="ios" width="40" height="40" /> 
   <icon src="images/icon57X57.png" gap:platform="ios" width="57" height="57" />
-  
   <icon src="images/icon76X76.png" gap:platform="ios" width="76" height="76" />
   <icon src="images/icon120X120.png" gap:platform="ios" width="120" height="120" />
   <icon src="images/icon152X152.png" gap:platform="ios" width="152" height="152" />
+
+  <gap:splash src="splash.png" />
+
 </widget>

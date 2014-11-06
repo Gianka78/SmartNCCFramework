@@ -49,7 +49,6 @@ function onDeviceReady() {
         function (data) {
             if (data.indexOf("+OK:") == 0) {
                 token = data.replace("+OK:", "");
-                //alert(token);
             }
             else {
                 alert('errore login webservice');
