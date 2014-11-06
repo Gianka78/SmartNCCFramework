@@ -11,28 +11,43 @@
         <link href="css/smartnccmobile_app.css" type="text/css" rel="stylesheet" />
         <style type="text/css"></style>
     </head>
-
+    <div id="header" class="css_header">SmartNCC Mobile APP</div>
     <body onload="onLoad()">	
         <div>
+            <br />
             <table style="width:100%;">
                 <tr>
-                    <td>&nbsp;</td>
+                    <td><img src="images/icon.png"/></td>
                 </tr>
                 <tr>
-                    <td>&nbsp;</td>
+                    <td>
+            <input id="btScan" class="scan" type="button" onclick="scanNewCode()" /></td>
                 </tr>
                 <tr>
-                    <td>&nbsp;</td>
+                    <td>
+            <input id="tfCodiceNoleggiatore" class="textbox" type="text" /></td>
+                </tr>
+                <tr>
+                    <td>
+            <input id="btAggiungiNoleggiatore" class="button" type="button" value=" + " onclick="aggiungiNoleggiatore()" /></td>
                 </tr>
             </table>
-            <br />
-            <br />
-            <input id="tfCodiceNoleggiatore" type="text" />
-            <input id="btAggiungiNoleggiatore" type="button" value="AGGIUNGI" onclick="aggiungiNoleggiatore()" />
-            <input id="btClearAll" type="button" value="SVUOTA" onclick="svuotaElenco()" />
-            <input id="btScan" type="button" value="SCAN" onclick="scanNewCode()" />
-            <div id="divElencoNoleggiatori">
+            &nbsp;&nbsp;
+            <div id="divElencoNoleggiatori" class="css_div_elenco">
+            </div>
+            <div id="template">
+                <a href='TAG_URLNCCONLINE'>TAG_DESCRIZIONE</a>
+                <input id='btToggle_TAG_CODICE' type="button" class="toggle" onclick='toggle("TAG_CODICE")' />
+                <div id="impostazioni_TAG_CODICE" class="css_div_impostazioni">
+                    <p>Inserire le credenziali di accesso</p>
+                    <input id='tfUsername_TAG_CODICE' type='text' value='TAG_USERNAME'/>
+                    <input id='tfPassword_TAG_CODICE' type='password' value='TAG_PASSWORD'/>
+                    <input id='btSalvaCredenziali_TAG_CODICE' type='button' value='SALVA' onclick='salvaCredenziali("TAG_CODICE")' />
+                    <input id='btEliminaNoleggiatore_TAG_CODICE' type='button' value='ELIMINA' onclick='eliminaNoleggiatore("TAG_CODICE")' />
+                </div>
             </div>
         </div>
+        <div id="footer" class="css_footer">Copyright GD-Soft s.r.l.</div>
+
     </body>
 </html>

@@ -30,6 +30,8 @@ function onLoad() {
         window.location.replace(urlFisso);
     }
     else {
+        $("#template").hide();
+        $("[id^=impostazioni_]").hide();
         document.addEventListener("deviceready", onDeviceReady, false);
     }
 }
@@ -54,8 +56,7 @@ function onDeviceReady() {
                 alert('errore login webservice');
             }
         }
-        );
-    
+        );    
 }
 
 function checkConnection() {
@@ -89,15 +90,19 @@ function okLetturaElenco(tx, results)
     try
     {
         var len = results.rows.length;
+        var template = $("#template").html();
         $("#divElencoNoleggiatori").html("<lu>");
+
         for (var i = 0; i < len; i++) {
-            var htmlLU = "<li><a href='"+results.rows.item(i).url_ncconline+"'>Noleggiatore n. = " + i + " id = " + results.rows.item(i).id 
-                        + " codice =  " + results.rows.item(i).codice+"</a>"
-                        + "<input id='tfUsername_" + results.rows.item(i).codice + "' type='text' value='" + results.rows.item(i).username + "'></input>"
-                        + "<input id='tfPassword_" + results.rows.item(i).codice + "' type='password' value='" + results.rows.item(i).password + "'></input>"
-                        + "<input id='btSalvaCredenziali_" + results.rows.item(i).codice + "' type='button' value='SALVA' onclick='salvaCredenziali(\"" + results.rows.item(i).codice + "\")' />"
-                        + "</li>";
-            $("#divElencoNoleggiatori").html($("#divElencoNoleggiatori").html() + htmlLU);
+            var descrizione = "Noleggiatore n. = " + i + " id = " + results.rows.item(i).id;
+            var templateApp = "";
+            templateApp = template.replace(/TAG_CODICE/gi, results.rows.item(i).codice);
+            templateApp = templateApp.replace(/TAG_USERNAME/gi, results.rows.item(i).username);
+            templateApp = templateApp.replace(/TAG_PASSWORD/gi, results.rows.item(i).password);
+            templateApp = templateApp.replace(/TAG_URLNCCONLINE/gi, results.rows.item(i).url_ncconline);
+            templateApp = templateApp.replace(/TAG_DESCRIZIONE/gi, descrizione);
+
+            $("#divElencoNoleggiatori").html($("#divElencoNoleggiatori").html() + "</li>" + templateApp + "</li>");
         }
         $("#divElencoNoleggiatori").html($("#divElencoNoleggiatori").html()+"</lu>");
     } catch (e) { alert('eccezione: '+e);}
@@ -156,20 +161,22 @@ function okAggiungiNoleggiatore(tx) {
     }
 }
 
-function svuotaElenco() {
-    db.transaction(okSvuotaelenco, errorCB, successCB);
-}
-function okSvuotaelenco(tx) {
-    tx.executeSql('delete from elenco');
-    aggiornaElencoNoleggiatori(tx);
-}
-
 function salvaCredenziali(codice)
 {
     db.transaction(
         function (tx)
         {
             var query = "update elenco set username = '" + $("#tfUsername_" + codice).val() + "', password = '" + $("#tfPassword_" + codice).val() + "' where codice = '" + codice + "'";
+            tx.executeSql(query);
+            aggiornaElencoNoleggiatori(tx);
+        }
+        , errorCB, successCB);
+}
+
+function eliminaNoleggiatore(codice) {
+    db.transaction(
+        function (tx) {
+            var query = "delete from elenco where codice = '" + codice + "'";
             tx.executeSql(query);
             aggiornaElencoNoleggiatori(tx);
         }
@@ -187,4 +194,16 @@ function scanNewCode() {
           alert("Scansione non riuscita [" + error + "]");
       }
    );
+}
+
+function toggle(codice)
+{
+
+    if (!$("#impostazioni_"+codice).is(':visible')) {
+        $("[id^=impostazioni_]").hide();
+        $("#impostazioni_" + codice).show();
+    }
+    else {
+        $("#impostazioni_" + codice).hide();
+    }
 }
