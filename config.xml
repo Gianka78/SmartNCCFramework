@@ -4,7 +4,7 @@
 <widget xmlns = "http://www.w3.org/ns/widgets"  xmlns:gap = "http://phonegap.com/ns/1.0"
   id = "com.SmartNCCMobile.AIRSERVICE"
   version = "2"
-  versionCode = "ALL" >
+  versionCode = "2" >
 
   <preference name="phonegap-version" value="3.6.3" />
   <preference name="SplashScreen" value="screen"/>
