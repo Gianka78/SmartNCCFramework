@@ -4,8 +4,12 @@
 //
 
 var hostWS = "demo2010.smartncc.it";
-//var urlFisso = "http://taxipadova.ncconline.it";
 var urlFisso = "";
+
+/*COMMENTARE PER APP GENERICA*/
+hostWS = "taxipadova.smartncc.it";
+urlFisso = "http://taxipadova.ncconline.it";
+
 var db = null;
 var token = "";
 
