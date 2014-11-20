@@ -3,7 +3,7 @@
 <!--GENERICA        id = "com.phonegap.SmartNCCMobile"-->
 <widget xmlns = "http://www.w3.org/ns/widgets"  xmlns:gap = "http://phonegap.com/ns/1.0"
   id = "com.SmartNCCMobile.AIRSERVICE"
-  version = "1.6"
+  version = "2"
   versionCode = "ALL" >
 
   <preference name="phonegap-version" value="3.6.3" />
