@@ -12,8 +12,8 @@
   <gap:plugin name="com.phonegap.plugins.barcodescanner" version="2.0.0" />
   <plugin name="Storage" value="org.apache.cordova.Storage" />
 
-  <name>SmartNCCMobile</name>
-  <description>Piattaforma MOBILE per la suite SmartNCC</description>
+  <name>Airservice APP</name>
+  <description>Piattaforma MOBILE Airservice</description>
   <author href="http://www.gd-soft.it" email="info@gd-soft.it">GD-SOFT S.R.L.</author>
 
   <preference name="permissions" value="none"/>
