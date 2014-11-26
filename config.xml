@@ -17,7 +17,8 @@
   <author href="http://www.gd-soft.it" email="info@gd-soft.it">GD-SOFT S.R.L.</author>
 
   <preference name="permissions" value="none"/>
-
+  <preference name="fullscreen" value="true" />
+  
   <icon src="images/icon.png"/>
   
   <icon src="images/icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="ldpi" />
