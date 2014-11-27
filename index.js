@@ -30,8 +30,6 @@ function onError(error) {
 }
 
 function onLoad() {
-    $("#header").hide();
-    $("#body_offline").hide();
     if (urlFisso != "") {
         window.location.replace(urlFisso);
     }
@@ -44,9 +42,11 @@ function onLoad() {
 
 
 function onDeviceReady() {
-    $("#header").show();
-    $("#body_offline").show();
-        db = window.openDatabase("ncconlinedb", "1.0", "SmartNCCMobile", 200000);
+    $("#header").css("visibility","visible");
+    $("#body_offline").css("visibility", "visible");
+    $("#footer").css("visibility", "visible");
+
+    db = window.openDatabase("ncconlinedb", "1.0", "SmartNCCMobile", 200000);
 
         db.transaction(function (tx) {
             tx.executeSql("CREATE TABLE IF NOT EXISTS elenco(id INTEGER PRIMARY KEY ASC, codice, url_ncconline, username, password)");

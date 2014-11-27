@@ -121,3 +121,17 @@
     background-color:blue;
     color:white;
 }
+
+#body_offline
+{
+    visibility: hidden;
+}
+
+#header
+{
+    visibility: hidden;
+}
+#footer
+{
+    visibility: hidden;
+}
