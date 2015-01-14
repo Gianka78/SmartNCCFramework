@@ -30,11 +30,11 @@ function onError(error) {
 }
 
 function onLoad() {
+    if (navigator && navigator.splashscreen) {
+        alert("chiudi_splash");
+        navigator.splashscreen.show();
+    }
     if (urlFisso != "") {
-        if (navigator && navigator.splashscreen) {
-            alert("chiudi_splash");
-            //navigator.splashscreen.hide();
-        }
         window.location.replace(urlFisso);
     }
     else {

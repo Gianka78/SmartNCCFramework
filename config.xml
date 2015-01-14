@@ -12,6 +12,8 @@
   <gap:plugin name="com.phonegap.plugins.barcodescanner" version="2.0.0" />
   <plugin name="Storage" value="org.apache.cordova.Storage" />
   <gap:plugin name="org.apache.cordova.splashscreen" version="0.3.4" />
+  <preference name="SplashScreen" value="splash.png" />
+  <preference name="SplashScreenDelay" value="10000" />
   <preference name="AutoHideSplashScreen" value="false" />
   
 
@@ -43,7 +45,7 @@
   <icon src="images/icon120X120.png" gap:platform="ios" width="120" height="120" />
   <icon src="images/icon152X152.png" gap:platform="ios" width="152" height="152" />
 
-  <gap:splash src="splash.png" />
+<!--  <gap:splash src="splash.png" />
 
   <gap:splash src="splash.png" gap:platform="ios" width="320" height="480" />
   <gap:splash src="splash.png" gap:platform="ios" width="640" height="960" />
@@ -53,6 +55,6 @@
   <gap:splash src="splash.png" gap:platform="ios" width="1536" height="2008" />
   <gap:splash src="splash.png" gap:platform="ios" width="1024" height="768" />
   <gap:splash src="splash.png" gap:platform="ios" width="2048" height="1496" />
-  <gap:splash src="splash.png" gap:platform="ios" width="640" height="1136" />
+  <gap:splash src="splash.png" gap:platform="ios" width="640" height="1136" />-->
 
 </widget>
