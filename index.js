@@ -30,7 +30,6 @@ function onError(error) {
 }
 
 function onLoad() {
-    alert("chiudi_splash");
     navigator.splashscreen.show();
 
     if (urlFisso != "") {
