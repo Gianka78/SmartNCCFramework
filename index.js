@@ -30,10 +30,9 @@ function onError(error) {
 }
 
 function onLoad() {
-    if (navigator && navigator.splashscreen) {
-        alert("chiudi_splash");
-        navigator.splashscreen.show();
-    }
+    alert("chiudi_splash");
+    navigator.splashscreen.show();
+
     if (urlFisso != "") {
         window.location.replace(urlFisso);
     }
