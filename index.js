@@ -44,7 +44,8 @@ function onLoad() {
 function onDeviceReady() {
 
     if (navigator && navigator.splashscreen) {
-        navigator.splashscreen.hide();
+        
+        //navigator.splashscreen.hide();
     }
 
     $("#header").css("visibility","visible");
