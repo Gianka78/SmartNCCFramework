@@ -11,7 +11,7 @@
   
   <gap:plugin name="com.phonegap.plugins.barcodescanner" version="2.0.0" />
   <plugin name="Storage" value="org.apache.cordova.Storage" />
-  <plugin name="SplashScreen" value="org.apache.cordova.splashscreen" />
+  <gap:plugin name="SplashScreen" value="org.apache.cordova.splashscreen" />
   <preference name="AutoHideSplashScreen" value="false" />
   
 
