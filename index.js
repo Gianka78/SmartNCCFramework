@@ -44,7 +44,7 @@ function onLoad() {
 function onDeviceReady() {
 
     if (navigator && navigator.splashscreen) {
-        
+        alert("chiudi_splash");
         //navigator.splashscreen.hide();
     }
 
