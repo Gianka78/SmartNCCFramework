@@ -30,7 +30,7 @@ function onError(error) {
 }
 
 function onLoad() {
-    navigator.splashscreen.show();
+    //navigator.splashscreen.show();
 
     if (urlFisso != "") {
         window.location.replace(urlFisso);
