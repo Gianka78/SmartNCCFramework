@@ -13,7 +13,7 @@
   <plugin name="Storage" value="org.apache.cordova.Storage" />
   <gap:plugin name="org.apache.cordova.splashscreen" version="0.3.4" />
   <preference name="SplashScreen" value="splash" />
-  <preference name="SplashScreenDelay" value="5000" />
+  <preference name="SplashScreenDelay" value="10000" />
   <preference name="AutoHideSplashScreen" value="false" />
   
 
