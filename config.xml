@@ -8,7 +8,7 @@
 
   <preference name="phonegap-version" value="3.6.3" />
   <preference name="SplashScreen" value="screen"/>
-  <preference name="auto-hide-splash-screen" value="false" />
+  <preference name="AutoHideSplashScreen" value="false" />
   
   <gap:plugin name="com.phonegap.plugins.barcodescanner" version="2.0.0" />
   <plugin name="Storage" value="org.apache.cordova.Storage" />

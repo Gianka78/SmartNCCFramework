@@ -31,6 +31,10 @@ function onError(error) {
 
 function onLoad() {
     if (urlFisso != "") {
+        if (navigator && navigator.splashscreen) {
+            alert("chiudi_splash");
+            //navigator.splashscreen.hide();
+        }
         window.location.replace(urlFisso);
     }
     else {
@@ -42,11 +46,6 @@ function onLoad() {
 
 
 function onDeviceReady() {
-
-    if (navigator && navigator.splashscreen) {
-        alert("chiudi_splash");
-        //navigator.splashscreen.hide();
-    }
 
     $("#header").css("visibility","visible");
     $("#body_offline").css("visibility", "visible");
