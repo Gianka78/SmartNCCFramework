@@ -48,7 +48,7 @@
   <gap:splash src="splash.png" gap:platform="ios" width="480" height="320" />
   <gap:splash src="splash.png" gap:platform="ios" width="960" height="640" />
   <gap:splash src="splash.png" gap:platform="ios" width="768" height="1024" />
-  <gap:splash src="splash.png" gap:platform="ios" width="1536" height="2008" />
+  <gap:splash src="splash.png" gap:platform="ios" width="1536" height="2048" />
   <gap:splash src="splash.png" gap:platform="ios" width="1024" height="768" />
   <gap:splash src="splash.png" gap:platform="ios" width="2048" height="1496" />
   <gap:splash src="splash.png" gap:platform="ios" width="640" height="1136" />
