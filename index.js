@@ -195,18 +195,6 @@ function eliminaNoleggiatore(codice) {
 }
 
 
-function scanNewCode() {
-    cordova.plugins.barcodeScanner.scan(
-      function (result) {
-          $("#tfCodiceNoleggiatore").val(result.text);
-          
-      },
-      function (error) {
-          alert("Scansione non riuscita [" + error + "]");
-      }
-   );
-}
-
 function toggle(codice)
 {
 

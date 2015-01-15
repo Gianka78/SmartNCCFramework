@@ -9,13 +9,9 @@
   <preference name="phonegap-version" value="3.6.3" />
   <preference name="SplashScreen" value="screen"/>
   
-  <gap:plugin name="com.phonegap.plugins.barcodescanner" version="2.0.0" />
-  <plugin name="Storage" value="org.apache.cordova.Storage" />
   <gap:plugin name="org.apache.cordova.splashscreen" version="0.3.4" />
   <preference name="SplashScreen" value="splash" />
   <preference name="SplashScreenDelay" value="8000" />
-  
-
 
   <gap:config-file platform="ios" parent="UIViewControllerBasedStatusBarAppearance" overwrite="true">
     <false/>
