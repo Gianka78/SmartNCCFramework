@@ -3,8 +3,8 @@
 <!--GENERICA        id = "com.phonegap.SmartNCCMobile"-->
 <widget xmlns = "http://www.w3.org/ns/widgets"  xmlns:gap = "http://phonegap.com/ns/1.0"
   id = "com.SmartNCCMobile.AIRSERVICE"
-  version = "5.5" 
-  versionCode = "55" > 
+  version = "5.6" 
+  versionCode = "56" > 
 
   <preference name="phonegap-version" value="3.6.3" />
   <preference name="SplashScreen" value="screen"/>
@@ -47,11 +47,17 @@
   <gap:splash src="splash.png" gap:platform="ios" width="640" height="960" />
   <gap:splash src="splash.png" gap:platform="ios" width="480" height="320" />
   <gap:splash src="splash.png" gap:platform="ios" width="960" height="640" />
-  <gap:splash src="splash.png" gap:platform="ios" width="768" height="1024" />
+
   <gap:splash src="splash-portrait.png" gap:platform="ios" width="1536" height="2048" />
-  <gap:splash src="splash.png" gap:platform="ios" width="1536" height="2048" />
+  <gap:splash src="splash.png" gap:platform="ios" width="2048" height="1536" />
+  
+  <gap:splash src="splash-portrait.png" gap:platform="ios" width="768" height="1024" />
   <gap:splash src="splash.png" gap:platform="ios" width="1024" height="768" />
+  
+  <gap:splash src="splash-portrait.png" gap:platform="ios" width="1496" height="2048" />
   <gap:splash src="splash.png" gap:platform="ios" width="2048" height="1496" />
-  <gap:splash src="splash.png" gap:platform="ios" width="640" height="1136" />
+  
+<gap:splash src="splash-portrait.png" gap:platform="ios" width="640" height="1136" />
+  <gap:splash src="splash.png" gap:platform="ios" width="1136" height="640" />
 
 </widget>
