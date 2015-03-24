@@ -2,7 +2,7 @@
 
 <!--GENERICA        id = "com.phonegap.SmartNCCMobile"-->
 <widget xmlns = "http://www.w3.org/ns/widgets"  xmlns:gap = "http://phonegap.com/ns/1.0"
-  id = "com.SmartNCCMobile.AIRSERVICE"
+  id = "com.SmartNCCMobile.MYTOUR"
   version = "5.8" 
   versionCode = "58" > 
 
@@ -19,7 +19,7 @@
   </gap:config-file>
   
   <name>Airservice APP</name>
-  <description>Piattaforma MOBILE Airservice</description>
+  <description>Piattaforma MOBILE MYTOUR</description>
   <author href="http://www.gd-soft.it" email="info@gd-soft.it">GD-SOFT S.R.L.</author>
 
   <preference name="permissions" value="none"/>
