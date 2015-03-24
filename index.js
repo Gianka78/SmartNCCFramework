@@ -7,8 +7,8 @@ var hostWS = "demo2010.smartncc.it";
 var urlFisso = "";
 
 /*COMMENTARE PER APP GENERICA*/
-hostWS = "taxipadova.smartncc.it";
-urlFisso = "http://taxipadova.ncconline.it/catalogo_noleggio/dashboard.aspx?parent_host=mobile_app&app_init=1";
+hostWS = "mytour.smartncc.it";
+urlFisso = "http://mytour.ncconline.it/catalogo_noleggio/dashboard.aspx?parent_host=mobile_app&app_init=1";
 
 var db = null;
 var token = "";
