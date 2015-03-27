@@ -2,7 +2,7 @@
 
 <!--GENERICA        id = "com.phonegap.SmartNCCMobile"-->
 <widget xmlns = "http://www.w3.org/ns/widgets"  xmlns:gap = "http://phonegap.com/ns/1.0"
-  id = "com.SmartNCCMobile.MYTOUR"
+  id = "com.SmartNCCMobile.MYTOURAPP"
   version = "5.9" 
   versionCode = "59" > 
 
