@@ -6,7 +6,7 @@
   version = "5.9" 
   versionCode = "59" > 
 
-  <preference name="phonegap-version" value="3.6.3" />
+  <preference name="phonegap-version" value="3.7.0" />
   <preference name="SplashScreen" value="screen"/>
   
   <gap:plugin name="org.apache.cordova.splashscreen" version="0.3.4" />
