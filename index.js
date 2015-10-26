@@ -46,7 +46,7 @@ function onLoad() {
 
 
 function onDeviceReady() {
-
+    /*
     $("#header").css("visibility","visible");
     $("#body_offline").css("visibility", "visible");
     $("#footer").css("visibility", "visible");
@@ -69,7 +69,7 @@ function onDeviceReady() {
                 alert('errore login webservice');
             }
         }
-        );    
+        );    */
 }
 
 function checkConnection() {

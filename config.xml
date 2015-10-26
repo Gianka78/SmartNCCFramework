@@ -5,7 +5,6 @@
   id = "com.SmartNCCMobile.SMARTNCCAPP"
   version = "6.0" 
   versionCode = "60" > 
-  <access origin="mytour.smartncc.it" subdomains="true"/>
   <preference name="phonegap-version" value="3.7.0" />
   <preference name="SplashScreen" value="screen"/>
   <gap:plugin name="com.phonegap.plugins.barcodescanner" version="2.0.0" />
@@ -63,5 +62,7 @@
   
   <gap:splash src="splash-portrait.png" gap:platform="ios" width="640" height="1136" />
   <gap:splash src="splash.png" gap:platform="ios" width="1136" height="640" />
+
+  <access origin="*" />
 
 </widget>
