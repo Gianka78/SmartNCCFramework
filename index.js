@@ -32,7 +32,7 @@ function onError(error) {
 
 function onLoad() {
     if (urlFisso != "") {
-        window.location.href = urlFisso;
+        window.location.href = "http://mytour.smartncc.it/catalogo_noleggio/API_test.htm";
     }
     else {
         $("#template").hide();
