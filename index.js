@@ -7,8 +7,8 @@ var hostWS = "demo2010.smartncc.it";
 var urlFisso = "";
 
 /*COMMENTARE PER APP GENERICA*/
-hostWS = "mytour.smartncc.it";
-urlFisso = "http://mytour.ncconline.it/catalogo_noleggio/dashboard.aspx?parent_host=mobile_app&app_init=1";
+//hostWS = "taxipadova.smartncc.it";
+//urlFisso = "http://taxipadova.ncconline.it/catalogo_noleggio/dashboard.aspx?parent_host=mobile_app";
 
 var db = null;
 var token = "";
@@ -194,6 +194,18 @@ function eliminaNoleggiatore(codice) {
         , errorCB, successCB);
 }
 
+
+function scanNewCode() {
+    cordova.plugins.barcodeScanner.scan(
+      function (result) {
+          $("#tfCodiceNoleggiatore").val(result.text);
+          
+      },
+      function (error) {
+          alert("Scansione non riuscita [" + error + "]");
+      }
+   );
+}
 
 function toggle(codice)
 {
