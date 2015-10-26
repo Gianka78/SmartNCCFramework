@@ -32,8 +32,9 @@ function onError(error) {
 
 function onLoad() {
     //navigator.splashscreen.show();
-
+    alert(urlFisso);
     if (urlFisso != "") {
+        alert(urlFisso);
         window.location.replace(urlFisso);
     }
     else {
