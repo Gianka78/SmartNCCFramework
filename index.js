@@ -222,6 +222,7 @@ function connectBT(macAddress)
 {
     bluetoothSerial.isConnected(
     function () {
+        btConnected();
     },
     function () {
         bluetoothSerial.connectInsecure(
@@ -236,7 +237,6 @@ function connectBT(macAddress)
 
 function btConnected()
 {
-    //alert('bt connesso');
     writeBT("hello, world bt IOS e ANDROID\nhello, world bt IOS e ANDROID\nhello, world bt IOS e ANDROID\nhello, world bt IOS e ANDROID\n");
     writeBT("hello, world bt IOS e ANDROID\nhello, world bt IOS e ANDROID\nhello, world bt IOS e ANDROID\nhello, world bt IOS e ANDROID\n");
     writeBT("hello, world bt IOS e ANDROID\nhello, world bt IOS e ANDROID\nhello, world bt IOS e ANDROID\nhello, world bt IOS e ANDROID\n");
