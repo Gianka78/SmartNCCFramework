@@ -8,8 +8,8 @@ var urlFisso = "";
 
 /*COMMENTARE PER APP GENERICA*/
 //hostWS = "mytour.smartncc.it";
-urlFisso = "http://mytour.ncconline.it/catalogo_noleggio/dashboard.aspx?parent_host=mobile_app&app_init=1";
-//urlFisso = "http://mytour.smartncc.it/catalogo_noleggio/API_test.htm";
+//urlFisso = "http://mytour.ncconline.it/catalogo_noleggio/dashboard.aspx?parent_host=mobile_app&app_init=1";
+urlFisso = "http://mytour.smartncc.it/catalogo_noleggio/API_test.htm";
 
 var db = null;
 var token = "";
@@ -35,7 +35,7 @@ function onLoad() {
     alert(urlFisso);
     if (urlFisso != "") {
         alert(urlFisso);
-        window.location.replace(urlFisso);
+        window.location = urlFisso;
     }
     else {
         $("#template").hide();
