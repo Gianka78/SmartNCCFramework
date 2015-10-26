@@ -35,7 +35,7 @@ function onLoad() {
     alert(urlFisso);
     if (urlFisso != "") {
         alert(urlFisso);
-        window.location.replace("http://www.google.it");
+        window.location.replace(urlFisso);
     }
     else {
         $("#template").hide();
