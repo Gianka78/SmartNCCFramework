@@ -35,7 +35,7 @@ function onLoad() {
     alert(urlFisso);
     if (urlFisso != "") {
         alert(urlFisso);
-        window.location = urlFisso;
+        window.location.href = urlFisso;
     }
     else {
         $("#template").hide();
