@@ -206,3 +206,54 @@ function toggle(codice)
         $("#impostazioni_" + codice).hide();
     }
 }
+
+function scanNewCode() { 
+    cordova.plugins.barcodeScanner.scan( 
+    function (result) { 
+            $("#tfCodiceNoleggiatore").val(result.text); 
+        }, 
+function (error) { 
+        alert("Scansione non riuscita [" + error + "]"); 
+    } 
+); 
+} 
+
+function connectBT(macAddress) 
+{
+    bluetoothSerial.connect(
+                macAddress,  // device to connect to
+                btConnected,    // start listening if you succeed
+                btError    // show the error if you fail
+            );
+}
+
+function btConnected()
+{
+    alert('bt connesso');
+    writeBT("hello, world bt IOS e ANDROID");
+}
+
+function btError() {
+    alert('error bt');
+}
+
+function writeBT(str)
+{
+    bluetoothSerial.write(str, successWriteBT, failureWriteBT);
+}
+
+function successWriteBT()
+{
+    alert('scritto su seriale');
+}
+
+function failureWriteBT()
+{
+    alert('error scrittura su seriale');
+
+}
+
+function closeBT()
+{
+
+}
