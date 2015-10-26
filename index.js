@@ -220,7 +220,7 @@ function (error) {
 
 function connectBT(macAddress) 
 {
-    bluetoothSerial.connect(
+    bluetoothSerial.connectInsecure(
                 macAddress,  // device to connect to
                 btConnected,    // start listening if you succeed
                 btError    // show the error if you fail
