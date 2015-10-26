@@ -43,7 +43,7 @@ function onLoad() {
 
 function homePageExt()
 {
-    navigator.app.loadUrl("http://mytour.smartncc.it/catalogo_noleggio/API_test.htm", { openExternal: true });
+    window.location = urlFisso;
 }
 
 function onDeviceReady() {
