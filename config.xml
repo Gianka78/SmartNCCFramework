@@ -2,9 +2,9 @@
 
 <!--GENERICA        id = "com.phonegap.SmartNCCMobile"-->
 <widget xmlns = "http://www.w3.org/ns/widgets"  xmlns:gap = "http://phonegap.com/ns/1.0"
-  id = "com.SmartNCCMobile.MYTOURAPP"
-  version = "5.9" 
-  versionCode = "59" > 
+  id = "com.SmartNCCMobile.SMARTNCCAPP"
+  version = "6.0" 
+  versionCode = "60" > 
 
   <preference name="phonegap-version" value="3.7.0" />
   <preference name="SplashScreen" value="screen"/>
@@ -19,7 +19,7 @@
   </gap:config-file>
   
   <name>MyTour APP</name>
-  <description>Piattaforma MOBILE MYTOUR</description>
+  <description>Piattaforma MOBILE SMARTNCC</description>
   <author href="http://www.gd-soft.it" email="info@gd-soft.it">GD-SOFT S.R.L.</author>
 
   <preference name="permissions" value="none"/>
