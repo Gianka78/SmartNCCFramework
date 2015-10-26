@@ -220,17 +220,26 @@ function (error) {
 
 function connectBT(macAddress) 
 {
-    bluetoothSerial.connectInsecure(
-                macAddress,  // device to connect to
-                btConnected,    // start listening if you succeed
-                btError    // show the error if you fail
-            );
+    bluetoothSerial.isConnected(
+    function () {
+    },
+    function () {
+        bluetoothSerial.connectInsecure(
+                    macAddress,  // device to connect to
+                    btConnected,    // start listening if you succeed
+                    btError    // show the error if you fail
+                );
+    }
+);
+
 }
 
 function btConnected()
 {
-    alert('bt connesso');
-    writeBT("hello, world bt IOS e ANDROID");
+    //alert('bt connesso');
+    writeBT("hello, world bt IOS e ANDROID\nhello, world bt IOS e ANDROID\nhello, world bt IOS e ANDROID\nhello, world bt IOS e ANDROID\n");
+    writeBT("hello, world bt IOS e ANDROID\nhello, world bt IOS e ANDROID\nhello, world bt IOS e ANDROID\nhello, world bt IOS e ANDROID\n");
+    writeBT("hello, world bt IOS e ANDROID\nhello, world bt IOS e ANDROID\nhello, world bt IOS e ANDROID\nhello, world bt IOS e ANDROID\n");
 }
 
 function btError() {
@@ -244,7 +253,7 @@ function writeBT(str)
 
 function successWriteBT()
 {
-    alert('scritto su seriale');
+    //alert('scritto su seriale');
 }
 
 function failureWriteBT()
