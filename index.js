@@ -298,8 +298,10 @@ function ReceiveMessage(evt) {
     var ta = document.getElementById("taRecvMessage");
     if (ta == null)
         alert(message);
-    else
+    else {
         document.getElementById("taRecvMessage").innerHTML = message;
+        eval(message);
+    }
 
     //evt.source.postMessage("thanks, got it ;)", event.origin);
 } // End Function ReceiveMessage
