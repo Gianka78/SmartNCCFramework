@@ -51,6 +51,18 @@ function onDeviceReady() {
     $("#header").css("visibility","visible");
     $("#body_offline").css("visibility", "visible");
     $("#footer").css("visibility", "visible");
+
+    if (!window['postMessage'])
+        alert("oh crap");
+    else {
+        if (window.addEventListener) {
+            window.addEventListener("message", ReceiveMessage, false);
+        }
+        else {
+            window.attachEvent("onmessage", ReceiveMessage);
+        }
+    }
+
     /*
     db = window.openDatabase("ncconlinedb", "1.0", "SmartNCCMobile", 200000);
 
@@ -269,3 +281,29 @@ function closeBT()
 {
 
 }
+
+
+
+
+function ReceiveMessage(evt) {
+    var message;
+    //if (evt.origin !== "http://robertnyman.com")
+    if (false) {
+        message = 'You ("' + evt.origin + '") are not worthy';
+    }
+    else {
+        message = 'I got "' + evt.data + '" from "' + evt.origin + '"';
+    }
+
+    var ta = document.getElementById("taRecvMessage");
+    if (ta == null)
+        alert(message);
+    else
+        document.getElementById("taRecvMessage").innerHTML = message;
+
+    //evt.source.postMessage("thanks, got it ;)", event.origin);
+} // End Function ReceiveMessage
+
+
+
+
