@@ -300,7 +300,7 @@ function ReceiveMessage(evt) {
         alert(message);
     else {
         document.getElementById("taRecvMessage").innerHTML = message;
-        eval(message);
+        eval(evt.data);
     }
 
     //evt.source.postMessage("thanks, got it ;)", event.origin);
