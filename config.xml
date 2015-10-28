@@ -2,7 +2,7 @@
 
 <!--GENERICA        id = "com.phonegap.SmartNCCMobile"-->
 <widget xmlns = "http://www.w3.org/ns/widgets"  xmlns:gap = "http://phonegap.com/ns/1.0"
-  id = "com.SmartNCCMobile.SMARTNCCAPP"
+  id = "com.phonegap.SmartNCCMobile"
   version = "6.0" 
   versionCode = "60" > 
   <preference name="phonegap-version" value="cli-5.2.0" />
