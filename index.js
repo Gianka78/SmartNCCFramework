@@ -47,7 +47,7 @@ function homePageExt()
 }
 
 function onDeviceReady() {
-    
+    alert('onDeviceReady');
     $("#header").css("visibility","visible");
     $("#body_offline").css("visibility", "visible");
     $("#footer").css("visibility", "visible");
@@ -286,6 +286,7 @@ function closeBT()
 
 
 function ReceiveMessage(evt) {
+    alert("messaggio ricevuto")
     var message = evt.data.split('__separatore_postmessage__')[0];
     var callbackJS = evt.data.split('__separatore_postmessage__')[1];
     var origine = evt.origin;
