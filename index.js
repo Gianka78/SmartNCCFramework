@@ -286,25 +286,19 @@ function closeBT()
 
 
 function ReceiveMessage(evt) {
-    var message;
-    //if (evt.origin !== "http://robertnyman.com")
-    if (false) {
-        message = 'You ("' + evt.origin + '") are not worthy';
-    }
-    else {
-        message = 'I got "' + evt.data + '" from "' + evt.origin + '"';
-    }
-
+    var message = evt.data.split('__separatore_postmessage__')[0];
+    var callbackJS = evt.data.split('__separatore_postmessage__')[1];
+    var origine = evt.origin;
     var ta = document.getElementById("taRecvMessage");
     if (ta == null)
         alert(message);
     else {
-        document.getElementById("taRecvMessage").innerHTML = message;
+        document.getElementById("taRecvMessage").innerHTML = message+' da ['+origine+']';
         eval(evt.data);
     }
 
-    //evt.source.postMessage("thanks, got it ;)", event.origin);
-} // End Function ReceiveMessage
+    evt.source.postMessage(callbackJS, origine);
+} 
 
 
 
