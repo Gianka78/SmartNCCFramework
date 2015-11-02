@@ -23,8 +23,10 @@
   <description>Piattaforma MOBILE SMARTNCC</description>
   <author href="http://www.gd-soft.it" email="info@gd-soft.it">GD-SOFT S.R.L.</author>
 
-  <preference name="permissions" value="none"/>
+<!--  <preference name="permissions" value="none"/>-->
   <preference name="fullscreen" value="true" />
+  <feature name="http://api.phonegap.com/1.0/device" />
+  <feature name="http://api.phonegap.com/1.0/camera"/>
   
   <icon src="images/icon.png"/>
   
