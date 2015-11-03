@@ -7,76 +7,116 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no
 		initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
 
-	<title>BLE Scan</title>
+	<title>Bluno - Hello World</title>
 
 	<style>
 		@import 'ui/css/evothings-app.css';
+
+		.center {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		p.deviceAddress {
+			margin: 5px 0px 10px 10px;
+			font-size: xx-small;
+			font-weight:bold;
+		}
+
+		p.deviceName {
+			margin: 5px 0px 0px 10px;
+			font-weight: bold
+		}
+
+		div.deviceContainer {
+			border-radius: 10px;
+			border: 1px solid;
+			border-color: #CCCCCC;
+			overflow: hidden;
+			margin: 10px 0px;
+		}
+
+		#loadingView {
+		 	position: absolute;
+		 	left: 0px;
+		 	top: 0px;
+		    width: 100%;
+		    height: 100%;
+		    z-index: 1;
+		    display: table;
+		    text-align: center;
+		}
+
+		#loadingIndicator {
+			 width:20%;
+			 display: table-cell;
+  			 vertical-align: middle;
+  			 border: solid 1px;
+  			 background-color: #ffffff;
+		}
 	</style>
 
-	<script>
-	// Redirect console.log to Evothings Workbench.
-	if (window.hyper && window.hyper.log) { console.log = hyper.log }
-	</script>
-
 	<script src="cordova.js"></script>
-	<script src="libs/jquery/jquery.js"></script>
 	<script src="libs/evothings/evothings.js"></script>
 	<script src="libs/evothings/ui/ui.js"></script>
+	<script src="libs/evothings/easyble/easyble.js"></script>
+	<script src="libs/jquery/jquery.js"></script>
 	<script src="app.js"></script>
 
 </head>
 
-<body ontouchstart=""><!-- ontouchstart="" enables low-delay CSS transitions. -->
+<body ontouchstart="">
 
 	<header>
+
 		<button class="back" onclick="history.back()">
 			<img src="ui/images/arrow-left.svg" />
 		</button>
 
 		<img class="logotype" src="ui/images/logo.svg" alt="Evothings" />
 
-		<button id="menu-button" tabindex="0" onclick="this.focus()">
-			<img src="ui/images/menu.svg" />
-		</button>
-
-		<menu>
-			<menuitem>
-				<a href="#">Home</a>
-			</menuitem>
-
-			<menuitem>
-				<a href="#troubleshooting">Troubleshooting</a>
-			</menuitem>
-		</menu>
 	</header>
 
-	<h1>BLE Scan</h1>
+	<h1>Bluno - Hello World</h1>
 
-	<button onclick="app.ui.onStartScanButton()" class="green">
-		START SCAN
-	</button>
+	<div id="startView">
 
-	<button onclick="app.ui.onStopScanButton()" class="charcoal">
-		STOP SCAN
-	</button>
+		<img class="center" style="width:100%" src="img/bluno.jpg">
+		<button class="red wide" onclick="app.startScan()"> Scan </button>
 
-	<p id="scan-status">Scanning Paused</p>
+	</div>
 
-	<ul id="found-devices" class="dynamic"></ul>
+	<div id="scanResultView" style="display:none">
 
-	<section id='troubleshooting'>
+	</div>
 
-		<h2>Troubleshooting</h2>
+	<div id="controlView" style="display:none">
 
-		<p>Sometimes BLE stops working when switching between apps or doing multiple reloads. In this case restart the Evothings Client app. Additionally, you can use the Evothings Workbench Tools to see any error messages that may help in your investigation.</p>
+		<h2>Led</h2>
 
-	</section>
-    <div id="taRecvMessage">valore iniziale</div>
+		<button class="green wide" onclick="app.sendData([0x01])">On</button>
+		<button class="red wide" onclick="app.sendData([0x00])">Off</button>
 
-    <iframe name="framewrap" id="framewrap"
-            style="border:1px; width: 200px; height:100px"
-            src="https://mytour.smartncc.it/catalogo_noleggio/API_test.htm"></iframe>
-    <div id="footer" class="css_footer">Copyright GD-Soft s.r.l.</div>
+		<h2>Analog In</h2>
+
+		<button id="analogDigitalResult" class="aluminum wide">-</button>
+
+		<hr>
+
+		<button id="disconnectButton" class="red wide" onclick="app.disconnect()">Disconnect</button>
+
+	</div>
+
+	<div id="loadingView" style="display:none">
+
+		<div id="loadingIndicator">
+			<img src="img/loader.gif">
+			<p id="loadingStatus"></p>
+		</div>
+
+	</div>
+
 </body>
 
 </html>
