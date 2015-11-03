@@ -175,7 +175,7 @@ app.sendData = function(data)
 		}
 
 		data = new Uint8Array(data);
-
+		
 		app.device.writeCharacteristic(
 			app.DFRBLU_CHAR_TX_UUID,
 			data,
