@@ -251,11 +251,4 @@ app.disconnect = function(errorMessage)
 	// Stop any ongoing scan and close devices.
 	evothings.easyble.stopScan();
 	evothings.easyble.closeConnectedDevices();
-
-	console.log('Disconnected');
-
-	$('#scanResultView').hide();
-	$('#scanResultView').empty();
-	$('#controlView').hide();
-	$('#startView').show();
 };
