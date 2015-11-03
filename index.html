@@ -1,64 +1,77 @@
 <!DOCTYPE html>
-<html>  
-    <head>    
-        <title>SmartNCCMobile APP</title>
+<html>
 
-        <script src="js/jquery-1.11.1.min.js"></script>
-        <script src="js/jquery-ui-1.11.1.min.js"></script>
-        <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
-        <script type="text/javascript" charset="utf-8" src="index.js"></script>
+<head>
 
-        <link href="css/smartnccmobile_app.css" type="text/css" rel="stylesheet" />
-        <style type="text/css"></style>
-    </head>
-    <div id="header" class="css_header">SmartNCC Mobile APP</div>
-    <body onload="onLoad()">	
-        <div id="body_offline">
-            <br />
-            <table style="width:100%;">
-                <tr>
-                    <td><img src="images/icon.png"/></td>
-                </tr>
-                <tr>
-                    <td>
-                        <input id="btScan" class="scan" type="button" onclick="scanNewCode()" />scanNewCode</td>
-                    <td><input id="btConnect" class="connect" type="button" onclick="connectBT('00:22:58:3B:E4:CC')" />connectBT</td>
-                    <td> <input id="bthomePageExt" class="connect" type="button" onclick="homePageExt()" />homePageExt</td>
-                    </tr>
-                <tr>
-                    <td>
-                        <input id="tfCodiceNoleggiatore" class="textbox" type="text" /></td>
-                    </tr>
-                <tr>
-                    <td>
-                        <input id="btAggiungiNoleggiatore" class="button" type="button" value=" + " onclick="aggiungiNoleggiatore()" /></td>
-                    </tr>
-                    <td>
-                        <input id="btAggiungiNoleggiatore" class="button" type="button" value=" + " onclick="aggiungiNoleggiatore()" /></td>
-                    </tr>
-            </table>
-            &nbsp;&nbsp;
-            <div id="divElencoNoleggiatori" class="css_div_elenco">
-            </div>
-            <div id="template">
-                <a href='TAG_URLNCCONLINE'>TAG_DESCRIZIONE</a>
-                <input id='btToggle_TAG_CODICE' type="button" class="toggle" onclick='toggle("TAG_CODICE")' />
-                <div id="impostazioni_TAG_CODICE" class="css_div_impostazioni">
-                    <p>Inserire le credenziali di accesso</p>
-                    <input id='tfUsername_TAG_CODICE' type='text' value='TAG_USERNAME'/>
-                    <input id='tfPassword_TAG_CODICE' type='password' value='TAG_PASSWORD'/>
-                    <input id='btSalvaCredenziali_TAG_CODICE' type='button' value='SALVA' onclick='salvaCredenziali("TAG_CODICE")' />
-                    <input id='btEliminaNoleggiatore_TAG_CODICE' type='button' value='ELIMINA' onclick='eliminaNoleggiatore("TAG_CODICE")' />
-                </div>
-            </div>
-        </div>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, user-scalable=no
+		initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
 
-        <div id="taRecvMessage">valore iniziale</div>
+	<title>BLE Scan</title>
 
-            <iframe name="framewrap" id="framewrap"
-                    style="border:1px; width: 200px; height:100px"
-                    src="https://mytour.smartncc.it/catalogo_noleggio/API_test.htm"></iframe>
-            <div id="footer" class="css_footer">Copyright GD-Soft s.r.l.</div>
+	<style>
+		@import 'ui/css/evothings-app.css';
+	</style>
+
+	<script>
+	// Redirect console.log to Evothings Workbench.
+	if (window.hyper && window.hyper.log) { console.log = hyper.log }
+	</script>
+
+	<script src="cordova.js"></script>
+	<script src="libs/jquery/jquery.js"></script>
+	<script src="libs/evothings/evothings.js"></script>
+	<script src="libs/evothings/ui/ui.js"></script>
+	<script src="app.js"></script>
+
+</head>
+
+<body ontouchstart=""><!-- ontouchstart="" enables low-delay CSS transitions. -->
+
+	<header>
+		<button class="back" onclick="history.back()">
+			<img src="ui/images/arrow-left.svg" />
+		</button>
+
+		<img class="logotype" src="ui/images/logo.svg" alt="Evothings" />
+
+		<button id="menu-button" tabindex="0" onclick="this.focus()">
+			<img src="ui/images/menu.svg" />
+		</button>
+
+		<menu>
+			<menuitem>
+				<a href="#">Home</a>
+			</menuitem>
+
+			<menuitem>
+				<a href="#troubleshooting">Troubleshooting</a>
+			</menuitem>
+		</menu>
+	</header>
+
+	<h1>BLE Scan</h1>
+
+	<button onclick="app.ui.onStartScanButton()" class="green">
+		START SCAN
+	</button>
+
+	<button onclick="app.ui.onStopScanButton()" class="charcoal">
+		STOP SCAN
+	</button>
+
+	<p id="scan-status">Scanning Paused</p>
+
+	<ul id="found-devices" class="dynamic"></ul>
+
+	<section id='troubleshooting'>
+
+		<h2>Troubleshooting</h2>
+
+		<p>Sometimes BLE stops working when switching between apps or doing multiple reloads. In this case restart the Evothings Client app. Additionally, you can use the Evothings Workbench Tools to see any error messages that may help in your investigation.</p>
+
+	</section>
 
 </body>
+
 </html>
