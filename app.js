@@ -159,6 +159,15 @@ app.connectTo = function(address)
 	device.connect(onConnectSuccess, onConnectFailure);
 };
 
+function str2ab(str) {
+    var buf = new ArrayBuffer(str.length * 2); // 2 bytes for each char
+    var bufView = new Uint8Array(buf);
+    for (var i = 0, strLen = str.length; i < strLen; i++) {
+        bufView[i] = str.charCodeAt(i);
+    }
+    return buf;
+}
+
 app.sendData = function(data)
 {
 	if (app.connected)
@@ -174,11 +183,11 @@ app.sendData = function(data)
 			app.disconnect('Failed to send data');
 		}
 
-		data = new Uint8Array(data);
+		dataArray = str2ab(data);
 		
 		app.device.writeCharacteristic(
 			app.DFRBLU_CHAR_TX_UUID,
-			data,
+			dataArray,
 			onMessageSendSucces,
 			onMessageSendFailure);
 	}
