@@ -23,20 +23,11 @@ app.initialize = function()
 
 app.onDeviceReady = function()
 {
-    /*
-    if (!window['postMessage'])
-        alert("oh crap");
-    else {
-        if (window.addEventListener) {
-            window.addEventListener("message", ReceiveMessage, false);
-        }
-        else {
-            window.attachEvent("onmessage", ReceiveMessage);
-        }
-    }
-    */
+	// Not used.
+	// Here you can update the UI to say that
+	// the device (the phone/tablet) is ready
+	// to use BLE and other Cordova functions.
 };
-
 
 // Start the scan. Call the callback function when a device is found.
 // Format:
