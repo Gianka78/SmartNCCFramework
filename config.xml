@@ -3,8 +3,8 @@
 <!--GENERICA        id = "com.phonegap.SmartNCCMobile"-->
 <widget xmlns = "http://www.w3.org/ns/widgets"  xmlns:gap = "http://phonegap.com/ns/1.0"
   id = "com.SmartNCCMobile.MULTIUSER"
-  version = "7.2" 
-  versionCode = "72" > 
+  version = "7.3" 
+  versionCode = "73" > 
   <preference name="phonegap-version" value="cli-5.2.0" />
   <preference name="SplashScreen" value="screen"/>
   <gap:plugin name="com.phonegap.plugins.barcodescanner" version="2.0.0" />
