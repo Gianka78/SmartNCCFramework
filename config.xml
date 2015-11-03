@@ -9,7 +9,7 @@
   <preference name="SplashScreen" value="screen"/>
   <gap:plugin name="com.phonegap.plugins.barcodescanner" version="2.0.0" />
   <gap:plugin name="org.apache.cordova.splashscreen" version="0.3.4" />
-  <gap:plugin name="com.megster.cordova.ble" version="0.1.0" />
+  <gap:plugin name="com.evothings.ble" version="1.0.0" />
   
   <preference name="SplashScreen" value="splash" />
   <preference name="SplashScreenDelay" value="4000" />
