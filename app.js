@@ -23,11 +23,19 @@ app.initialize = function()
 
 app.onDeviceReady = function()
 {
-	// Not used.
-	// Here you can update the UI to say that
-	// the device (the phone/tablet) is ready
-	// to use BLE and other Cordova functions.
+
+    if (!window['postMessage'])
+        alert("oh crap");
+    else {
+        if (window.addEventListener) {
+            window.addEventListener("message", ReceiveMessage, false);
+        }
+        else {
+            window.attachEvent("onmessage", ReceiveMessage);
+        }
+    }
 };
+
 
 // Start the scan. Call the callback function when a device is found.
 // Format:
@@ -142,8 +150,8 @@ app.ui.displayStatus = function(message)
 
 app.initialize();
 
-/*
-app.ui.ReceiveMessage = function (evt) {
+
+function ReceiveMessage(evt) {
     document.getElementById("taRecvMessage").innerHTML = "messaggio ricevuto";
     var message = evt.data.split('__separatore_postmessage__')[0];
     var callbackJS = evt.data.split('__separatore_postmessage__')[1];
@@ -157,4 +165,4 @@ app.ui.ReceiveMessage = function (evt) {
     }
 
     evt.source.postMessage(callbackJS, origine);
-}*/
+}
