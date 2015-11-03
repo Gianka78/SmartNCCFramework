@@ -159,13 +159,17 @@ app.connectTo = function(address)
 	device.connect(onConnectSuccess, onConnectFailure);
 };
 
-function str2ab(str) {
-    var buf = new ArrayBuffer(str.length * 2); // 2 bytes for each char
-    var bufView = new Uint8Array(buf);
-    for (var i = 0, strLen = str.length; i < strLen; i++) {
-        bufView[i] = str.charCodeAt(i);
-    }
-    return buf;
+// string to uint array
+function unicodeStringToTypedArray(s) {
+    var escstr = encodeURIComponent(s);
+    var binstr = escstr.replace(/%([0-9A-F]{2})/g, function (match, p1) {
+        return String.fromCharCode('0x' + p1);
+    });
+    var ua = new Uint8Array(binstr.length);
+    Array.prototype.forEach.call(binstr, function (ch, i) {
+        ua[i] = ch.charCodeAt(0);
+    });
+    return ua;
 }
 
 app.sendData = function(data)
@@ -182,9 +186,10 @@ app.sendData = function(data)
 			console.log('Failed to send data with error: ' + errorCode);
 			app.disconnect('Failed to send data');
 		}
+		alert(data);
+		dataArray = unicodeStringToTypedArray(data);
+		alert(dataArray);
 
-		dataArray = str2ab(data);
-		
 		app.device.writeCharacteristic(
 			app.DFRBLU_CHAR_TX_UUID,
 			dataArray,
