@@ -7,62 +7,28 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no
 		initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
 
-	<title>Bluno - Hello World</title>
-
-	<style>
-		@import 'ui/css/evothings-app.css';
-
-		.center {
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-		}
-
-		p.deviceAddress {
-			margin: 5px 0px 10px 10px;
-			font-size: xx-small;
-			font-weight:bold;
-		}
-
-		p.deviceName {
-			margin: 5px 0px 0px 10px;
-			font-weight: bold
-		}
-
-		div.deviceContainer {
-			border-radius: 10px;
-			border: 1px solid;
-			border-color: #CCCCCC;
-			overflow: hidden;
-			margin: 10px 0px;
-		}
-
-		#loadingView {
-		 	position: absolute;
-		 	left: 0px;
-		 	top: 0px;
-		    width: 100%;
-		    height: 100%;
-		    z-index: 1;
-		    display: table;
-		    text-align: center;
-		}
-
-		#loadingIndicator {
-			 width:20%;
-			 display: table-cell;
-  			 vertical-align: middle;
-  			 border: solid 1px;
-  			 background-color: #ffffff;
-		}
-	</style>
-
+	<title>Smart NCC mobile APP by GD-Soft s.r.l.</title>
 	<script src="cordova.js"></script>
 	<script src="libs/evothings/evothings.js"></script>
 	<script src="libs/evothings/ui/ui.js"></script>
 	<script src="libs/evothings/easyble/easyble.js"></script>
 	<script src="libs/jquery/jquery.js"></script>
-	<script src="app.js"></script>
+	<script src="bluetooth_lib_ios.js"></script>
+
+    <!--<script type="text/javascript" src="http://jsconsole.com/remote.js?3B3CDA72-D48A-475D-A2DB-4CD45C33273E"></script>-->
+    <!--<script type="text/javascript" src="http://mytourtest.smartncc.it/repositorysmartticket_nccolAPP/SmartTicketMobile/js/jquery-1.4.2.min.js"></script>-->
+    <script type="text/javascript" src="http://mytourtest.smartncc.it/repositorysmartticket_nccolAPP/SmartTicketMobile/js/gdJsLibrary.js"></script>
+    <script type="text/javascript" src="http://mytourtest.smartncc.it/repositorysmartticket_nccolAPP/SmartTicketMobile/customization.js"></script>
+    <script type="text/javascript" src="http://mytourtest.smartncc.it/repositorysmartticket_nccolAPP/SmartTicketMobile/deviceinfo.js"></script>
+    <script type="text/javascript" src="http://mytourtest.smartncc.it/repositorysmartticket_nccolAPP/SmartTicketMobile/commonlib.js"></script>
+    <script type="text/javascript" src="http://mytourtest.smartncc.it/repositorysmartticket_nccolAPP/SmartTicketMobile/myapi_wp8.js"></script>
+    <!--<script type="text/javascript" src="sqlconnector.js"></script>-->
+    <script type="text/javascript" src="http://mytourtest.smartncc.it/repositorysmartticket_nccolAPP/SmartTicketMobile/dictionary.js"></script>
+    <script type="text/javascript" src="http://mytourtest.smartncc.it/repositorysmartticket_nccolAPP/SmartTicketMobile/positioning.js"></script>
+    <script type="text/javascript" src="http://mytourtest.smartncc.it/repositorysmartticket_nccolAPP/SmartTicketMobile/printerlib.js"></script>
+
+    <script type="text/javascript" src="http://mytourtest.smartncc.it/repositorysmartticket_nccolAPP/SmartTicketMobile/mobileticket.js"></script>
+    <link type="text/css" href="http://mytourtest.smartncc.it/repositorysmartticket_nccolAPP/SmartTicketMobile/mobileticket.css" rel="stylesheet" />
 
 </head>
 
@@ -93,7 +59,17 @@
 
 	<div id="controlView" style="display:none">
 
-		<h2>Led</h2>
+		<h2>Smart NCC mobile APP by GD-Soft s.r.l.</h2>
+
+        <iframe name="framewrap" id="framewrap" src="http://mytourtest.smartncc.it/catalogo_noleggio/API_test_WP8.htm"></iframe>
+        <div id="dialog_div" class="dialog_div">
+            <div id="dialog_frame" class="dialog_frame">
+                <img id="dialog_img" src="" />
+                <span id="dialog_txt"></span>
+                <span id="yes_btn"></span>
+                <span id="no_btn"></span>
+            </div>
+        </div>
 
 		<button class="green wide" onclick="app.sendData('bottone ONbottone ONbottone ONbottone ONbottone ONbottone ON')">On</button>
 		<button class="red wide" onclick="app.sendDataSTR([0xab, 0xab, 0xab, 0xab, 0xab, 0xab, 0xab, 0xab])">Off</button>
