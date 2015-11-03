@@ -28,9 +28,10 @@ document.addEventListener(
 var app = {};
 
 //app.DFRBLU_SERVICE_UUID = 'dfb0';
-app.DFRBLU_SERVICE_UUID = '0000dfb0-0000-1000-8000-00805f9b34fb';
-app.DFRBLU_CHAR_RXTX_UUID = '0000dfb1-0000-1000-8000-00805f9b34fb';
-app.DFRBLU_TX_UUID_DESCRIPTOR = '00002902-0000-1000-8000-00805f9b34fb';
+app.DFRBLU_SERVICE_UUID = '38eb4a80-c570-11e3-9507-0002a5d5c51b';
+app.DFRBLU_CHAR_RX_UUID = '38EB4A81-C570-11E3-9507-0002A5D5C51B';
+app.DFRBLU_CHAR_TX_UUID = '38EB4A82-C570-11E3-9507-0002A5D5C51B';
+app.DFRBLU_TX_UUID_DESCRIPTOR = '00001101-0000-1000-8000-00805f9b34fb';
 
 app.initialize = function()
 {
@@ -119,7 +120,7 @@ app.connectTo = function(address)
 			$('#controlView').show();
 
 			device.enableNotification(
-				app.DFRBLU_CHAR_RXTX_UUID,
+				app.DFRBLU_CHAR_RX_UUID,
 				app.receivedData,
 				function(errorcode) {
 					console.log('BLE enableNotification error: ' + errorCode);
@@ -176,7 +177,7 @@ app.sendData = function(data)
 		data = new Uint8Array(data);
 
 		app.device.writeCharacteristic(
-			app.DFRBLU_CHAR_RXTX_UUID,
+			app.DFRBLU_CHAR_TX_UUID,
 			data,
 			onMessageSendSucces,
 			onMessageSendFailure);
