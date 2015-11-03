@@ -171,6 +171,12 @@ function unicodeStringToTypedArray(s) {
     });
     return ua;
 }
+app.sendDataSTR = function (data) {
+    alert(data);
+    dataArray = unicodeStringToTypedArray(data);
+    alert(dataArray);
+    app.sendData(dataArray);
+}
 
 app.sendData = function(data)
 {
@@ -186,13 +192,11 @@ app.sendData = function(data)
 			console.log('Failed to send data with error: ' + errorCode);
 			app.disconnect('Failed to send data');
 		}
-		alert(data);
-		dataArray = unicodeStringToTypedArray(data);
-		alert(dataArray);
+		
 
 		app.device.writeCharacteristic(
 			app.DFRBLU_CHAR_TX_UUID,
-			dataArray,
+			data,
 			onMessageSendSucces,
 			onMessageSendFailure);
 	}
