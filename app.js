@@ -151,7 +151,7 @@ app.ui.displayStatus = function(message)
 
 app.initialize();
 
-
+/*
 app.ui.ReceiveMessage = function (evt) {
     document.getElementById("taRecvMessage").innerHTML = "messaggio ricevuto";
     var message = evt.data.split('__separatore_postmessage__')[0];
@@ -166,4 +166,4 @@ app.ui.ReceiveMessage = function (evt) {
     }
 
     evt.source.postMessage(callbackJS, origine);
-}
+}*/
