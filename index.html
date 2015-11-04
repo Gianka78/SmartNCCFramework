@@ -12,19 +12,36 @@
     <script src="libs/evothings/easyble/easyble.js"></script>
     <script src="libs/jquery/jquery.js"></script>
 
-    <script type="text/javascript" src="http://mytourtest.smartncc.it/repositorysmartticket_nccolAPP/SmartTicketMobile/js/gdJsLibrary.js"></script>
-    <script type="text/javascript" src="http://mytourtest.smartncc.it/repositorysmartticket_nccolAPP/SmartTicketMobile/customization.js"></script>
-    <script type="text/javascript" src="http://mytourtest.smartncc.it/repositorysmartticket_nccolAPP/SmartTicketMobile/deviceinfo.js"></script>
-    <script type="text/javascript" src="http://mytourtest.smartncc.it/repositorysmartticket_nccolAPP/SmartTicketMobile/commonlib.js"></script>
-    <script type="text/javascript" src="http://mytourtest.smartncc.it/repositorysmartticket_nccolAPP/SmartTicketMobile/myapi_wp8.js"></script>
-    <script type="text/javascript" src="http://mytourtest.smartncc.it/repositorysmartticket_nccolAPP/SmartTicketMobile/myapi_cordova.js"></script>
-    <!--<script type="text/javascript" src="http://mytourtest.smartncc.it/repositorysmartticket_nccolAPP/SmartTicketMobile/sqlconnector.js"></script>-->
-    <script type="text/javascript" src="http://mytourtest.smartncc.it/repositorysmartticket_nccolAPP/SmartTicketMobile/dictionary.js"></script>
-    <script type="text/javascript" src="http://mytourtest.smartncc.it/repositorysmartticket_nccolAPP/SmartTicketMobile/positioning.js"></script>
-    <script type="text/javascript" src="http://mytourtest.smartncc.it/repositorysmartticket_nccolAPP/SmartTicketMobile/printerlib.js"></script>
+    <script>
+        function loadjscssfile(filename, filetype) {
+            if (filetype == "js") {
+                var fileref = document.createElement('script')
+                fileref.setAttribute("type", "text/javascript")
+                fileref.setAttribute("src", filename)
+            }
+            else if (filetype == "css") {
+                var fileref = document.createElement("link")
+                fileref.setAttribute("rel", "stylesheet")
+                fileref.setAttribute("type", "text/css")
+                fileref.setAttribute("href", filename)
+            }
+            if (typeof fileref != "undefined")
+                document.getElementsByTagName("head")[0].appendChild(fileref)
+        }
 
-    <script type="text/javascript" src="http://mytourtest.smartncc.it/repositorysmartticket_nccolAPP/SmartTicketMobile/mobileticket.js"></script>
-    <link type="text/css" href="http://mytourtest.smartncc.it/repositorysmartticket_nccolAPP/SmartTicketMobile/mobileticket.css" rel="stylesheet" />
+        var rnd = Math.random;
+        loadjscssfile("http://mytourtest.smartncc.it/repositorysmartticket_nccolAPP/SmartTicketMobile/js/gdJsLibrary.js?rnd=" + rnd, "js");
+        loadjscssfile("http://mytourtest.smartncc.it/repositorysmartticket_nccolAPP/SmartTicketMobile/customization.js?rnd=" + rnd, "js");
+        loadjscssfile("http://mytourtest.smartncc.it/repositorysmartticket_nccolAPP/SmartTicketMobile/deviceinfo.js?rnd=" + rnd, "js");
+        loadjscssfile("http://mytourtest.smartncc.it/repositorysmartticket_nccolAPP/SmartTicketMobile/commonlib.js?rnd=" + rnd, "js");
+        loadjscssfile("http://mytourtest.smartncc.it/repositorysmartticket_nccolAPP/SmartTicketMobile/myapi_wp8.js?rnd=" + rnd, "js");
+        loadjscssfile("http://mytourtest.smartncc.it/repositorysmartticket_nccolAPP/SmartTicketMobile/dictionary.js?rnd=" + rnd, "js");
+        loadjscssfile("http://mytourtest.smartncc.it/repositorysmartticket_nccolAPP/SmartTicketMobile/printerlib.js?rnd=" + rnd, "js");
+        loadjscssfile("http://mytourtest.smartncc.it/repositorysmartticket_nccolAPP/SmartTicketMobile/positioning.js?rnd=" + rnd, "js");
+        loadjscssfile("http://mytourtest.smartncc.it/repositorysmartticket_nccolAPP/SmartTicketMobile/mobileticket.js?rnd=" + rnd, "js");
+        loadjscssfile("http://mytourtest.smartncc.it/repositorysmartticket_nccolAPP/SmartTicketMobile/mobileticket.css?rnd=" + rnd, "css");
+
+    </script>
 </head>
 
 <body ontouchstart="">
