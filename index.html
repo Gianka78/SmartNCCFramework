@@ -33,7 +33,7 @@
         var host_prefix = "mytourtest";
         
         loadjscssfile("http://" + host_prefix + ".smartncc.it/repositorysmartticket_nccolAPP/SmartTicketMobile/mobileticket_incl.js?rnd=" + rnd, "js");
-		//document.getElementById("framewrap").src = "http://mytour.ncconline.it/catalogo_noleggio/dashboard.aspx?parent_host=mobile_app&app_init=1";
+        $('#framewrap').attr('src', "http://" + host_prefix + ".ncconline.it/catalogo_noleggio/dashboard.aspx?parent_host=mobile_app&app_init=1");
 		//"http://mytourtest.smartncc.it/catalogo_noleggio/API_test_WP81.htm";
     </script>
 </head>
