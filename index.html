@@ -30,13 +30,15 @@
         }
 
         var rnd = Math.random;
-        loadjscssfile("http://mytourtest.smartncc.it/repositorysmartticket_nccolAPP/SmartTicketMobile/mobileticket_incl.js?rnd=" + rnd, "js");
-
+		var host = "http://mytour.ncconline.it";
+        loadjscssfile(host + "/repositorysmartticket_nccolAPP/SmartTicketMobile/mobileticket_incl.js?rnd=" + rnd, "js");
+		//document.getElementById("framewrap").src = "http://mytour.ncconline.it/catalogo_noleggio/dashboard.aspx?parent_host=mobile_app&app_init=1";
+		//"http://mytourtest.smartncc.it/catalogo_noleggio/API_test_WP81.htm";
     </script>
 </head>
 
 <body ontouchstart="">
-    <iframe name="framewrap" id="framewrap" src="http://mytourtest.smartncc.it/catalogo_noleggio/API_test_WP81.htm"></iframe>
+    <iframe name="framewrap" id="framewrap" src=""></iframe>
     <div id="dialog_div" class="dialog_div">
         <div id="dialog_frame" class="dialog_frame">
             <img id="dialog_img" src="" />
