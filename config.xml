@@ -12,6 +12,7 @@
   <gap:plugin name="com.evothings.ble" version="1.0.0" />
   <!--<gap:plugin name="com.megster.cordova.bluetoothserial" version="0.3.3" />-->
 <gap:plugin name="cordova-plugin-device" version="1.0.1" />
+  <gap:plugin name="com.badrit.macaddress" version="0.1.0" />
   
   <preference name="SplashScreen" value="splash" /> 
   <preference name="SplashScreenDelay" value="4000" />
