@@ -10,8 +10,11 @@
   <gap:plugin name="com.phonegap.plugins.barcodescanner" version="2.0.0" />
   <gap:plugin name="org.apache.cordova.splashscreen" version="0.3.4" />
   <gap:plugin name="com.evothings.ble" version="1.0.0" />
-  <gap:plugin name="com.megster.cordova.bluetoothserial" version="0.3.3" />
-  <preference name="SplashScreen" value="splash" />
+  <platform name="android">
+    <gap:plugin name="com.megster.cordova.bluetoothserial" version="0.3.3" />
+  </platform>
+  
+  <preference name="SplashScreen" value="splash" /> 
   <preference name="SplashScreenDelay" value="4000" />
   <preference name="orientation" value="portrait" />
 
