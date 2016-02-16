@@ -3,17 +3,18 @@
 <!--GENERICA        id = "com.phonegap.SmartNCCMobile"-->
 <widget xmlns = "http://www.w3.org/ns/widgets"  xmlns:gap = "http://phonegap.com/ns/1.0"
   id = "com.SmartNCCMobile.MYTOURAPP"
-  version = "7.8" 
-  versionCode = "78" > 
+  version = "7.9" 
+  versionCode = "79" > 
   <preference name="phonegap-version" value="cli-5.2.0" />
   <preference name="SplashScreen" value="screen"/>
   <gap:plugin name="com.phonegap.plugins.barcodescanner" version="2.2.0" />
   <gap:plugin name="org.apache.cordova.splashscreen" version="0.3.4" />
   <gap:plugin name="com.evothings.ble" version="1.0.0" />
   <!--<gap:plugin name="com.megster.cordova.bluetoothserial" version="0.3.3" />-->
-<gap:plugin name="cordova-plugin-device" version="1.0.1" />
+  <gap:plugin name="cordova-plugin-device" version="1.0.1" />
   <gap:plugin name="com.badrit.macaddress" version="0.1.0" />
   <gap:plugin name="org.apache.cordova.geolocation" />
+  <gap:plugin name="org.apache.cordova.device" version="0.2.3" />
   
   <preference name="SplashScreen" value="splash" /> 
   <preference name="SplashScreenDelay" value="4000" />
