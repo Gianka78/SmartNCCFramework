@@ -154,3 +154,9 @@ $RECYCLE.BIN/
 
 # Mac desktop service store files
 .DS_Store
+/index_SINGOLO.js
+/index_SINGOLO.html
+/config_SINGOLO.xml
+/config - taxipadova.xml
+/ui/images
+/img
