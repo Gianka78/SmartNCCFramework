@@ -3,8 +3,8 @@
 <!--GENERICA        id = "com.phonegap.SmartNCCMobile"-->
 <widget xmlns = "http://www.w3.org/ns/widgets"  xmlns:gap = "http://phonegap.com/ns/1.0"
   id = "com.SmartNCCMobile.AIRSERVICE"
-  version = "7.9" 
-  versionCode = "79" > 
+  version = "8.0" 
+  versionCode = "80" > 
   <preference name="phonegap-version" value="cli-5.2.0" />
   <preference name="SplashScreen" value="screen"/>
   <gap:plugin name="com.phonegap.plugins.barcodescanner" version="2.2.0" />
@@ -24,8 +24,8 @@
     <false/>
   </gap:config-file>
   
-  <name>Airservice APP</name>
-  <description>Piattaforma MOBILE Airservice</description>
+  <name>AIRSERVICE APP</name>
+  <description>Piattaforma MOBILE SmartNCC</description>
   <author href="http://www.gd-soft.it" email="info@gd-soft.it">GD-SOFT S.R.L.</author>
 
 <!--  <preference name="permissions" value="none"/>-->
