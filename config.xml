@@ -15,7 +15,7 @@
   <gap:plugin name="com.badrit.macaddress" version="0.1.0" />
   <gap:plugin name="org.apache.cordova.geolocation" />
   <gap:plugin name="org.apache.cordova.device" version="0.2.3" />
-  <plugin name="org.apache.cordova.inappbrowser" spec="0.6.0" source="pgb" />
+  <gap:plugin name="org.apache.cordova.inappbrowser" spec="0.6.0" source="pgb" />
   
   <preference name="SplashScreen" value="splash" /> 
   <preference name="SplashScreenDelay" value="4000" />
