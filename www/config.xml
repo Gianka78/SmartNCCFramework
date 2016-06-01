@@ -1,1 +1,77 @@
-test
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--GENERICA        id = "com.phonegap.SmartNCCMobile"-->
+<widget xmlns = "http://www.w3.org/ns/widgets"  xmlns:gap = "http://phonegap.com/ns/1.0"
+  id = "com.SmartNCCMobile.MULTIUSER"
+  version = "8.2" 
+  versionCode = "82" > 
+  <preference name="phonegap-version" value="cli-5.2.0" />
+  <preference name="SplashScreen" value="screen"/>
+  <gap:plugin name="com.phonegap.plugins.barcodescanner" version="2.2.0" />
+  <gap:plugin name="org.apache.cordova.splashscreen" version="0.3.4" />
+  <!--<gap:plugin name="com.evothings.ble" version="1.0.0" />-->
+  <!--<gap:plugin name="com.megster.cordova.bluetoothserial" version="0.3.3" />-->
+  <gap:plugin name="cordova-plugin-device" version="1.0.1" />
+  <gap:plugin name="com.badrit.macaddress" version="0.1.0" />
+  <gap:plugin name="org.apache.cordova.geolocation" />
+  <gap:plugin name="org.apache.cordova.device" version="0.2.3" />
+  
+  <preference name="SplashScreen" value="splash" /> 
+  <preference name="SplashScreenDelay" value="4000" />
+  <preference name="orientation" value="portrait" />
+
+  <gap:config-file platform="ios" parent="UIViewControllerBasedStatusBarAppearance" overwrite="true">
+    <false/>
+  </gap:config-file>
+  
+  <name>SmartNCCMobile APP</name>
+  <description>Piattaforma MOBILE SMARTNCC</description>
+  <author href="http://www.gd-soft.it" email="info@gd-soft.it">GD-SOFT S.R.L.</author>
+
+<!--  <preference name="permissions" value="none"/>-->
+  <preference name="fullscreen" value="true" />
+  <feature name="http://api.phonegap.com/1.0/device" />
+  <feature name="http://api.phonegap.com/1.0/camera"/>
+  <feature name="http://api.phonegap.com/1.0/geolocation"/>
+  <feature name="http://api.phonegap.com/1.0/network"/>
+   
+  
+  <icon src="images/icon.png"/>
+  
+  <icon src="images/icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="ldpi" />
+  <icon src="images/icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="mdpi" />
+  <icon src="images/icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="hdpi" />
+  <icon src="images/icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="xhdpi" />
+  <icon src="images/icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="xxhdpi" />
+  <icon src="images/icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="fr-xxhdpi" />
+  
+  <icon src="images/icon57X57.png" gap:platform="ios" width="50" height="50" /> 
+  <icon src="images/icon57X57.png" gap:platform="ios" width="40" height="40" /> 
+  <icon src="images/icon57X57.png" gap:platform="ios" width="57" height="57" />
+  <icon src="images/icon76X76.png" gap:platform="ios" width="76" height="76" />
+  <icon src="images/icon120X120.png" gap:platform="ios" width="120" height="120" />
+  <icon src="images/icon152X152.png" gap:platform="ios" width="152" height="152" />
+
+  <gap:splash src="splash.png" />
+
+  <gap:splash src="splash-portrait.png" gap:platform="ios" width="320" height="480" />
+  <gap:splash src="splash.png" gap:platform="ios" width="480" height="320" />
+  
+  <gap:splash src="splash-portrait.png" gap:platform="ios" width="640" height="960" />
+  <gap:splash src="splash.png" gap:platform="ios" width="960" height="640" />
+
+  <gap:splash src="splash-portrait.png" gap:platform="ios" width="1536" height="2048" />
+  <gap:splash src="splash.png" gap:platform="ios" width="2048" height="1536" />
+  
+  <gap:splash src="splash-portrait.png" gap:platform="ios" width="768" height="1024" />
+  <gap:splash src="splash.png" gap:platform="ios" width="1024" height="768" />
+  
+  <gap:splash src="splash-portrait.png" gap:platform="ios" width="1496" height="2048" />
+  <gap:splash src="splash.png" gap:platform="ios" width="2048" height="1496" />
+  
+  <gap:splash src="splash-portrait.png" gap:platform="ios" width="640" height="1136" />
+  <gap:splash src="splash.png" gap:platform="ios" width="1136" height="640" />
+
+  <access origin="*" />
+
+</widget>
