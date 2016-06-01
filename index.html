@@ -11,7 +11,22 @@
     <script src="libs/evothings/ui/ui.js"></script>
     <script src="libs/evothings/easyble/easyble.js"></script>
     <script src="libs/jquery/jquery.js"></script>
-
+    <style type="text/css">
+        div.app_loading_spalsh {
+            background-color: #F3F3F3;
+            border: 1px solid #ADE0F9;
+            font-family: Verdana, Geneva, sans-serif;
+            text-align: center;
+            line-height: 25px;
+            margin-top: 50px;
+            width: 80%;
+            margin-left: 5%;
+            padding-top: 10%;
+            padding-bottom: 10%;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+    </style>
 </head>
 
 <body ontouchstart="" id="app_body" >
@@ -34,12 +49,26 @@
         }
 
         var rnd = Date.now();
-        var host_prefix = "generica";
+        var host_prefix = "auto_host_byid";
         var framework_version = "Build 1.01 01-06-2016";
 
         loadjscssfile("http://" + host_prefix + ".smartncc.it/repositorysmartticket_nccolAPP/SmartTicketMobile/mobileticket_incl.js?rnd=" + rnd, "js");
     </script>
-    app loading...
+    <div class="app_loading_spalsh">
+        Caricamento dell'applicazione in corso...<br />
+        Se questa schermata viene visualizzata troppo a lungo potrebbe esserci un problema con la tua connessione internet.<br />
+        <input type="button" value="Clicca qui per riprovare" onclick="window.location.reload()" /><br /><br />
+
+        Application loading takes too long... <br />
+        <input type="button" value="Click heare to try again" onclick="window.location.reload()" />
+    </div>
+
+    <div id="app_body"></div>
+
+    <div id="app_footer">
+        SmartNCC Mobile app By GD-Soft s.r.l. - condizioni d'uso - privacy - cookie - <span id='cambia_vettore'>cambia vettore</span>
+    </div>
+
     <div id="dialog_div" class="dialog_div">
         <div id="dialog_frame" class="dialog_frame">
             <img id="dialog_img" src="" />
