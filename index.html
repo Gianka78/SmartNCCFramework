@@ -11,6 +11,7 @@
     <script src="libs/evothings/ui/ui.js"></script>
     <script src="libs/evothings/easyble/easyble.js"></script>
     <script src="libs/jquery/jquery.js"></script>
+    
     <style type="text/css">
         div.app_loading_spalsh {
             background-color: #F3F3F3;
@@ -51,8 +52,11 @@
         var rnd = Date.now();
         var host_prefix = "auto_host_byid";
         var framework_version = "Build 1.01 01-06-2016";
-
+        alert("1");
         loadjscssfile("http://" + host_prefix + ".smartncc.it/repositorysmartticket_nccolAPP/SmartTicketMobile/mobileticket_incl.js?rnd=" + rnd, "js");
+        alert("2");
+        loadjscssfile("http://" + host_prefix + ".smartncc.it/repositorysmartticket_nccolAPP/SmartTicketMobile/mobileticket_incl.js?rnd=" + rnd, "js");
+        alert("3");
     </script>
     <div class="app_loading_spalsh">
         Caricamento dell'applicazione in corso...<br />
@@ -61,22 +65,6 @@
 
         Application loading takes too long... <br />
         <input type="button" value="Click heare to try again" onclick="window.location.reload()" />
-        
-        <a href="http://auto_host_byid.smartncc.it/progettogestionale/WSSmartNCC/WSGD.asmx/get_host_by_hash_ASCIIJSON?hash=GDSO-GRTH">
-            link test
-        </a>
-        
-        <a href="http://www.gd-soft.it">
-            www
-        </a>
-        
-        <a href="https://auto_host_byid.smartncc.it/progettogestionale/WSSmartNCC/WSGD.asmx/get_host_by_hash_ASCIIJSON?hash=GDSO-GRTH">
-            https local
-        </a>
-        
-        <a href="https://gd-soft.smartncc.it/progettogestionale/WSSmartNCC/WSGD.asmx/get_host_by_hash_ASCIIJSON?hash=GDSO-GRTH">
-            https remote
-        </a>
     </div>
 
     <div id="ncc_app_body"></div>
