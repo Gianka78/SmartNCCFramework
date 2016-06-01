@@ -34,7 +34,7 @@
   <feature name="http://api.phonegap.com/1.0/camera"/>
   <feature name="http://api.phonegap.com/1.0/geolocation"/>
   
-  
+   
   
   <icon src="images/icon.png"/>
   
