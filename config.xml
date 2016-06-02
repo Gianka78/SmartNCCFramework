@@ -17,10 +17,7 @@
   <gap:plugin name="org.apache.cordova.device" version="0.2.3" />
   <plugin name="cordova-plugin-whitelist" />
   <plugin name="fi.avaus.cordova.geolocation" spec="0.3.11" source="pgb" />
-  
-  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-  
+
   <preference name="SplashScreen" value="splash" /> 
   <preference name="SplashScreenDelay" value="4000" />
   <preference name="orientation" value="portrait" />
@@ -37,7 +34,7 @@
   <preference name="fullscreen" value="true" />
   <feature name="http://api.phonegap.com/1.0/device" />
   <feature name="http://api.phonegap.com/1.0/camera"/>
-  <feature name="http://api.phonegap.com/1.0/geolocation"/>
+  <!--<feature name="http://api.phonegap.com/1.0/geolocation"/>-->
   
    
   
