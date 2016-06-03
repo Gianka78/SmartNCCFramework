@@ -5,7 +5,7 @@
   id = "com.SmartNCCMobile.MULTIUSER"
   version = "8.2" 
   versionCode = "82" > 
-  <preference name="phonegap-version" value="cli-5.2.0" />
+  <preference name="phonegap-version" value="cli-6.1.0" />
   <preference name="SplashScreen" value="screen"/>
   <!--<gap:plugin name="com.phonegap.plugins.barcodescanner" version="2.2.0" />-->
   <gap:plugin name="org.apache.cordova.splashscreen" version="0.3.4" />
