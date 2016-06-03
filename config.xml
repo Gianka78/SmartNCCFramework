@@ -9,21 +9,12 @@
   <preference name="phonegap-version" value="cli-6.0.0" />
   <preference name="SplashScreen" value="screen"/>
   <preference name="KeepRunning" value="true"/>
-  
-  <!--
-  <plugin name="com.evothings.ble" source="pgb" spec="1.0.0" />
+
   <plugin name="com.phonegap.plugins.barcodescanner" source="pgb" spec="2.2.0" />
-  <plugin name="cordova-plugin-device" source="pgb" spec="1.0.1" />
-  <plugin name="cordova-plugin-mauron85-background-geolocation" spec="1.0.1" />
-  <plugin name="cordova-plugin-whitelist" spec="1.2.2" />
   <plugin name="org.apache.cordova.splashscreen" source="pgb" spec="1.0.0" />
-  -->
-  
-  <gap:plugin name="com.phonegap.plugins.barcodescanner" version="2.2.0" />
-  <gap:plugin name="org.apache.cordova.splashscreen" />
-  <gap:plugin name="com.evothings.ble" />
+  <plugin name="com.evothings.ble" source="pgb" spec="1.0.0" />
   <!--<gap:plugin name="com.megster.cordova.bluetoothserial" version="0.3.3" />-->
-  <gap:plugin name="cordova-plugin-device" version="1.0.1" />
+  <plugin name="cordova-plugin-device" source="pgb" spec="1.0.1" />
   <gap:plugin name="cordova-plugin-geolocation" />
   
   <!--<gap:plugin name="com.badrit.macaddress" version="0.1.0" />-->
@@ -31,11 +22,11 @@
   <!-- non compatibile cli-<gap:plugin name="org.apache.cordova.device"/>-->
   
   <!-- inizio modifiche prova giancarlo -->
-  <plugin name="cordova-plugin-whitelist" />
+  <plugin name="cordova-plugin-whitelist" spec="1.2.2" />
   <!--<plugin name="fi.avaus.cordova.geolocation" spec="0.3.11" source="npm" />-->
   <!--<preference name="android-minSdkVersion" value="14" />-->
   <!--<gap:plugin name="cordova-plugin-battery-status" source="npm"/>-->
-  <!--<gap:plugin name="cordova-plugin-network-information" source="npm"/>-->
+  <!--<gap:plugin name="cordova-plugin-network-information" spec="1.0.1" source="npm"/>-->
   
   <!--<gap:plugin name="cordova-plugin-mauron85-background-geolocation" source="npm"/>-->
   
