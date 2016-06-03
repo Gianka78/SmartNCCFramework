@@ -3,7 +3,7 @@
   <widget xmlns = "http://www.w3.org/ns/widgets"  xmlns:gap = "http://phonegap.com/ns/1.0"
           id = "com.SmartNCCMobile.MULTIUSER" version = "9.3" versionCode = "93" > 
 
-  <preference name="phonegap-version" value="cli-6.1.0" />
+  <preference name="phonegap-version" value="cli-5.2.0" />
   
   <!--
   <preference name="SplashScreen" value="screen"/>
