@@ -109,6 +109,7 @@
 <platform name="ios">
     <!-- images are determined by width and height. The following are supported -->
     <splash src="splash-portrait.png" width="320" height="480"/>
+    <splash src="splash-portrait.png" width="320" height="586"/>
     <splash src="splash-portrait.png" width="640" height="960"/>
     <splash src="splash-portrait.png" width="768" height="1024"/>
     <splash src="splash-portrait.png" width="1536" height="2048"/>
