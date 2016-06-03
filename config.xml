@@ -33,7 +33,7 @@
     <false/>
   </gap:config-file>
   
-  <config-file platform="android" parent="/manifest">
+  <gap:config-file platform="android" parent="/manifest">
     <uses-sdk tools:overrideLibrary="org.apache.cordova,com.library.plugin" />
   </config-file>
   
