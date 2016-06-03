@@ -3,7 +3,7 @@
   <widget xmlns = "http://www.w3.org/ns/widgets"  xmlns:gap = "http://phonegap.com/ns/1.0"
           id = "com.SmartNCCMobile.MULTIUSER" version = "9.3" versionCode = "93" > 
           
-          
+  <!--
   <preference name="phonegap-version" value="cli-6.1.0" />
   <preference name="SplashScreen" value="screen"/>
   <preference name="KeepRunning" value="true"/>
@@ -14,8 +14,9 @@
   <plugin name="cordova-plugin-device" source="pgb" spec="1.0.1" />
   <plugin name="cordova-plugin-geolocation" />
   <plugin name="cordova-plugin-whitelist" spec="1.2.2" />
-  <plugin name="cordova-plugin-legacy-whitelist" />
-
+  <plugin name="cordova-plugin-legacy-whitelist" /> 
+  -->
+  
   <!--<gap:plugin name="com.megster.cordova.bluetoothserial" version="0.3.3" />-->
   <!-- non compatibile cli-6.1.0 <gap:plugin name="org.apache.cordova.geolocation" />-->
   <!-- non compatibile cli-6.1.0 <gap:plugin name="org.apache.cordova.device"/>-->  <!--inutile <plugin name="fi.avaus.cordova.geolocation" spec="0.3.11" source="npm" />-->
