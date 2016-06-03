@@ -61,15 +61,8 @@
   <icon src="images/icon152X152.png" gap:platform="ios" width="152" height="152" />
   
   <gap:splash src="splash.png" />
-  
-  <platform name="wp8">
-    <!-- images are determined by width and height. The following are supported -->
-    <splash src="res/screen/wp8/SplashScreenImage.jpg" width="768" height="1280"/>
-  </platform>
 
 
-
-<!--
   <gap:splash src="splash-portrait.png" gap:platform="ios" width="320" height="480" />
   <gap:splash src="splash.png" gap:platform="ios" width="480" height="320" />
   
@@ -93,10 +86,8 @@
   
   <gap:splash src="splash-portrait.png" gap:platform="ios" width="640" height="1136" />
   <gap:splash src="splash.png" gap:platform="ios" width="1136" height="640" />
-  -->
-  
+<!--  
 <platform name="ios">
-    <!-- images are determined by width and height. The following are supported -->
     <splash src="splash-portrait.png" width="320" height="480"/>
     <splash src="splash-portrait.png" width="320" height="586"/>
     <splash src="splash-portrait.png" width="640" height="960"/>
@@ -109,7 +100,7 @@
     <splash src="splash-portrait.png" width="1242" height="2208"/>
     <splash src="splash.png" width="2208" height="1242"/>
 </platform>
-
+-->
   <access origin="*" />
 
 </widget>
