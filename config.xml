@@ -12,7 +12,7 @@
   id = "com.SmartNCCMobile.MULTIUSER"
   version = "9.1" 
   versionCode = "91" > 
-  <preference name="phonegap-version" value="cli-5.2.0" />
+  <preference name="phonegap-version" value="cli-6.1.0" />
   <preference name="SplashScreen" value="screen"/>
   
   <!--
@@ -42,7 +42,7 @@
   <gap:plugin name="cordova-plugin-battery-status" source="npm"/>
   <gap:plugin name="cordova-plugin-network-information" source="npm"/>
   <!--<gap:plugin name="cordova-plugin-mauron85-background-geolocation" source="npm"/>-->
-  <gap:plugin name="de.appplant.cordova.plugin.background-mode" version="0.6.3" />
+  <gap:plugin name="de.appplant.cordova.plugin.background-mode"  />
   <!-- fine modifiche giancarlo -->
   
   <preference name="SplashScreen" value="splash" /> 
