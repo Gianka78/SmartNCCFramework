@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <!--GENERICA        id = "com.phonegap.SmartNCCMobile"-->
-<widget xmlns = "http://www.w3.org/ns/widgets"  xmlns:gap = "http://phonegap.com/ns/1.0"
+<!--<widget xmlns = "http://www.w3.org/ns/widgets"  xmlns:gap = "http://phonegap.com/ns/1.0"
   id = "com.SmartNCCMobile.MULTIUSER"
+  version = "8.4" 
+  versionCode = "84" > 
+  <preference name="phonegap-version" value="cli-6.1.0" />
+  <preference name="SplashScreen" value="screen"/>
+  -->
+  <widget xmlns = "http://www.w3.org/ns/widgets"  xmlns:gap = "http://phonegap.com/ns/1.0"
+  id = "K3LK447Q78.com.SmartNCCMobile.MULTIUSER"
   version = "8.4" 
   versionCode = "84" > 
   <preference name="phonegap-version" value="cli-6.1.0" />
