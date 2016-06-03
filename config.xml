@@ -24,6 +24,8 @@
   <plugin name="cordova-plugin-device" source="pgb" spec="1.0.1" />
   <plugin name="cordova-plugin-whitelist" spec="1.2.2" />
   <plugin name="cordova-plugin-legacy-whitelist" /> 
+  <plugin name="cordova-plugin-inappbrowser" /> 
+
   <!-- <gap:plugin name="cordova-plugin-mauron85-background-geolocation" source="npm"/>-->
   
   <!--<gap:plugin name="com.megster.cordova.bluetoothserial" version="0.3.3" />-->
