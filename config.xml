@@ -102,6 +102,10 @@
   <icon platform="winphone" width="744" height="360" src="images/icon.png" />
   <splash platform="winphone" width="1152" height="1920" src="splash-portrait.png" />
   -->
-  <access origin="*" />
+  <plugin name="cordova-plugin-whitelist"      source="npm" spec="1.1.0" />
+<allow-navigation href="*" />
+<allow-intent href="*" />
+<access origin="*" />
+
 
 </widget>
