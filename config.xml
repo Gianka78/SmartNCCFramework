@@ -35,20 +35,17 @@
   <!-- provato non funziona <gap:plugin name="cordova-plugin-background-app" spec="^2.0.0" />-->
   <!-- <gap:plugin name="cordova-plugin-mauron85-background-geolocation" source="npm"/>-->
   
-  <!--
   
   
-
+  
   <gap:config-file platform="ios" parent="UIViewControllerBasedStatusBarAppearance" overwrite="true">
     <false/>
   </gap:config-file>
-  
 
-  
   <feature name="http://api.phonegap.com/1.0/device" />
   <feature name="http://api.phonegap.com/1.0/camera"/>
   <feature name="http://api.phonegap.com/1.0/geolocation"/>
-  -->
+  
    
   <icon src="images/icon.png"/>
   
