@@ -10,8 +10,8 @@
   -->
   <widget xmlns = "http://www.w3.org/ns/widgets"  xmlns:gap = "http://phonegap.com/ns/1.0"
   id = "com.SmartNCCMobile.MULTIUSER"
-  version = "9.0" 
-  versionCode = "90" > 
+  version = "9.1" 
+  versionCode = "91" > 
   <preference name="phonegap-version" value="cli-6.1.0" />
   <preference name="SplashScreen" value="screen"/>
   
@@ -106,11 +106,11 @@
  
   <gap:splash src="splash-portrait.png" gap:platform="ios" width="1496" height="2048" />
   <gap:splash src="splash.png" gap:platform="ios" width="2048" height="1496" />
-  <!--
+  
   <gap:splash src="splash-portrait.png" gap:platform="ios" width="1536" height="2048" />
   <gap:splash src="splash.png" gap:platform="ios" width="2048" height="1536" />
   
-  -->
+  
 
   <access origin="*" />
 
