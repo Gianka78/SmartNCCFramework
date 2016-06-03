@@ -7,9 +7,9 @@
   versionCode = "82" > 
   <preference name="phonegap-version" value="cli-5.2.0" />
   <preference name="SplashScreen" value="screen"/>
-  <gap:plugin name="com.phonegap.plugins.barcodescanner" version="2.2.0" />
+  <!--<gap:plugin name="com.phonegap.plugins.barcodescanner" version="2.2.0" />-->
   <gap:plugin name="org.apache.cordova.splashscreen" version="0.3.4" />
-  <gap:plugin name="com.evothings.ble" version="1.0.0" />
+  <!--<gap:plugin name="com.evothings.ble" version="1.0.0" />-->
   <!--<gap:plugin name="com.megster.cordova.bluetoothserial" version="0.3.3" />-->
   <gap:plugin name="cordova-plugin-device" version="1.0.1" />
   <gap:plugin name="com.badrit.macaddress" version="0.1.0" />
