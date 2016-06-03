@@ -11,12 +11,12 @@
   <plugin name="com.phonegap.plugins.barcodescanner" source="pgb" spec="2.2.0" />
   <plugin name="org.apache.cordova.splashscreen" source="pgb" spec="1.0.0" />
   <plugin name="com.evothings.ble" source="pgb" spec="1.0.0" />
-  <!--<gap:plugin name="com.megster.cordova.bluetoothserial" version="0.3.3" />-->
   <plugin name="cordova-plugin-device" source="pgb" spec="1.0.1" />
   <plugin name="cordova-plugin-geolocation" />
   <plugin name="cordova-plugin-whitelist" spec="1.2.2" />
   <plugin name="cordova-plugin-legacy-whitelist" />
-  
+
+  <!--<gap:plugin name="com.megster.cordova.bluetoothserial" version="0.3.3" />-->
   <!-- non compatibile cli-6.1.0 <gap:plugin name="org.apache.cordova.geolocation" />-->
   <!-- non compatibile cli-6.1.0 <gap:plugin name="org.apache.cordova.device"/>-->  <!--inutile <plugin name="fi.avaus.cordova.geolocation" spec="0.3.11" source="npm" />-->
   <!--inutile <preference name="android-minSdkVersion" value="14" />-->
@@ -24,8 +24,9 @@
   <!--verificare <gap:plugin name="cordova-plugin-network-information" spec="1.0.1" source="npm"/>-->
   <!-- provato non funziona <gap:plugin name="de.appplant.cordova.plugin.background-mode"  />-->
   <!-- provato non funziona <gap:plugin name="cordova-plugin-background-app" spec="^2.0.0" />-->
-  
   <!-- <gap:plugin name="cordova-plugin-mauron85-background-geolocation" source="npm"/>-->
+  
+  <!--
   
   
   <preference name="SplashScreen" value="splash" /> 
@@ -82,13 +83,6 @@
   <gap:splash src="splash-portrait.png" gap:platform="ios" width="1536" height="2048" />
   <gap:splash src="splash.png" gap:platform="ios" width="2048" height="1536" />
   
-  
-  <!--non funziona in caricamento 
-  <gap:splash src="splash-portrait.png" gap:platform="ios" width="640" height="1136" />
-  <gap:splash src="splash.png" gap:platform="ios" width="1136" height="640" />
-  -->
-  
-  
   <icon platform="winphone" width="44" height="44" src="images/icon.png" />
   <icon platform="winphone" width="106" height="106" src="images/icon.png" />
   <icon platform="winphone" width="150" height="150" src="images/icon.png" />
@@ -98,7 +92,13 @@
   <icon platform="winphone" width="310" height="150" src="images/icon.png" />
   <icon platform="winphone" width="744" height="360" src="images/icon.png" />
   <splash platform="winphone" width="1152" height="1920" src="splash-portrait.png" />
+  -->
   
+  <!--non funziona in caricamento 
+  <gap:splash src="splash-portrait.png" gap:platform="ios" width="640" height="1136" />
+  <gap:splash src="splash.png" gap:platform="ios" width="1136" height="640" />
+  -->
+
 
   <allow-navigation href="*" />
   <allow-intent href="*" />
