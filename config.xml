@@ -39,7 +39,7 @@
   <author href="http://www.gd-soft.it" email="info@gd-soft.it">GD-SOFT S.R.L.</author>
 
 <!--  <preference name="permissions" value="none"/>-->
-  <!-- <preference name="fullscreen" value="true" />-->
+   <preference name="fullscreen" value="true" />
   <!--<feature name="http://api.phonegap.com/1.0/device" />-->
   <!--<feature name="http://api.phonegap.com/1.0/camera"/>-->
   <!--<feature name="http://api.phonegap.com/1.0/geolocation"/>-->
