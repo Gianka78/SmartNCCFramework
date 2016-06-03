@@ -7,7 +7,7 @@
   <description>Piattaforma MOBILE SMARTNCC</description>
   <author href="http://www.gd-soft.it" email="info@gd-soft.it">GD-SOFT S.R.L.</author>
 
-  <preference name="phonegap-version" value="cli-5.4.1" />
+  <preference name="phonegap-version" value="cli-6.1.1" />
   <preference name="SplashScreen" value="screen"/>
   <preference name="KeepRunning" value="true"/>
   <preference name="SplashScreen" value="splash" /> 
