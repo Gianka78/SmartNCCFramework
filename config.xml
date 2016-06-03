@@ -62,6 +62,11 @@
   
   <gap:splash src="splash.png" />
   
+  <platform name="wp8">
+    <!-- images are determined by width and height. The following are supported -->
+    <splash src="res/screen/wp8/SplashScreenImage.jpg" width="768" height="1280"/>
+  </platform>
+
   <platform name="android">
     <!-- you can use any density that exists in the Android project -->
     <splash src="res/screen/android/splash-land-hdpi.png" density="land-hdpi"/>
