@@ -5,7 +5,7 @@
   id = "com.SmartNCCMobile.MULTIUSER"
   version = "8.2" 
   versionCode = "82" > 
-  <preference name="phonegap-version" value="cli-6.2.0" />
+  <preference name="phonegap-version" value="cli-6.1.0" />
   <preference name="SplashScreen" value="screen"/>
   <!--<gap:plugin name="com.phonegap.plugins.barcodescanner" version="2.2.0" />-->
   <gap:plugin name="org.apache.cordova.splashscreen" version="0.3.4" />
@@ -14,7 +14,7 @@
   <gap:plugin name="cordova-plugin-device" version="1.0.1" />
   <!--<gap:plugin name="com.badrit.macaddress" version="0.1.0" />-->
   <!--<gap:plugin name="org.apache.cordova.geolocation" />-->
-  <gap:plugin name="org.apache.cordova.device" version="0.2.3" />
+  <!--<gap:plugin name="org.apache.cordova.device" version="0.2.3" />-->
   
   <!-- inizio modifiche prova giancarlo -->
   <plugin name="cordova-plugin-whitelist" />
