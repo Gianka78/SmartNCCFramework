@@ -17,7 +17,7 @@
   <!--<gap:plugin name="org.apache.cordova.device" version="0.2.3" />-->
   
   <!-- inizio modifiche prova giancarlo -->
-  <plugin name="cordova-plugin-whitelist" />
+  <!-- <plugin name="cordova-plugin-whitelist" /> -->
   <!--<plugin name="fi.avaus.cordova.geolocation" spec="0.3.11" source="pgb" />-->
   <!--<preference name="android-minSdkVersion" value="14" />-->
   <!--<gap:plugin name="cordova-plugin-mauron85-background-geolocation" source="npm"/>-->
