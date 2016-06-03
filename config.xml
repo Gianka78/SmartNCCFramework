@@ -17,24 +17,20 @@
   <plugin name="cordova-plugin-device" source="pgb" spec="1.0.1" />
   <gap:plugin name="cordova-plugin-geolocation" />
   
-
   <!-- non compatibile cli-6.1.0 <gap:plugin name="org.apache.cordova.geolocation" />-->
   <!-- non compatibile cli-6.1.0 <gap:plugin name="org.apache.cordova.device"/>-->
   
-  <!-- inizio modifiche prova giancarlo -->
   <plugin name="cordova-plugin-whitelist" spec="1.2.2" />
-  <!--<plugin name="fi.avaus.cordova.geolocation" spec="0.3.11" source="npm" />-->
-  <!--<preference name="android-minSdkVersion" value="14" />-->
-  <!--<gap:plugin name="cordova-plugin-battery-status" source="npm"/>-->
-  <!--<gap:plugin name="cordova-plugin-network-information" spec="1.0.1" source="npm"/>-->
-  
-  <!--<gap:plugin name="cordova-plugin-mauron85-background-geolocation" source="npm"/>-->
-  
+  <!--inutile <plugin name="fi.avaus.cordova.geolocation" spec="0.3.11" source="npm" />-->
+  <!--inutile <preference name="android-minSdkVersion" value="14" />-->
+  <!--varificare <gap:plugin name="cordova-plugin-battery-status" source="npm"/>-->
+  <!--verificare <gap:plugin name="cordova-plugin-network-information" spec="1.0.1" source="npm"/>-->
   <!-- provato non funziona <gap:plugin name="de.appplant.cordova.plugin.background-mode"  />-->
   <!-- provato non funziona <gap:plugin name="cordova-plugin-background-app" spec="^2.0.0" />-->
   
-  <!-- fine modifiche giancarlo -->
+  <!-- <gap:plugin name="cordova-plugin-mauron85-background-geolocation" source="npm"/>-->
   
+
   <!--
   <preference name="SplashScreen" value="splash" /> 
   <preference name="SplashScreenDelay" value="4000" />
@@ -55,8 +51,8 @@
   <feature name="http://api.phonegap.com/1.0/geolocation"/>
   -->
    
-  
   <icon src="images/icon.png"/>
+  
   <!--
   <icon src="images/icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="ldpi" />
   <icon src="images/icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="mdpi" />
