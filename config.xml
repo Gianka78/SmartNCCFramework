@@ -19,7 +19,7 @@
   <!-- non compatibile cli-6.1.0 <gap:plugin name="org.apache.cordova.device"/>-->
   
   <!--<plugin name="cordova-plugin-whitelist" spec="1.2.2" />-->
-  <plugin name="cordova-plugin-legacy-whitelist />
+  <plugin name="cordova-plugin-legacy-whitelist" />
   <!--inutile <plugin name="fi.avaus.cordova.geolocation" spec="0.3.11" source="npm" />-->
   <!--inutile <preference name="android-minSdkVersion" value="14" />-->
   <!--varificare <gap:plugin name="cordova-plugin-battery-status" source="npm"/>-->
