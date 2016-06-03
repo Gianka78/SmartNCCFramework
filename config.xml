@@ -14,6 +14,7 @@
   versionCode = "91" > 
   <preference name="phonegap-version" value="cli-6.1.0" />
   <preference name="SplashScreen" value="screen"/>
+  <preference name="KeepRunning" value="true"/>
   
   <!--
   <plugin name="com.evothings.ble" source="pgb" spec="1.0.0" />
