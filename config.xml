@@ -19,7 +19,7 @@
   
 
   <!-- non compatibile cli-6.1.0 <gap:plugin name="org.apache.cordova.geolocation" />-->
-  <!-- non compatibile cli-<gap:plugin name="org.apache.cordova.device"/>-->
+  <!-- non compatibile cli-6.1.0 <gap:plugin name="org.apache.cordova.device"/>-->
   
   <!-- inizio modifiche prova giancarlo -->
   <plugin name="cordova-plugin-whitelist" spec="1.2.2" />
@@ -35,6 +35,7 @@
   
   <!-- fine modifiche giancarlo -->
   
+  <!--
   <preference name="SplashScreen" value="splash" /> 
   <preference name="SplashScreenDelay" value="4000" />
   <preference name="orientation" value="portrait" />
@@ -42,7 +43,7 @@
   <gap:config-file platform="ios" parent="UIViewControllerBasedStatusBarAppearance" overwrite="true">
     <false/>
   </gap:config-file>
-  
+  -->
   <name>SmartNCCMobile APP</name>
   <description>Piattaforma MOBILE SMARTNCC</description>
   <author href="http://www.gd-soft.it" email="info@gd-soft.it">GD-SOFT S.R.L.</author>
