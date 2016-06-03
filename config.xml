@@ -40,8 +40,8 @@
   <plugin name="cordova-plugin-whitelist" />
   <!--<plugin name="fi.avaus.cordova.geolocation" spec="0.3.11" source="npm" />-->
   <!--<preference name="android-minSdkVersion" value="14" />-->
-  <gap:plugin name="cordova-plugin-battery-status" source="npm"/>
-  <gap:plugin name="cordova-plugin-network-information" source="npm"/>
+  <!--<gap:plugin name="cordova-plugin-battery-status" source="npm"/>-->
+  <!--<gap:plugin name="cordova-plugin-network-information" source="npm"/>-->
   <gap:plugin name="cordova-plugin-mauron85-background-geolocation" source="npm"/>
   <!-- provato non funziona <gap:plugin name="de.appplant.cordova.plugin.background-mode"  />-->
   <!-- provato non funziona <gap:plugin name="cordova-plugin-background-app" spec="^2.0.0" />-->
