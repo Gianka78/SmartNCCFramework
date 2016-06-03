@@ -29,13 +29,15 @@
   <gap:plugin name="com.evothings.ble" />
   <!--<gap:plugin name="com.megster.cordova.bluetoothserial" version="0.3.3" />-->
   <gap:plugin name="cordova-plugin-device" version="1.0.1" />
+  <gap:plugin name="cordova-plugin-geolocation" version="2.1.0" />
+  
   <!--<gap:plugin name="com.badrit.macaddress" version="0.1.0" />-->
   <!-- non compatibile cli-6.1.0 <gap:plugin name="org.apache.cordova.geolocation" />-->
   <!-- non compatibile cli-<gap:plugin name="org.apache.cordova.device"/>-->
   
   <!-- inizio modifiche prova giancarlo -->
   <plugin name="cordova-plugin-whitelist" />
-  <plugin name="fi.avaus.cordova.geolocation" spec="0.3.11" source="npm" />
+  <!--<plugin name="fi.avaus.cordova.geolocation" spec="0.3.11" source="npm" />-->
   <!--<preference name="android-minSdkVersion" value="14" />-->
   <gap:plugin name="cordova-plugin-mauron85-background-geolocation" source="npm"/>
 
