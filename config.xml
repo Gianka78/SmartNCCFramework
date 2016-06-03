@@ -35,7 +35,7 @@
   
   <!-- inizio modifiche prova giancarlo -->
   <plugin name="cordova-plugin-whitelist" />
-  <!--<plugin name="fi.avaus.cordova.geolocation" spec="0.3.11" source="pgb" />-->
+  <plugin name="fi.avaus.cordova.geolocation" spec="0.3.11" source="npm" />
   <!--<preference name="android-minSdkVersion" value="14" />-->
   <gap:plugin name="cordova-plugin-mauron85-background-geolocation" source="npm"/>
 
