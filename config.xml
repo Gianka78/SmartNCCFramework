@@ -3,6 +3,10 @@
   <widget xmlns = "http://www.w3.org/ns/widgets"  xmlns:gap = "http://phonegap.com/ns/1.0"
           id = "com.SmartNCCMobile.MULTIUSER" version = "9.3" versionCode = "93" > 
 
+  <name>SmartNCCMobile APP</name>
+  <description>Piattaforma MOBILE SMARTNCC</description>
+  <author href="http://www.gd-soft.it" email="info@gd-soft.it">GD-SOFT S.R.L.</author>
+
   <preference name="phonegap-version" value="cli-6.1.0" />
   
   <preference name="SplashScreen" value="screen"/>
@@ -39,9 +43,6 @@
     <false/>
   </gap:config-file>
   
-  <name>SmartNCCMobile APP</name>
-  <description>Piattaforma MOBILE SMARTNCC</description>
-  <author href="http://www.gd-soft.it" email="info@gd-soft.it">GD-SOFT S.R.L.</author>
 
   
   <preference name="fullscreen" value="true" />
