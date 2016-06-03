@@ -8,9 +8,13 @@
   <author href="http://www.gd-soft.it" email="info@gd-soft.it">GD-SOFT S.R.L.</author>
 
   <preference name="phonegap-version" value="cli-6.1.0" />
-  
   <preference name="SplashScreen" value="screen"/>
   <preference name="KeepRunning" value="true"/>
+  <preference name="SplashScreen" value="splash" /> 
+  <preference name="SplashScreenDelay" value="4000" />
+  <preference name="orientation" value="portrait" />
+  <preference name="fullscreen" value="true" />
+
   <!--
   <plugin name="com.phonegap.plugins.barcodescanner" source="pgb" spec="2.2.0" />
   <plugin name="org.apache.cordova.splashscreen" source="pgb" spec="1.0.0" />
@@ -34,9 +38,6 @@
   <!--
   
   
-  <preference name="SplashScreen" value="splash" /> 
-  <preference name="SplashScreenDelay" value="4000" />
-  <preference name="orientation" value="portrait" />
 
   <gap:config-file platform="ios" parent="UIViewControllerBasedStatusBarAppearance" overwrite="true">
     <false/>
@@ -44,15 +45,13 @@
   
 
   
-  <preference name="fullscreen" value="true" />
   <feature name="http://api.phonegap.com/1.0/device" />
   <feature name="http://api.phonegap.com/1.0/camera"/>
   <feature name="http://api.phonegap.com/1.0/geolocation"/>
-  
+  -->
    
   <icon src="images/icon.png"/>
   
-  -->
   <icon src="images/icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="ldpi" />
   <icon src="images/icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="mdpi" />
   <icon src="images/icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="hdpi" />
