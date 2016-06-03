@@ -15,9 +15,14 @@
   <gap:plugin name="com.badrit.macaddress" version="0.1.0" />
   <!--<gap:plugin name="org.apache.cordova.geolocation" />-->
   <gap:plugin name="org.apache.cordova.device" version="0.2.3" />
+  
+  <!-- inizio modifiche prova giancarlo -->
   <plugin name="cordova-plugin-whitelist" />
-  <plugin name="fi.avaus.cordova.geolocation" spec="0.3.11" source="pgb" />
+  <!--<plugin name="fi.avaus.cordova.geolocation" spec="0.3.11" source="pgb" />-->
+  <gap:plugin name="cordova-plugin-mauron85-background-geolocation" source="npm"/>
 
+  <!-- fine modifiche giancarlo -->
+  
   <preference name="SplashScreen" value="splash" /> 
   <preference name="SplashScreenDelay" value="4000" />
   <preference name="orientation" value="portrait" />
