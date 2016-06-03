@@ -29,7 +29,7 @@
   <gap:plugin name="com.evothings.ble" />
   <!--<gap:plugin name="com.megster.cordova.bluetoothserial" version="0.3.3" />-->
   <gap:plugin name="cordova-plugin-device" version="1.0.1" />
-  <gap:plugin name="cordova-plugin-geolocation" version="2.1.0" />
+  <gap:plugin name="cordova-plugin-geolocation" />
   
   <!--<gap:plugin name="com.badrit.macaddress" version="0.1.0" />-->
   <!-- non compatibile cli-6.1.0 <gap:plugin name="org.apache.cordova.geolocation" />-->
