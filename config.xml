@@ -9,7 +9,7 @@
   <!--<preference name="KeepRunning" value="true"/>-->
 
   <plugin name="com.phonegap.plugins.barcodescanner" source="pgb" spec="2.2.0" />
-  <plugin name="org.apache.cordova.splashscreen" source="pgb" spec="1.0.0" />
+  <!--<plugin name="org.apache.cordova.splashscreen" source="pgb" spec="1.0.0" />-->
   <plugin name="com.evothings.ble" source="pgb" spec="1.0.0" />
   <!--<gap:plugin name="com.megster.cordova.bluetoothserial" version="0.3.3" />-->
   <plugin name="cordova-plugin-device" source="pgb" spec="1.0.1" />
