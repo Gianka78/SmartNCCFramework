@@ -5,9 +5,9 @@
 
   <preference name="phonegap-version" value="cli-6.1.0" />
   
-  <!--
   <preference name="SplashScreen" value="screen"/>
   <preference name="KeepRunning" value="true"/>
+  <!--
 
   <plugin name="com.phonegap.plugins.barcodescanner" source="pgb" spec="2.2.0" />
   <plugin name="org.apache.cordova.splashscreen" source="pgb" spec="1.0.0" />
