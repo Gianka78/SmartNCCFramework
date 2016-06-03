@@ -7,6 +7,16 @@
   versionCode = "83" > 
   <preference name="phonegap-version" value="cli-6.1.0" />
   <preference name="SplashScreen" value="screen"/>
+  
+  <!--
+  <plugin name="com.evothings.ble" source="pgb" spec="1.0.0" />
+  <plugin name="com.phonegap.plugins.barcodescanner" source="pgb" spec="2.2.0" />
+  <plugin name="cordova-plugin-device" source="pgb" spec="1.0.1" />
+  <plugin name="cordova-plugin-mauron85-background-geolocation" spec="1.0.1" />
+  <plugin name="cordova-plugin-whitelist" spec="1.2.2" />
+  <plugin name="org.apache.cordova.splashscreen" source="pgb" spec="1.0.0" />
+  -->
+  
   <gap:plugin name="com.phonegap.plugins.barcodescanner" version="2.2.0" />
   <gap:plugin name="org.apache.cordova.splashscreen" />
   <gap:plugin name="com.evothings.ble" />
