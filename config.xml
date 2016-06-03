@@ -1,18 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <!--GENERICA        id = "com.phonegap.SmartNCCMobile"-->
-<!--<widget xmlns = "http://www.w3.org/ns/widgets"  xmlns:gap = "http://phonegap.com/ns/1.0"
-  id = "com.SmartNCCMobile.MULTIUSER"
-  version = "8.4" 
-  versionCode = "84" > 
-  <preference name="phonegap-version" value="cli-6.1.0" />
-  <preference name="SplashScreen" value="screen"/>
-  -->
+
   <widget xmlns = "http://www.w3.org/ns/widgets"  xmlns:gap = "http://phonegap.com/ns/1.0"
   id = "com.SmartNCCMobile.MULTIUSER"
   version = "9.2" 
   versionCode = "92" > 
-  <preference name="phonegap-version" value="cli-6.1.0" />
+  <preference name="phonegap-version" value="cli-6.0.0" />
   <preference name="SplashScreen" value="screen"/>
   <preference name="KeepRunning" value="true"/>
   
@@ -62,7 +56,7 @@
   <description>Piattaforma MOBILE SMARTNCC</description>
   <author href="http://www.gd-soft.it" email="info@gd-soft.it">GD-SOFT S.R.L.</author>
 
-  <!--  <preference name="permissions" value="none"/>-->
+  
   <preference name="fullscreen" value="true" />
   <feature name="http://api.phonegap.com/1.0/device" />
   <feature name="http://api.phonegap.com/1.0/camera"/>
