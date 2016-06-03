@@ -10,8 +10,8 @@
   -->
   <widget xmlns = "http://www.w3.org/ns/widgets"  xmlns:gap = "http://phonegap.com/ns/1.0"
   id = "com.SmartNCCMobile.MULTIUSER"
-  version = "9.1" 
-  versionCode = "91" > 
+  version = "9.2" 
+  versionCode = "92" > 
   <preference name="phonegap-version" value="cli-6.1.0" />
   <preference name="SplashScreen" value="screen"/>
   <preference name="KeepRunning" value="true"/>
@@ -119,7 +119,7 @@
   <gap:splash src="splash-portrait.png" gap:platform="ios" width="1536" height="2048" />
   <gap:splash src="splash.png" gap:platform="ios" width="2048" height="1536" />
   
-  
+  <!--
   <icon platform="winphone" width="44" height="44" src="images/icon.png" />
   <icon platform="winphone" width="106" height="106" src="images/icon.png" />
   <icon platform="winphone" width="150" height="150" src="images/icon.png" />
@@ -129,7 +129,7 @@
   <icon platform="winphone" width="310" height="150" src="images/icon.png" />
   <icon platform="winphone" width="744" height="360" src="images/icon.png" />
   <splash platform="winphone" width="1152" height="1920" src="splash-portrait.png" />
-
+  -->
   <access origin="*" />
 
 </widget>
