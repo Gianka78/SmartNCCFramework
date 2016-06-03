@@ -14,9 +14,9 @@
   <plugin name="com.evothings.ble" source="pgb" spec="1.0.0" />
   <plugin name="cordova-plugin-device" source="pgb" spec="1.0.1" />
   <plugin name="cordova-plugin-geolocation" />
+  -->
   <plugin name="cordova-plugin-whitelist" spec="1.2.2" />
   <plugin name="cordova-plugin-legacy-whitelist" /> 
-  -->
   
   <!--<gap:plugin name="com.megster.cordova.bluetoothserial" version="0.3.3" />-->
   <!-- non compatibile cli-6.1.0 <gap:plugin name="org.apache.cordova.geolocation" />-->
