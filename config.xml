@@ -23,7 +23,7 @@
   <plugin name="cordova-plugin-whitelist" spec="1.2.2" />
   <plugin name="cordova-plugin-legacy-whitelist" /> 
 
-  <!-- <gap:plugin name="cordova-plugin-mauron85-background-geolocation" source="npm"/>-->
+  <gap:plugin name="cordova-plugin-mauron85-background-geolocation" source="npm"/>
   
   <!--<gap:plugin name="com.megster.cordova.bluetoothserial" version="0.3.3" />-->
   <!-- non compatibile cli-6.1.0 <gap:plugin name="org.apache.cordova.geolocation" />-->
