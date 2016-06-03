@@ -19,9 +19,7 @@
   <!-- inizio modifiche prova giancarlo -->
   <plugin name="cordova-plugin-whitelist" />
   <!--<plugin name="fi.avaus.cordova.geolocation" spec="0.3.11" source="pgb" />-->
-  <config-file platform="android" parent="/manifest">
-    <uses-sdk tools:overrideLibrary="org.apache.cordova,com.library.plugin" />
-  </config-file>
+  
   <preference name="android-minSdkVersion" value="14" />
   <gap:plugin name="cordova-plugin-mauron85-background-geolocation" source="npm"/>
 
@@ -34,6 +32,10 @@
   <gap:config-file platform="ios" parent="UIViewControllerBasedStatusBarAppearance" overwrite="true">
     <false/>
   </gap:config-file>
+  
+  <config-file platform="android" parent="/manifest">
+    <uses-sdk tools:overrideLibrary="org.apache.cordova,com.library.plugin" />
+  </config-file>
   
   <name>SmartNCCMobile APP</name>
   <description>Piattaforma MOBILE SMARTNCC</description>
