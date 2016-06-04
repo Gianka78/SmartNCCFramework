@@ -7,9 +7,9 @@
   <description>Piattaforma MOBILE SMARTNCC</description>
   <author href="http://www.gd-soft.it" email="info@gd-soft.it">GD-SOFT S.R.L.</author>
 
-  <!--<preference name="phonegap-version" value="cli-5.4.1" />-->
-  <!-- problema iOS apre link fuori APP non firma WP8 <preference name="phonegap-version" value="cli-5.4.1" /> -->
-  <preference name="phonegap-version" value="cli-6.1.0" />
+  <preference name="phonegap-version" value="cli-5.4.1" />
+  <!-- problema android no GPS Background <preference name="phonegap-version" value="cli-5.4.1" /> -->
+  <!-- problema iOS apre link fuori APP non firma WP8 <preference name="phonegap-version" value="cli-6.1.0" /> -->
   
   <preference name="SplashScreen" value="screen"/>
   <preference name="KeepRunning" value="true"/>
@@ -21,7 +21,7 @@
   <plugin name="com.phonegap.plugins.barcodescanner" source="pgb" spec="2.2.0" />
   <plugin name="org.apache.cordova.splashscreen" source="npm" />
   <!--<plugin name="com.evothings.ble" source="pgb" spec="1.0.0" />-->
-  <plugin name="com.evothings.ble" source="npm" spec="1.3.1"/>
+  <plugin name="com.evothings.ble" source="npm" spec="1.2.0"/>
   <plugin name="cordova-plugin-geolocation" />
   <plugin name="cordova-plugin-device" source="pgb" spec="1.0.1" />
   <plugin name="cordova-plugin-whitelist" spec="1.2.2" />
