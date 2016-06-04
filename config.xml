@@ -28,6 +28,7 @@
   <plugin name="cordova-plugin-legacy-whitelist" /> 
   
   <!-- funziona a singhiozzo su ios e android <gap:plugin name="cordova-plugin-appinfo" source="npm"/>-->
+  <gap:plugin name="cordova-plugin-appversion" source="npm"/>
   <gap:plugin name="cordova-plugin-battery-status" source="npm"/>
   <gap:plugin name="cordova-plugin-network-information" spec="1.0.1" source="npm"/>
   
