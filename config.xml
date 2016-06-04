@@ -8,6 +8,8 @@
   <author href="http://www.gd-soft.it" email="info@gd-soft.it">GD-SOFT S.R.L.</author>
 
   <preference name="phonegap-version" value="cli-5.4.1" />
+  <!-- problema iOS apre link fuori APP <preference name="phonegap-version" value="cli-5.4.1" /> -->
+  
   <preference name="SplashScreen" value="screen"/>
   <preference name="KeepRunning" value="true"/>
   <preference name="SplashScreen" value="splash" /> 
@@ -22,19 +24,16 @@
   <plugin name="cordova-plugin-device" source="pgb" spec="1.0.1" />
   <plugin name="cordova-plugin-whitelist" spec="1.2.2" />
   <plugin name="cordova-plugin-legacy-whitelist" /> 
-
-  <gap:plugin name="cordova-plugin-mauron85-background-geolocation" source="npm"/>
+  <gap:plugin name="cordova-plugin-battery-status" source="npm"/>
+  <gap:plugin name="cordova-plugin-network-information" spec="1.0.1" source="npm"/>
   
-  <!--<gap:plugin name="com.megster.cordova.bluetoothserial" version="0.3.3" />-->
+  <!-- compatibile solo con Android cli-6.1.0 <gap:plugin name="cordova-plugin-mauron85-background-geolocation" source="npm"/> -->
+  
+  <!-- bluettoth standard da provare <gap:plugin name="com.megster.cordova.bluetoothserial" version="0.3.3" />-->
   <!-- non compatibile cli-6.1.0 <gap:plugin name="org.apache.cordova.geolocation" />-->
   <!-- non compatibile cli-6.1.0 <gap:plugin name="org.apache.cordova.device"/>-->  <!--inutile <plugin name="fi.avaus.cordova.geolocation" spec="0.3.11" source="npm" />-->
-  <!--inutile <preference name="android-minSdkVersion" value="14" />-->
-  <!--varificare <gap:plugin name="cordova-plugin-battery-status" source="npm"/>-->
-  <!--verificare <gap:plugin name="cordova-plugin-network-information" spec="1.0.1" source="npm"/>-->
-  <!-- provato non funziona <gap:plugin name="de.appplant.cordova.plugin.background-mode"  />-->
-  <!-- provato non funziona <gap:plugin name="cordova-plugin-background-app" spec="^2.0.0" />-->
-  
-  
+  <!-- provato non funziona iOS <gap:plugin name="de.appplant.cordova.plugin.background-mode"  />-->
+  <!-- provato non funziona iOS <gap:plugin name="cordova-plugin-background-app" spec="^2.0.0" />-->
   
   
   <gap:config-file platform="ios" parent="UIViewControllerBasedStatusBarAppearance" overwrite="true">
