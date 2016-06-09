@@ -64,7 +64,7 @@
   
    
   <icon src="images/icon.png"/>
-  <!--
+  
   <icon src="images/icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="ldpi" />
   <icon src="images/icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="mdpi" />
   <icon src="images/icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="hdpi" />
@@ -80,6 +80,8 @@
   <icon src="images/icon114X114.png" gap:platform="ios" width="114" height="114" />
   <icon src="images/icon120X120.png" gap:platform="ios" width="120" height="120" />
   <icon src="images/icon152X152.png" gap:platform="ios" width="152" height="152" />
+  
+  <!--
   
   <gap:splash src="splash-portrait.png" />
   <gap:splash src="splash-portrait.png" gap:platform="ios" width="320" height="568" />
