@@ -3,8 +3,8 @@
 <!--GENERICA        id = "com.phonegap.SmartNCCMobile"-->
 <widget xmlns = "http://www.w3.org/ns/widgets"  xmlns:gap = "http://phonegap.com/ns/1.0"
   id = "com.SmartNCCMobile.MULTIUSER"
-  version = "9.4" 
-  versionCode = "94" > 
+  version = "9.5" 
+  versionCode = "95" > 
   <preference name="phonegap-version" value="cli-5.2.0" />
   <preference name="SplashScreen" value="screen"/>
   <gap:plugin name="com.phonegap.plugins.barcodescanner" version="2.2.0" />
@@ -71,6 +71,7 @@
   
   <gap:splash src="splash-portrait.png" gap:platform="ios" width="640" height="1136" />
   <gap:splash src="splash.png" gap:platform="ios" width="1136" height="640" />
+
 
   <access origin="*" />
 
