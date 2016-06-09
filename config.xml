@@ -7,7 +7,7 @@
   <description>Piattaforma MOBILE SMARTNCC</description>
   <author href="http://www.gd-soft.it" email="info@gd-soft.it">GD-SOFT S.R.L.</author>
 
-  <preference name="phonegap-version" value="cli-6.0.0" />
+  <preference name="phonegap-version" value="cli-6.1.0" />
   
   <!-- problema android no GPS Background <preference name="phonegap-version" value="cli-5.4.1" /> -->
   <!-- problema iOS apre link fuori APP non firma WP8 <preference name="phonegap-version" value="cli-6.1.0" /> -->
@@ -31,7 +31,7 @@
   <gap:plugin name="cordova-plugin-appinfo" source="npm"/>
 
   <gap:plugin name="de.appplant.cordova.plugin.background-mode" version="0.6.4" />
-  <gap:plugin name="de.appplant.cordova.plugin.local-notification" source="npm"/>
+  <!--<gap:plugin name="de.appplant.cordova.plugin.local-notification" source="npm"/>-->
   
   <!-- funziona a singhiozzo su ios e android <gap:plugin name="cordova-plugin-appinfo" source="npm"/>-->
   <!--<gap:plugin name="cordova-plugin-appversion" source="npm"/>-->
