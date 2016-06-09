@@ -35,7 +35,7 @@
   
   <!-- funziona a singhiozzo su ios e android <gap:plugin name="cordova-plugin-appinfo" source="npm"/>-->
   <!--<gap:plugin name="cordova-plugin-appversion" source="npm"/>-->
-  <gap:plugin name="cordova-plugin-battery-status" source="npm"/>
+  <gap:plugin name="cordova-plugin-battery-status" source="pbg"/>
   <gap:plugin name="cordova-plugin-network-information" spec="1.0.1" source="npm"/>
   
   <!-- compatibile solo con Android cli-6.1.0 <gap:plugin name="cordova-plugin-mauron85-background-geolocation" source="npm"/> -->
