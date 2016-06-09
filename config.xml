@@ -29,7 +29,8 @@
   
   <gap:plugin name="cordova-plugin-appinfo" source="npm"/>
   <gap:plugin name="de.appplant.cordova.plugin.background-mode" source="pgb"/>
-   
+  <gap:plugin name="de.appplant.cordova.plugin.local-notification"  source="npm"/>
+  
   <!-- funziona a singhiozzo su ios e android <gap:plugin name="cordova-plugin-appinfo" source="npm"/>-->
   <!--<gap:plugin name="cordova-plugin-appversion" source="npm"/>-->
   <gap:plugin name="cordova-plugin-battery-status" source="npm"/>
