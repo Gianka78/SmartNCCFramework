@@ -28,6 +28,8 @@
   <plugin name="cordova-plugin-legacy-whitelist" /> 
   
   <gap:plugin name="cordova-plugin-appinfo" source="npm"/>
+  <gap:plugin name="de.appplant.cordova.plugin.background-mode" source="pgb"/>
+   
   <!-- funziona a singhiozzo su ios e android <gap:plugin name="cordova-plugin-appinfo" source="npm"/>-->
   <!--<gap:plugin name="cordova-plugin-appversion" source="npm"/>-->
   <gap:plugin name="cordova-plugin-battery-status" source="npm"/>
