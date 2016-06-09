@@ -64,7 +64,7 @@
   
    
   <icon src="images/icon.png"/>
-  
+  <!--
   <icon src="images/icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="ldpi" />
   <icon src="images/icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="mdpi" />
   <icon src="images/icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="hdpi" />
@@ -106,7 +106,7 @@
   <icon platform="winphone" width="310" height="150" src="images/icon.png" />
   <icon platform="winphone" width="744" height="360" src="images/icon.png" />
   <splash platform="winphone" width="1152" height="1920" src="splash-portrait.png" />
-  
+  -->
   
   <!--non funziona in caricamento 
   <gap:splash src="splash-portrait.png" gap:platform="ios" width="640" height="1136" />
