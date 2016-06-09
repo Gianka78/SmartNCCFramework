@@ -82,7 +82,7 @@
   <icon src="images/icon152X152.png" gap:platform="ios" width="152" height="152" />
   
   
-  <gap:splash src="splash-portrait.png" />
+  <!--<gap:splash src="splash-portrait.png" />-->
   
   <gap:splash src="splash-portrait.png" gap:platform="ios" width="320" height="568" />
   <gap:splash src="splash.png" gap:platform="ios" width="568" height="320" />
