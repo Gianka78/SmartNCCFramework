@@ -26,8 +26,8 @@
     <gap:plugin platform="android" name="de.appplant.cordova.plugin.background-mode" version="0.6.4" source="pgb"/>
   </platform>
   <platform name="ios">
-    <preference name="phonegap-version" value="cli-6.1.0" />
-    <!--<preference name="phonegap-version" value="cli-5.4.1" />-->
+    <!--<preference name="phonegap-version" value="cli-6.1.0" />-->
+    <preference name="phonegap-version" value="cli-5.4.1" />
     <gap:plugin name="de.appplant.cordova.plugin.local-notification" version="0.8.4"  source="npm"/>
     <gap:plugin name="de.appplant.cordova.plugin.background-mode" version="0.6.4" source="pgb"/>
   </platform>
