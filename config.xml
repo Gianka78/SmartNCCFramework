@@ -7,7 +7,7 @@
   <description>Piattaforma MOBILE SMARTNCC</description>
   <author href="http://www.gd-soft.it" email="info@gd-soft.it">GD-SOFT S.R.L.</author>
 
-  <preference name="phonegap-version" value="cli-6.1.0" />
+  <preference name="phonegap-version" value="cli-6.0.0" />
   
   <!-- problema android no GPS Background <preference name="phonegap-version" value="cli-5.4.1" /> -->
   <!-- problema iOS apre link fuori APP non firma WP8 <preference name="phonegap-version" value="cli-6.1.0" /> -->
