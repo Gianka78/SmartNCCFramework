@@ -34,6 +34,8 @@
   <platform name="android">
     <gap:plugin platform="android" name="de.appplant.cordova.plugin.background-mode" version="0.6.4" source="pgb"/>-->
   </platform>
+  <platform name="ios">
+  </platform>
   <gap:plugin name="de.appplant.cordova.plugin.local-notification" version="0.8.4"  source="npm"/>
   
   <!-- funziona a singhiozzo su ios e android <gap:plugin name="cordova-plugin-appinfo" source="npm"/>-->
