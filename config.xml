@@ -29,7 +29,8 @@
   <plugin name="cordova-plugin-legacy-whitelist" /> 
   
   <gap:plugin name="cordova-plugin-appinfo" source="npm"/>
-  <gap:plugin name="de.appplant.cordova.plugin.background-mode" source="npm"/>
+
+  <gap:plugin name="de.appplant.cordova.plugin.background-mode" version="0.6.3" />
   <gap:plugin name="de.appplant.cordova.plugin.local-notification" source="npm"/>
   
   <!-- funziona a singhiozzo su ios e android <gap:plugin name="cordova-plugin-appinfo" source="npm"/>-->
