@@ -84,8 +84,7 @@
   
   <gap:splash src="splash-portrait.png" />
   
-  <!--
-  <gap:splash src="splash-portrait.png" gap:platform="ios" width="320" height="568" />
+    <gap:splash src="splash-portrait.png" gap:platform="ios" width="320" height="568" />
   <gap:splash src="splash.png" gap:platform="ios" width="568" height="320" />
   <gap:splash src="splash-portrait.png" gap:platform="ios" width="320" height="480" />
   <gap:splash src="splash.png" gap:platform="ios" width="480" height="320" />
@@ -109,7 +108,6 @@
   <icon platform="winphone" width="310" height="150" src="images/icon.png" />
   <icon platform="winphone" width="744" height="360" src="images/icon.png" />
   <splash platform="winphone" width="1152" height="1920" src="splash-portrait.png" />
-  -->
   
   <!--non funziona in caricamento 
   <gap:splash src="splash-portrait.png" gap:platform="ios" width="640" height="1136" />
