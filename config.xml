@@ -37,13 +37,14 @@
   </platform>
   <platform name="ios">
     <preference name="phonegap-version" value="cli-5.4.1" />
+    <gap:plugin name="de.appplant.cordova.plugin.local-notification" version="0.8.4"  source="npm"/>
   </platform>
   <platform name="winphone">
     <preference name="phonegap-version" value="cli-6.0.0" />
   </platform>
   
   <!--<gap:plugin platform="android" name="de.appplant.cordova.plugin.background-mode" version="0.6.4" source="pgb"/>-->
-  <gap:plugin name="de.appplant.cordova.plugin.local-notification" version="0.8.4"  source="npm"/>
+  
   
   <!-- funziona a singhiozzo su ios e android <gap:plugin name="cordova-plugin-appinfo" source="npm"/>-->
   <!--<gap:plugin name="cordova-plugin-appversion" source="npm"/>-->
