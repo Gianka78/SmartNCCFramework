@@ -43,8 +43,11 @@
   <gap:plugin name="cordova-plugin-appinfo" source="npm"/>
   <gap:plugin name="cordova-plugin-battery-status" source="npm"/>
   <gap:plugin name="cordova-plugin-network-information" spec="1.0.1" source="npm"/>
-  <gap:plugin name="phonegap-plugin-push" source="npm"/>
   
+<preference name="android-build-tool" value="gradle" />
+<plugin name="phonegap-plugin-push" source="npm">
+    <param name="SENDER_ID" value="236799555977" />
+</plugin>  
   <!-- compatibile solo con Android cli-6.1.0 <gap:plugin name="cordova-plugin-mauron85-background-geolocation" source="npm"/> -->
   
   <!-- bluettoth standard da provare <gap:plugin name="com.megster.cordova.bluetoothserial" version="0.3.3" />-->
