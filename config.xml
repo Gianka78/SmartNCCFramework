@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
   <widget xmlns = "http://www.w3.org/ns/widgets"  xmlns:gap = "http://phonegap.com/ns/1.0"
-          id = "com.SmartNCCMobile.MULTIUSER" version = "9.83" versionCode = "983" > 
+          id = "com.SmartNCCMobile.MULTIUSER" version = "9.84" versionCode = "984" > 
 
   <name>SmartNCCMobile APP</name>
   <description>Piattaforma MOBILE SMARTNCC</description>
