@@ -22,11 +22,11 @@
   <!-- funzionante su cli-5.4.1 <gap:plugin namde="de.appplant.cordova.plugin.background-mode" version="0.6.4" source="pgb"/>-->
   <platform name="android">
     <preference name="phonegap-version" value="cli-6.1.0" />
-    <gap:plugin name="de.appplant.cordova.plugin.local-notification" version="0.8.4"  source="npm"/>
-    <gap:plugin platform="android" name="de.appplant.cordova.plugin.background-mode" version="0.6.4" source="pgb"/>
+    <!-- 11-06-2016 <gap:plugin name="de.appplant.cordova.plugin.local-notification" version="0.8.4"  source="npm"/> -->
+    <!-- 11-06-2016 <gap:plugin platform="android" name="de.appplant.cordova.plugin.background-mode" version="0.6.4" source="pgb"/>-->
   </platform>
   <platform name="ios">
-    <preference name="phonegap-version" value="cli-6.0.0" />
+    <preference name="phonegap-version" value="cli-6.1.0" />
     <!--<preference name="phonegap-version" value="cli-5.4.1" />-->
     <!--<gap:plugin name="de.appplant.cordova.plugin.local-notification" version="0.8.4"  source="npm"/>-->
     <!--<gap:plugin name="de.appplant.cordova.plugin.background-mode" version="0.6.4" source="pgb"/>-->
@@ -37,7 +37,7 @@
   <!--<plugin name="com.evothings.ble" source="pgb" spec="1.0.0" />-->
   <plugin name="com.evothings.ble" source="npm" spec="1.2.0"/>
   <plugin name="cordova-plugin-geolocation" />
-  <!--non compila con cli.6.1.0 <plugin name="cordova-plugin-device" source="pgb" spec="1.0.1" />-->
+  <!-- 11-06-2016 non compila con cli.6.1.0 <plugin name="cordova-plugin-device" source="pgb" spec="1.0.1" />-->
   
   <plugin name="cordova-plugin-whitelist" spec="1.2.2" />
   <plugin name="cordova-plugin-legacy-whitelist" /> 
@@ -70,7 +70,7 @@
     <false/>
   </gap:config-file>
 
-  <!--<feature name="http://api.phonegap.com/1.0/device" />-->
+  <!-- 11-06-2016 <feature name="http://api.phonegap.com/1.0/device" />-->
   <feature name="http://api.phonegap.com/1.0/camera"/>
   <feature name="http://api.phonegap.com/1.0/geolocation"/>
   
