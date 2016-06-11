@@ -43,7 +43,7 @@
   <gap:plugin name="cordova-plugin-appinfo" source="npm"/>
   <gap:plugin name="cordova-plugin-battery-status" source="npm"/>
   <gap:plugin name="cordova-plugin-network-information" spec="1.0.1" source="npm"/>
-  <plugin name="cordova-background-geolocation-lt" source="npm" />
+  <!--<plugin name="cordova-background-geolocation-lt" source="npm" />-->
 
   
   <preference name="android-build-tool" value="gradle" />
