@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
   <widget xmlns = "http://www.w3.org/ns/widgets"  xmlns:gap = "http://phonegap.com/ns/1.0"
-          id = "com.SmartNCCMobile.MULTIUSER" version = "9.8" versionCode = "98" > 
+          id = "com.SmartNCCMobile.MULTIUSER" version = "9.81" versionCode = "981" > 
 
   <name>SmartNCCMobile APP</name>
   <description>Piattaforma MOBILE SMARTNCC</description>
@@ -85,7 +85,7 @@
   <icon src="images/icon120X120.png" gap:platform="ios" width="120" height="120" />
   <icon src="images/icon152X152.png" gap:platform="ios" width="152" height="152" />
 
-  <gap:splash src="splash.png" />
+  <gap:splash src="splash-portrait.png" />
 
   <gap:splash src="splash-portrait.png" gap:platform="ios" width="320" height="480" />
   <gap:splash src="splash.png" gap:platform="ios" width="480" height="320" />
