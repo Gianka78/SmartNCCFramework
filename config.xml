@@ -140,6 +140,11 @@
     <splash src="splash.png" platform="android" qualifier="land-xxhdpi" />
   </platform>
 
+  <platform name="winphone">
+    <splash src="splash-portrait.png" />
+    <splash width="1152" height="1920" src="splash-portrait.png" />
+  </platform>
+
   <allow-navigation href="*" />
   <allow-intent href="*" />
   <access origin="*" />
