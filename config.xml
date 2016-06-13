@@ -49,7 +49,7 @@
   <gap:plugin name="cordova-plugin-network-information" spec="1.0.1" source="npm"/>
   <plugin name="cordova-background-geolocation-lt" source="npm" />
   <!--<gap:plugin name="cordova-plugin-badge" source="npm" />-->
-  <gap:plugin name="cordova-plugin-file" source="npm" />
+  <!--<gap:plugin name="cordova-plugin-file" source="npm" />-->
   
   <preference name="android-build-tool" value="gradle" />
   <plugin name="phonegap-plugin-push" source="npm">
