@@ -28,7 +28,7 @@
       <param name="SENDER_ID" value="236799555977" />
     </plugin> 
     <gap:plugin name="de.appplant.cordova.plugin.local-notification" version="0.8.4"  source="npm"/>
-    <!--<gap:plugin name="de.appplant.cordova.plugin.background-mode" version="0.6.4" source="pgb"/>-->
+    <gap:plugin name="de.appplant.cordova.plugin.background-mode" version="0.6.4" source="pgb"/>
   </platform>
   
   <platform name="ios">
@@ -38,7 +38,7 @@
       <param name="SENDER_ID" value="236799555977" />
     </plugin> 
     <gap:plugin name="de.appplant.cordova.plugin.local-notification" version="0.8.4"  source="npm"/>
-    <!--<gap:plugin name="de.appplant.cordova.plugin.background-mode" version="0.6.4" source="pgb"/>-->
+    <gap:plugin name="de.appplant.cordova.plugin.background-mode" version="0.6.4" source="pgb"/>
   </platform>
   
   <!--<platform name="winphone">
