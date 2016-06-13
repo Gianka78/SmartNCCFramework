@@ -34,7 +34,7 @@
   <platform name="ios">
     <!--<preference name="phonegap-version" value="cli-6.1.0" />-->
     <preference name="phonegap-version" value="cli-5.4.1" />
-    <plugin name="phonegap-plugin-push" source="npm" spec="2.2.0" >
+    <plugin name="phonegap-plugin-push" source="npm" spec="1.6.4" >
       <param name="SENDER_ID" value="236799555977" />
     </plugin> 
     <gap:plugin name="de.appplant.cordova.plugin.local-notification" version="0.8.4"  source="npm"/>
