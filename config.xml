@@ -3,7 +3,7 @@
   <widget xmlns = "http://www.w3.org/ns/widgets"  xmlns:gap = "http://phonegap.com/ns/1.0"
           id = "com.SmartNCCMobile.MULTIUSER" version = "10.01" versionCode = "1001" > 
 
-  <name>Smart NCC Mobile</name>
+  <name>SmartNCCMobile APP</name>
   <description>Piattaforma MOBILE SMARTNCC</description>
   <author href="http://www.gd-soft.it" email="info@gd-soft.it">GD-SOFT S.R.L.</author>
 
