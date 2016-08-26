@@ -154,3 +154,20 @@ $RECYCLE.BIN/
 
 # Mac desktop service store files
 .DS_Store
+/test_app_funzionante_background.xml
+/test_app_funzionante_background.html
+/index_SINGOLO.js
+/index_SINGOLO.html
+/funzionante_android.xml
+/config_SINGOLO.xml
+/config_funzionante_linkesterni.xml
+/config_funzionante_android_geolocation.xml
+/config - taxipadova.xml
+/bacato_prove_geolocation.xml
+/09-06-2016-beta9.9-funzionanteIOS_android.xml
+/09-06-2016-beta9.7-funzionanteIOS_android.xml
+/01-06-2016-release8.2-funzionante_ios.xml
+/ui/images/menu.svg
+/ui/images/logo.svg
+/ui/images/arrow-right.svg
+/ui/images/arrow-left.svg
