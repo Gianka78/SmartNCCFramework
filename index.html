@@ -16,6 +16,14 @@
 
 <body ontouchstart="" id="app_body" >
     <script>
+        document.addEventListener("deviceready", onDeviceReady, false);
+
+        // device APIs are available
+        //
+        function onDeviceReady() {
+            navigator.splashscreen.show();
+        }
+
         var isCordova = true;
         function loadjscssfile(filename, filetype) {
             if (filetype == "js") {
