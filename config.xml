@@ -17,7 +17,7 @@
   <gap:plugin name="org.apache.cordova.device" version="0.2.3" />
   
   <preference name="SplashScreen" value="splash" /> 
-  <preference name="SplashScreenDelay" value="4000" />
+  <!--<preference name="SplashScreenDelay" value="4000" />-->
   <preference name="orientation" value="portrait" />
 
   <gap:config-file platform="ios" parent="UIViewControllerBasedStatusBarAppearance" overwrite="true">
