@@ -16,7 +16,7 @@
   <gap:plugin name="org.apache.cordova.geolocation" />
   <gap:plugin name="org.apache.cordova.device" version="0.2.3" />
   <gap:plugin name="org.apache.cordova.statusbar" spec="0.1.4" />
-  
+  <gap:plugin name="cordova-plugin-file" />
   <preference name="SplashScreen" value="splash" /> 
   <!--<preference name="SplashScreenDelay" value="4000" />-->
   <preference name="orientation" value="portrait" />
