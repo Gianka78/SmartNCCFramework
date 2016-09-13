@@ -20,6 +20,9 @@
   <preference name="SplashScreen" value="splash" /> 
   <!--<preference name="SplashScreenDelay" value="4000" />-->
   <preference name="orientation" value="portrait" />
+  
+  <preference name="AndroidPersistentFileLocation" value="Internal" />
+  <preference name="AndroidPersistentFileLocation" value="Compatibility" />
 
   <gap:config-file platform="ios" parent="UIViewControllerBasedStatusBarAppearance" overwrite="true">
     <false/>
@@ -74,5 +77,6 @@
   <gap:splash src="splash.png" gap:platform="ios" width="1136" height="640" />
 
   <access origin="*" />
+
 
 </widget>
