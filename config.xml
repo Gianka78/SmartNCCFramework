@@ -66,6 +66,8 @@
   <plugin name="cordova-background-geolocation-lt" source="npm" />
   <gap:plugin name="cordova-plugin-badge" source="npm" />
   <gap:plugin name="cordova-plugin-file" source="npm" />
+  <gap:plugin name="cordova-plugin-file-transfer" source="npm" />
+  
   
  
 
