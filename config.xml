@@ -21,8 +21,6 @@
   <!--<preference name="SplashScreenDelay" value="4000" />-->
   <preference name="orientation" value="portrait" />
   
-  <preference name="AndroidPersistentFileLocation" value="Internal" />
-  <preference name="AndroidPersistentFileLocation" value="Compatibility" />
 
   <gap:config-file platform="ios" parent="UIViewControllerBasedStatusBarAppearance" overwrite="true">
     <false/>
