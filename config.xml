@@ -5,7 +5,7 @@
   id = "com.SmartNCCMobile.SMARTTICKET"
   version = "8.1" 
   versionCode = "81" > 
-  <preference name="phonegap-version" value="cli-6.3.0" />
+  <preference name="phonegap-version" value="cli-5.2.1" />
   <preference name="SplashScreen" value="screen"/>
   <gap:plugin name="com.phonegap.plugins.barcodescanner" version="2.2.0" />
   <gap:plugin name="org.apache.cordova.splashscreen" spec="1.0.0" source="pgb" />
@@ -16,7 +16,7 @@
   <gap:plugin name="org.apache.cordova.geolocation" />
   <gap:plugin name="org.apache.cordova.device" version="0.2.3" />
   <gap:plugin name="org.apache.cordova.statusbar" spec="0.1.4" />
-  <gap:plugin name="cordova-plugin-file" spec="4.2.0"/>
+  <gap:plugin name="cordova-plugin-file"/>
   <preference name="SplashScreen" value="splash" /> 
   <!--<preference name="SplashScreenDelay" value="4000" />-->
   <preference name="orientation" value="portrait" />
@@ -27,7 +27,7 @@
   </gap:config-file>
   
   <name>SmartTicketMobile</name>
-  <description>Piattaforma MOBILE SmartNCC</description>
+  <description>Piattaforma MOBILE SmartTicket Mobile</description>
   <author href="http://www.gd-soft.it" email="info@gd-soft.it">GD-SOFT S.R.L.</author>
 
 <!--  <preference name="permissions" value="none"/>-->
