@@ -51,7 +51,7 @@
     <gap:plugin name="de.appplant.cordova.plugin.background-mode" version="0.6.5" source="npm"/>
   </platform>
   
-  <plugin name="phonegap-plugin-barcodescanner" source="npm" spec="2.2.0" />
+  <plugin name="phonegap-plugin-barcodescanner" spec="2.2.0" />
   <plugin name="org.apache.cordova.splashscreen" source="npm" />
   <!--<plugin name="com.evothings.ble" source="npm" spec="1.0.0" />-->
   <plugin name="com.evothings.ble" source="npm" spec="1.2.0"/>
