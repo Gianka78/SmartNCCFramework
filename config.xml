@@ -19,7 +19,7 @@
   <!--<preference name="orientation" value="portrait" />-->
   <preference name="fullscreen" value="true" />
 
-  <!-- funzionante su cli-5.4.1 <gap:plugin namde="de.appplant.cordova.plugin.background-mode" version="0.6.4" source="npm"/>-->
+  <!-- funzionante su cli-5.4.1 <gap:plugin namde="de.appplant.cordova.plugin.background-mode" version="0.65" source="npm"/>-->
   
   <platform name="android">
     <preference name="phonegap-version" value="cli-6.1.0" />
@@ -28,7 +28,7 @@
       <param name="SENDER_ID" value="236799555977" />
     </plugin> 
     <gap:plugin name="de.appplant.cordova.plugin.local-notification" version="0.8.4"  source="npm"/>
-    <gap:plugin name="de.appplant.cordova.plugin.background-mode" version="0.6.4" source="npm"/>
+    <gap:plugin name="de.appplant.cordova.plugin.background-mode" version="0.6.5" source="npm"/>
   </platform>
   
   <platform name="ios">
@@ -38,7 +38,7 @@
       <param name="SENDER_ID" value="236799555977" />
     </plugin> 
     <gap:plugin name="de.appplant.cordova.plugin.local-notification" version="0.8.4"  source="npm"/>
-    <gap:plugin name="de.appplant.cordova.plugin.background-mode" version="0.6.4" source="npm"/>
+    <gap:plugin name="de.appplant.cordova.plugin.background-mode" version="0.6.5" source="npm"/>
   </platform>
   
   <platform name="winphone">
