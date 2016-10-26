@@ -28,7 +28,10 @@
       <param name="SENDER_ID" value="236799555977" />
     </plugin> 
     <gap:plugin name="de.appplant.cordova.plugin.local-notification" version="0.8.4"  source="npm"/>
-    <gap:plugin name="de.appplant.cordova.plugin.background-mode"/>
+    <!--<gap:plugin name="de.appplant.cordova.plugin.background-mode"/>-->
+    <!-- compatibile solo con Android cli-6.1.0 -->
+    <gap:plugin name="cordova-plugin-mauron85-background-geolocation" source="npm"/>
+  
   </platform>
   
   <platform name="ios">
@@ -69,7 +72,6 @@
   
  
 
-  <!-- compatibile solo con Android cli-6.1.0 <gap:plugin name="cordova-plugin-mauron85-background-geolocation" source="npm"/> -->
   
   <!-- bluettoth standard da provare <gap:plugin name="com.megster.cordova.bluetoothserial" version="0.3.3" />-->
   <!-- non compatibile cli-6.1.0 <gap:plugin name="org.apache.cordova.geolocation" />-->
