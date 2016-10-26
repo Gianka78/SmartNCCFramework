@@ -28,10 +28,11 @@
       <param name="SENDER_ID" value="236799555977" />
     </plugin> 
     <gap:plugin name="de.appplant.cordova.plugin.local-notification" version="0.8.4"  source="npm"/>
+    <plugin name="cordova-plugin-geolocation" />
     <!--<gap:plugin name="de.appplant.cordova.plugin.background-mode"/>-->
     <!-- compatibile solo con Android cli-6.1.0 -->
-    <gap:plugin name="cordova-plugin-mauron85-background-geolocation" source="npm"/>
-  
+    <!-- <gap:plugin name="cordova-plugin-mauron85-background-geolocation" source="npm"/> --!
+    <!-- <plugin name="cordova-background-geolocation-lt" source="npm" /> -->
   </platform>
   
   <platform name="ios">
@@ -42,6 +43,8 @@
     </plugin> 
     <gap:plugin name="de.appplant.cordova.plugin.local-notification" version="0.8.4"  source="npm"/>
     <!--<gap:plugin name="de.appplant.cordova.plugin.background-mode"/>-->
+    <plugin name="cordova-background-geolocation-lt" source="npm" />
+    <plugin name="cordova-plugin-geolocation" />
   </platform>->
   
   <platform name="winphone">
@@ -52,13 +55,15 @@
     </plugin> 
     <gap:plugin name="de.appplant.cordova.plugin.local-notification" version="0.8.4"  source="npm"/>
     <!--<gap:plugin name="de.appplant.cordova.plugin.background-mode" version="0.6.5" source="npm"/>-->
+    <plugin name="cordova-background-geolocation-lt" source="npm" />
+    <plugin name="cordova-plugin-geolocation" />
   </platform>
   
   <plugin name="phonegap-plugin-barcodescanner" source="npm" />
   <plugin name="org.apache.cordova.splashscreen" source="npm" />
   <!--<plugin name="com.evothings.ble" source="npm" spec="1.0.0" />-->
   <plugin name="com.evothings.ble" source="npm" spec="1.2.0"/>
-  <plugin name="cordova-plugin-geolocation" />
+  <!--<plugin name="cordova-plugin-geolocation" />-->
   <plugin name="cordova-plugin-device" source="npm" spec="1.0.1" />
   
   <plugin name="cordova-plugin-whitelist" spec="1.2.2" />
@@ -66,7 +71,7 @@
   <gap:plugin name="cordova-plugin-appinfo" source="npm"/>
   <gap:plugin name="cordova-plugin-battery-status" source="npm"/>
   <gap:plugin name="cordova-plugin-network-information" spec="1.0.1" source="npm"/>
-  <plugin name="cordova-background-geolocation-lt" source="npm" />
+  <!--<plugin name="cordova-background-geolocation-lt" source="npm" />-->
   <gap:plugin name="cordova-plugin-badge" source="npm" />
   <gap:plugin name="cordova-plugin-file" source="npm" />
   
