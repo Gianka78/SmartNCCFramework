@@ -33,6 +33,9 @@
     <!-- compatibile solo con Android cli-6.1.0 -->
     <!-- <gap:plugin name="cordova-plugin-mauron85-background-geolocation" source="npm"/> -->
     <!-- <plugin name="cordova-background-geolocation-lt" source="npm" /> -->
+    <plugin name="cordova-plugin-mauron85-background-geolocation" spec="^2.2.4">
+      <variable name="ALWAYS_USAGE_DESCRIPTION" value="This app requires background tracking enabled" />
+    </plugin>
   </platform>
   
   <platform name="ios">
