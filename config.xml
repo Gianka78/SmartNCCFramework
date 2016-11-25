@@ -7,7 +7,31 @@
   <description>Piattaforma MOBILE SMARTNCC</description>
   <author href="http://www.gd-soft.it" email="info@gd-soft.it">GD-SOFT S.R.L.</author>
 
-  
+<!--
+  com.evothings.ble   	npm	1.2.0	1.2.0	n/a	android,ios,winphone
+  cordova-background-geolocation-lt   	npm	*	2.2.0	n/a	winphone
+  cordova-plugin-appinfo   	npm	*	2.0.3	n/a	android,ios,winphone
+  cordova-plugin-badge   	npm	*	0.7.3	n/a	android,ios,winphone
+  cordova-plugin-battery-status   	npm	*	1.2.0	n/a	android,ios,winphone
+  cordova-plugin-device   	npm	1.0.1	n/a	n/a	android,ios,winphone
+  cordova-plugin-file   	npm	*	4.3.0	n/a	android,ios,winphone
+  cordova-plugin-geolocation   	npm	*	2.4.0	n/a	android
+  cordova-plugin-geolocation   	npm	*	2.4.0	n/a	ios
+  cordova-plugin-geolocation   	npm	*	2.4.0	n/a	winphone
+  cordova-plugin-legacy-whitelist   	npm	*	1.1.1	n/a	android,ios,winphone
+  cordova-plugin-mauron85-background-geolocation   	npm	^2.2.5	2.2.5	n/a	android
+  cordova-plugin-mauron85-background-geolocation   	npm	^2.2.4	2.2.5	n/a	ios
+  cordova-plugin-network-information   	npm	1.0.1	1.0.1	n/a	android,ios,winphone
+  cordova-plugin-whitelist   	npm	1.2.2	1.2.2	n/a	android,ios,winphone
+  de.appplant.cordova.plugin.local-notification   	npm	0.8.4	0.8.4	n/a	android
+  de.appplant.cordova.plugin.local-notification   	npm	0.8.4	0.8.4	n/a	ios
+  de.appplant.cordova.plugin.local-notification   	npm	0.8.4	0.8.4	n/a	winphone
+  org.apache.cordova.splashscreen   	npm	*	4.0.0	n/a	android,ios,winphone
+  phonegap-plugin-barcodescanner   	npm	*	6.0.3	n/a	android,ios,winphone
+  phonegap-plugin-push   	npm	1.5.3	1.5.3	n/a	android
+  phonegap-plugin-push   	npm	1.5.3	1.5.3	n/a	ios
+  phonegap-plugin-push   	npm	*	1.9.0	n/a	winphone
+-->
   
   <!-- problema android no GPS Background <preference name="phonegap-version" value="cli-5.4.1" /> -->
   <!-- problema iOS apre link fuori APP non firma WP8 <preference name="phonegap-version" value="cli-6.1.0" /> -->
