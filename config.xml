@@ -27,7 +27,7 @@
     <plugin name="phonegap-plugin-push" source="npm">
       <param name="SENDER_ID" value="236799555977" />
     </plugin> 
-    
+    <gap:plugin name="de.appplant.cordova.plugin.local-notification" version="0.8.4"  source="npm"/>
   </platform>
   
   <platform name="ios">
