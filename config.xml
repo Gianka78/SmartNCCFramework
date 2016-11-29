@@ -163,12 +163,12 @@
   </platform>
 
   <platform name="android">
-    <icon src="images/ldpi.png" gap:platform="android" gap:qualifier="ldpi" />
-    <icon src="images/mdpi.png" gap:platform="android" gap:qualifier="mdpi" />
-    <icon src="images/hdpi.png" gap:platform="android" gap:qualifier="hdpi" />
-    <icon src="images/xhdpi.png" gap:platform="android" gap:qualifier="xhdpi" />
-    <icon src="images/xxhdpi.png" gap:platform="android" gap:qualifier="xxhdpi" />
-    <icon src="images/fr-xxhdpi.png" gap:platform="android" gap:qualifier="fr-xxhdpi" />
+    <icon src="images/icon.png" gap:platform="android" gap:qualifier="ldpi" />
+    <icon src="images/icon.png" gap:platform="android" gap:qualifier="mdpi" />
+    <icon src="images/icon.png" gap:platform="android" gap:qualifier="hdpi" />
+    <icon src="images/icon.png" gap:platform="android" gap:qualifier="xhdpi" />
+    <icon src="images/icon.png" gap:platform="android" gap:qualifier="xxhdpi" />
+    <icon src="images/icon.png" gap:platform="android" gap:qualifier="fr-xxhdpi" />
     
     <splash src="splash-portrait.png" platform="android" qualifier="ldpi" />
     <splash src="splash-portrait.png" platform="android" qualifier="mdpi" />
