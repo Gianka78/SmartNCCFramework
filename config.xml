@@ -132,7 +132,7 @@
   <feature name="http://api.phonegap.com/1.0/geolocation"/>
   
    
-  <icon src="images/icona_smartncc_mobile.png"/>
+  <icon src="icon.png"/>
   <gap:splash src="splash.png" />
 
   <platform name="ios">
