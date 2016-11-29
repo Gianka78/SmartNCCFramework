@@ -163,12 +163,12 @@
   </platform>
 
   <platform name="android">
-    <icon src="images/icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="ldpi" />
-    <icon src="images/icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="mdpi" />
-    <icon src="images/icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="hdpi" />
-    <icon src="images/icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="xhdpi" />
-    <icon src="images/icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="xxhdpi" />
-    <icon src="images/icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="fr-xxhdpi" />
+    <icon src="res/android/icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="ldpi" />
+    <icon src="res/android/icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="mdpi" />
+    <icon src="res/android/icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="hdpi" />
+    <icon src="res/android/icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="xhdpi" />
+    <icon src="res/android/icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="xxhdpi" />
+    <icon src="res/android/icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="fr-xxhdpi" />
     
     <splash src="splash-portrait.png" platform="android" qualifier="ldpi" />
     <splash src="splash-portrait.png" platform="android" qualifier="mdpi" />
