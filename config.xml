@@ -46,7 +46,7 @@
   <!-- funzionante su cli-5.4.1 <gap:plugin namde="de.appplant.cordova.plugin.background-mode" version="0.65" source="npm"/>-->
   
   <platform name="android">
-    <preference name="phonegap-version" value="cli-6.1.0" />
+    <preference name="phonegap-version" value="cli-6.4.0" />
     <preference name="android-build-tool" value="gradle" />
     <plugin name="phonegap-plugin-push" source="npm" version="1.5.3">
       <param name="SENDER_ID" value="236799555977" />
@@ -110,7 +110,8 @@
  
 <preference name="iosExtraFilesystems" value="library,library-nosync,documents,documents-nosync,cache,bundle,root" />
 <preference name="AndroidExtraFilesystems" value="files,files-external,documents,sdcard,cache,cache-external,assets,root" />
-  
+<preference name="AndroidPersistentFileLocation" value="Compatibility" />
+    
   <!-- bluettoth standard da provare <gap:plugin name="com.megster.cordova.bluetoothserial" version="0.3.3" />-->
   <!-- non compatibile cli-6.1.0 <gap:plugin name="org.apache.cordova.geolocation" />-->
   <!-- non compatibile cli-6.1.0 <gap:plugin name="org.apache.cordova.device" spec="1.1.2" source="npm"/>-->  
