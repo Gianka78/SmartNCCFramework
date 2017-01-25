@@ -41,7 +41,7 @@
   <preference name="SplashScreen" value="splash" /> 
   <preference name="SplashScreenDelay" value="4000" />
   <!--<preference name="orientation" value="portrait" />-->
-  <preference name="fullscreen" value="true" />
+  <preference name="fullscreen" value="false" />
 
   <!-- funzionante su cli-5.4.1 <gap:plugin namde="de.appplant.cordova.plugin.background-mode" version="0.65" source="npm"/>-->
   
