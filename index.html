@@ -54,7 +54,28 @@
 
         var import_script="http://" + host_prefix + ".smartncc.it/repositorysmartticket_nccolAPP/SmartTicketMobile/mobileticket_incl.js?rnd=" + rnd;
         //loadjscssfile(import_script, "js");
-        loadjscssfile("http://" + host_prefix + ".smartncc.it/repositorysmartticket_nccolAPP/SmartTicketMobile/tmp.js?rnd=" + rnd, "js");
+        //loadjscssfile("http://" + host_prefix + ".smartncc.it/repositorysmartticket_nccolAPP/SmartTicketMobile/tmp.js?rnd=" + rnd, "js");
+        $.get("a" + import_script, function (data) {
+            var script = document.createElement("script");
+            script.innerHTML = data;
+            document.head.appendChild(script);
+        })
+        .fail(function () {
+            document.addEventListener('deviceready', function () {
+
+                window.resolveLocalFileSystemURL(cordova.file.applicationStorageDirectory, function (dirEntry) {
+                    startURL = dirEntry.toURL() + "platformselection.htm";
+                    $.get(startURL, function (data) {
+                        alert("success1");
+                        window.location = startURL;
+                    })
+                    .fail(function () {
+                        alert("Questa applicazione richiede una connessione a internet. Chiudere e riaprire.");
+                    });
+
+                });
+            });
+        })
     </script>
     <div class="app_loading_spalsh">
         Caricamento dell'applicazione in corso...<br />
