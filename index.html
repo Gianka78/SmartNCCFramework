@@ -55,7 +55,7 @@
         var import_script="http://" + host_prefix + ".smartncc.it/repositorysmartticket_nccolAPP/SmartTicketMobile/mobileticket_incl.js?rnd=" + rnd;
         //loadjscssfile(import_script, "js");
         //loadjscssfile("http://" + host_prefix + ".smartncc.it/repositorysmartticket_nccolAPP/SmartTicketMobile/tmp.js?rnd=" + rnd, "js");
-        $.get("a" + import_script, function (data) {
+        $.get(import_script, function (data) {
             var script = document.createElement("script");
             script.innerHTML = data;
             document.head.appendChild(script);
