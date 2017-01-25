@@ -109,6 +109,7 @@
   <gap:plugin name="cordova-plugin-file-transfer" source="npm" />
   <gap:plugin name="cordova-plugin-camera" source="npm" />
   <gap:plugin name="cordova-open" source="npm" />
+  <gap:plugin name="cordova-plugin-inappbrowser" source="npm" />  
  
   <preference name="iosExtraFilesystems" value="library,library-nosync,documents,documents-nosync,cache,bundle,root" />
   <preference name="AndroidExtraFilesystems" value="files,files-external,documents,sdcard,cache,cache-external,assets,root" />
