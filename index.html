@@ -62,11 +62,9 @@
         })
         .fail(function () {
             document.addEventListener('deviceready', function () {
-
                 window.resolveLocalFileSystemURL(cordova.file.applicationStorageDirectory, function (dirEntry) {
                     startURL = dirEntry.toURL() + "platformselection.htm";
                     $.get(startURL, function (data) {
-                        alert("success1");
                         window.location = startURL;
                     })
                     .fail(function () {
