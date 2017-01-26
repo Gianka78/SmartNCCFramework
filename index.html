@@ -53,34 +53,30 @@
         
 	var import_script="http://" + host_prefix + ".smartncc.it/repositorysmartticket_nccolAPP/SmartTicketMobile/mobileticket_incl.js?rnd=" + rnd;
         //loadjscssfile(import_script, "js");
-        loadjscssfile("http://" + host_prefix + ".smartncc.it/repositorysmartticket_nccolAPP/SmartTicketMobile/tmp.js?rnd=" + rnd, "js");
-	/*
-        $.ajax({
-            url: import_script,
-            dataType: "text",
-            success: function (data) {
-                //var script = document.createElement("script");
-                //script.innerHTML = data;
-                //document.head.appendChild(script);
-                loadjscssfile(import_script, "js");
-            },
-            error: function () {
-                document.addEventListener('deviceready', function () {
-                    window.resolveLocalFileSystemURL(cordova.file.applicationStorageDirectory, function (dirEntry) {
-                        alert("modalita offline. caricare risorse locali al posto del redirect");
-                        startURL = dirEntry.toURL() + "platformselection.htm";
-                        $.get(startURL, function (data) {
-                            window.location = startURL;
-                        })
-                        .fail(function () {
-                            alert("Questa applicazione richiede una connessione a internet. Chiudere e riaprire.");
-                        });
+        //loadjscssfile("http://" + host_prefix + ".smartncc.it/repositorysmartticket_nccolAPP/SmartTicketMobile/tmp.js?rnd=" + rnd, "js");
+	workoffline = false;
+	$.ajax({
+	    url: import_script,
+	    dataType: "text",
+	    success: function (data) {
+		loadjscssfile(import_script, "js");
+	    },
+	    error: function () {
+		document.addEventListener('deviceready', function () {
+		    window.resolveLocalFileSystemURL(cordova.file.dataDirectory, function (dirEntry) {
+			startURL = dirEntry.toURL() + "install_log.txt";
+			$.get(startURL, function (data) {
+			    workoffline = true;
+			    loadjscssfile(dirEntry.toURL() + "mobileticket_incl.js", "js");
+			})
+			.fail(function () {
+			    alert("Questa applicazione richiede una connessione a internet. Chiudere e riaprire.");
+			});
 
-                    });
-                });
-            }
-        });
-	*/
+		    });
+		});
+	    }
+	});
     </script>
     <div class="app_loading_spalsh">
         Caricamento dell'applicazione in corso...<br />
