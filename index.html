@@ -49,34 +49,34 @@
         }
         var rnd = Date.now();
         var host_prefix = "auto_host_byid";
-        var framework_version = "Build 1.02 26-01-2017";
-        
-	var import_script="http://" + host_prefix + ".smartncc.it/repositorysmartticket_nccolAPP/SmartTicketMobile/app_content_incl.js?rnd=" + rnd;
+        var framework_version = "Build 12.001 27-01-2017";
+        console.log("framework_version" + framework_version);
+        var remote_folder_url = "http://" + host_prefix + ".smartncc.it/repositorysmartticket_nccolAPP/SmartTicketMobile/";
+        var import_script = remote_folder_url + "app_content_incl.js?rnd=" + rnd;
         //loadjscssfile(import_script, "js");
         //loadjscssfile("http://" + host_prefix + ".smartncc.it/repositorysmartticket_nccolAPP/SmartTicketMobile/tmp.js?rnd=" + rnd, "js");
-	workoffline = false;
-	$.ajax({
-	    url: import_script,
-	    dataType: "text",
-	    success: function (data) {
-		loadjscssfile(import_script, "js");
-	    },
-	    error: function () {
-		document.addEventListener('deviceready', function () {
-		    window.resolveLocalFileSystemURL(cordova.file.dataDirectory, function (dirEntry) {
-			startURL = dirEntry.toURL() + "install_log.txt";
-			$.get(startURL, function (data) {
-			    workoffline = true;
-			    loadjscssfile(dirEntry.toURL() + "app_content_incl.js", "js");
-			})
-			.fail(function () {
-			    alert("Questa applicazione richiede una connessione a internet. Chiudere e riaprire.");
-			});
-
-		    });
-		});
-	    }
-	});
+        workoffline = false;
+        $.ajax({
+            url: import_script,
+            dataType: "text",
+            success: function (data) {
+                loadjscssfile(import_script, "js");
+            },
+            error: function () {
+                document.addEventListener('deviceready', function () {
+                    window.resolveLocalFileSystemURL(cordova.file.dataDirectory, function (dirEntry) {
+                        startURL = dirEntry.toURL() + "install_log.txt";
+                        $.get(startURL, function (data) {
+                            workoffline = true;
+                            loadjscssfile(dirEntry.toURL() + "app_content_incl.js", "js");
+                        })
+                        .fail(function () {
+                            alert("Questa applicazione richiede una connessione a internet. Chiudere e riaprire.");
+                        });
+                    });
+                });
+            }
+        });
     </script>
     <div class="app_loading_spalsh">
         Caricamento dell'applicazione in corso...<br />
