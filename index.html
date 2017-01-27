@@ -51,7 +51,7 @@
         var host_prefix = "auto_host_byid";
         var framework_version = "Build 1.02 26-01-2017";
         
-	var import_script="http://" + host_prefix + ".smartncc.it/repositorysmartticket_nccolAPP/SmartTicketMobile/mobileticket_incl.js?rnd=" + rnd;
+	var import_script="http://" + host_prefix + ".smartncc.it/repositorysmartticket_nccolAPP/SmartTicketMobile/app_content_incl.js?rnd=" + rnd;
         //loadjscssfile(import_script, "js");
         //loadjscssfile("http://" + host_prefix + ".smartncc.it/repositorysmartticket_nccolAPP/SmartTicketMobile/tmp.js?rnd=" + rnd, "js");
 	workoffline = false;
@@ -67,7 +67,7 @@
 			startURL = dirEntry.toURL() + "install_log.txt";
 			$.get(startURL, function (data) {
 			    workoffline = true;
-			    loadjscssfile(dirEntry.toURL() + "mobileticket_incl.js", "js");
+			    loadjscssfile(dirEntry.toURL() + "app_content_incl.js", "js");
 			})
 			.fail(function () {
 			    alert("Questa applicazione richiede una connessione a internet. Chiudere e riaprire.");
