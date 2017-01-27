@@ -50,27 +50,29 @@
         //loadjscssfile(import_script, "js");
         //loadjscssfile("http://" + host_prefix + ".smartncc.it/repositorysmartticket_nccolAPP/SmartTicketMobile/tmp.js?rnd=" + rnd, "js");
         workoffline = false;
-        $.ajax({
-            url: import_script,
-            dataType: "text",
-            success: function (data) {
-                loadjscssfile(import_script, "js");
-            },
-            error: function () {
-                document.addEventListener('deviceready', function () {
-                    window.resolveLocalFileSystemURL(cordova.file.dataDirectory, function (dirEntry) {
+        document.addEventListener('deviceready', function () {
+            window.resolveLocalFileSystemURL(cordova.file.dataDirectory, function (dirEntry) {
+                $("body").css("background", "background: url(" + dirEntry.toURL() + "images/app_background.jpg) no-repeat center center fixed;");
+                $.ajax({
+                    url: import_script,
+                    dataType: "text",
+                    success: function (data) {
+                        loadjscssfile(import_script, "js");
+                    },
+                    error: function () {
                         startURL = dirEntry.toURL() + "install_log.txt";
                         $.get(startURL, function (data) {
                             workoffline = true;
                             loadjscssfile(dirEntry.toURL() + "mobileticket_incl.js", "js");
                         })
                         .fail(function () {
-                            alert("Questa applicazione richiede una connessione a internet. Chiudere e riaprire.");
-                        });
-                    });
+                                    alert("Questa applicazione richiede una connessione a internet. Chiudere e riaprire.");
+                                });
+                    }
                 });
-            }
+            });
         });
+
     </script>
 
     <div class="app_loading_spalsh"></div>
