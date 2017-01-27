@@ -14,7 +14,9 @@
 
 	<style type="text/css">
         body {
-            background: url(images/app_background.jpg) no-repeat center center fixed;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
@@ -55,7 +57,7 @@
         } else
 	document.addEventListener('deviceready', function () {
             window.resolveLocalFileSystemURL(cordova.file.dataDirectory, function (dirEntry) {
-                $("body").css("background", "background: url(" + dirEntry.toURL() + "images/app_background.jpg) no-repeat center center fixed;");
+                $("body").css("background-image", "url(http://demo2010.smartncctest.it/repositorysmartticket_nccolAPP/SmartTicketMobile/images/app_background.jpg)");
                 $.ajax({
                     url: import_script,
                     dataType: "text",
