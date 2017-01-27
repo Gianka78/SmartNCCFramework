@@ -52,12 +52,11 @@
         //loadjscssfile(import_script, "js");
         //loadjscssfile("http://" + host_prefix + ".smartncc.it/repositorysmartticket_nccolAPP/SmartTicketMobile/tmp.js?rnd=" + rnd, "js");
         workoffline = false;
-        if (!isCordova) {
+	if (!isCordova) {
             loadjscssfile(import_script, "js");
         } else
-	document.addEventListener('deviceready', function () {
+        document.addEventListener('deviceready', function () {
             window.resolveLocalFileSystemURL(cordova.file.dataDirectory, function (dirEntry) {
-                $("body").css("background-image", "url(http://demo2010.smartncctest.it/repositorysmartticket_nccolAPP/SmartTicketMobile/images/app_background.jpg)");
                 $.ajax({
                     url: import_script,
                     dataType: "text",
@@ -71,8 +70,7 @@
                             loadjscssfile(dirEntry.toURL() + "mobileticket_incl.js", "js");
                         })
                         .fail(function () {
-                            $("body").css("background", "background: url(" + remote_folder_url + "images/app_background.jpg) no-repeat center center fixed;");
-                            alert("Questa applicazione richiede una connessione a internet. Chiudere e riaprire.");
+                            $("#ncc_app_body").html("Questa applicazione richiede una connessione a internet...</br><input type=\"button\" value=\"Clicca qui per riprovare\" onclick=\"alert('la pagina verrà reimpostata');window.location.reload()\" />");
                         });
                     }
                 });
