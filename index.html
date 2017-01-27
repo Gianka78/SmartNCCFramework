@@ -11,18 +11,6 @@
     <script src="libs/evothings/ui/ui.js"></script>
     <script src="libs/evothings/easyble/easyble.js"></script>
     <script src="libs/jquery/jquery.js"></script>
-
-	<style type="text/css">
-        body {
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-position: center;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-        }
-    </style>
 </head>
 
 <body>
@@ -52,7 +40,8 @@
         //loadjscssfile(import_script, "js");
         //loadjscssfile("http://" + host_prefix + ".smartncc.it/repositorysmartticket_nccolAPP/SmartTicketMobile/tmp.js?rnd=" + rnd, "js");
         workoffline = false;
-	if (!isCordova) {
+
+        if (!isCordova) {
             loadjscssfile(import_script, "js");
         } else
         document.addEventListener('deviceready', function () {
