@@ -91,7 +91,7 @@
   
   <!--<plugin name="phonegap-plugin-barcodescanner" source="npm" />-->
   <plugin name="cordova-plugin-barcodescanner" source="npm" /> 
-  <plugin name="org.apache.cordova.splashscreen" source="npm" />
+  <plugin name="cordova-plugin-splashscreen" source="npm" />
   <plugin name="cordova-plugin-bluetooth-serial" source="npm" />
   <!--<plugin name="com.evothings.ble" source="npm" spec="1.2.0"/> 2.0.1 -->
   <plugin name="com.evothings.ble" source="npm" spec="2.0.1"/>
@@ -141,12 +141,12 @@
   <gap:splash src="splash.png" />
 
   <platform name="ios">
-    <icon src="images/icon57X57.png" gap:platform="ios" width="50" height="50" /> 
-    <icon src="images/icon57X57.png" gap:platform="ios" width="40" height="40" /> 
-    <icon src="images/icon57X57.png" gap:platform="ios" width="57" height="57" />
-    <icon src="images/icon76X76.png" gap:platform="ios" width="76" height="76" />
-    <icon src="images/icon120X120.png" gap:platform="ios" width="120" height="120" />
-    <icon src="images/icon152X152.png" gap:platform="ios" width="152" height="152" />
+    <icon src="icon.png" gap:platform="ios" width="50" height="50" /> 
+    <icon src="icon.png" gap:platform="ios" width="40" height="40" /> 
+    <icon src="icon.png" gap:platform="ios" width="57" height="57" />
+    <icon src="icon.png" gap:platform="ios" width="76" height="76" />
+    <icon src="icon.png" gap:platform="ios" width="120" height="120" />
+    <icon src="icon.pngg" gap:platform="ios" width="152" height="152" />
     
     <gap:splash src="splash-portrait.png" gap:platform="ios" width="320" height="480" />
     <gap:splash src="splash.png" gap:platform="ios" width="480" height="320" />
@@ -168,12 +168,12 @@
   </platform>
 
   <platform name="android">
-    <icon src="images/icon.png" gap:platform="android" gap:qualifier="ldpi" />
-    <icon src="images/icon.png" gap:platform="android" gap:qualifier="mdpi" />
-    <icon src="images/icon.png" gap:platform="android" gap:qualifier="hdpi" />
-    <icon src="images/icon.png" gap:platform="android" gap:qualifier="xhdpi" />
-    <icon src="images/icon.png" gap:platform="android" gap:qualifier="xxhdpi" />
-    <icon src="images/icon.png" gap:platform="android" gap:qualifier="fr-xxhdpi" />
+    <icon src="icon.png" gap:platform="android" gap:qualifier="ldpi" />
+    <icon src="icon.png" gap:platform="android" gap:qualifier="mdpi" />
+    <icon src="icon.png" gap:platform="android" gap:qualifier="hdpi" />
+    <icon src="icon.png" gap:platform="android" gap:qualifier="xhdpi" />
+    <icon src="icon.png" gap:platform="android" gap:qualifier="xxhdpi" />
+    <icon src="icon.png" gap:platform="android" gap:qualifier="fr-xxhdpi" />
     
     <splash src="splash-portrait.png" platform="android" qualifier="ldpi" />
     <splash src="splash-portrait.png" platform="android" qualifier="mdpi" />
