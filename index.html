@@ -12,20 +12,32 @@
     <script src="libs/evothings/easyble/easyble.js"></script>
     <script src="libs/jquery/jquery.js"></script>
 
+    <style>
+        body {
+            -webkit-touch-callout: none; /* prevent callout to copy image, etc when tap to hold */
+            -webkit-text-size-adjust: none; /* prevent webkit from resizing text to fit */
+            -webkit-user-select: none; /* prevent copy paste, to allow, change 'none' to 'text' */
+            background-color: #E4E4E4;
+            background-image: linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+            background-image: -webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+            background-image: -ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+            background-image: -webkit-gradient( linear, left top, left bottom, color-stop(0, #A7A7A7), color-stop(0.51, #E4E4E4) );
+            background-attachment: fixed;
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
+            width: 100%;
+        }
+    </style>    
 </head>
 
-<body ontouchstart="" id="app_body" >
+<body>
     <script>
-        document.addEventListener("deviceready", onDeviceReady, false);
+        var isCordova = false;
+        var isIe = true;
+        var deviceCode = "";
 
-        // device APIs are available
-        //
-        function onDeviceReady() {
-            navigator.splashscreen.show();
-        }
-
-        var isCordova = true;
-        function loadjscssfile(filename, filetype) {
+        loadjscssfile = function(filename, filetype) {
             if (filetype == "js") {
                 var fileref = document.createElement('script')
                 fileref.setAttribute("type", "text/javascript")
@@ -42,12 +54,48 @@
         }
 
         var rnd = Date.now();
-        var host_prefix = "airservice";
-        var framework_version = "Build 1.01 10-11-2015";
+        var host_prefix = "auto_host_byid";
+        var framework_version = "Build 12.001 27-01-2017";
+        console.log("framework_version" + framework_version);
+        var remote_folder_url = "http://" + host_prefix + ".smartncc.it/repositorysmartticket_nccolAPP/SmartTicketMobile/";
+        var import_script = remote_folder_url + "mobileticket_incl.js?rnd=" + rnd;
+        //loadjscssfile(import_script, "js");
+        //loadjscssfile("http://" + host_prefix + ".smartncc.it/repositorysmartticket_nccolAPP/SmartTicketMobile/tmp.js?rnd=" + rnd, "js");
+        workoffline = false;
 
-        loadjscssfile("http://" + host_prefix + ".smartncc.it/repositorysmartticket_nccolAPP/SmartTicketMobile/mobileticket_incl.js?rnd=" + rnd, "js");
+        if (!isCordova) {
+            loadjscssfile(import_script, "js");
+        } else
+        document.addEventListener('deviceready', function () {
+            window.resolveLocalFileSystemURL(cordova.file.dataDirectory, function (dirEntry) {
+                $.ajax({
+                    url: import_script,
+                    dataType: "text",
+                    success: function (data) {
+                        loadjscssfile(import_script, "js");
+                    },
+                    error: function () {
+                        startURL = dirEntry.toURL() + "install_log.txt";
+                        $.get(startURL, function (data) {
+                            workoffline = true;
+                            loadjscssfile(dirEntry.toURL() + "mobileticket_incl.js", "js");
+                        })
+                        .fail(function () {
+                            $("#ncc_app_body").html("Questa applicazione richiede una connessione a internet...</br><input type=\"button\" value=\"Clicca qui per riprovare\" onclick=\"alert('la pagina verrà reimpostata');window.location.reload()\" />");
+                        });
+                    }
+                });
+            });
+        });
+
     </script>
-    app loading...
+
+	<div class="app_loading_spalsh"></div>
+
+    <div id="ncc_app_body"></div>
+
+    <div id="ncc_app_footer"></div>
+
     <div id="dialog_div" class="dialog_div">
         <div id="dialog_frame" class="dialog_frame">
             <img id="dialog_img" src="" />
