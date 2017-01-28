@@ -24,11 +24,16 @@
         padding:0px;
         width:100%;
         
-      background-image: url('splash.png') !important;
+      background-image: url('splash-portrait.png') !important;
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-position: center bottom;
-      background-size: cover;        
+      background-size: cover;     
+        
+      @media (orientation: landscape) {
+          background-image: url('splash.png') !important;
+      }
+        
     }
     </style>
 </head>
