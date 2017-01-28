@@ -154,9 +154,9 @@
     <icon src="icon.png" gap:platform="ios" width="50" height="50" /> 
     <icon src="icon.png" gap:platform="ios" width="40" height="40" /> 
     <icon src="icon.png" gap:platform="ios" width="57" height="57" />
-    <icon src="icon.png" gap:platform="ios" width="76" height="76" />
-    <icon src="icon.png" gap:platform="ios" width="120" height="120" />
-    <icon src="icon.pngg" gap:platform="ios" width="152" height="152" />
+    <icon src="icon76x76.png" gap:platform="ios" width="76" height="76" />
+    <icon src="icon120x120.png" gap:platform="ios" width="120" height="120" />
+    <icon src="icon152x152.png" gap:platform="ios" width="152" height="152" />
     
     <gap:splash src="splash-portrait.png" gap:platform="ios" width="320" height="480" />
     <gap:splash src="splash.png" gap:platform="ios" width="480" height="320" />
