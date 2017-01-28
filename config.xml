@@ -4,7 +4,7 @@
 <!-- Sezione customizzata per cliente --> 
   <widget xmlns = "http://www.w3.org/ns/widgets"  xmlns:gap = "http://phonegap.com/ns/1.0"
           id = "com.SmartNCCMobile.MULTIUSER" version = "12.003" versionCode = "12003" > 
-
+    
   <name>SmartNCCMobile APP</name>
   <description>Piattaforma MOBILE SMARTNCC</description>
   <author href="http://www.gd-soft.it" email="info@gd-soft.it">GD-SOFT S.R.L.</author>
