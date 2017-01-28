@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
+
+<!-- Sezione customizzata per cliente --> 
+<!--
   <widget xmlns = "http://www.w3.org/ns/widgets"  xmlns:gap = "http://phonegap.com/ns/1.0"
           id = "com.SmartNCCMobile.MULTIUSER" version = "12.002" versionCode = "12001" > 
 
   <name>SmartNCCMobile APP</name>
   <description>Piattaforma MOBILE SMARTNCC</description>
   <author href="http://www.gd-soft.it" email="info@gd-soft.it">GD-SOFT S.R.L.</author>
+-->
 
+  <widget id = "com.SmartNCCMobile.VIPCLASS" version = "12.002" versionCode = "12001" xmlns = "http://www.w3.org/ns/widgets"  xmlns:gap = "http://phonegap.com/ns/1.0" >
+  <name>VIPCLASS Chauffeured limousine</name>
+  <description>Piattaforma SmartNCC Mobile - Vipclass Chauffeured Limousine s.c.a.r.l.</description>
+  <author href="http://www.gd-soft.it" email="info@gd-soft.it">GD-SOFT S.R.L.</author>
+
+<!-- Fine sezione customizzata per cliente -->
+  
+  
 <!--
   com.evothings.ble   	npm	1.2.0	1.2.0	n/a	android,ios,winphone
   cordova-background-geolocation-lt   	npm	*	2.2.0	n/a	winphone
