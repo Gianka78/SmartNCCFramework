@@ -47,8 +47,8 @@
   <!-- problema iOS apre link fuori APP non firma WP8 <preference name="phonegap-version" value="cli-6.1.0" /> -->
   
   <preference name="KeepRunning" value="true"/>
-  <preference name="SplashScreen" value="splash" /> 
-  <preference name="SplashScreenDelay" value="4000" />
+  <!--<preference name="SplashScreen" value="splash" /> 
+  <preference name="SplashScreenDelay" value="4000" />-->
   <!--<preference name="orientation" value="portrait" />-->
   <preference name="fullscreen" value="false" />
 
