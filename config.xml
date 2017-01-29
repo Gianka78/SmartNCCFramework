@@ -114,10 +114,10 @@
   <feature name="http://api.phonegap.com/1.0/camera"/>
   <feature name="http://api.phonegap.com/1.0/geolocation"/>
   
-   
+  <!-- 
   <icon src="images/icon.png"/>
   <gap:splash src="splash.png" />
-
+-->
   <platform name="ios">
     <icon src="images/icon57X57.png" gap:platform="ios" width="50" height="50" /> 
     <icon src="images/icon57X57.png" gap:platform="ios" width="40" height="40" /> 
@@ -144,7 +144,7 @@
     <gap:splash src="splash-portrait.png" gap:platform="ios" width="640" height="1136" />
     <gap:splash src="splash.png" gap:platform="ios" width="1136" height="640" />
   </platform>
-
+<!--
   <platform name="android">
     <icon src="images/icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="ldpi" />
     <icon src="images/icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="mdpi" />
@@ -166,7 +166,7 @@
     <splash src="splash-portrait.png" />
     <splash width="1152" height="1920" src="splash-portrait.png" />
   </platform>
-
+-->
   <allow-navigation href="*" />
   <allow-intent href="*" />
   <access origin="*" />
