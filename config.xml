@@ -46,7 +46,6 @@
   <!-- problema android no GPS Background <preference name="phonegap-version" value="cli-5.4.1" /> -->
   <!-- problema iOS apre link fuori APP non firma WP8 <preference name="phonegap-version" value="cli-6.1.0" /> -->
   
-  <preference name="SplashScreen" value="screen"/>
   <preference name="KeepRunning" value="true"/>
   <preference name="SplashScreen" value="splash" /> 
   <preference name="SplashScreenDelay" value="4000" />
@@ -150,35 +149,33 @@
   <icon src="images/icon.png"/>
   <gap:splash src="splash.png" />
 
-        <platform name="ios">
-        <icon   src="helloworld_res/icon/ios/icon.png"                         platform="ios" width="57"   height="57" />
-        <icon   src="helloworld_res/icon/ios/icon@2x.png"                      platform="ios" width="114"  height="114" />
-        <icon   src="helloworld_res/icon/ios/icon-40.png"                      platform="ios" width="40"   height="40" />
-        <icon   src="helloworld_res/icon/ios/icon-40@2x.png"                   platform="ios" width="80"   height="80" />
-        <icon   src="helloworld_res/icon/ios/icon-50.png"                      platform="ios" width="50"   height="50" />
-        <icon   src="helloworld_res/icon/ios/icon-50@2x.png"                   platform="ios" width="100"  height="100" />
-        <icon   src="helloworld_res/icon/ios/icon-60.png"                      platform="ios" width="60"   height="60" />
-        <icon   src="helloworld_res/icon/ios/icon-60@2x.png"                   platform="ios" width="120"  height="120" />
-        <icon   src="helloworld_res/icon/ios/icon-60@3x.png"                   platform="ios" width="180"  height="180" />
-        <icon   src="helloworld_res/icon/ios/icon-72.png"                      platform="ios" width="72"   height="72" />
-        <icon   src="helloworld_res/icon/ios/icon-72@2x.png"                   platform="ios" width="144"  height="144" />
-        <icon   src="helloworld_res/icon/ios/icon-76.png"                      platform="ios" width="76"   height="76" />
-        <icon   src="helloworld_res/icon/ios/icon-76@2x.png"                   platform="ios" width="152"  height="152" />
-        <icon   src="helloworld_res/icon/ios/icon-small.png"                   platform="ios" width="29"   height="29" />
-        <icon   src="helloworld_res/icon/ios/icon-small@2x.png"                platform="ios" width="58"   height="58" />
-        <icon   src="helloworld_res/icon/ios/icon-small@3x.png"                platform="ios" width="87"   height="87" />
-        <splash src="helloworld_res/screen/ios/Default-568h@2x~iphone.png"     platform="ios" width="640"  height="1136" />
-        <splash src="helloworld_res/screen/ios/Default-667h.png"               platform="ios" width="750"  height="1334" />
-        <splash src="helloworld_res/screen/ios/Default-736h.png"               platform="ios" width="1242" height="2208" />
-        <splash src="helloworld_res/screen/ios/Default-Landscape-736h.png"     platform="ios" width="2208" height="1242" />
-        <splash src="helloworld_res/screen/ios/Default-Landscape@2x~ipad.png"  platform="ios" width="2048" height="1536" />
-        <splash src="helloworld_res/screen/ios/Default-Landscape~ipad.png"     platform="ios" width="1024" height="768" />
-        <splash src="helloworld_res/screen/ios/Default-Portrait@2x~ipad.png"   platform="ios" width="1536" height="2048" />
-        <splash src="helloworld_res/screen/ios/Default-Portrait~ipad.png"      platform="ios" width="768"  height="1024" />
-        <splash src="helloworld_res/screen/ios/Default@2x~iphone.png"          platform="ios" width="640"  height="960" />
-        <splash src="helloworld_res/screen/ios/Default~iphone.png"             platform="ios" width="320"  height="480" />
-    </platform>
+  <platform name="ios">
+    <icon src="images/icon57X57.png" gap:platform="ios" width="50" height="50" /> 
+    <icon src="images/icon57X57.png" gap:platform="ios" width="40" height="40" /> 
+    <icon src="images/icon57X57.png" gap:platform="ios" width="57" height="57" />
+    <icon src="images/icon76X76.png" gap:platform="ios" width="76" height="76" />
+    <icon src="images/icon120X120.png" gap:platform="ios" width="120" height="120" />
+    <icon src="images/icon152X152.png" gap:platform="ios" width="152" height="152" />
     
+    <gap:splash src="splash-portrait.png" gap:platform="ios" width="320" height="480" />
+    <gap:splash src="splash.png" gap:platform="ios" width="480" height="320" />
+    
+    <gap:splash src="splash-portrait.png" gap:platform="ios" width="640" height="960" />
+    <gap:splash src="splash.png" gap:platform="ios" width="960" height="640" />
+  
+    <gap:splash src="splash-portrait.png" gap:platform="ios" width="1536" height="2048" />
+    <gap:splash src="splash.png" gap:platform="ios" width="2048" height="1536" />
+    
+    <gap:splash src="splash-portrait.png" gap:platform="ios" width="768" height="1024" />
+    <gap:splash src="splash.png" gap:platform="ios" width="1024" height="768" />
+    
+    <gap:splash src="splash-portrait.png" gap:platform="ios" width="1496" height="2048" />
+    <gap:splash src="splash.png" gap:platform="ios" width="2048" height="1496" />
+    
+    <gap:splash src="splash-portrait.png" gap:platform="ios" width="640" height="1136" />
+    <gap:splash src="splash.png" gap:platform="ios" width="1136" height="640" />
+  </platform>
+        
   <platform name="android">
     <icon src="images/icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="ldpi" />
     <icon src="images/icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="mdpi" />
