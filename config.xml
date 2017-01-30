@@ -3,7 +3,7 @@
 
 <!-- Sezione customizzata per cliente --> 
   <widget xmlns = "http://www.w3.org/ns/widgets"  xmlns:gap = "http://phonegap.com/ns/1.0"
-          id = "com.SmartNCCMobile.MULTIUSER" version = "12.43" versionCode = "1243" > 
+          id = "com.SmartNCCMobile.MULTIUSER" version = "12.44" versionCode = "1244" > 
     
   <name>SmartNCCMobile APP</name>
   <description>Piattaforma MOBILE SMARTNCC</description>
@@ -102,7 +102,9 @@
     <plugin name="cordova-plugin-geolocation" />
   </platform>
   
-  <plugin name="cordova-plugin-barcodescanner" source="npm" />
+  <!--<plugin name="cordova-plugin-barcodescanner" source="npm" >
+	<variable name="CAMERA_USAGE_DESCRIPTION" value="Using camera to read QRCode" />
+  </plugin>-->
   <plugin name="cordova-plugin-splashscreen" source="npm" />
   <!--<plugin name="cordova-plugin-bluetooth-serial" source="npm" />-->
   <!--<plugin name="com.evothings.ble" source="npm" spec="2.0.1"/>-->
@@ -119,10 +121,11 @@
   <gap:plugin name="cordova-plugin-file" source="npm" />
   <gap:plugin name="cordova-plugin-file-transfer" source="npm" />
   <!--<gap:plugin name="cordova-plugin-camera" source="npm" />-->
+  
   <plugin name="cordova-plugin-camera">
-        <variable name="CAMERA_USAGE_DESCRIPTION" value="your usage message" />
+        <variable name="CAMERA_USAGE_DESCRIPTION" value="Using camera to read take photos" />
   </plugin>
-
+  
   <!--<gap:plugin name="cordova-open" source="npm" />-->
   
  
