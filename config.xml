@@ -3,7 +3,7 @@
 
 <!-- Sezione customizzata per cliente --> 
   <widget xmlns = "http://www.w3.org/ns/widgets"  xmlns:gap = "http://phonegap.com/ns/1.0"
-          id = "com.SmartNCCMobile.MULTIUSER" version = "12.41" versionCode = "1241" > 
+          id = "com.SmartNCCMobile.MULTIUSER" version = "12.42" versionCode = "1242" > 
     
   <name>SmartNCCMobile APP</name>
   <description>Piattaforma MOBILE SMARTNCC</description>
@@ -97,13 +97,13 @@
       <param name="SENDER_ID" value="236799555977" />
     </plugin> 
     <gap:plugin name="de.appplant.cordova.plugin.local-notification" version="0.8.4"  source="npm"/>
-    
+    <!--<gap:plugin name="de.appplant.cordova.plugin.background-mode" version="0.6.5" source="npm"/>-->
     <plugin name="cordova-background-geolocation-lt" source="npm" />
     <plugin name="cordova-plugin-geolocation" />
   </platform>
   
-  <!--<plugin name="cordova-plugin-barcodescanner" source="npm" /> -->
-  <!--<plugin name="cordova-plugin-splashscreen" source="npm" /> -->
+  <plugin name="cordova-plugin-barcodescanner" source="npm" />
+  <plugin name="cordova-plugin-splashscreen" source="npm" />
   <!--<plugin name="cordova-plugin-bluetooth-serial" source="npm" />-->
   <!--<plugin name="com.evothings.ble" source="npm" spec="2.0.1"/>-->
   
