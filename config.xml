@@ -75,6 +75,8 @@
   
   <platform name="ios">
     <!--<preference name="phonegap-version" value="cli-6.1.0" />-->
+    <gap:plugin name="cordova-plugin-ios-camera-permissions" source="npm" />
+    <gap:plugin name="cordova-plugin-ios-ble-permissions" source="npm" />
     <preference name="phonegap-version" value="cli-5.4.1" />
     <plugin name="phonegap-plugin-push" source="npm" spec="1.5.3" >
       <param name="SENDER_ID" value="236799555977" />
@@ -119,6 +121,8 @@
   <gap:plugin name="cordova-plugin-file" source="npm" />
   <gap:plugin name="cordova-plugin-file-transfer" source="npm" />
   <gap:plugin name="cordova-plugin-camera" source="npm" />
+    
+    
   <gap:plugin name="cordova-open" source="npm" />
   
  
