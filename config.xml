@@ -3,7 +3,7 @@
 
 <!-- Sezione customizzata per cliente --> 
   <widget xmlns = "http://www.w3.org/ns/widgets"  xmlns:gap = "http://phonegap.com/ns/1.0"
-          id = "com.SmartNCCMobile.MULTIUSER" version = "12.42" versionCode = "1242" > 
+          id = "com.SmartNCCMobile.MULTIUSER" version = "12.43" versionCode = "1243" > 
     
   <name>SmartNCCMobile APP</name>
   <description>Piattaforma MOBILE SMARTNCC</description>
@@ -119,6 +119,10 @@
   <gap:plugin name="cordova-plugin-file" source="npm" />
   <gap:plugin name="cordova-plugin-file-transfer" source="npm" />
   <!--<gap:plugin name="cordova-plugin-camera" source="npm" />-->
+  <plugin name="cordova-plugin-camera">
+        <variable name="CAMERA_USAGE_DESCRIPTION" value="your usage message" />
+  </plugin>
+
   <!--<gap:plugin name="cordova-open" source="npm" />-->
   
  
