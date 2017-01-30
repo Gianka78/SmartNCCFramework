@@ -107,7 +107,7 @@
   <feature name="http://api.phonegap.com/1.0/geolocation"/>
   
    
-
+<!--
   <gap:splash src="splash-portrait.png" gap:platform="ios" width="320" height="480" />
   <gap:splash src="splash.png" gap:platform="ios" width="480" height="320" />
 
@@ -125,7 +125,7 @@
 
   <gap:splash src="splash-portrait.png" gap:platform="ios" width="640" height="1136" />
   <gap:splash src="splash.png" gap:platform="ios" width="1136" height="640" />
-
+-->
     
 
     
