@@ -90,7 +90,7 @@
       <variable name="ALWAYS_USAGE_DESCRIPTION" value="This app requires background tracking enabled" />
     </plugin>
 	
-    <gap:plugin "cordova-plugin-ios-ble-permissions" source="npm"/>
+    <gap:plugin name="cordova-plugin-ios-ble-permissions" source="npm" />
 	<plugin name="com.evothings.ble" source="npm" spec="2.0.1">
     	<variable name="BLUETOOTH_USAGE_DESCRIPTION" value="Connetion to Bluetooth printers" />
   	</plugin>
