@@ -3,7 +3,7 @@
 
 <!-- Sezione customizzata per cliente --> 
   <widget xmlns = "http://www.w3.org/ns/widgets"  xmlns:gap = "http://phonegap.com/ns/1.0"
-          id = "com.SmartNCCMobile.MULTIUSER" version = "12.33" versionCode = "1233" > 
+          id = "com.SmartNCCMobile.MULTIUSER" version = "12.56" versionCode = "1256" > 
     
   <name>SmartNCCMobile APP</name>
   <description>Piattaforma MOBILE SMARTNCC</description>
@@ -75,8 +75,6 @@
   
   <platform name="ios">
     <!--<preference name="phonegap-version" value="cli-6.1.0" />-->
-    <gap:plugin name="cordova-plugin-ios-camera-permissions" source="npm" />
-    <gap:plugin name="cordova-plugin-ios-ble-permissions" source="npm" />
     <preference name="phonegap-version" value="cli-5.4.1" />
     <plugin name="phonegap-plugin-push" source="npm" spec="1.5.3" >
       <param name="SENDER_ID" value="236799555977" />
@@ -102,13 +100,20 @@
     <plugin name="cordova-plugin-geolocation" />
   </platform>
   
-  <!--<plugin name="phonegap-plugin-barcodescanner" source="npm" />-->
-  <plugin name="cordova-plugin-barcodescanner" source="npm" /> 
+    <!--<plugin name="phonegap-plugin-barcodescanner" source="npm" />-->
+	<plugin name="cordova-plugin-barcodescanner" source="npm" >
+	<variable name="CAMERA_USAGE_DESCRIPTION" value="App would use camera to read QRCode" />
+	<variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="App would like to access the library to get QRCode reads." />
+  </plugin>
   <plugin name="cordova-plugin-splashscreen" source="npm" />
-  <plugin name="cordova-plugin-bluetooth-serial" source="npm" />
-  <!--<plugin name="com.evothings.ble" source="npm" spec="1.2.0"/> 2.0.1 -->
-  <plugin name="com.evothings.ble" source="npm" spec="2.0.1"/>
-  <!--<plugin name="cordova-plugin-geolocation" />-->
+	<plugin name="cordova-plugin-bluetooth-serial" source="npm">
+	  <variable name="BLUETOOTH_USAGE_DESCRIPTION" value="App would use BT Connetion to Bluetooth printers" />
+	</plugin>
+	<gap:plugin name="cordova-plugin-ios-ble-permissions" source="npm" />
+	<plugin name="com.evothings.ble" source="npm" spec="2.0.1">
+		<variable name="BLUETOOTH_USAGE_DESCRIPTION" value="App would use BT Connetion to Bluetooth printers" />
+	</plugin>
+  
   <plugin name="cordova-plugin-device" source="npm" spec="1.0.1" />
   
   <plugin name="cordova-plugin-whitelist" spec="1.2.2" />
@@ -120,10 +125,13 @@
   <gap:plugin name="cordova-plugin-badge" source="npm" />
   <gap:plugin name="cordova-plugin-file" source="npm" />
   <gap:plugin name="cordova-plugin-file-transfer" source="npm" />
-  <gap:plugin name="cordova-plugin-camera" source="npm" />
-    
-    
-  <gap:plugin name="cordova-open" source="npm" />
+  
+  <plugin name="cordova-plugin-camera">
+        <variable name="CAMERA_USAGE_DESCRIPTION" value="APP would use camera to take photo of vehicle damages." />
+		<variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="App would like to access the library to take photo of vechicle damages." />
+  </plugin>
+  
+  <!--<gap:plugin name="cordova-open" source="npm" />-->
   
  
   <preference name="iosExtraFilesystems" value="library,library-nosync,documents,documents-nosync,cache,bundle,root" />
