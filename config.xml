@@ -3,7 +3,7 @@
 
 <!-- Sezione customizzata per cliente --> 
   <widget xmlns = "http://www.w3.org/ns/widgets"  xmlns:gap = "http://phonegap.com/ns/1.0"
-          id = "com.SmartNCCMobile.MULTIUSER" version = "12.44" versionCode = "1244" > 
+          id = "com.SmartNCCMobile.MULTIUSER" version = "12.45" versionCode = "1245" > 
     
   <name>SmartNCCMobile APP</name>
   <description>Piattaforma MOBILE SMARTNCC</description>
@@ -104,6 +104,7 @@
   
   <!--<plugin name="cordova-plugin-barcodescanner" source="npm" >
 	<variable name="CAMERA_USAGE_DESCRIPTION" value="Using camera to read QRCode" />
+	<variable name="CAMERA_USAGE_DESCRIPTION" value="Using camera to read QRCode" />
   </plugin>-->
   <plugin name="cordova-plugin-splashscreen" source="npm" />
   <!--<plugin name="cordova-plugin-bluetooth-serial" source="npm" />-->
@@ -124,6 +125,7 @@
   
   <plugin name="cordova-plugin-camera">
         <variable name="CAMERA_USAGE_DESCRIPTION" value="Using camera to read take photos" />
+		<variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="App would like to access the library." />
   </plugin>
   
   <!--<gap:plugin name="cordova-open" source="npm" />-->
