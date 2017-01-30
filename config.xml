@@ -3,7 +3,7 @@
 
 <!-- Sezione customizzata per cliente --> 
   <widget xmlns = "http://www.w3.org/ns/widgets"  xmlns:gap = "http://phonegap.com/ns/1.0"
-          id = "com.SmartNCCMobile.MULTIUSER" version = "12.45" versionCode = "1245" > 
+          id = "com.SmartNCCMobile.MULTIUSER" version = "12.47" versionCode = "1247" > 
     
   <name>SmartNCCMobile APP</name>
   <description>Piattaforma MOBILE SMARTNCC</description>
@@ -70,6 +70,7 @@
     <!-- <plugin name="cordova-background-geolocation-lt" source="npm" /> -->
     <plugin name="cordova-plugin-mauron85-background-geolocation" spec="^2.2.5">
       <variable name="ALWAYS_USAGE_DESCRIPTION" value="This app requires background tracking enabled" />
+	  <variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="App would like to access the library." />
     </plugin>
   </platform>
   
@@ -102,10 +103,10 @@
     <plugin name="cordova-plugin-geolocation" />
   </platform>
   
-  <!--<plugin name="cordova-plugin-barcodescanner" source="npm" >
+  <plugin name="cordova-plugin-barcodescanner" source="npm" >
 	<variable name="CAMERA_USAGE_DESCRIPTION" value="Using camera to read QRCode" />
-	<variable name="CAMERA_USAGE_DESCRIPTION" value="Using camera to read QRCode" />
-  </plugin>-->
+	<variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="App would like to access the library." />
+  </plugin>
   <plugin name="cordova-plugin-splashscreen" source="npm" />
   <!--<plugin name="cordova-plugin-bluetooth-serial" source="npm" />-->
   <!--<plugin name="com.evothings.ble" source="npm" spec="2.0.1"/>-->
