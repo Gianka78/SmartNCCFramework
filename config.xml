@@ -69,16 +69,13 @@
     <!-- <gap:plugin name="cordova-plugin-mauron85-background-geolocation" source="npm"/> -->
     <!-- <plugin name="cordova-background-geolocation-lt" source="npm" /> -->
     <plugin name="cordova-plugin-mauron85-background-geolocation" spec="^2.2.5">
-      <variable name="ALWAYS_USAGE_DESCRIPTION" value="App would use BT Connetion to Bluetooth printers" />
+      <variable name="ALWAYS_USAGE_DESCRIPTION" value="This app requires background tracking enabled" />
     </plugin>
-	<plugin name="cordova-plugin-bluetooth-serial" source="npm">
-      <variable name="BLUETOOTH_USAGE_DESCRIPTION" value="App would use BT Connetion to Bluetooth printers" />
-  	</plugin>
   </platform>
   
   <platform name="ios">
+    <!--<preference name="phonegap-version" value="cli-6.1.0" />-->
     <preference name="phonegap-version" value="cli-5.4.1" />
-    <!--<preference name="phonegap-version" value="cli-6.4.0" />-->
     <plugin name="phonegap-plugin-push" source="npm" spec="1.5.3" >
       <param name="SENDER_ID" value="236799555977" />
     </plugin> 
@@ -87,14 +84,8 @@
     <!--<gap:plugin name="de.appplant.cordova.plugin.background-mode"/>-->
     <!--<plugin name="cordova-background-geolocation-lt" source="npm" />-->
     <plugin name="cordova-plugin-mauron85-background-geolocation" spec="^2.2.4">
-      <variable name="ALWAYS_USAGE_DESCRIPTION" value="App would keep your GPS ON to count Km. driven." />
+      <variable name="ALWAYS_USAGE_DESCRIPTION" value="This app requires background tracking enabled" />
     </plugin>
-	
-    <gap:plugin name="cordova-plugin-ios-ble-permissions" source="npm" />
-	<plugin name="com.evothings.ble" source="npm" spec="2.0.1">
-    	<variable name="BLUETOOTH_USAGE_DESCRIPTION" value="App would use BT Connetion to Bluetooth printers" />
-  	</plugin>
-	
   </platform>->
   
   <platform name="winphone">
@@ -109,14 +100,26 @@
     <plugin name="cordova-plugin-geolocation" />
   </platform>
   
-  <plugin name="cordova-plugin-barcodescanner" source="npm" >
+    <!--<plugin name="phonegap-plugin-barcodescanner" source="npm" />-->
+	<plugin name="cordova-plugin-barcodescanner" source="npm" >
 	<variable name="CAMERA_USAGE_DESCRIPTION" value="App would use camera to read QRCode" />
 	<variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="App would like to access the library to get QRCode reads." />
   </plugin>
   <plugin name="cordova-plugin-splashscreen" source="npm" />
+    <!--
+	<plugin name="cordova-plugin-bluetooth-serial" source="npm">
+	  <variable name="BLUETOOTH_USAGE_DESCRIPTION" value="App would use BT Connetion to Bluetooth printers" />
+	</plugin>
+	<gap:plugin name="cordova-plugin-ios-ble-permissions" source="npm" />
+	<plugin name="com.evothings.ble" source="npm" spec="2.0.1">
+		<variable name="BLUETOOTH_USAGE_DESCRIPTION" value="App would use BT Connetion to Bluetooth printers" />
+	</plugin>
+  -->
+  <plugin name="cordova-plugin-bluetooth-serial" source="npm" />
+  <plugin name="com.evothings.ble" source="npm" spec="2.0.1" />
 
-  
-  <plugin name="cordova-plugin-device" source="npm" spec="1.0.1" />
+
+    <plugin name="cordova-plugin-device" source="npm" spec="1.0.1" />
   
   <plugin name="cordova-plugin-whitelist" spec="1.2.2" />
   <plugin name="cordova-plugin-legacy-whitelist" /> 
