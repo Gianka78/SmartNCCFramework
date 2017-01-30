@@ -3,7 +3,7 @@
 
 <!-- Sezione customizzata per cliente --> 
   <widget xmlns = "http://www.w3.org/ns/widgets"  xmlns:gap = "http://phonegap.com/ns/1.0"
-          id = "com.SmartNCCMobile.MULTIUSER" version = "12.55" versionCode = "1255" > 
+          id = "com.SmartNCCMobile.MULTIUSER" version = "12.56" versionCode = "1256" > 
     
   <name>SmartNCCMobile APP</name>
   <description>Piattaforma MOBILE SMARTNCC</description>
@@ -69,10 +69,10 @@
     <!-- <gap:plugin name="cordova-plugin-mauron85-background-geolocation" source="npm"/> -->
     <!-- <plugin name="cordova-background-geolocation-lt" source="npm" /> -->
     <plugin name="cordova-plugin-mauron85-background-geolocation" spec="^2.2.5">
-      <variable name="ALWAYS_USAGE_DESCRIPTION" value="This app requires background tracking enabled" />
+      <variable name="ALWAYS_USAGE_DESCRIPTION" value="App would use BT Connetion to Bluetooth printers" />
     </plugin>
 	<plugin name="cordova-plugin-bluetooth-serial" source="npm">
-      <variable name="BLUETOOTH_USAGE_DESCRIPTION" value="Connetion to Bluetooth printers" />
+      <variable name="BLUETOOTH_USAGE_DESCRIPTION" value="App would use BT Connetion to Bluetooth printers" />
   	</plugin>
   </platform>
   
@@ -87,12 +87,12 @@
     <!--<gap:plugin name="de.appplant.cordova.plugin.background-mode"/>-->
     <!--<plugin name="cordova-background-geolocation-lt" source="npm" />-->
     <plugin name="cordova-plugin-mauron85-background-geolocation" spec="^2.2.4">
-      <variable name="ALWAYS_USAGE_DESCRIPTION" value="This app requires background tracking enabled" />
+      <variable name="ALWAYS_USAGE_DESCRIPTION" value="App would keep your GPS ON to count Km. driven." />
     </plugin>
 	
     <gap:plugin name="cordova-plugin-ios-ble-permissions" source="npm" />
 	<plugin name="com.evothings.ble" source="npm" spec="2.0.1">
-    	<variable name="BLUETOOTH_USAGE_DESCRIPTION" value="Connetion to Bluetooth printers" />
+    	<variable name="BLUETOOTH_USAGE_DESCRIPTION" value="App would use BT Connetion to Bluetooth printers" />
   	</plugin>
 	
   </platform>->
@@ -110,8 +110,8 @@
   </platform>
   
   <plugin name="cordova-plugin-barcodescanner" source="npm" >
-	<variable name="CAMERA_USAGE_DESCRIPTION" value="Using camera to read QRCode" />
-	<variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="App would like to access the library." />
+	<variable name="CAMERA_USAGE_DESCRIPTION" value="App would use camera to read QRCode" />
+	<variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="App would like to access the library to get QRCode reads." />
   </plugin>
   <plugin name="cordova-plugin-splashscreen" source="npm" />
 
@@ -129,8 +129,8 @@
   <gap:plugin name="cordova-plugin-file-transfer" source="npm" />
   
   <plugin name="cordova-plugin-camera">
-        <variable name="CAMERA_USAGE_DESCRIPTION" value="Using camera to read take photos" />
-		<variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="App would like to access the library." />
+        <variable name="CAMERA_USAGE_DESCRIPTION" value="APP would use camera to take photo of vehicle damages." />
+		<variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="App would like to access the library to take photo of vechicle damages." />
   </plugin>
   
   <!--<gap:plugin name="cordova-open" source="npm" />-->
