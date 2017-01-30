@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
   <widget xmlns = "http://www.w3.org/ns/widgets"  xmlns:gap = "http://phonegap.com/ns/1.0"
-          id = "com.SmartNCCMobile.MULTIUSER" version = "12.04" versionCode = "1204" > 
+          id = "com.SmartNCCMobile.MULTIUSER" version = "12.13" versionCode = "1213" > 
 
   <name>SmartNCCMobile APP</name>
   <description>Piattaforma MOBILE SMARTNCC</description>
@@ -109,7 +109,24 @@
    
   <icon src="images/icon.png"/>
   <gap:splash src="splash.png" />
+  <gap:splash src="splash-portrait.png" gap:platform="ios" width="320" height="480" />
+  <gap:splash src="splash.png" gap:platform="ios" width="480" height="320" />
 
+  <gap:splash src="splash-portrait.png" gap:platform="ios" width="640" height="960" />
+  <gap:splash src="splash.png" gap:platform="ios" width="960" height="640" />
+
+  <gap:splash src="splash-portrait.png" gap:platform="ios" width="1536" height="2048" />
+  <gap:splash src="splash.png" gap:platform="ios" width="2048" height="1536" />
+
+  <gap:splash src="splash-portrait.png" gap:platform="ios" width="768" height="1024" />
+  <gap:splash src="splash.png" gap:platform="ios" width="1024" height="768" />
+
+  <gap:splash src="splash-portrait.png" gap:platform="ios" width="1496" height="2048" />
+  <gap:splash src="splash.png" gap:platform="ios" width="2048" height="1496" />
+
+  <gap:splash src="splash-portrait.png" gap:platform="ios" width="640" height="1136" />
+  <gap:splash src="splash.png" gap:platform="ios" width="1136" height="640" />
+    
   <platform name="ios">
     <icon src="images/icon57X57.png" gap:platform="ios" width="50" height="50" /> 
     <icon src="images/icon57X57.png" gap:platform="ios" width="40" height="40" /> 
@@ -117,24 +134,6 @@
     <icon src="images/icon76X76.png" gap:platform="ios" width="76" height="76" />
     <icon src="images/icon120X120.png" gap:platform="ios" width="120" height="120" />
     <icon src="images/icon152X152.png" gap:platform="ios" width="152" height="152" />
-    
-    <gap:splash src="splash-portrait.png" gap:platform="ios" width="320" height="480" />
-    <gap:splash src="splash.png" gap:platform="ios" width="480" height="320" />
-    
-    <gap:splash src="splash-portrait.png" gap:platform="ios" width="640" height="960" />
-    <gap:splash src="splash.png" gap:platform="ios" width="960" height="640" />
-  
-    <gap:splash src="splash-portrait.png" gap:platform="ios" width="1536" height="2048" />
-    <gap:splash src="splash.png" gap:platform="ios" width="2048" height="1536" />
-    
-    <gap:splash src="splash-portrait.png" gap:platform="ios" width="768" height="1024" />
-    <gap:splash src="splash.png" gap:platform="ios" width="1024" height="768" />
-    
-    <gap:splash src="splash-portrait.png" gap:platform="ios" width="1496" height="2048" />
-    <gap:splash src="splash.png" gap:platform="ios" width="2048" height="1496" />
-    
-    <gap:splash src="splash-portrait.png" gap:platform="ios" width="640" height="1136" />
-    <gap:splash src="splash.png" gap:platform="ios" width="1136" height="640" />
   </platform>
 
   <platform name="android">
