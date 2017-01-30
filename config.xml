@@ -108,7 +108,7 @@
   
    
   <icon src="images/icon.png"/>
-  <gap:splash src="splash.png" />
+
   <gap:splash src="splash-portrait.png" gap:platform="ios" width="320" height="480" />
   <gap:splash src="splash.png" gap:platform="ios" width="480" height="320" />
 
@@ -126,6 +126,10 @@
 
   <gap:splash src="splash-portrait.png" gap:platform="ios" width="640" height="1136" />
   <gap:splash src="splash.png" gap:platform="ios" width="1136" height="640" />
+
+    
+
+    
     
   <platform name="ios">
     <icon src="images/icon57X57.png" gap:platform="ios" width="50" height="50" /> 
