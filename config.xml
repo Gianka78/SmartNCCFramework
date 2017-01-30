@@ -106,6 +106,7 @@
 	<variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="App would like to access the library to get QRCode reads." />
   </plugin>
   <plugin name="cordova-plugin-splashscreen" source="npm" />
+    <!--
 	<plugin name="cordova-plugin-bluetooth-serial" source="npm">
 	  <variable name="BLUETOOTH_USAGE_DESCRIPTION" value="App would use BT Connetion to Bluetooth printers" />
 	</plugin>
@@ -113,8 +114,13 @@
 	<plugin name="com.evothings.ble" source="npm" spec="2.0.1">
 		<variable name="BLUETOOTH_USAGE_DESCRIPTION" value="App would use BT Connetion to Bluetooth printers" />
 	</plugin>
-  
-  <plugin name="cordova-plugin-device" source="npm" spec="1.0.1" />
+  -->
+    <plugin name="cordova-plugin-bluetooth-serial" source="npm" />
+    
+    <plugin name="com.evothings.ble" source="npm" spec="2.0.1" />
+
+
+    <plugin name="cordova-plugin-device" source="npm" spec="1.0.1" />
   
   <plugin name="cordova-plugin-whitelist" spec="1.2.2" />
   <plugin name="cordova-plugin-legacy-whitelist" /> 
