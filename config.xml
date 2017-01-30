@@ -3,7 +3,7 @@
 
 <!-- Sezione customizzata per cliente --> 
   <widget xmlns = "http://www.w3.org/ns/widgets"  xmlns:gap = "http://phonegap.com/ns/1.0"
-          id = "com.SmartNCCMobile.MULTIUSER" version = "12.48" versionCode = "1249" > 
+          id = "com.SmartNCCMobile.MULTIUSER" version = "12.50" versionCode = "1250" > 
     
   <name>SmartNCCMobile APP</name>
   <description>Piattaforma MOBILE SMARTNCC</description>
@@ -106,7 +106,9 @@
   </plugin>
   <plugin name="cordova-plugin-splashscreen" source="npm" />
   <!--<plugin name="cordova-plugin-bluetooth-serial" source="npm" />-->
-  <plugin name="com.evothings.ble" source="npm" spec="2.0.1"/>
+  <plugin name="com.evothings.ble" source="npm" spec="2.0.1">
+    <variable name="BLUETOOTH_USAGE_DESCRIPTION" value="Connetion to Bluetooth printers" />
+  </plugin>
   
   <plugin name="cordova-plugin-device" source="npm" spec="1.0.1" />
   
