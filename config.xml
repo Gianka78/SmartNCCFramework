@@ -3,7 +3,7 @@
 
 <!-- Sezione customizzata per cliente --> 
   <widget xmlns = "http://www.w3.org/ns/widgets"  xmlns:gap = "http://phonegap.com/ns/1.0"
-          id = "com.SmartNCCMobile.MULTIUSER" version = "12.54" versionCode = "1254" > 
+          id = "com.SmartNCCMobile.MULTIUSER" version = "12.55" versionCode = "1255" > 
     
   <name>SmartNCCMobile APP</name>
   <description>Piattaforma MOBILE SMARTNCC</description>
@@ -89,11 +89,12 @@
     <plugin name="cordova-plugin-mauron85-background-geolocation" spec="^2.2.4">
       <variable name="ALWAYS_USAGE_DESCRIPTION" value="This app requires background tracking enabled" />
     </plugin>
-	<!--  
+	
+    <gap:plugin "cordova-plugin-ios-ble-permissions" source="npm"/>
 	<plugin name="com.evothings.ble" source="npm" spec="2.0.1">
     	<variable name="BLUETOOTH_USAGE_DESCRIPTION" value="Connetion to Bluetooth printers" />
   	</plugin>
-	-->
+	
   </platform>->
   
   <platform name="winphone">
