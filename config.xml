@@ -105,7 +105,7 @@
   <!--<plugin name="cordova-plugin-barcodescanner" source="npm" /> -->
   <!--<plugin name="cordova-plugin-splashscreen" source="npm" /> -->
   <!--<plugin name="cordova-plugin-bluetooth-serial" source="npm" />-->
-  <plugin name="com.evothings.ble" source="npm" spec="2.0.1"/>
+  <!--<plugin name="com.evothings.ble" source="npm" spec="2.0.1"/>-->
   
   <plugin name="cordova-plugin-device" source="npm" spec="1.0.1" />
   
