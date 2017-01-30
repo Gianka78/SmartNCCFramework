@@ -1,48 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-
-<!-- Sezione customizzata per cliente --> 
   <widget xmlns = "http://www.w3.org/ns/widgets"  xmlns:gap = "http://phonegap.com/ns/1.0"
-          id = "com.SmartNCCMobile.MULTIUSER" version = "12.003" versionCode = "12003" > 
-    
+          id = "com.SmartNCCMobile.MULTIUSER" version = "11.01" versionCode = "1001" > 
+
   <name>SmartNCCMobile APP</name>
   <description>Piattaforma MOBILE SMARTNCC</description>
   <author href="http://www.gd-soft.it" email="info@gd-soft.it">GD-SOFT S.R.L.</author>
-<!--
 
-  <widget id = "com.SmartNCCVIPCLASS" version = "12.002" versionCode = "VIPCLASS12002" xmlns = "http://www.w3.org/ns/widgets"  xmlns:gap = "http://phonegap.com/ns/1.0" >
-  <name>VIPCLASS Chauffeured limousine</name>
-  <description>Piattaforma SmartNCC Mobile - Vipclass Chauffeured Limousine s.c.a.r.l.</description>
-  <author href="http://www.gd-soft.it" email="info@gd-soft.it">GD-SOFT S.R.L.</author>
--->
-<!-- Fine sezione customizzata per cliente -->
   
-  
-<!--
-  com.evothings.ble   	npm	1.2.0	1.2.0	n/a	android,ios,winphone
-  cordova-background-geolocation-lt   	npm	*	2.2.0	n/a	winphone
-  cordova-plugin-appinfo   	npm	*	2.0.3	n/a	android,ios,winphone
-  cordova-plugin-badge   	npm	*	0.7.3	n/a	android,ios,winphone
-  cordova-plugin-battery-status   	npm	*	1.2.0	n/a	android,ios,winphone
-  cordova-plugin-device   	npm	1.0.1	n/a	n/a	android,ios,winphone
-  cordova-plugin-file   	npm	*	4.3.0	n/a	android,ios,winphone
-  cordova-plugin-geolocation   	npm	*	2.4.0	n/a	android
-  cordova-plugin-geolocation   	npm	*	2.4.0	n/a	ios
-  cordova-plugin-geolocation   	npm	*	2.4.0	n/a	winphone
-  cordova-plugin-legacy-whitelist   	npm	*	1.1.1	n/a	android,ios,winphone
-  cordova-plugin-mauron85-background-geolocation   	npm	^2.2.5	2.2.5	n/a	android
-  cordova-plugin-mauron85-background-geolocation   	npm	^2.2.4	2.2.5	n/a	ios
-  cordova-plugin-network-information   	npm	1.0.1	1.0.1	n/a	android,ios,winphone
-  cordova-plugin-whitelist   	npm	1.2.2	1.2.2	n/a	android,ios,winphone
-  de.appplant.cordova.plugin.local-notification   	npm	0.8.4	0.8.4	n/a	android
-  de.appplant.cordova.plugin.local-notification   	npm	0.8.4	0.8.4	n/a	ios
-  de.appplant.cordova.plugin.local-notification   	npm	0.8.4	0.8.4	n/a	winphone
-  org.apache.cordova.splashscreen   	npm	*	4.0.0	n/a	android,ios,winphone
-  phonegap-plugin-barcodescanner   	npm	*	6.0.3	n/a	android,ios,winphone
-  phonegap-plugin-push   	npm	1.5.3	1.5.3	n/a	android
-  phonegap-plugin-push   	npm	1.5.3	1.5.3	n/a	ios
-  phonegap-plugin-push   	npm	*	1.9.0	n/a	winphone
--->
   
   <!-- problema android no GPS Background <preference name="phonegap-version" value="cli-5.4.1" /> -->
   <!-- problema iOS apre link fuori APP non firma WP8 <preference name="phonegap-version" value="cli-6.1.0" /> -->
@@ -52,14 +17,14 @@
   <preference name="SplashScreen" value="splash" /> 
   <preference name="SplashScreenDelay" value="4000" />
   <!--<preference name="orientation" value="portrait" />-->
-  <preference name="fullscreen" value="false" />
+  <preference name="fullscreen" value="true" />
 
   <!-- funzionante su cli-5.4.1 <gap:plugin namde="de.appplant.cordova.plugin.background-mode" version="0.65" source="npm"/>-->
   
   <platform name="android">
-    <preference name="phonegap-version" value="cli-6.4.0" />
+    <preference name="phonegap-version" value="cli-6.3.0" />
     <preference name="android-build-tool" value="gradle" />
-    <plugin name="phonegap-plugin-push" source="npm" version="1.5.3">
+    <plugin name="phonegap-plugin-push" source="npm">
       <param name="SENDER_ID" value="236799555977" />
     </plugin> 
     <gap:plugin name="de.appplant.cordova.plugin.local-notification" version="0.8.4"  source="npm"/>
@@ -68,9 +33,10 @@
     <!-- compatibile solo con Android cli-6.1.0 -->
     <!-- <gap:plugin name="cordova-plugin-mauron85-background-geolocation" source="npm"/> -->
     <!-- <plugin name="cordova-background-geolocation-lt" source="npm" /> -->
-    <plugin name="cordova-plugin-mauron85-background-geolocation" spec="^2.2.5">
+    <plugin name="cordova-plugin-mauron85-background-geolocation" spec="^2.2.4">
       <variable name="ALWAYS_USAGE_DESCRIPTION" value="This app requires background tracking enabled" />
     </plugin>
+    
   </platform>
   
   <platform name="ios">
@@ -100,12 +66,10 @@
     <plugin name="cordova-plugin-geolocation" />
   </platform>
   
-  <!--<plugin name="phonegap-plugin-barcodescanner" source="npm" />-->
-  <plugin name="cordova-plugin-barcodescanner" source="npm" /> 
-  <plugin name="cordova-plugin-splashscreen" source="npm" />
-  <plugin name="cordova-plugin-bluetooth-serial" source="npm" />
-  <!--<plugin name="com.evothings.ble" source="npm" spec="1.2.0"/> 2.0.1 -->
-  <plugin name="com.evothings.ble" source="npm" spec="2.0.1"/>
+  <plugin name="phonegap-plugin-barcodescanner" source="npm" />
+  <plugin name="org.apache.cordova.splashscreen" source="npm" />
+  <!--<plugin name="com.evothings.ble" source="npm" spec="1.0.0" />-->
+  <plugin name="com.evothings.ble" source="npm" spec="1.2.0"/>
   <!--<plugin name="cordova-plugin-geolocation" />-->
   <plugin name="cordova-plugin-device" source="npm" spec="1.0.1" />
   
@@ -117,15 +81,10 @@
   <!--<plugin name="cordova-background-geolocation-lt" source="npm" />-->
   <gap:plugin name="cordova-plugin-badge" source="npm" />
   <gap:plugin name="cordova-plugin-file" source="npm" />
-  <gap:plugin name="cordova-plugin-file-transfer" source="npm" />
-  <gap:plugin name="cordova-plugin-camera" source="npm" />
-  <gap:plugin name="cordova-open" source="npm" />
   
  
-  <preference name="iosExtraFilesystems" value="library,library-nosync,documents,documents-nosync,cache,bundle,root" />
-  <preference name="AndroidExtraFilesystems" value="files,files-external,documents,sdcard,cache,cache-external,assets,root" />
 
-    
+  
   <!-- bluettoth standard da provare <gap:plugin name="com.megster.cordova.bluetoothserial" version="0.3.3" />-->
   <!-- non compatibile cli-6.1.0 <gap:plugin name="org.apache.cordova.geolocation" />-->
   <!-- non compatibile cli-6.1.0 <gap:plugin name="org.apache.cordova.device" spec="1.1.2" source="npm"/>-->  
@@ -148,16 +107,16 @@
   <feature name="http://api.phonegap.com/1.0/geolocation"/>
   
    
-  <icon src="icon.png"/>
+  <icon src="images/icon.png"/>
   <gap:splash src="splash.png" />
 
   <platform name="ios">
-    <icon src="icon.png" gap:platform="ios" width="50" height="50" /> 
-    <icon src="icon.png" gap:platform="ios" width="40" height="40" /> 
-    <icon src="icon.png" gap:platform="ios" width="57" height="57" />
-    <icon src="icon.png" gap:platform="ios" width="76" height="76" />
-    <icon src="icon.png" gap:platform="ios" width="120" height="120" />
-    <icon src="icon.pngg" gap:platform="ios" width="152" height="152" />
+    <icon src="images/icon57X57.png" gap:platform="ios" width="50" height="50" /> 
+    <icon src="images/icon57X57.png" gap:platform="ios" width="40" height="40" /> 
+    <icon src="images/icon57X57.png" gap:platform="ios" width="57" height="57" />
+    <icon src="images/icon76X76.png" gap:platform="ios" width="76" height="76" />
+    <icon src="images/icon120X120.png" gap:platform="ios" width="120" height="120" />
+    <icon src="images/icon152X152.png" gap:platform="ios" width="152" height="152" />
     
     <gap:splash src="splash-portrait.png" gap:platform="ios" width="320" height="480" />
     <gap:splash src="splash.png" gap:platform="ios" width="480" height="320" />
@@ -179,12 +138,12 @@
   </platform>
 
   <platform name="android">
-    <icon src="icon.png" gap:platform="android" gap:qualifier="ldpi" />
-    <icon src="icon.png" gap:platform="android" gap:qualifier="mdpi" />
-    <icon src="icon.png" gap:platform="android" gap:qualifier="hdpi" />
-    <icon src="icon.png" gap:platform="android" gap:qualifier="xhdpi" />
-    <icon src="icon.png" gap:platform="android" gap:qualifier="xxhdpi" />
-    <icon src="icon.png" gap:platform="android" gap:qualifier="fr-xxhdpi" />
+    <icon src="images/icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="ldpi" />
+    <icon src="images/icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="mdpi" />
+    <icon src="images/icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="hdpi" />
+    <icon src="images/icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="xhdpi" />
+    <icon src="images/icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="xxhdpi" />
+    <icon src="images/icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="fr-xxhdpi" />
     
     <splash src="splash-portrait.png" platform="android" qualifier="ldpi" />
     <splash src="splash-portrait.png" platform="android" qualifier="mdpi" />
