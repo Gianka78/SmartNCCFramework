@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<!-- Sezione customizzata per cliente --> 
 
-  <widget id="com.SmartNCCMobile.VIPCLASS" 
-          android-packageName="com.SmartNCCMobile.VIPCLASS" 
-          ios-CFBundleIdentifier="com.SmartNCCMobile.VIPCLASS" 
-          version = "12.003" 
-          versionCode = "12003" 
-          xmlns = "http://www.w3.org/ns/widgets"  
-          xmlns:gap = "http://phonegap.com/ns/1.0" >
-  
+<!-- Sezione customizzata per cliente --> 
+<!--  <widget xmlns = "http://www.w3.org/ns/widgets"  xmlns:gap = "http://phonegap.com/ns/1.0"
+          id = "com.SmartNCCMobile.MULTIUSER" version = "12.58" versionCode = "1258" > 
+    
+  <name>SmartNCCMobile APP</name>
+  <description>Piattaforma MOBILE SMARTNCC</description>
+  <author href="http://www.gd-soft.it" email="info@gd-soft.it">GD-SOFT S.R.L.</author>
+-->
+
+
+  <widget id = "com.SmartNCCVIPCLASS" version = "12.58" versionCode = "1258" xmlns = "http://www.w3.org/ns/widgets"  xmlns:gap = "http://phonegap.com/ns/1.0" >
   <name>VIPCLASS Chauffeured limousine</name>
   <description>Piattaforma SmartNCC Mobile - Vipclass Chauffeured Limousine s.c.a.r.l.</description>
   <author href="http://www.gd-soft.it" email="info@gd-soft.it">GD-SOFT S.R.L.</author>
@@ -17,7 +19,33 @@
 <!-- Fine sezione customizzata per cliente -->
   
   
-<!-- problema android no GPS Background <preference name="phonegap-version" value="cli-5.4.1" /> -->
+<!--
+  com.evothings.ble   	npm	1.2.0	1.2.0	n/a	android,ios,winphone
+  cordova-background-geolocation-lt   	npm	*	2.2.0	n/a	winphone
+  cordova-plugin-appinfo   	npm	*	2.0.3	n/a	android,ios,winphone
+  cordova-plugin-badge   	npm	*	0.7.3	n/a	android,ios,winphone
+  cordova-plugin-battery-status   	npm	*	1.2.0	n/a	android,ios,winphone
+  cordova-plugin-device   	npm	1.0.1	n/a	n/a	android,ios,winphone
+  cordova-plugin-file   	npm	*	4.3.0	n/a	android,ios,winphone
+  cordova-plugin-geolocation   	npm	*	2.4.0	n/a	android
+  cordova-plugin-geolocation   	npm	*	2.4.0	n/a	ios
+  cordova-plugin-geolocation   	npm	*	2.4.0	n/a	winphone
+  cordova-plugin-legacy-whitelist   	npm	*	1.1.1	n/a	android,ios,winphone
+  cordova-plugin-mauron85-background-geolocation   	npm	^2.2.5	2.2.5	n/a	android
+  cordova-plugin-mauron85-background-geolocation   	npm	^2.2.4	2.2.5	n/a	ios
+  cordova-plugin-network-information   	npm	1.0.1	1.0.1	n/a	android,ios,winphone
+  cordova-plugin-whitelist   	npm	1.2.2	1.2.2	n/a	android,ios,winphone
+  de.appplant.cordova.plugin.local-notification   	npm	0.8.4	0.8.4	n/a	android
+  de.appplant.cordova.plugin.local-notification   	npm	0.8.4	0.8.4	n/a	ios
+  de.appplant.cordova.plugin.local-notification   	npm	0.8.4	0.8.4	n/a	winphone
+  org.apache.cordova.splashscreen   	npm	*	4.0.0	n/a	android,ios,winphone
+  phonegap-plugin-barcodescanner   	npm	*	6.0.3	n/a	android,ios,winphone
+  phonegap-plugin-push   	npm	1.5.3	1.5.3	n/a	android
+  phonegap-plugin-push   	npm	1.5.3	1.5.3	n/a	ios
+  phonegap-plugin-push   	npm	*	1.9.0	n/a	winphone
+-->
+  
+  <!-- problema android no GPS Background <preference name="phonegap-version" value="cli-5.4.1" /> -->
   <!-- problema iOS apre link fuori APP non firma WP8 <preference name="phonegap-version" value="cli-6.1.0" /> -->
   
   <preference name="SplashScreen" value="screen"/>
@@ -25,14 +53,14 @@
   <preference name="SplashScreen" value="splash" /> 
   <preference name="SplashScreenDelay" value="4000" />
   <!--<preference name="orientation" value="portrait" />-->
-  <preference name="fullscreen" value="true" />
+  <preference name="fullscreen" value="false" />
 
   <!-- funzionante su cli-5.4.1 <gap:plugin namde="de.appplant.cordova.plugin.background-mode" version="0.65" source="npm"/>-->
   
   <platform name="android">
-    <preference name="phonegap-version" value="cli-6.3.0" />
+    <preference name="phonegap-version" value="cli-6.4.0" />
     <preference name="android-build-tool" value="gradle" />
-    <plugin name="phonegap-plugin-push" source="npm">
+    <plugin name="phonegap-plugin-push" source="npm" version="1.5.3">
       <param name="SENDER_ID" value="236799555977" />
     </plugin> 
     <gap:plugin name="de.appplant.cordova.plugin.local-notification" version="0.8.4"  source="npm"/>
@@ -41,15 +69,18 @@
     <!-- compatibile solo con Android cli-6.1.0 -->
     <!-- <gap:plugin name="cordova-plugin-mauron85-background-geolocation" source="npm"/> -->
     <!-- <plugin name="cordova-background-geolocation-lt" source="npm" /> -->
-    <plugin name="cordova-plugin-mauron85-background-geolocation" spec="^2.2.4">
+    <plugin name="cordova-plugin-mauron85-background-geolocation" spec="^2.2.5">
       <variable name="ALWAYS_USAGE_DESCRIPTION" value="This app requires background tracking enabled" />
     </plugin>
-    
+  	<plugin name="cordova-plugin-bluetooth-serial" source="npm">
+	    <variable name="BLUETOOTH_USAGE_DESCRIPTION" value="App would use BT Connetion to Bluetooth printers" />
+	  </plugin>
+  
   </platform>
   
   <platform name="ios">
-    <preference name="phonegap-version" value="cli-6.3.0" />-->
-    <!--<preference name="phonegap-version" value="cli-5.4.1" /> -->
+    <!--<preference name="phonegap-version" value="cli-6.1.0" />-->
+    <preference name="phonegap-version" value="cli-5.4.1" />
     <plugin name="phonegap-plugin-push" source="npm" spec="1.5.3" >
       <param name="SENDER_ID" value="236799555977" />
     </plugin> 
@@ -57,6 +88,10 @@
     <plugin name="cordova-plugin-geolocation" />
     <!--<gap:plugin name="de.appplant.cordova.plugin.background-mode"/>-->
     <!--<plugin name="cordova-background-geolocation-lt" source="npm" />-->
+	<gap:plugin name="cordova-plugin-ios-ble-permissions" source="npm" />
+	<plugin name="com.evothings.ble" source="npm" spec="2.0.1">
+		<variable name="BLUETOOTH_USAGE_DESCRIPTION" value="App would use BT Connetion to Bluetooth printers" />
+	</plugin>
     <plugin name="cordova-plugin-mauron85-background-geolocation" spec="^2.2.4">
       <variable name="ALWAYS_USAGE_DESCRIPTION" value="This app requires background tracking enabled" />
     </plugin>
@@ -74,12 +109,18 @@
     <plugin name="cordova-plugin-geolocation" />
   </platform>
   
-  <plugin name="phonegap-plugin-barcodescanner" source="npm" />
-  <plugin name="org.apache.cordova.splashscreen" source="npm" />
-  <!--<plugin name="com.evothings.ble" source="npm" spec="1.0.0" />-->
-  <plugin name="com.evothings.ble" source="npm" spec="1.2.0"/>
-  <!--<plugin name="cordova-plugin-geolocation" />-->
-  <plugin name="cordova-plugin-device" source="npm" spec="1.0.1" />
+    <!--<plugin name="phonegap-plugin-barcodescanner" source="npm" />-->
+	<plugin name="cordova-plugin-barcodescanner" source="npm" >
+	<variable name="CAMERA_USAGE_DESCRIPTION" value="App would use camera to read QRCode" />
+	<variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="App would like to access the library to get QRCode reads." />
+  </plugin>
+  <plugin name="cordova-plugin-splashscreen" source="npm" />
+    
+  <!--<plugin name="cordova-plugin-bluetooth-serial" source="npm" />-->
+  <!--<plugin name="com.evothings.ble" source="npm" spec="2.0.1" />-->
+
+
+    <plugin name="cordova-plugin-device" source="npm" spec="1.0.1" />
   
   <plugin name="cordova-plugin-whitelist" spec="1.2.2" />
   <plugin name="cordova-plugin-legacy-whitelist" /> 
@@ -89,10 +130,20 @@
   <!--<plugin name="cordova-background-geolocation-lt" source="npm" />-->
   <gap:plugin name="cordova-plugin-badge" source="npm" />
   <gap:plugin name="cordova-plugin-file" source="npm" />
+  <gap:plugin name="cordova-plugin-file-transfer" source="npm" />
+  
+  <plugin name="cordova-plugin-camera">
+        <variable name="CAMERA_USAGE_DESCRIPTION" value="APP would use camera to take photo of vehicle damages." />
+		<variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="App would like to access the library to take photo of vechicle damages." />
+  </plugin>
+  
+  <!--<gap:plugin name="cordova-open" source="npm" />-->
   
  
+  <preference name="iosExtraFilesystems" value="library,library-nosync,documents,documents-nosync,cache,bundle,root" />
+  <preference name="AndroidExtraFilesystems" value="files,files-external,documents,sdcard,cache,cache-external,assets,root" />
 
-  
+    
   <!-- bluettoth standard da provare <gap:plugin name="com.megster.cordova.bluetoothserial" version="0.3.3" />-->
   <!-- non compatibile cli-6.1.0 <gap:plugin name="org.apache.cordova.geolocation" />-->
   <!-- non compatibile cli-6.1.0 <gap:plugin name="org.apache.cordova.device" spec="1.1.2" source="npm"/>-->  
@@ -114,88 +165,129 @@
   <feature name="http://api.phonegap.com/1.0/camera"/>
   <feature name="http://api.phonegap.com/1.0/geolocation"/>
   
-  <!-- 
-  <icon src="icon.png"/>
-  <gap:splash src="splash.png" />
--->
+  <!--<platform name="android">
+    <icon src="res/icons/android/ic_launcher_ldpi.png" density="ldpi" />
+    <icon src="res/icons/android/ic_launcher_mdpi.png" density="mdpi" />
+    <icon src="res/icons/android/ic_launcher_hdpi.png" density="hdpi" />
+    <icon src="res/icons/android/ic_launcher_xhdpi.png" density="xhdpi" />
+    <icon src="res/icons/android/ic_launcher_xxhdpi.png" density="xxhdpi" />
+    <icon src="res/icons/android/ic_launcher_xxxhdpi.png" density="xxxhdpi" />
+  </platform>-->
     
-  <!-- iOS 7.0+ -->
-  <!-- iPhone / iPod Touch  -->
+  <platform name="android">
+    <icon src="icon.png" density="ldpi" />
+    <icon src="icon.png" density="mdpi" />
+    <icon src="icon.png" density="hdpi" />
+    <icon src="icon.png" density="xhdpi" />
+    <icon src="icon.png" density="xxhdpi" />
+    <icon src="icon.png" density="xxxhdpi" />
+  </platform>
+    
+  <icon src="icon.png" />
+  <!--<icon src="res/icons/appFeel-512.png" />-->
+
+    
+
+     
+  <icon src="icon_60x60.png" width="60" height="60" gap:platform="ios" />
+  <icon src="icon_120x120.png" width="120" height="120" gap:platform="ios" />
+  <icon src="icon_76x76.png" width="76" height="76" gap:platform="ios" />
+  <icon src="icon_152x152.png" width="152" height="152" />
+  <icon src="icon_40x40.png" width="40" height="40" gap:platform="ios" />
+  <icon src="icon_80x80.png" width="80" height="80" gap:platform="ios" />
+  <icon src="icon_57x57.png" width="57" height="57" gap:platform="ios" />
+  <icon src="icon_114x114.png" width="114" height="114" gap:platform="ios" />
+  <icon src="icon_72x72.png" width="72" height="72" gap:platform="ios" />
+  <icon src="icon_144x144.png" width="144" height="144" gap:platform="ios" />
+  <icon src="icon_29x29.png" width="29" height="29" gap:platform="ios" />
+  <icon src="icon_58x58.png" width="58" height="58" gap:platform="ios" />
+  <icon src="icon_50x50.png" width="50" height="50" gap:platform="ios" />
+  <icon src="icon_100x100.png" width="100" height="100" gap:platform="ios" />
+    
+<!--    
   <icon src="icon-60.png" width="60" height="60" gap:platform="ios" />
   <icon src="icon-60@2x.png" width="120" height="120" gap:platform="ios" />
-  <!-- iPad -->
   <icon src="icon-76.png" width="76" height="76" gap:platform="ios" />
   <icon src="icon-76@2x.png" width="152" height="152" />
-  <!-- iOS 6.1 -->
-  <!-- Spotlight Icon -->
   <icon src="icon-40.png" width="40" height="40" gap:platform="ios" />
   <icon src="icon-40@2x.png" width="80" height="80" gap:platform="ios" />
-
-  <!-- iPhone / iPod Touch -->
   <icon src="icon.png" width="57" height="57" gap:platform="ios" />
   <icon src="icon@2x.png" width="114" height="114" gap:platform="ios" />
-  <!-- iPad -->
   <icon src="icon-72.png" width="72" height="72" gap:platform="ios" />
   <icon src="icon-72@2x.png" width="144" height="144" gap:platform="ios" />
-  <!-- iPhone Spotlight and Settings Icon -->
   <icon src="icon-Small.png" width="29" height="29" gap:platform="ios" />
   <icon src="icon-Small@2x.png" width="58" height="58" gap:platform="ios" />
-  <!-- iPad Spotlight and Settings Icon -->
   <icon src="icon-Small-50.png" width="50" height="50" gap:platform="ios" />
-  <icon src="icon-Small-50@2x.png" width="100" height="100" gap:platform="ios" />  
-    
-  <platform name="ios">
-    <icon src="images/icon57X57.png" gap:platform="ios" width="50" height="50" /> 
-    <icon src="images/icon57X57.png" gap:platform="ios" width="40" height="40" /> 
-    <icon src="images/icon57X57.png" gap:platform="ios" width="57" height="57" />
-    <icon src="images/icon76X76.png" gap:platform="ios" width="76" height="76" />
-    <icon src="images/icon120X120.png" gap:platform="ios" width="120" height="120" />
-    <icon src="images/icon152X152.png" gap:platform="ios" width="152" height="152" />
-    
-    <gap:splash src="splash-portrait.png" gap:platform="ios" width="320" height="480" />
-    <gap:splash src="splash.png" gap:platform="ios" width="480" height="320" />
-    
-    <gap:splash src="splash-portrait.png" gap:platform="ios" width="640" height="960" />
-    <gap:splash src="splash.png" gap:platform="ios" width="960" height="640" />
-  
-    <gap:splash src="splash-portrait.png" gap:platform="ios" width="1536" height="2048" />
-    <gap:splash src="splash.png" gap:platform="ios" width="2048" height="1536" />
-    
-    <gap:splash src="splash-portrait.png" gap:platform="ios" width="768" height="1024" />
-    <gap:splash src="splash.png" gap:platform="ios" width="1024" height="768" />
-    
-    <gap:splash src="splash-portrait.png" gap:platform="ios" width="1496" height="2048" />
-    <gap:splash src="splash.png" gap:platform="ios" width="2048" height="1496" />
-    
-    <gap:splash src="splash-portrait.png" gap:platform="ios" width="640" height="1136" />
-    <gap:splash src="splash.png" gap:platform="ios" width="1136" height="640" />
-  </platform>
-    
-    
-    
-<!--
-  <platform name="android">
-    <icon src="images/icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="ldpi" />
-    <icon src="images/icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="mdpi" />
-    <icon src="images/icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="hdpi" />
-    <icon src="images/icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="xhdpi" />
-    <icon src="images/icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="xxhdpi" />
-    <icon src="images/icona_smartncc_mobile.png" gap:platform="android" gap:qualifier="fr-xxhdpi" />
-    
-    <splash src="splash-portrait.png" platform="android" qualifier="ldpi" />
-    <splash src="splash-portrait.png" platform="android" qualifier="mdpi" />
-    <splash src="splash-portrait.png" platform="android" qualifier="hdpi" />
-    <splash src="splash-portrait.png" platform="android" qualifier="xhdpi" />
-    <splash src="splash-portrait.png" platform="android" qualifier="fr-xhdpi" />
-    <splash src="splash-portrait.png" platform="android" qualifier="port-xxhdpi" />
-    <splash src="splash.png" platform="android" qualifier="land-xxhdpi" />
-  </platform>
+  <icon src="icon-Small-50@2x.png" width="100" height="100" gap:platform="ios" />
+-->
 
-  <platform name="winphone">
-    <splash src="splash-portrait.png" />
-    <splash width="1152" height="1920" src="splash-portrait.png" />
+  <platform name="ios">
+    <preference name="BackupWebStorage" value="local"/>
+    <icon src="icon_60x60.png" width="60" height="60" />
+    <icon src="icon_120x120.png" width="120" height="120" />
+    <icon src="icon_152x152.png" width="76" height="76" />
+    <icon src="icon_152x152.png" width="152" height="152" />
+    <icon src="icon_40x40.png" width="40" height="40" />
+    <icon src="icon_80x80.png" width="80" height="80" />
+    <icon src="icon_57x57.png" width="57" height="57" />
+    <icon src="icon_114x114.png" width="114" height="114" />
+    <icon src="icon_72x72.png" width="72" height="72" />
+    <icon src="icon_144x144.png" width="144" height="144" />
+    <icon src="icon_29x29.png" width="29" height="29" />
+    <icon src="icon_58x58.png" width="58" height="58" />
+    <icon src="icon_50x50.png" width="50" height="50" />
+    <icon src="icon_100x100.png" width="100" height="100" />
+  </platform>
+  
+<!--
+  <platform name="ios">
+    <preference name="BackupWebStorage" value="local"/>
+    <icon src="res/icons/ios/icon-60.png" width="60" height="60" />
+    <icon src="res/icons/ios/icon-60@2x.png" width="120" height="120" />
+    <icon src="res/icons/ios/icon-76.png" width="76" height="76" />
+    <icon src="res/icons/ios/icon-76@2x.png" width="152" height="152" />
+    <icon src="res/icons/ios/icon-40.png" width="40" height="40" />
+    <icon src="res/icons/ios/icon-40@2x.png" width="80" height="80" />
+    <icon src="res/icons/ios/icon.png" width="57" height="57" />
+    <icon src="res/icons/ios/icon@2x.png" width="114" height="114" />
+    <icon src="res/icons/ios/icon-72.png" width="72" height="72" />
+    <icon src="res/icons/ios/icon-72@2x.png" width="144" height="144" />
+    <icon src="res/icons/ios/icon-Small.png" width="29" height="29" />
+    <icon src="res/icons/ios/icon-Small@2x.png" width="58" height="58" />
+    <icon src="res/icons/ios/icon-Small-50.png" width="50" height="50" />
+    <icon src="res/icons/ios/icon-Small-50@2x.png" width="100" height="100" />
   </platform>
 -->
+    
+    
+  
+    
+    <!--
+    <gap:splash src="res/screen/android/screen-ldpi-portrait.png"       gap:platform="android" gap:qualifier="port-ldpi" />
+    <gap:splash src="res/screen/android/screen-mdpi-portrait.png"       gap:platform="android" gap:qualifier="port-mdpi" />
+    <gap:splash src="res/screen/android/screen-hdpi-portrait.png"       gap:platform="android" gap:qualifier="port-hdpi" />
+    <gap:splash src="res/screen/android/screen-xhdpi-portrait.png"      gap:platform="android" gap:qualifier="port-xhdpi" />
+    <gap:splash src="res/screen/blackberry/screen-225.png"              gap:platform="blackberry" />
+    <gap:splash src="res/screen/ios/screen-iphone-portrait.png"         gap:platform="ios"     width="320" height="480" />
+    <gap:splash src="res/screen/ios/screen-iphone-portrait-2x.png"      gap:platform="ios"     width="640" height="960" />
+    <gap:splash src="res/screen/ios/screen-iphone-portrait-568h-2x.png" gap:platform="ios"     width="640" height="1136" />
+    <gap:splash src="res/screen/ios/screen-ipad-portrait.png"           gap:platform="ios"     width="768" height="1024" />
+    <gap:splash src="res/screen/ios/screen-ipad-landscape.png"          gap:platform="ios"     width="1024" height="768" />
+    <gap:splash src="res/screen/windows-phone/screen-portrait.jpg"      gap:platform="winphone" />
+    -->
+    
+    <gap:splash src="splash-portrait.png"                           gap:platform="android" gap:qualifier="port-ldpi" />
+    <gap:splash src="splash-portrait.png"                           gap:platform="android" gap:qualifier="port-mdpi" />
+    <gap:splash src="splash-portrait.png"                           gap:platform="android" gap:qualifier="port-hdpi" />
+    <gap:splash src="splash-portrait.png"                           gap:platform="android" gap:qualifier="port-xhdpi" />
+    <gap:splash src="splash-portrait.png"                           gap:platform="blackberry" />
+    <gap:splash src="splash-portrait_320x480.png"                   gap:platform="ios"     width="320" height="480" />
+    <gap:splash src="splash-portrait_640x960.png"                   gap:platform="ios"     width="640" height="960" />
+    <gap:splash src="splash-portrait_640x1136.png"                  gap:platform="ios"     width="640" height="1136" />
+    <gap:splash src="splash-portrait_768x1024.png"                  gap:platform="ios"     width="768" height="1024" />
+    <gap:splash src="splash_1024x768.png"                           gap:platform="ios"     width="1024" height="768" />
+    <gap:splash src="splash-portrait.png"                           gap:platform="winphone" />
+    
     
   <allow-navigation href="*" />
   <allow-intent href="*" />
