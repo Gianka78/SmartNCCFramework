@@ -110,10 +110,12 @@
   </platform>
   
     <!--<plugin name="phonegap-plugin-barcodescanner" source="npm" />-->
-	<plugin name="cordova-plugin-barcodescanner" source="npm" >
+   <!--	
+   <plugin name="cordova-plugin-barcodescanner" source="npm" >
 	<variable name="CAMERA_USAGE_DESCRIPTION" value="App would use camera to read QRCode" />
 	<variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="App would like to access the library to get QRCode reads." />
-  </plugin>
+   </plugin>
+   -->
   <plugin name="cordova-plugin-splashscreen" source="npm" />
     
 	
