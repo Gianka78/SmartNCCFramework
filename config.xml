@@ -5,8 +5,8 @@
   <widget xmlns = "http://www.w3.org/ns/widgets"  xmlns:gap = "http://phonegap.com/ns/1.0"
           id = "com.SmartNCCMobile.MULTIUSER" version = "12.58" versionCode = "1258" > 
     
-  <name>SmartNCCMobile APP</name>
-  <description>Piattaforma MOBILE SMARTNCC</description>
+  <name>World Wide Group Limousine - Smart NCC Mobile APP</name>
+  <description>Piattaforma MOBILE SMARTNCC - World Wide Group Limousine</description>
   <author href="http://www.gd-soft.it" email="info@gd-soft.it">GD-SOFT S.R.L.</author>
 <!--
 
