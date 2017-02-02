@@ -32,9 +32,49 @@
 
 </head>
 <body>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no	initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+
+    <title>Smart NCC mobile APP by GD-Soft s.r.l.</title>
+
+    <script src="cordova.js"></script>
+    <script src="libs/evothings/evothings.js"></script>
+    <script src="libs/evothings/ui/ui.js"></script>
+    <script src="libs/evothings/easyble/easyble.js"></script>
+    <script src="libs/jquery/jquery.js"></script>
+    
+    <style>
+    /*body {
+        -webkit-touch-callout: none;                
+        -webkit-text-size-adjust: none;             
+        -webkit-user-select: none;                  
+        background-color:#E4E4E4;
+        background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+        background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+        background-image:-ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+        background-image:-webkit-gradient(
+            linear,
+            left top,
+            left bottom,
+            color-stop(0, #A7A7A7),
+            color-stop(0.51, #E4E4E4)
+        );
+        background-attachment:fixed;
+        height:100%;
+        margin:0px;
+        padding:0px;
+        width:100%;
+    }*/
+    </style>
+</head>
+
+<body>
     <script>
         var isCordova = true;
-        loadjscssfile = function(filename, filetype) {
+        function loadjscssfile(filename, filetype) {
             if (filetype == "js") {
                 var fileref = document.createElement('script')
                 fileref.setAttribute("type", "text/javascript")
@@ -49,9 +89,9 @@
             if (typeof fileref != "undefined")
                 document.getElementsByTagName("head")[0].appendChild(fileref)
         }
-
         var rnd = Date.now();
         var host_prefix = "vipclass";
+        //var host_prefix = "auto_host_byid";
         var framework_version = "Build 12.001 27-01-2017";
         console.log("framework_version" + framework_version);
         var remote_folder_url = "http://" + host_prefix + ".smartncc.it/repositorysmartticket_nccolAPP/SmartTicketMobile/";
@@ -85,9 +125,10 @@
             });
         });
 
+
     </script>
 
-	<div class="app_loading_spalsh"></div>
+    <div class="app_loading_spalsh"></div>
 
     <div id="ncc_app_body"></div>
 
