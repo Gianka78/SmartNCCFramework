@@ -90,7 +90,12 @@
     <plugin name="cordova-plugin-mauron85-background-geolocation" spec="^2.2.4">
       <variable name="ALWAYS_USAGE_DESCRIPTION" value="This app requires background tracking enabled" />
     </plugin>
-  </platform>->
+    <gap:plugin name="cordova-plugin-ios-ble-permissions" source="npm" />-->
+    <plugin name="com.evothings.ble" source="npm" spec="2.0.1">
+  	<variable name="BLUETOOTH_USAGE_DESCRIPTION" value="App would use BT Connetion to Bluetooth printers" />
+    </plugin>
+	  
+  </platform>
   
   <platform name="winphone">
     <preference name="phonegap-version" value="cli-5.4.1" />
@@ -112,10 +117,6 @@
   <plugin name="cordova-plugin-splashscreen" source="npm" />
     
 	
-  <!--<gap:plugin name="cordova-plugin-ios-ble-permissions" source="npm" />-->
-	<plugin name="com.evothings.ble" source="npm" spec="2.0.1">
-		<variable name="BLUETOOTH_USAGE_DESCRIPTION" value="App would use BT Connetion to Bluetooth printers" />
-	</plugin>
 
   <!--<plugin name="cordova-plugin-bluetooth-serial" source="npm" />-->
   <!--<plugin name="com.evothings.ble" source="npm" spec="2.0.1" />-->
