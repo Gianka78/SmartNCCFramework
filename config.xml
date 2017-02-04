@@ -141,8 +141,8 @@
 		<variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="App would like to access the library to take photo of vechicle damages." />
   </plugin>
   
-  <!--<gap:plugin name="cordova-open" source="npm" />-->
-  
+  <gap:plugin name="cordova-open" source="npm" />
+  <gap:plugin name="cordova-plugin-inappbrowser" source="npm" />
  
   <preference name="iosExtraFilesystems" value="library,library-nosync,documents,documents-nosync,cache,bundle,root" />
   <preference name="AndroidExtraFilesystems" value="files,files-external,documents,sdcard,cache,cache-external,assets,root" />
