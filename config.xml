@@ -60,7 +60,7 @@
     <preference name="phonegap-version" value="cli-6.4.0" />
     <preference name="android-build-tool" value="gradle" />
     <plugin name="phonegap-plugin-push" source="npm">
-      <param name="SENDER_ID" value="236799555977"  spec="1.5.3"/>
+      <param name="SENDER_ID" value="236799555977" />
     </plugin> 
     <gap:plugin name="de.appplant.cordova.plugin.local-notification" version="0.8.4"  source="npm"/>
     <!--<plugin name="cordova-plugin-geolocation" />rimosso 21/02/2017 errore compilazione agg phonegap-->
