@@ -105,7 +105,7 @@
     </plugin> 
     <gap:plugin name="de.appplant.cordova.plugin.local-notification" version="0.8.4"  source="npm"/>
     <!--<gap:plugin name="de.appplant.cordova.plugin.background-mode" version="0.6.5" source="npm"/>-->
-    <plugin name="cordova-background-geolocation-lt" source="npm" />
+    <!--<plugin name="cordova-background-geolocation-lt" source="npm" /> rimosso 21/02/2017 errore compilazione agg phonegap-->
     <plugin name="cordova-plugin-geolocation" />
   </platform>
   
