@@ -6,7 +6,7 @@
           id = "com.SmartNCCMobile.MYTOURAPP" version = "12.67" versionCode = "1267" > 
     
   <name>MyTour</name>
-  <description>Piattaforma MOBILE SMARTNCC</description>
+  <description>Piattaforma SmartNCC mobile per MyTour s.r.l.</description>
   <author href="http://www.gd-soft.it" email="info@gd-soft.it">GD-SOFT S.R.L.</author>
 <!-- Fine sezione customizzata per cliente -->
   
