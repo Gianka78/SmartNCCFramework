@@ -3,10 +3,10 @@
 
 <!-- Sezione customizzata per cliente --> 
   <widget xmlns = "http://www.w3.org/ns/widgets"  xmlns:gap = "http://phonegap.com/ns/1.0"
-          id = "com.SmartNCCMobile.MULTIUSER" version = "12.66" versionCode = "1266" > 
+          id = "com.SmartNCCMobile.AIRSERVICE" version = "12.68" versionCode = "1268" > 
     
-  <name>SmartNCC Mobile</name>
-  <description>Piattaforma MOBILE SMARTNCC</description>
+  <name>AirService</name>
+  <description>Piattaforma SmartNCC Mobile per Airservice Padova</description>
   <author href="http://www.gd-soft.it" email="info@gd-soft.it">GD-SOFT S.R.L.</author>
 <!--
 
