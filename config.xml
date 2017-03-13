@@ -3,7 +3,7 @@
 
 <!-- Sezione customizzata per cliente --> 
   <widget xmlns = "http://www.w3.org/ns/widgets"  xmlns:gap = "http://phonegap.com/ns/1.0"
-          id = "com.SmartNCCMobile.ROMAOPENBUS" version = "12.58" versionCode = "1258" > 
+          id = "com.SmartNCCMobile.ROMAOPENBUS" version = "12.65" versionCode = "1265" > 
     
   <name>City Sightseeing Roma</name>
   <description>City Sightseeing Roma - APP Aziendale basata su Smart NCC Mobile</description>
