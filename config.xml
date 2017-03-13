@@ -3,7 +3,7 @@
 
 <!-- Sezione customizzata per cliente --> 
   <widget xmlns = "http://www.w3.org/ns/widgets"  xmlns:gap = "http://phonegap.com/ns/1.0"
-          id = "com.SmartNCCMobile.WWG" version = "12.58" versionCode = "1258" > 
+          id = "com.SmartNCCMobile.WWG" version = "12.60" versionCode = "1260" > 
     
   <name>World Wide Group Limousine - Smart NCC Mobile APP</name>
   <description>Piattaforma MOBILE SMARTNCC - World Wide Group Limousine</description>
