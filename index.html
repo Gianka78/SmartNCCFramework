@@ -66,10 +66,13 @@
         //loadjscssfile("http://" + host_prefix + ".smartncc.it/repositorysmartticket_nccolAPP/SmartTicketMobile/tmp.js?rnd=" + rnd, "js");
         workoffline = false;
 
-        if (1==1 || !isCordova) {
+        if (!isCordova) {
             loadjscssfile(import_script, "js");
         } else
         document.addEventListener('deviceready', function () {
+            if (typeof cordova.file == "undefined"){
+                loadjscssfile(import_script, "js");
+            } else
             window.resolveLocalFileSystemURL(cordova.file.dataDirectory, function (dirEntry) {
                 $.ajax({
                     url: import_script,
