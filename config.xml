@@ -115,6 +115,10 @@
     <plugin name="cordova-plugin-geolocation" />
   </platform>
   
+	<platform name="wp8">
+    <preference name="fullscreen" value="true"/>
+</platform>
+	  
     <!--<plugin name="phonegap-plugin-barcodescanner" source="npm" />-->
    <!--	
    <plugin name="cordova-plugin-barcodescanner" source="npm" >
