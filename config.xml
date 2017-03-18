@@ -2,15 +2,8 @@
 
 
 <!-- Sezione customizzata per cliente --> 
-<!--  <widget xmlns = "http://www.w3.org/ns/widgets"  xmlns:gap = "http://phonegap.com/ns/1.0"
-          id = "com.SmartNCCMobile.MULTIUSER" version = "12.58" versionCode = "1258" > 
-    
-  <name>SmartNCCMobile APP</name>
-  <description>Piattaforma MOBILE SMARTNCC</description>
-  <author href="http://www.gd-soft.it" email="info@gd-soft.it">GD-SOFT S.R.L.</author>-->
 
-
-  <widget id = "com.SmartNCCMobile.VIPCLASS" version = "12.64" versionCode = "1264" xmlns = "http://www.w3.org/ns/widgets"  xmlns:gap = "http://phonegap.com/ns/1.0" >
+  <widget id = "com.SmartNCCMobile.VIPCLASS" version = "12.70" versionCode = "1270" xmlns = "http://www.w3.org/ns/widgets"  xmlns:gap = "http://phonegap.com/ns/1.0" >
   <name>VIPCLASS Chauffeured limousine</name>
   <description>Piattaforma SmartNCC Mobile - Vipclass Chauffeured Limousine s.c.a.r.l.</description>
   <author href="http://www.gd-soft.it" email="info@gd-soft.it">GD-SOFT S.R.L.</author>
