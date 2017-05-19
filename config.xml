@@ -119,12 +119,12 @@
     <preference name="fullscreen" value="true"/>
 </platform>
 	  
-    <!--<plugin name="phonegap-plugin-barcodescanner" source="npm" />-->
+   <plugin name="phonegap-plugin-barcodescanner" source="npm" />
    	
-   <plugin name="cordova-plugin-barcodescanner" source="npm" >
+   <!--<plugin name="cordova-plugin-barcodescanner" source="npm" >
 	<variable name="CAMERA_USAGE_DESCRIPTION" value="App would use camera to read QRCode" />
 	<variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="App would like to get QRCode reads from your library" />
-   </plugin>
+   </plugin>-->
    
   <plugin name="cordova-plugin-splashscreen" source="npm" />
     
