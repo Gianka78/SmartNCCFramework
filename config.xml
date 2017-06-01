@@ -54,6 +54,7 @@
   <preference name="SplashShowOnlyFirstTime" value="false" />
   <!--<preference name="orientation" value="portrait" />-->
   <preference name="fullscreen" value="false" />
+  <preference name="StatusBarBackgroundColor" value="#000000" />
 	  
   <preference name="EnableViewportScale" value="true" />
   <!-- funzionante su cli-5.4.1 <gap:plugin namde="de.appplant.cordova.plugin.background-mode" version="0.65" source="npm"/>-->
@@ -135,7 +136,7 @@
    </plugin>-->
    
   <plugin name="cordova-plugin-splashscreen" source="npm" />
-    
+  <plugin name="cordova-plugin-statusbar" source="npm" />   
 	
 
   <!--<plugin name="cordova-plugin-bluetooth-serial" source="npm" />-->
