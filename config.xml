@@ -83,7 +83,7 @@
   
   <platform name="ios">
 	  
-    <!--<preference name="phonegap-version" value="cli-6.1.0" />-->
+    <!-- <preference name="phonegap-version" value="cli-6.1.0" />-->
     <preference name="phonegap-version" value="cli-5.4.1" />
     <plugin name="phonegap-plugin-push" source="npm" spec="1.5.3" >
       <param name="SENDER_ID" value="236799555977" />
@@ -138,7 +138,7 @@
    
   <plugin name="cordova-plugin-splashscreen" source="npm" />
   <plugin name="cordova-plugin-statusbar" source="npm" />   
-  <!--<plugin name="cordova-plugin-calendar" source="npm" />	-->
+  <plugin name="cordova-plugin-calendar" source="npm" />
 
   <!--<plugin name="cordova-plugin-bluetooth-serial" source="npm" />-->
   <!--<plugin name="com.evothings.ble" source="npm" spec="2.0.1" />-->
