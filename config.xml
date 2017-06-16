@@ -96,7 +96,7 @@
       <variable name="ALWAYS_USAGE_DESCRIPTION" value="This app requires background tracking enabled" />
     </plugin>
     <gap:plugin name="cordova-plugin-ios-ble-permissions" source="npm" />-->
-    <!--<plugin name="com.evothings.ble" source="npm" spec="2.0.1">-->
+    <!--2017-06-16 <plugin name="com.evothings.ble" source="npm" spec="2.0.1">-->
     <plugin name="com.evothings.ble" source="npm">
   	<variable name="BLUETOOTH_USAGE_DESCRIPTION" value="App would use BT Connetion to Bluetooth printers" />
     </plugin>
@@ -152,7 +152,7 @@
   <gap:plugin name="cordova-plugin-battery-status" source="npm"/>
   <gap:plugin name="cordova-plugin-network-information" spec="1.0.1" source="npm"/>
   <!--<plugin name="cordova-background-geolocation-lt" source="npm" />-->
-  <gap:plugin name="cordova-plugin-badge" source="npm" />
+  <!--2017-06-16 <gap:plugin name="cordova-plugin-badge" source="npm" />-->
   <gap:plugin name="cordova-plugin-file" source="npm" />
   <gap:plugin name="cordova-plugin-file-transfer" source="npm" />
   
