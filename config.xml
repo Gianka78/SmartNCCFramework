@@ -82,7 +82,8 @@
     <plugin name="phonegap-plugin-push" source="npm" spec="1.5.3" >
       <param name="SENDER_ID" value="236799555977" />
     </plugin> 
-    <gap:plugin name="de.appplant.cordova.plugin.local-notification" version="0.8.4"  source="npm"/>
+    <!--<gap:plugin name="de.appplant.cordova.plugin.local-notification" version="0.8.4"  source="npm"/>-->
+    <gap:plugin name="de.appplant.cordova.plugin.local-notification" source="npm"/>
     <plugin name="cordova-plugin-geolocation" />
     <!--<gap:plugin name="de.appplant.cordova.plugin.background-mode"/>-->
     <!--<plugin name="cordova-background-geolocation-lt" source="npm" />-->
