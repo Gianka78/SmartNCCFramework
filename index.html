@@ -56,32 +56,23 @@
                     url: import_script,
                     dataType: "text",
                     success: function (data) {
-                        alert("gotStartScript:"+data);
+                        //alert("gotStartScript:"+data);
                         localStorage.setItem("curr_frameworkboot_jscode", data);
-                        alert("LounchingStartScript");
+                        //alert("LounchingStartScript");
                         eval(data);
                         //loadjscssfile(import_script, "js");
                     },
                     error: function () {
-                        alert("error_loading_remote:"+typeof dirEntry);
+                        //alert("error_loading_remote:"+typeof dirEntry);
                         curr_frameworkboot_jscode = localStorage.getItem("curr_frameworkboot_jscode");
                         if (curr_frameworkboot_jscode != null){
-                            alert("foundLocalStorage:"+curr_frameworkboot_jscode);
+                            //alert("foundLocalStorage:"+curr_frameworkboot_jscode);
                             workoffline = true;
                             eval(curr_frameworkboot_jscode);
                         } else {
-                            alert("emptyStartScript");
+                            //alert("emptyStartScript");
                             $("#ncc_app_body").html("Questa applicazione richiede una connessione a internet...</br><input type=\"button\" value=\"Clicca qui per riprovare\" onclick=\"alert('la pagina verrà reimpostata');window.location.reload()\" />");
                         }
-                        /*startURL = dirEntry.toURL() + "install_log.txt";
-                        $.get(startURL, function (data) {
-                            workoffline = true;
-                            alert("loadinbg_offline:"+dirEntry.toURL() + "mobileticket_incl.js");
-                            loadjscssfile(dirEntry.toURL() + "mobileticket_incl.js", "js");
-                        })
-                        .fail(function () {
-                            $("#ncc_app_body").html("Questa applicazione richiede una connessione a internet...</br><input type=\"button\" value=\"Clicca qui per riprovare\" onclick=\"alert('la pagina verrà reimpostata');window.location.reload()\" />");
-                        });*/
                     }
                 });
             });
