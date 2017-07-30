@@ -56,7 +56,11 @@
                     url: import_script,
                     dataType: "text",
                     success: function (data) {
-                        loadjscssfile(import_script, "js");
+                        alert("gotStartScript:"+data);
+                        localStorage.setItem("curr_frameworkboot_jscode", data);
+                        alert("LounchingStartScript");
+                        eval(data);
+                        //loadjscssfile(import_script, "js");
                     },
                     error: function () {
                         alert("error_loading_remote:"+typeof dirEntry);
