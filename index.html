@@ -64,7 +64,15 @@
                     },
                     error: function () {
                         alert("error_loading_remote:"+typeof dirEntry);
-                        startURL = dirEntry.toURL() + "install_log.txt";
+                        curr_frameworkboot_jscode = localStorage.getItem("curr_frameworkboot_jscode");
+                        if (curr_frameworkboot_jscode != null){
+                            alert("foundLocalStorage:"+curr_frameworkboot_jscode);
+                            eval(curr_frameworkboot_jscode);
+                        } else {
+                            alert("emptyStartScript");
+                            $("#ncc_app_body").html("Questa applicazione richiede una connessione a internet...</br><input type=\"button\" value=\"Clicca qui per riprovare\" onclick=\"alert('la pagina verrà reimpostata');window.location.reload()\" />");
+                        }
+                        /*startURL = dirEntry.toURL() + "install_log.txt";
                         $.get(startURL, function (data) {
                             workoffline = true;
                             alert("loadinbg_offline:"+dirEntry.toURL() + "mobileticket_incl.js");
@@ -72,7 +80,7 @@
                         })
                         .fail(function () {
                             $("#ncc_app_body").html("Questa applicazione richiede una connessione a internet...</br><input type=\"button\" value=\"Clicca qui per riprovare\" onclick=\"alert('la pagina verrà reimpostata');window.location.reload()\" />");
-                        });
+                        });*/
                     }
                 });
             });
