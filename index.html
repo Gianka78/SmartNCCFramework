@@ -12,29 +12,6 @@
     <script src="libs/evothings/easyble/easyble.js"></script>
     <script src="libs/jquery/jquery.js"></script>
     
-    <style>
-    /*body {
-        -webkit-touch-callout: none;                
-        -webkit-text-size-adjust: none;             
-        -webkit-user-select: none;                  
-        background-color:#E4E4E4;
-        background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-        background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-        background-image:-ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-        background-image:-webkit-gradient(
-            linear,
-            left top,
-            left bottom,
-            color-stop(0, #A7A7A7),
-            color-stop(0.51, #E4E4E4)
-        );
-        background-attachment:fixed;
-        height:100%;
-        margin:0px;
-        padding:0px;
-        width:100%;
-    }*/
-    </style>
 </head>
 
 <body>
@@ -82,6 +59,7 @@
                         loadjscssfile(import_script, "js");
                     },
                     error: function () {
+                        alert("error_loading_remote:"+typeof dirEntry);
                         startURL = dirEntry.toURL() + "install_log.txt";
                         $.get(startURL, function (data) {
                             workoffline = true;
