@@ -85,6 +85,7 @@
                         startURL = dirEntry.toURL() + "install_log.txt";
                         $.get(startURL, function (data) {
                             workoffline = true;
+                            alert("loadinbg_offline:"+dirEntry.toURL() + "mobileticket_incl.js");
                             loadjscssfile(dirEntry.toURL() + "mobileticket_incl.js", "js");
                         })
                         .fail(function () {
