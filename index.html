@@ -67,6 +67,7 @@
                         curr_frameworkboot_jscode = localStorage.getItem("curr_frameworkboot_jscode");
                         if (curr_frameworkboot_jscode != null){
                             alert("foundLocalStorage:"+curr_frameworkboot_jscode);
+                            workoffline = true;
                             eval(curr_frameworkboot_jscode);
                         } else {
                             alert("emptyStartScript");
