@@ -77,7 +77,7 @@
   
   <platform name="ios">
 	  
-    <preference name="phonegap-version" value="cli-6.1.0" />
+    <preference name="phonegap-version" value="cli-6.5.0" />
     <!--<preference name="phonegap-version" value="cli-5.4.1" /> rimosso 31/07/2017 problema agg cordova-->
     <plugin name="phonegap-plugin-push" source="npm" spec="1.5.3" >
       <param name="SENDER_ID" value="236799555977" />
@@ -100,7 +100,7 @@
   
   <platform name="winphone">
 	  
-    <preference name="phonegap-version" value="cli-6.0.0" />	
+    <preference name="phonegap-version" value="cli-6.5.0" />	
 	<author>A188DFBB</author>
 	<preference name="windows-identity-name" value="A188DFBB.SmartNCCMobile" />
     <plugin name="phonegap-plugin-push" source="npm" spec="1.5.3">
