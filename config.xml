@@ -90,7 +90,7 @@
     <plugin name="cordova-plugin-mauron85-background-geolocation" spec="^2.2.4">
       <variable name="ALWAYS_USAGE_DESCRIPTION" value="This app requires background tracking enabled" />
     </plugin>
-    <gap:plugin name="cordova-plugin-ios-ble-permissions" source="npm" />-->
+    <gap:plugin name="cordova-plugin-ios-ble-permissions" source="npm" />
     <!--2017-06-16 <plugin name="com.evothings.ble" source="npm" spec="2.0.1">-->
     <plugin name="com.evothings.ble" source="npm" spec="2.0.1">
   	<variable name="BLUETOOTH_USAGE_DESCRIPTION" value="App would use BT Connetion to Bluetooth printers" />
