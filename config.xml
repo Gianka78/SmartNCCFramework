@@ -60,7 +60,7 @@
       <param name="SENDER_ID" value="236799555977" />
     </plugin> 
     <!--<gap:plugin name="de.appplant.cordova.plugin.local-notification" version="0.8.4"  source="npm"/> 2017-07-31 per migrazione pg6.0.5-->
-	<gap:plugin name="cordova-plugin-local-notifications" source="npm"/>
+	<gap:plugin name="de.appplant.cordova.plugin.local-notification" source="npm"/>
     <!--<plugin name="cordova-plugin-geolocation" />rimosso 21/02/2017 errore compilazione agg phonegap-->
     <!--<gap:plugin name="de.appplant.cordova.plugin.background-mode"/>-->
     <!-- compatibile solo con Android cli-6.1.0 -->
@@ -83,7 +83,7 @@
       <param name="SENDER_ID" value="236799555977" />
     </plugin> 
     <!--<gap:plugin name="de.appplant.cordova.plugin.local-notification" version="0.8.4"  source="npm"/> 2017-07-31 per migrazione pg6.0.5-->
-	<gap:plugin name="cordova-plugin-local-notifications" source="npm"/>
+	<gap:plugin name="de.appplant.cordova.plugin.local-notification" source="npm"/>
     <plugin name="cordova-plugin-geolocation" />
     <!--<gap:plugin name="de.appplant.cordova.plugin.background-mode"/>-->
     <!--<plugin name="cordova-background-geolocation-lt" source="npm" />-->
@@ -108,7 +108,7 @@
     	</plugin> 
     	<!--<gap:plugin name="de.appplant.cordova.plugin.local-notification" version="0.8.4"  source="npm"/>-->
     	<!--<gap:plugin name="de.appplant.cordova.plugin.local-notification" source="npm"/> 2017-07-31 per migrazione pg6.0.5-->
-	<gap:plugin name="cordova-plugin-local-notifications" source="npm"/>
+	<gap:plugin name="de.appplant.cordova.plugin.local-notification" source="npm"/>
 	  
     <!--<gap:plugin name="de.appplant.cordova.plugin.background-mode" version="0.6.5" source="npm"/>-->
     <plugin name="cordova-background-geolocation-lt" source="npm" />
