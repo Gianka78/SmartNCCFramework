@@ -92,7 +92,7 @@
     </plugin>
     <gap:plugin name="cordova-plugin-ios-ble-permissions" source="npm" />
     <!--2017-06-16 <plugin name="com.evothings.ble" source="npm" spec="2.0.1">-->
-    <plugin name="com.evothings.ble" source="npm" spec="2.0.1">
+    <plugin name="com.evothings.ble" source="npm">
   	<variable name="BLUETOOTH_USAGE_DESCRIPTION" value="App would use BT Connetion to Bluetooth printers" />
     </plugin>
 	  
