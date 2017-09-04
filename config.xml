@@ -62,7 +62,9 @@
   <platform name="android">
 	  
     <preference name="phonegap-version" value="cli-7.0.1" />
-    <!--<preference name="android-build-tool" value="gradle" /> 2017-09-04-->
+    <preference name="android-build-tool" value="gradle" />
+    <framework src="com.google.android.gms:play-services-location:11.0.1" />
+	  
     <plugin name="phonegap-plugin-push" source="npm">
       <param name="SENDER_ID" value="236799555977" />
     </plugin> 
