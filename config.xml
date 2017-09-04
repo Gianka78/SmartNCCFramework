@@ -61,13 +61,11 @@
   
   <platform name="android">
 	  
-    <preference name="phonegap-version" value="cli-7.0.1" />
+    <preference name="phonegap-version" value="cli-6.5.0" />
     <preference name="android-build-tool" value="gradle" />
-    <!--<framework src="com.google.android.gms:play-services-location:11.0.1" /> 2017/09/04-->
-	<!--  
     <plugin name="phonegap-plugin-push" source="npm">
       <param name="SENDER_ID" value="236799555977" />
-    </plugin> -->
+    </plugin> 
     <!--<gap:plugin name="de.appplant.cordova.plugin.local-notification" version="0.8.4"  source="npm"/> 2017-07-31 per migrazione pg6.0.5-->
 	<gap:plugin name="de.appplant.cordova.plugin.local-notification" source="npm"/>
     <!--<plugin name="cordova-plugin-geolocation" />rimosso 21/02/2017 errore compilazione agg phonegap-->
@@ -75,9 +73,9 @@
     <!-- compatibile solo con Android cli-6.1.0 -->
     <!-- <gap:plugin name="cordova-plugin-mauron85-background-geolocation" source="npm"/> -->
     <!-- <plugin name="cordova-background-geolocation-lt" source="npm" /> -->
-    <!--<plugin name="cordova-plugin-mauron85-background-geolocation" spec="^2.2.5">
+    <plugin name="cordova-plugin-mauron85-background-geolocation" spec="^2.2.5">
       <variable name="ALWAYS_USAGE_DESCRIPTION" value="This app requires background tracking enabled" />
-    </plugin> 2017/09/04 -->
+    </plugin>
   	<plugin name="cordova-plugin-bluetooth-serial" source="npm">
 	    <variable name="BLUETOOTH_USAGE_DESCRIPTION" value="App would use BT Connetion to Bluetooth printers" />
 	  </plugin>
@@ -86,7 +84,7 @@
   
   <platform name="ios">
 	  
-    <preference name="phonegap-version" value="cli-7.0.1" />
+    <preference name="phonegap-version" value="cli-6.5.0" />
     <!--<preference name="phonegap-version" value="cli-5.4.1" /> rimosso 31/07/2017 problema agg cordova-->
     <plugin name="phonegap-plugin-push" source="npm" spec="1.5.3" >
       <param name="SENDER_ID" value="236799555977" />
@@ -109,7 +107,7 @@
   
   <platform name="winphone">
 	  
-    <preference name="phonegap-version" value="cli-7.0.1" />	
+    <preference name="phonegap-version" value="cli-6.5.0" />	
 	<author>A188DFBB</author>
 	<preference name="windows-identity-name" value="A188DFBB.SmartNCCMobile" />
     	<plugin name="phonegap-plugin-push" source="npm" spec="1.5.3">
@@ -153,16 +151,16 @@
   <!--<plugin name="com.evothings.ble" source="npm" spec="2.0.1" />-->
 
 
-    <plugin name="cordova-plugin-device" source="npm"/>
+    <plugin name="cordova-plugin-device" source="npm" spec="1.0.1" />
   
-  <plugin name="cordova-plugin-whitelist"/>
+  <plugin name="cordova-plugin-whitelist" spec="1.2.2" />
   <plugin name="cordova-plugin-legacy-whitelist" /> 
   <gap:plugin name="cordova-plugin-appinfo" source="npm"/>
   <gap:plugin name="cordova-plugin-battery-status" source="npm"/>
   <gap:plugin name="cordova-plugin-network-information" spec="1.0.1" source="npm"/>
   <!--<plugin name="cordova-background-geolocation-lt" source="npm" />-->
   <!--2017-06-16 <gap:plugin name="cordova-plugin-badge" source="npm" />-->
-  <gap:plugin name="cordova-plugin-badge" source="npm"/>
+  <gap:plugin name="cordova-plugin-badge" source="npm" spec="0.7.3" />
 	  
   <gap:plugin name="cordova-plugin-file" source="npm" />
   <gap:plugin name="cordova-plugin-file-transfer" source="npm" />
