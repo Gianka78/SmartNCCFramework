@@ -64,10 +64,10 @@
     <preference name="phonegap-version" value="cli-7.0.1" />
     <preference name="android-build-tool" value="gradle" />
     <!--<framework src="com.google.android.gms:play-services-location:11.0.1" /> 2017/09/04-->
-	  
+	<!--  
     <plugin name="phonegap-plugin-push" source="npm">
       <param name="SENDER_ID" value="236799555977" />
-    </plugin> 
+    </plugin> -->
     <!--<gap:plugin name="de.appplant.cordova.plugin.local-notification" version="0.8.4"  source="npm"/> 2017-07-31 per migrazione pg6.0.5-->
 	<gap:plugin name="de.appplant.cordova.plugin.local-notification" source="npm"/>
     <!--<plugin name="cordova-plugin-geolocation" />rimosso 21/02/2017 errore compilazione agg phonegap-->
