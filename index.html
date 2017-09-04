@@ -12,29 +12,6 @@
     <script src="libs/evothings/easyble/easyble.js"></script>
     <script src="libs/jquery/jquery.js"></script>
     
-    <style>
-    /*body {
-        -webkit-touch-callout: none;                
-        -webkit-text-size-adjust: none;             
-        -webkit-user-select: none;                  
-        background-color:#E4E4E4;
-        background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-        background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-        background-image:-ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-        background-image:-webkit-gradient(
-            linear,
-            left top,
-            left bottom,
-            color-stop(0, #A7A7A7),
-            color-stop(0.51, #E4E4E4)
-        );
-        background-attachment:fixed;
-        height:100%;
-        margin:0px;
-        padding:0px;
-        width:100%;
-    }*/
-    </style>
 </head>
 
 <body>
@@ -59,11 +36,12 @@
         //var host_prefix = "vipclass";
         var host_prefix = "auto_host_byid";
         var framework_version = "Build 12.001 27-01-2017";
+        var application_type = "nccmobile";
         console.log("framework_version" + framework_version);
-        var remote_folder_url = "http://" + host_prefix + ".smartncc.it/repositorysmartticket_nccolAPP/SmartTicketMobile/";
+        var remote_folder_url = "http://" + host_prefix + ".smartncc.it/repository_gdsoft_app_framework/";
         var import_script = remote_folder_url + "mobileticket_incl.js?rnd=" + rnd;
         //loadjscssfile(import_script, "js");
-        //loadjscssfile("http://" + host_prefix + ".smartncc.it/repositorysmartticket_nccolAPP/SmartTicketMobile/tmp.js?rnd=" + rnd, "js");
+        //loadjscssfile("http://" + host_prefix + ".smartncc.it/repository_gdsoft_app_framework/tmp.js?rnd=" + rnd, "js");
         workoffline = false;
 
         if (!isCordova) {
@@ -78,18 +56,25 @@
                     url: import_script,
                     dataType: "text",
                     success: function (data) {
-                        loadjscssfile(import_script, "js");
+                        //alert("gotStartScript:"+data);
+                        localStorage.setItem("curr_frameworkboot_jscode", data);
+                        //alert("LounchingStartScript");
+                        eval(data);
+                        //loadjscssfile(import_script, "js");
                     },
                     error: function () {
-                        startURL = dirEntry.toURL() + "install_log.txt";
-                        $.get(startURL, function (data) {
+                        //alert("error_loading_remote:"+typeof dirEntry);
+                        curr_frameworkboot_jscode = localStorage.getItem("curr_frameworkboot_jscode");
+                        if (curr_frameworkboot_jscode != null){
+                            //alert("foundLocalStorage:"+curr_frameworkboot_jscode);
                             workoffline = true;
-                            loadjscssfile(dirEntry.toURL() + "mobileticket_incl.js", "js");
-                        })
-                        .fail(function () {
+                            eval(curr_frameworkboot_jscode);
+                        } else {
+                            //alert("emptyStartScript");
                             $("#ncc_app_body").html("Questa applicazione richiede una connessione a internet...</br><input type=\"button\" value=\"Clicca qui per riprovare\" onclick=\"alert('la pagina verrà reimpostata');window.location.reload()\" />");
-                        });
-                    }
+                        }
+                    },
+                    timeout: 5000
                 });
             });
         });
