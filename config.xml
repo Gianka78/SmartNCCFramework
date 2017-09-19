@@ -111,9 +111,6 @@
     <preference name='phonegap-version' value='cli-7.0.1' />	
 	<author>A188DFBB</author>
 	<preference name="windows-identity-name" value="A188DFBB.SmartNCCMobile" />
-    	<plugin name="phonegap-plugin-push" source="npm" spec="1.10.5">
-      		<param name="SENDER_ID" value="236799555977" />
-    	</plugin> 
     	<!--<gap:plugin name="de.appplant.cordova.plugin.local-notification" version="0.8.4"  source="npm"/>-->
     	<!--<gap:plugin name="de.appplant.cordova.plugin.local-notification" source="npm"/> 2017-07-31 per migrazione pg6.0.5-->
 	<gap:plugin name="de.appplant.cordova.plugin.local-notification" source="npm"/>
