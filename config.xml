@@ -120,9 +120,6 @@
     <plugin name="cordova-plugin-geolocation" />
   </platform>
   
-	<platform name="wp8">
-    <preference name="fullscreen" value="true"/>
-</platform>
 	  
 <plugin name="phonegap-plugin-barcodescanner" source="npm">
 	<variable name="CAMERA_USAGE_DESCRIPTION" value="App would use camera to read QRCode" />
