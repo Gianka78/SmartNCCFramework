@@ -108,7 +108,7 @@
   
   <platform name="winphone">
 	  
-    <preference name='phonegap-version' value='cli-7.0.1' />	
+    <preference name='phonegap-version' value='cli-6.3.0' />	
 	<author>A188DFBB</author>
 	<preference name="windows-identity-name" value="A188DFBB.SmartNCCMobile" />
     	<!--<gap:plugin name="de.appplant.cordova.plugin.local-notification" version="0.8.4"  source="npm"/>-->
