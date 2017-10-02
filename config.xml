@@ -80,7 +80,9 @@
     <plugin name="cordova-plugin-bluetooth-serial" source="npm">
 	<variable name="BLUETOOTH_USAGE_DESCRIPTION" value="App would use BT Connetion to Bluetooth printers" />
     </plugin>
-  
+    <plugin name="cordova-plugin-calendar" source="npm" />
+    	<variable name="CALENDAR_USAGE_DESCRIPTION" value="App would use Calendars to alert user for scheduled customer bookings and driver own tasks" />
+    </plugin>
   </platform>
   
   <platform name="ios">
@@ -102,6 +104,9 @@
     <!--2017-06-16 <plugin name="com.evothings.ble" source="npm" spec="2.0.1">-->
     <plugin name="cordova-plugin-ble" source="npm">
   	<variable name="BLUETOOTH_USAGE_DESCRIPTION" value="App would use BT Connetion to Bluetooth printers" />
+    </plugin>
+    <plugin name="cordova-plugin-calendar" source="npm" />
+    	<variable name="CALENDAR_USAGE_DESCRIPTION" value="App would use Calendars to alert user for scheduled customer bookings and driver own tasks" />
     </plugin>
 	  
   </platform>
@@ -138,7 +143,7 @@
    
   <plugin name="cordova-plugin-splashscreen" source="npm" />
   <plugin name="cordova-plugin-statusbar" source="npm" />   
-  <plugin name="cordova-plugin-calendar" source="npm" />
+  
   <plugin name="cordova-plugin-sqlite-2" source="npm" />
   <plugin name="cordova-plugin-insomnia" source="npm" />	  
 	  
