@@ -3,10 +3,10 @@
 
 <!-- Sezione customizzata per cliente --> 
   <widget xmlns = "http://www.w3.org/ns/widgets"  xmlns:gap = "http://phonegap.com/ns/1.0"
-          id = "com.SmartNCCMobile.MULTIUSER" version = "13.005" versionCode = "13005" > 
+          id = "com.SmartNCCMobile.CSFIRENZE" version = "13.005" versionCode = "13005" > 
     
-  <name>SmartNCC Mobile</name>
-  <description>Piattaforma MOBILE SMARTNCC</description>
+  <name>CS-Firenze SmartNCC Mobile</name>
+  <description>Piattaforma MOBILE SmartNCC mobile per City Sightseeing Firenze</description>
   <author href="http://www.gd-soft.it" email="info@gd-soft.it">GD-SOFT S.R.L.</author>
 <!--
 
