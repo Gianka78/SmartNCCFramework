@@ -118,18 +118,18 @@
   </platform>
   
   
-<!-- 2017-12-11   
+
 <plugin name="phonegap-plugin-barcodescanner" source="npm">
 	<variable name="CAMERA_USAGE_DESCRIPTION" value="App would use camera to read QRCode" />
 	<variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="App would like to get QRCode reads from your library" />
 </plugin>
--->
+
 	  
-<!-- 2017-12-11
+
 <gap:config-file platform="ios" parent="NSCameraUsageDescription" overwrite="true">
    <string>We are using the Camera for scanning QRCode coupons..</string>
 </gap:config-file>
--->
+
 	  
    <!--<plugin name="cordova-plugin-barcodescanner" source="npm" >
 	<variable name="CAMERA_USAGE_DESCRIPTION" value="App would use camera to read QRCode" />
