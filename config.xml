@@ -168,13 +168,13 @@
 		<variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="App would like to access the library to take photo of vechicle damages." />
   </plugin>
   -->
-	  
+	<!--  2017-11-12
   <gap:plugin name="cordova-open" source="npm" />
   <gap:plugin name="cordova-plugin-inappbrowser" source="npm" />
  
   <preference name="iosExtraFilesystems" value="library,library-nosync,documents,documents-nosync,cache,bundle,root" />
   <preference name="AndroidExtraFilesystems" value="files,files-external,documents,sdcard,cache,cache-external,assets,root" />
-
+-->
     
   <!-- bluettoth standard da provare <gap:plugin name="com.megster.cordova.bluetoothserial" version="0.3.3" />-->
   <!-- non compatibile cli-6.1.0 <gap:plugin name="org.apache.cordova.geolocation" />-->
