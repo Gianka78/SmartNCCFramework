@@ -117,10 +117,10 @@
     <plugin name="cordova-plugin-ble" source="npm">
   	<variable name="BLUETOOTH_USAGE_DESCRIPTION" value="App would use BT Connetion to Bluetooth printers" />
     </plugin>
-    <plugin name="cordova-plugin-calendar" source="npm">
+    <!--<plugin name="cordova-plugin-calendar" source="npm">
     	<variable name="CALENDAR_USAGE_DESCRIPTION" value="App would use Calendars to alert user for scheduled customer bookings and driver own tasks" />
         <variable name="GOOGLE_PLAY_SERVICES_VERSION" value="11.0.1" />
-    </plugin>
+    </plugin>-->
 	  
   </platform>
   
@@ -165,9 +165,9 @@
   <gap:plugin name="cordova-plugin-file" source="npm" />
 
  
-<!-- 2017-12-11 errore compilazione
+<!-- 2017-12-11 errore compilazione-->
 <gap:plugin name="cordova-plugin-file-transfer" source="npm" />
--->
+
 <!-- 2017-12-11 errore compilazione
 <gap:plugin name="cordova-open" source="npm" />
 -->
