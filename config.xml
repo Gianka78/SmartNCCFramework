@@ -331,7 +331,7 @@
     <gap:splash src="splash-portrait.png"                           gap:platform="blackberry" />
 	  
 	 
-	<!-- 2017-10-03   
+    <!-- 2017-10-03   
     <gap:splash src="splash-portrait_320x480.png"                   gap:platform="ios"     width="320" height="480" />
     <gap:splash src="splash-portrait_640x960.png"                   gap:platform="ios"     width="640" height="960" />
     <gap:splash src="splash-portrait_640x1136.png"                  gap:platform="ios"     width="640" height="1136" />
@@ -359,6 +359,7 @@
 	<!-- Retina iPad -->
 	<splash src="splash_1536x2048.png" platform="ios" width="1536" height="2048" />
 	<splash src="splash_2048x1536.png" platform="ios" width="2048" height="1536" />
+	  
 
 
     
