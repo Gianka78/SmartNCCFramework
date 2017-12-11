@@ -65,7 +65,7 @@
     <!--<preference name='pgb-builder-version' value='1' />-->
 	  
     <!-- 2017-12-11 -->
-    <preference name="android-minSdkVersion" value="14" />
+    
 	  
     <preference name="android-build-tool" value="gradle" />
     <plugin name="phonegap-plugin-push" source="npm" spec="1.10.5" >
@@ -177,10 +177,10 @@
 	
   <gap:plugin name="cordova-open" source="npm" />
   <gap:plugin name="cordova-plugin-inappbrowser" source="npm" />
- 
+ <!--
   <preference name="iosExtraFilesystems" value="library,library-nosync,documents,documents-nosync,cache,bundle,root" />
   <preference name="AndroidExtraFilesystems" value="files,files-external,documents,sdcard,cache,cache-external,assets,root" />
-
+-->
     
   <!-- bluettoth standard da provare <gap:plugin name="com.megster.cordova.bluetoothserial" version="0.3.3" />-->
   <!-- non compatibile cli-6.1.0 <gap:plugin name="org.apache.cordova.geolocation" />-->
