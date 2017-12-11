@@ -144,11 +144,12 @@
    </plugin>-->
    
   <plugin name="cordova-plugin-splashscreen" source="npm" />
+  <!-- 2017-12-11
   <plugin name="cordova-plugin-statusbar" source="npm" />   
   <plugin name="cordova-plugin-calendar" source="npm" />
   <plugin name="cordova-plugin-sqlite-2" source="npm" />
   <plugin name="cordova-plugin-insomnia" source="npm" />	  
-	  
+  -->
   <!--<plugin name="cordova-plugin-bluetooth-serial" source="npm" />-->
   <!--<plugin name="com.evothings.ble" source="npm" spec="2.0.1" />-->
 
