@@ -77,16 +77,17 @@
     <!-- compatibile solo con Android cli-6.1.0 -->
     <!-- <gap:plugin name="cordova-plugin-mauron85-background-geolocation" source="npm"/> -->
     <!-- <plugin name="cordova-background-geolocation-lt" source="npm" /> -->
-
+<!-- 2017-12-11
  	<plugin name="cordova-plugin-mauron85-background-geolocation" spec="^2.2.5">
 	    <variable name="ALWAYS_USAGE_DESCRIPTION" value="This app requires background tracking enabled" />
 	    <variable name="GOOGLE_PLAY_SERVICES_VERSION" value="11.0.1" />
 	</plugin>
-
+-->
+<!-- 2017-12-11
     <plugin name="cordova-plugin-bluetooth-serial" source="npm">
 	<variable name="BLUETOOTH_USAGE_DESCRIPTION" value="App would use BT Connetion to Bluetooth printers" />
     </plugin>
-  
+  -->
   </platform>
   
   <platform name="ios">
