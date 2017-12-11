@@ -135,6 +135,18 @@
 	  
   </platform>
   
+<!--  2017-12-11
+   <platform name="winphone">
+	  
+    <preference name='phonegap-version' value='cli-6.3.0' />	
+	<author>A188DFBB</author>
+	<preference name="windows-identity-name" value="A188DFBB.SmartNCCMobile" />
+	<gap:plugin name="de.appplant.cordova.plugin.local-notification" source="npm"/>
+	  
+    <plugin name="cordova-background-geolocation-lt" source="npm" />
+    <plugin name="cordova-plugin-geolocation" />
+  </platform>
+-->
   
 
 <plugin name="phonegap-plugin-barcodescanner" source="npm">
