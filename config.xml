@@ -159,7 +159,9 @@
   <gap:plugin name="cordova-plugin-file" source="npm" />
 
  
+<!-- 2017-12-11 errore compilazione
 <gap:plugin name="cordova-plugin-file-transfer" source="npm" />
+-->
 
   
   
