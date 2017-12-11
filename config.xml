@@ -175,9 +175,10 @@
   </plugin>
  
 	
-  <gap:plugin name="cordova-open" source="npm" />
+  
   <gap:plugin name="cordova-plugin-inappbrowser" source="npm" />
- <!--
+ <!-- 2017-12-11
+<gap:plugin name="cordova-open" source="npm" />
   <preference name="iosExtraFilesystems" value="library,library-nosync,documents,documents-nosync,cache,bundle,root" />
   <preference name="AndroidExtraFilesystems" value="files,files-external,documents,sdcard,cache,cache-external,assets,root" />
 -->
