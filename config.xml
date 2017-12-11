@@ -19,29 +19,38 @@
   
   
 <!--
-  com.evothings.ble   	npm	1.2.0	1.2.0	n/a	android,ios,winphone
-  cordova-background-geolocation-lt   	npm	*	2.2.0	n/a	winphone
-  cordova-plugin-appinfo   	npm	*	2.0.3	n/a	android,ios,winphone
-  cordova-plugin-badge   	npm	*	0.7.3	n/a	android,ios,winphone
-  cordova-plugin-battery-status   	npm	*	1.2.0	n/a	android,ios,winphone
-  cordova-plugin-device   	npm	1.0.1	n/a	n/a	android,ios,winphone
-  cordova-plugin-file   	npm	*	4.3.0	n/a	android,ios,winphone
-  cordova-plugin-geolocation   	npm	*	2.4.0	n/a	android
-  cordova-plugin-geolocation   	npm	*	2.4.0	n/a	ios
-  cordova-plugin-geolocation   	npm	*	2.4.0	n/a	winphone
-  cordova-plugin-legacy-whitelist   	npm	*	1.1.1	n/a	android,ios,winphone
-  cordova-plugin-mauron85-background-geolocation   	npm	^2.2.5	2.2.5	n/a	android
-  cordova-plugin-mauron85-background-geolocation   	npm	^2.2.4	2.2.5	n/a	ios
-  cordova-plugin-network-information   	npm	1.0.1	1.0.1	n/a	android,ios,winphone
-  cordova-plugin-whitelist   	npm	1.2.2	1.2.2	n/a	android,ios,winphone
-  de.appplant.cordova.plugin.local-notification   	npm	0.8.4	0.8.4	n/a	android
-  de.appplant.cordova.plugin.local-notification   	npm	0.8.4	0.8.4	n/a	ios
-  de.appplant.cordova.plugin.local-notification   	npm	0.8.4	0.8.4	n/a	winphone
-  org.apache.cordova.splashscreen   	npm	*	4.0.0	n/a	android,ios,winphone
-  phonegap-plugin-barcodescanner   	npm	*	6.0.3	n/a	android,ios,winphone
-  phonegap-plugin-push   	npm	1.5.3	1.5.3	n/a	android
-  phonegap-plugin-push   	npm	1.5.3	1.5.3	n/a	ios
-  phonegap-plugin-push   	npm	*	1.9.0	n/a	winphone
+  cordova-background-geolocation-lt   	npm	*	n/a	n/a	winphone
+	cordova-open   	npm	*	1.0.12	n/a	android,ios,winphone
+	cordova-plugin-appinfo   	npm	*	2.1.2	n/a	android,ios,winphone
+	cordova-plugin-badge   	npm	0.7.3	0.7.3	n/a	android,ios,winphone
+	cordova-plugin-battery-status   	npm	*	1.2.4	n/a	android,ios,winphone
+	cordova-plugin-ble   	npm	*	2.0.1	n/a	ios
+	cordova-plugin-bluetooth-serial   	npm	*	0.4.7	n/a	android
+	cordova-plugin-calendar   	npm	*	4.6.0	n/a	android,ios,winphone
+	cordova-plugin-camera   	npm	*	2.4.1	n/a	android,ios,winphone
+	cordova-plugin-device   	npm	1.0.1	n/a	n/a	android,ios,winphone
+	cordova-plugin-file   	npm	*	4.3.3	n/a	android,ios,winphone
+	cordova-plugin-file-transfer   	npm	*	1.6.3	n/a	android,ios,winphone
+	cordova-plugin-geolocation   	npm	*	2.4.3	n/a	ios
+	cordova-plugin-geolocation   	npm	*	n/a	n/a	winphone
+	cordova-plugin-inappbrowser   	npm	*	1.7.1	n/a	android,ios,winphone
+	cordova-plugin-insomnia   	npm	*	4.3.0	n/a	android,ios,winphone
+	cordova-plugin-ios-ble-permissions   	npm	*	1.0.3	n/a	ios
+	cordova-plugin-legacy-whitelist   	npm	*	1.1.2	n/a	android,ios,winphone
+	cordova-plugin-mauron85-background-geolocation   	npm	^2.2.5	2.2.5	n/a	android
+	cordova-plugin-mauron85-background-geolocation   	npm	^2.2.4	2.2.5	n/a	ios
+	cordova-plugin-network-information   	npm	1.0.1	1.0.1	n/a	android,ios,winphone
+	cordova-plugin-splashscreen   	npm	*	4.0.3	n/a	android,ios,winphone
+	cordova-plugin-sqlite-2   	npm	*	1.0.4	n/a	android,ios,winphone
+	cordova-plugin-statusbar   	npm	*	2.2.3	n/a	android,ios,winphone
+	cordova-plugin-whitelist   	npm	1.2.2	1.2.2	n/a	android,ios,winphone
+	de.appplant.cordova.plugin.local-notification   	npm	*	0.8.5	n/a	android
+	de.appplant.cordova.plugin.local-notification   	npm	*	0.8.5	n/a	ios
+	de.appplant.cordova.plugin.local-notification   	npm	*	n/a	n/a	winphone
+	phonegap-plugin-barcodescanner   	npm	*	6.0.8	n/a	android,ios,winphone
+	phonegap-plugin-push   	npm	*	2.0.0-rc5	n/a	android
+	phonegap-plugin-push   	npm	1.5.3	1.5.3	n/a	ios
+	phonegap-plugin-push   	npm	1.5.3	n/a	n/a	winphone
 -->
   
   <!-- problema android no GPS Background <preference name="phonegap-version" value="cli-5.4.1" /> -->
@@ -162,9 +171,7 @@
   <!--2017-06-16 <gap:plugin name="cordova-plugin-badge" source="npm" />-->
   
   <gap:plugin name="cordova-plugin-badge" source="npm" spec="0.7.3" />
-  <gap:plugin name="cordova-plugin-file" source="npm" />
-
- 
+  <gap:plugin name="cordova-plugin-file" source="npm" spec="4.3.3" />
 <!-- 2017-12-11 errore compilazione-->
 <gap:plugin name="cordova-plugin-file-transfer" source="npm" spec="1.6.3"/>
 
