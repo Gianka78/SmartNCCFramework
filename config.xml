@@ -162,12 +162,12 @@
 <gap:plugin name="cordova-plugin-file-transfer" source="npm" />
 -->
   
-  <!-- 2017-12-11
+  
   <plugin name="cordova-plugin-camera">
         <variable name="CAMERA_USAGE_DESCRIPTION" value="APP would use camera to take photo of vehicle damages." />
 		<variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="App would like to access the library to take photo of vechicle damages." />
   </plugin>
-  -->
+ 
 	<!--  2017-11-12
   <gap:plugin name="cordova-open" source="npm" />
   <gap:plugin name="cordova-plugin-inappbrowser" source="npm" />
