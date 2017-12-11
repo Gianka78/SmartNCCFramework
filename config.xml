@@ -158,14 +158,15 @@
   <!--<plugin name="cordova-background-geolocation-lt" source="npm" />-->
   <!--2017-06-16 <gap:plugin name="cordova-plugin-badge" source="npm" />-->
   
-<gap:plugin name="cordova-plugin-badge" source="npm" spec="0.7.3" />
-	  
+  <gap:plugin name="cordova-plugin-badge" source="npm" spec="0.7.3" />
   <gap:plugin name="cordova-plugin-file" source="npm" />
 
  
 <!-- 2017-12-11 errore compilazione
 <gap:plugin name="cordova-plugin-file-transfer" source="npm" />
 -->
+
+<gap:plugin name="cordova-open" source="npm" />
 
   
   
@@ -176,9 +177,7 @@
  
   
   <gap:plugin name="cordova-plugin-inappbrowser" source="npm" />
-  <!-- 2017-12-11
-	<gap:plugin name="cordova-open" source="npm" />
-  -->
+ 
   <preference name="iosExtraFilesystems" value="library,library-nosync,documents,documents-nosync,cache,bundle,root" />
   <preference name="AndroidExtraFilesystems" value="files,files-external,documents,sdcard,cache,cache-external,assets,root" />
 	  
