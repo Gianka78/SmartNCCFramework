@@ -186,7 +186,7 @@
   <gap:plugin name="cordova-plugin-appinfo" source="npm"/>
   <gap:plugin name="cordova-plugin-battery-status" source="npm"/>
   <gap:plugin name="cordova-plugin-network-information" spec="1.0.1" source="npm"/>
-  
+  <gap:plugin name="cordova-plugin-chrome-apps-sockets-tcp" source="npm"/>
 	  
   <!--<plugin name="cordova-background-geolocation-lt" source="npm" />-->
   <!--2017-06-16 <gap:plugin name="cordova-plugin-badge" source="npm" />-->
