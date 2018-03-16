@@ -70,7 +70,7 @@
   
   <platform name="android">
     <!--<preference name="phonegap-version" value="cli-6.5.0" />-->
-    <preference name='phonegap-version' value='cli-8.0.0' />
+    <preference name='phonegap-version' value='cli-6.5.0' />
     <!--<preference name='pgb-builder-version' value='1' />-->
 	  
     <!-- 2017-12-11 -->
