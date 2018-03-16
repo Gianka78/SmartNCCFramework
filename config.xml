@@ -70,7 +70,7 @@
   
   <platform name="android">
     <!--<preference name="phonegap-version" value="cli-6.5.0" />-->
-    <preference name='phonegap-version' value='cli-6.5.0' />
+    <preference name='phonegap-version' value='cli-7.0.1' />
     <!--<preference name='pgb-builder-version' value='1' />-->
 	  
     <!-- 2017-12-11 -->
@@ -149,7 +149,7 @@
 -->
   
 
-<plugin name="phonegap-plugin-barcodescanner" source="npm" spec="6.0.8">
+<plugin name="phonegap-plugin-barcodescanner" source="npm">
 	<variable name="CAMERA_USAGE_DESCRIPTION" value="App would use camera to read QRCode" />
 	<variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="App would like to get QRCode reads from your library" />
 </plugin>
