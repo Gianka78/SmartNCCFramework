@@ -5,8 +5,8 @@
   <widget xmlns = "http://www.w3.org/ns/widgets"  xmlns:gap = "http://phonegap.com/ns/1.0"
           id = "com.SmartNCCMobile.EURONOLO" version = "13.007" versionCode = "13007" > 
     
-  <name>Euronolo Service</name>
-  <description>Piattaforma SmartNCC Mobile - Vipclass Chauffeured Limousine s.c.a.r.l.</description>
+  <name>Euronolo Service s.r.l. NCC</name>
+  <description>Piattaforma SmartNCC Mobile - Euronolo Service s.r.l.</description>
   <author href="http://www.gd-soft.it" email="info@gd-soft.it">GD-SOFT S.R.L.</author>
  
   
