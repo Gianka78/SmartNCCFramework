@@ -3,7 +3,7 @@
 
 <!-- Sezione customizzata per cliente --> 
   <widget xmlns = "http://www.w3.org/ns/widgets"  xmlns:gap = "http://phonegap.com/ns/1.0"
-          id = "com.SmartNCCMobile.EURONOLO" version = "13.008" versionCode = "13008" > 
+          id = "com.SmartNCCMobile.EURONOLO" version = "13.009" versionCode = "13009" > 
     
   <name>Euronolo Service s.r.l. NCC</name>
   <description>Piattaforma SmartNCC Mobile - Euronolo Service s.r.l.</description>
