@@ -100,11 +100,12 @@
 
 
     <plugin name="cordova-plugin-bluetooth-serial" source="npm">
-	<variable name="BLUETOOTH_USAGE_DESCRIPTION" value="App would use BT Connetion to Bluetooth printers" />
+		<variable name="BLUETOOTH_USAGE_DESCRIPTION" value="App would use BT Connetion to Bluetooth printers" />
     </plugin>
     <plugin name="cordova-plugin-calendar" source="npm">
     	<variable name="CALENDAR_USAGE_DESCRIPTION" value="App would use Calendars to alert user for scheduled customer bookings and driver own tasks" />
     </plugin>
+  	<plugin name="cordova-plugin-chrome-apps-socket" />
   </platform>
   
   <platform name="ios">
@@ -132,7 +133,7 @@
     	<variable name="CALENDAR_USAGE_DESCRIPTION" value="App would use Calendars to alert user for scheduled customer bookings and driver own tasks" />
         <variable name="GOOGLE_PLAY_SERVICES_VERSION" value="11.0.1" />
     </plugin>-->
-	  
+    
   </platform>
   
 <!--  2017-12-11
@@ -160,14 +161,10 @@
    <string>We are using the Camera for scanning QRCode coupons..</string>
 </gap:config-file>
 	  
+	  
 <config-file platform="ios" parent="NSPhotoLibraryUsageDescription" mode="replace">  
       <string>App would like to access the library to take photo of vechicle damages.</string> 
 </config-file>
-	  
-   <!--<plugin name="cordova-plugin-barcodescanner" source="npm" >
-	<variable name="CAMERA_USAGE_DESCRIPTION" value="App would use camera to read QRCode" />
-	<variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="App would like to get QRCode reads from your library" />
-   </plugin>-->
    
   <plugin name="cordova-plugin-splashscreen" source="npm" />
   
@@ -189,9 +186,7 @@
   <gap:plugin name="cordova-plugin-appinfo" source="npm"/>
   <gap:plugin name="cordova-plugin-battery-status" source="npm"/>
   <gap:plugin name="cordova-plugin-network-information" spec="1.0.1" source="npm"/>
-  <!--<gap:plugin name="cordova-plugin-chrome-apps-sockets-tcp" source="npm"/>-->
-  <!--<gap:plugin name="sockets-for-cordova" source="npm"/>-->
-  <plugin name="cordova-plugin-chrome-apps-socket" /> 	  
+   	  
 	  
   <!--<plugin name="cordova-background-geolocation-lt" source="npm" />-->
   <!--2017-06-16 <gap:plugin name="cordova-plugin-badge" source="npm" />-->
