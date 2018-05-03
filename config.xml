@@ -5,8 +5,8 @@
   <widget xmlns = "http://www.w3.org/ns/widgets"  xmlns:gap = "http://phonegap.com/ns/1.0"
           id = "com.SmartNCCMobile.CSITALYSTAFF" version = "13.011" versionCode = "13011" > 
     
-  <name>CitySightseeing Italy - Staff & Partners</name>
-  <description>Piattaforma CitySightseeing Italy Staff & Partners basata su SmartTicketMobile</description>
+  <name>CitySightseeing Italy - Staff and Partners</name>
+  <description>Piattaforma CitySightseeing Italy Staff and Partners basata su SmartTicketMobile</description>
   <author href="http://www.gd-soft.it" email="info@gd-soft.it">GD-SOFT S.R.L.</author>
  
   
