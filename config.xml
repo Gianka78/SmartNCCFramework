@@ -3,7 +3,7 @@
 
 <!-- Sezione customizzata per cliente --> 
   <widget xmlns = "http://www.w3.org/ns/widgets"  xmlns:gap = "http://phonegap.com/ns/1.0"
-          id = "com.SmartNCCMobile.MULTIUSER" version = "13.010" versionCode = "13010" > 
+          id = "com.SmartNCCMobile.MULTIUSER" version = "13.012" versionCode = "13012" > 
     
   <name>SmartNCC Mobile</name>
   <description>Piattaforma MOBILE SMARTNCC</description>
