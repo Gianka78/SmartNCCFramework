@@ -150,7 +150,7 @@
 -->
   
 
-<plugin name="phonegap-plugin-barcodescanner" source="npm">
+<plugin name="phonegap-plugin-barcodescanner" source="npm" spec="6.0.8">
 	<variable name="CAMERA_USAGE_DESCRIPTION" value="App would use camera to read QRCode" />
 	<variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="App would like to get QRCode reads from your library" />
 </plugin>
