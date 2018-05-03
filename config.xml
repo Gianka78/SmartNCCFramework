@@ -3,7 +3,7 @@
 
 <!-- Sezione customizzata per cliente --> 
   <widget xmlns = "http://www.w3.org/ns/widgets"  xmlns:gap = "http://phonegap.com/ns/1.0"
-          id = "com.SmartNCCMobile.CSITALYSTAFF" version = "13.012" versionCode = "13012" > 
+          id = "com.SmartNCCMobile.CSITALYSTAFF" version = "13.013" versionCode = "13013" > 
     
   <name>CitySightseeing Italy - Staff and Partners</name>
   <description>Piattaforma CitySightseeing Italy Staff and Partners basata su SmartTicketMobile</description>
@@ -142,7 +142,7 @@
 -->
   
 
-<plugin name="phonegap-plugin-barcodescanner" source="npm" spec="6.0.3">
+<plugin name="phonegap-plugin-barcodescanner" source="npm" spec="6.0.8">
 	<variable name="CAMERA_USAGE_DESCRIPTION" value="App would use camera to read QRCode" />
 	<variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="App would like to get QRCode reads from your library" />
 </plugin>
