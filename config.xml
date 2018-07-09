@@ -3,7 +3,7 @@
 
 <!-- Sezione customizzata per cliente --> 
   <widget xmlns = "http://www.w3.org/ns/widgets"  xmlns:gap = "http://phonegap.com/ns/1.0"
-          id = "com.SmartNCCMobile.SMARTTICKETMOBILE" version = "13.008" versionCode = "13008" > 
+          id = "com.SmartNCCMobile.SMARTTICKETMOBILE" version = "13.013" versionCode = "13013" > 
     
   <name>SmartTicket Mobile</name>
   <description>SmartTicket Mobile - biglietteria Bus/Autolinee</description>
@@ -40,7 +40,6 @@
   <!-- problema android no GPS Background <preference name="phonegap-version" value="cli-5.4.1" /> -->
   <!-- problema iOS apre link fuori APP non firma WP8 <preference name="phonegap-version" value="cli-6.1.0" /> -->
   
- 
   <preference name="SplashScreen" value="screen"/>
   <preference name="KeepRunning" value="true"/>
   <preference name="SplashScreen" value="splash" />
@@ -85,11 +84,12 @@
 
 
     <plugin name="cordova-plugin-bluetooth-serial" source="npm">
-	<variable name="BLUETOOTH_USAGE_DESCRIPTION" value="App would use BT Connetion to Bluetooth printers" />
+		<variable name="BLUETOOTH_USAGE_DESCRIPTION" value="App would use BT Connetion to Bluetooth printers" />
     </plugin>
     <plugin name="cordova-plugin-calendar" source="npm">
     	<variable name="CALENDAR_USAGE_DESCRIPTION" value="App would use Calendars to alert user for scheduled customer bookings and driver own tasks" />
     </plugin>
+  	<plugin name="cordova-plugin-chrome-apps-socket" />
   </platform>
   
   <platform name="ios">
@@ -117,7 +117,7 @@
     	<variable name="CALENDAR_USAGE_DESCRIPTION" value="App would use Calendars to alert user for scheduled customer bookings and driver own tasks" />
         <variable name="GOOGLE_PLAY_SERVICES_VERSION" value="11.0.1" />
     </plugin>-->
-	  
+    
   </platform>
   
 <!--  2017-12-11
@@ -134,7 +134,7 @@
 -->
   
 
-<plugin name="phonegap-plugin-barcodescanner" source="npm" spec="6.0.3">
+<plugin name="phonegap-plugin-barcodescanner" source="npm" spec="6.0.8">
 	<variable name="CAMERA_USAGE_DESCRIPTION" value="App would use camera to read QRCode" />
 	<variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="App would like to get QRCode reads from your library" />
 </plugin>
@@ -146,10 +146,9 @@
 </gap:config-file>
 	  
 	  
-   <!--<plugin name="cordova-plugin-barcodescanner" source="npm" >
-	<variable name="CAMERA_USAGE_DESCRIPTION" value="App would use camera to read QRCode" />
-	<variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="App would like to get QRCode reads from your library" />
-   </plugin>-->
+<config-file platform="ios" parent="NSPhotoLibraryUsageDescription" mode="replace">  
+      <string>App would like to access the library to take photo of vechicle damages.</string> 
+</config-file>
    
   <plugin name="cordova-plugin-splashscreen" source="npm" />
   
@@ -171,9 +170,7 @@
   <gap:plugin name="cordova-plugin-appinfo" source="npm"/>
   <gap:plugin name="cordova-plugin-battery-status" source="npm"/>
   <gap:plugin name="cordova-plugin-network-information" spec="1.0.1" source="npm"/>
-  <!--<gap:plugin name="cordova-plugin-chrome-apps-sockets-tcp" source="npm"/>-->
-  <!--<gap:plugin name="sockets-for-cordova" source="npm"/>-->
-  <plugin name="cordova-plugin-chrome-apps-socket" /> 	  
+   	  
 	  
   <!--<plugin name="cordova-background-geolocation-lt" source="npm" />-->
   <!--2017-06-16 <gap:plugin name="cordova-plugin-badge" source="npm" />-->
@@ -380,4 +377,3 @@
 
 
 </widget>
-
