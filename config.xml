@@ -89,7 +89,8 @@
     <plugin name="cordova-plugin-calendar" source="npm">
     	<variable name="CALENDAR_USAGE_DESCRIPTION" value="App would use Calendars to alert user for scheduled customer bookings and driver own tasks" />
     </plugin>
-  	<plugin name="cordova-plugin-chrome-apps-socket" />
+  	<!--<plugin name="cordova-plugin-chrome-apps-socket" />-->
+	<plugin name="cordova-plugin-chrome-apps-sockets-tcp" />
   </platform>
   
   <platform name="ios">
