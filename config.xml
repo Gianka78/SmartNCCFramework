@@ -132,7 +132,7 @@
     
   </platform>
 	<!--  
-  <plugin name="cordova-plugin-googlemaps" spec="2.3.7">
+  <plugin name="cordova-plugin-googlemaps" >
     <variable name="API_KEY_FOR_ANDROID" value="AIzaSyB5GEdY4ts-UGeryuepPa22oPtrZsEUzMs" />
     <variable name="API_KEY_FOR_IOS" value="AIzaSyB5GEdY4ts-UGeryuepPa22oPtrZsEUzMs" />
     <variable name="LOCATION_WHEN_IN_USE_DESCRIPTION" value="This app requires position for GoogleMaps" />
@@ -182,23 +182,23 @@
   <!--<plugin name="com.evothings.ble" source="npm" spec="2.0.1" />-->
 
   
-  <plugin name="cordova-plugin-device" source="npm" spec="1.0.1" />
+  <plugin name="cordova-plugin-device" source="npm"  />
   
-  <plugin name="cordova-plugin-whitelist" spec="1.2.2" />
+  <plugin name="cordova-plugin-whitelist"  />
   <plugin name="cordova-plugin-legacy-whitelist" /> 
   <gap:plugin name="cordova-plugin-appinfo" source="npm"/>
   <gap:plugin name="cordova-plugin-battery-status" source="npm"/>
-  <gap:plugin name="cordova-plugin-network-information" spec="1.0.1" source="npm"/>
+  <gap:plugin name="cordova-plugin-network-information" source="npm"/>
    	  
 	  
   <!--<plugin name="cordova-background-geolocation-lt" source="npm" />-->
   <!--2017-06-16 <gap:plugin name="cordova-plugin-badge" source="npm" />-->
   
-	<gap:plugin name="cordova-plugin-badge" source="npm" spec="0.7.3" />
-	<gap:plugin name="cordova-plugin-file" source="npm" spec="4.3.3" />
+	<gap:plugin name="cordova-plugin-badge" source="npm"  />
+	<gap:plugin name="cordova-plugin-file" source="npm"  />
 	  
 	<!-- 2017-12-11 errore compilazione-->
-	<gap:plugin name="cordova-plugin-file-transfer" source="npm" spec="1.6.3"/>
+	<gap:plugin name="cordova-plugin-file-transfer" source="npm" />
 
 	<gap:plugin name="cordova-plugin-file-hash" source="npm" />
 
