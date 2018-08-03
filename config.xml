@@ -71,7 +71,7 @@
     
 	  
     <preference name="android-build-tool" value="gradle" />
-    <plugin name="phonegap-plugin-push" source="npm" spec="1.10.5" >
+    <plugin name="phonegap-plugin-push" source="npm" >
       <param name="SENDER_ID" value="236799555977" />
     </plugin>
 	  
@@ -87,7 +87,7 @@
 	  
 <!-- 2017-12-11 -->
 	  
-<plugin name="cordova-plugin-mauron85-background-geolocation" spec="2.2.5">
+<plugin name="cordova-plugin-mauron85-background-geolocation">
     <variable name="ALWAYS_USAGE_DESCRIPTION" value="This app requires background tracking enabled" />
     <variable name="GOOGLE_PLAY_SERVICES_VERSION" value="11.0.1" />
 </plugin>
@@ -108,7 +108,7 @@
     <!--<preference name='phonegap-version' value='cli-7.0.1' />-->
     <!--<preference name='phonegap-version' value='cli-7.1.0' />-->
     <preference name='phonegap-version' value='cli-8.0.0' />
-    <plugin name="phonegap-plugin-push" source="npm"  >
+    <plugin name="phonegap-plugin-push" source="npm" spec="1.10.5">
       <param name="SENDER_ID" value="236799555977" />
     </plugin> 
     <!--<gap:plugin name="de.appplant.cordova.plugin.local-notification" version="0.8.4"  source="npm"/> 2017-07-31 per migrazione pg6.0.5-->
