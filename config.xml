@@ -133,14 +133,14 @@
     </plugin>-->
     
   </platform>
-	<!--  
+	  
   <plugin name="cordova-plugin-googlemaps" spec="2.3.7">
     <variable name="API_KEY_FOR_ANDROID" value="AIzaSyB5GEdY4ts-UGeryuepPa22oPtrZsEUzMs" />
     <variable name="API_KEY_FOR_IOS" value="AIzaSyB5GEdY4ts-UGeryuepPa22oPtrZsEUzMs" />
     <variable name="LOCATION_WHEN_IN_USE_DESCRIPTION" value="This app requires position for GoogleMaps" />
     <variable name="LOCATION_ALWAYS_USAGE_DESCRIPTION" value="This app requires position for GoogleMaps" />
   </plugin>
-	  -->
+	  
 <!--  2017-12-11
    <platform name="winphone">
 	  
