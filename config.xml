@@ -129,7 +129,7 @@
     	<variable name="CALENDAR_USAGE_DESCRIPTION" value="App would use Calendars to alert user for scheduled customer bookings and driver own tasks" />
         <variable name="GOOGLE_PLAY_SERVICES_VERSION" value="11.0.1" />
     </plugin>-->
-    
+    <edit-config file="app/src/main/AndroidManifest.xml" target="/manifest/application" mode="merge">
   </platform>
 	<!--  
   <plugin name="cordova-plugin-googlemaps" spec="2.3.7">
