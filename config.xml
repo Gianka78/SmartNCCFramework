@@ -63,15 +63,14 @@
   <platform name="android">
     <!--<preference name="phonegap-version" value="cli-6.5.0" />-->
     <!--<preference name='phonegap-version' value='cli-7.0.1' />-->
-    <!--<preference name='phonegap-version' value='cli-7.1.0' />-->
     <preference name='phonegap-version' value='cli-7.1.0' />
     <!--<preference name='pgb-builder-version' value='1' />-->
 	  
     <!-- 2017-12-11 -->
-    <preference name="android-minSdkVersion" value="15" />
+    
 	  
     <preference name="android-build-tool" value="gradle" />
-    <plugin name="phonegap-plugin-push" source="npm" >
+    <plugin name="phonegap-plugin-push" source="npm" spec="1.10.5" >
       <param name="SENDER_ID" value="236799555977" />
     </plugin>
 	  
@@ -87,7 +86,7 @@
 	  
 <!-- 2017-12-11 -->
 	  
-<plugin name="cordova-plugin-mauron85-background-geolocation">
+<plugin name="cordova-plugin-mauron85-background-geolocation" spec="2.2.5">
     <variable name="ALWAYS_USAGE_DESCRIPTION" value="This app requires background tracking enabled" />
     <variable name="GOOGLE_PLAY_SERVICES_VERSION" value="11.0.1" />
 </plugin>
@@ -105,10 +104,9 @@
   <platform name="ios">
     <!--<preference name="phonegap-version" value="cli-5.4.1" /> rimosso 31/07/2017 problema agg cordova-->
     <!--<preference name="phonegap-version" value="cli-6.5.0" /> rimosso 2017-07/04-->
-    <!--<preference name='phonegap-version' value='cli-7.0.1' />-->
+    <preference name='phonegap-version' value='cli-7.0.1' />
     <!--<preference name='phonegap-version' value='cli-7.1.0' />-->
-    <preference name='phonegap-version' value='cli-8.0.0' />
-    <plugin name="phonegap-plugin-push" source="npm" spec="1.10.5">
+    <plugin name="phonegap-plugin-push" source="npm" spec="1.10.5" >
       <param name="SENDER_ID" value="236799555977" />
     </plugin> 
     <!--<gap:plugin name="de.appplant.cordova.plugin.local-notification" version="0.8.4"  source="npm"/> 2017-07-31 per migrazione pg6.0.5-->
@@ -132,7 +130,7 @@
     
   </platform>
 	<!--  
-  <plugin name="cordova-plugin-googlemaps" >
+  <plugin name="cordova-plugin-googlemaps" spec="2.3.7">
     <variable name="API_KEY_FOR_ANDROID" value="AIzaSyB5GEdY4ts-UGeryuepPa22oPtrZsEUzMs" />
     <variable name="API_KEY_FOR_IOS" value="AIzaSyB5GEdY4ts-UGeryuepPa22oPtrZsEUzMs" />
     <variable name="LOCATION_WHEN_IN_USE_DESCRIPTION" value="This app requires position for GoogleMaps" />
@@ -182,23 +180,23 @@
   <!--<plugin name="com.evothings.ble" source="npm" spec="2.0.1" />-->
 
   
-  <plugin name="cordova-plugin-device" source="npm"  />
+  <plugin name="cordova-plugin-device" source="npm" spec="1.0.1" />
   
-  <plugin name="cordova-plugin-whitelist"  />
+  <plugin name="cordova-plugin-whitelist" spec="1.2.2" />
   <plugin name="cordova-plugin-legacy-whitelist" /> 
   <gap:plugin name="cordova-plugin-appinfo" source="npm"/>
   <gap:plugin name="cordova-plugin-battery-status" source="npm"/>
-  <gap:plugin name="cordova-plugin-network-information" source="npm"/>
+  <gap:plugin name="cordova-plugin-network-information" spec="1.0.1" source="npm"/>
    	  
 	  
   <!--<plugin name="cordova-background-geolocation-lt" source="npm" />-->
   <!--2017-06-16 <gap:plugin name="cordova-plugin-badge" source="npm" />-->
   
-	<gap:plugin name="cordova-plugin-badge" source="npm"  />
-	<gap:plugin name="cordova-plugin-file" source="npm"  />
+	<gap:plugin name="cordova-plugin-badge" source="npm" spec="0.7.3" />
+	<gap:plugin name="cordova-plugin-file" source="npm" spec="4.3.3" />
 	  
 	<!-- 2017-12-11 errore compilazione-->
-	<gap:plugin name="cordova-plugin-file-transfer" source="npm" />
+	<gap:plugin name="cordova-plugin-file-transfer" source="npm" spec="1.6.3"/>
 
 	<gap:plugin name="cordova-plugin-file-hash" source="npm" />
 
