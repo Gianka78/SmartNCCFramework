@@ -69,11 +69,7 @@
 	  
     <!-- 2017-12-11 -->
     
-    <preference name="android-minSdkVersion" value="16" />	  
     <preference name="android-build-tool" value="gradle" />
-    <plugin name="cordova-android-support-gradle-release" spec="^1.4.3">
-     <variable name="ANDROID_SUPPORT_VERSION" value="26.+" />
-    </plugin>`
     <plugin name="phonegap-plugin-push" source="npm" spec="1.10.5" >
       <param name="SENDER_ID" value="236799555977" />
     </plugin>
@@ -133,27 +129,7 @@
     </plugin>-->
     
   </platform>
-	  
-  <!--<plugin name="cordova-plugin-googlemaps" spec="2.3.7">
-    <variable name="API_KEY_FOR_ANDROID" value="AIzaSyB5GEdY4ts-UGeryuepPa22oPtrZsEUzMs" />
-    <variable name="API_KEY_FOR_IOS" value="AIzaSyB5GEdY4ts-UGeryuepPa22oPtrZsEUzMs" />
-    <variable name="LOCATION_WHEN_IN_USE_DESCRIPTION" value="This app requires position for GoogleMaps" />
-    <variable name="LOCATION_ALWAYS_USAGE_DESCRIPTION" value="This app requires position for GoogleMaps" />
-  </plugin>-->
-	  
-<!--  2017-12-11
-   <platform name="winphone">
-	  
-    <preference name='phonegap-version' value='cli-6.3.0' />	
-	<author>A188DFBB</author>
-	<preference name="windows-identity-name" value="A188DFBB.SmartNCCMobile" />
-	<gap:plugin name="de.appplant.cordova.plugin.local-notification" source="npm"/>
-	  
-    <plugin name="cordova-background-geolocation-lt" source="npm" />
-    <plugin name="cordova-plugin-geolocation" />
-  </platform>
--->
-  
+
 
 <plugin name="phonegap-plugin-barcodescanner" source="npm">
 	<variable name="CAMERA_USAGE_DESCRIPTION" value="App would use camera to read QRCode" />
