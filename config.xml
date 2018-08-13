@@ -111,11 +111,12 @@
 	<gap:plugin name="de.appplant.cordova.plugin.local-notification" source="npm"/>
     <plugin name="cordova-plugin-geolocation" />
   
-    <!--<gap:plugin name="cordova-plugin-background-mode" source="npm"/>-->
+    <gap:plugin name="cordova-plugin-background-mode" source="npm"/>
     <!--<plugin name="cordova-background-geolocation-lt" source="npm" />-->
     <plugin name="cordova-plugin-mauron85-background-geolocation" spec="^2.2.4">
       <variable name="ALWAYS_USAGE_DESCRIPTION" value="This app requires background tracking enabled" />
     </plugin>
+    <!--2017-06-16 vecchio plugin BLE sostituito per inserimento messaggio BLUETOOTH_USAGE_DESCRIPTION? -->
     <!--2017-06-16 <plugin name="com.evothings.ble" source="npm" spec="2.0.1">-->
 	  
     <!-- commentato perchè il cambio di plugin necessita modifica della myapy_cordova.js-->	  
