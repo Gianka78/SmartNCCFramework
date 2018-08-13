@@ -48,18 +48,6 @@ evothings.arduinotcp = {}
 	var internal = {}
 
 	/**
-	 * Internal string that holds data read from server.
-	 * @private
-	 */
-	internal.receiveBuffer = ''
-	
-	/**
-	 * Internal flag that keeps track of the receive listener.
-	 * @private
-	 */
-	internal.receiveListnerAdded = false
-
-	/**
 	 * Internal arrays for timeouts.
 	 * @private
 	 */
@@ -245,45 +233,16 @@ evothings.arduinotcp = {}
 	{
 		evothings.arduinotcp.disconnect()
 
-		chrome.sockets.tcp.create(function(createInfo)
+		chrome.socket.create('tcp', {}, function(createInfo)
 		{
-		  // Save socket id.
 			internal.socketId = createInfo.socketId
-			
-			// Connect.
-			chrome.sockets.tcp.connect(
+			chrome.socket.connect(
 				createInfo.socketId,
 				hostname,
 				port,
 				function(resultCode)
 				{
-				  if (resultCode === 0)
-				  {
-				    // Connect success.
-				    
-				    // Set up receive listener (lazy initialisation).
-				    if (!internal.receiveListnerAdded)
-				    {
-				      internal.receiveListnerAdded = true
-				      
-              chrome.sockets.tcp.onReceive.addListener(function(info) 
-              {
-                // Accumulate result.
-                internal.receiveBuffer += internal.bufferToString(info.data)
-              
-                // Process data.
-                internal.readNext()
-              })
-            }
-			    
-					  internal.connected = true
-					}
-					else
-					{
-				    // Error.
-					  internal.connected = false
-					}
-					
+					internal.connected = (0 === resultCode)
 					callback(internal.connected)
 				}
 			)
@@ -298,7 +257,7 @@ evothings.arduinotcp = {}
 	{
 		if (internal.connected)
 		{
-			chrome.sockets.tcp.close(internal.socketId)
+			chrome.socket.disconnect(internal.socketId)
 			internal.connected = false
 		}
 	}
@@ -338,12 +297,12 @@ evothings.arduinotcp = {}
 	 */
 	internal.write = function(socketId, string, callback)
 	{
-		chrome.sockets.tcp.send(
+		chrome.socket.write(
 			socketId,
 			internal.stringToBuffer(string),
-			function(sendInfo)
+			function(writeInfo)
 			{
-				callback(sendInfo.bytesSent)
+				callback(writeInfo.bytesWritten)
 			}
 		)
 	}
@@ -353,6 +312,12 @@ evothings.arduinotcp = {}
 	 * @private
 	 */
 	internal.resultCallbackQueue = []
+
+	/**
+	 * Data being read from the server.
+	 * @private
+	 */
+	internal.resultData = ''
 
 	/**
 	 * Read result from server, calling the callback function
@@ -367,50 +332,60 @@ evothings.arduinotcp = {}
 
 		// If this is the only callback there is no read operation
 		// in progress, so start reading.
-		internal.readNext()
+		if (internal.resultCallbackQueue.length == 1)
+		{
+			internal.resultData = ''
+			internal.readNext()
+		}
 	}
 
 	/**
-	 * Parse data received from server, when a result is found (reading up to
-	 * next newline char) the first function in the callback queue is called.
-	 * This function may return if data has not yet arrived from the server.
-	 * In that case it will be called again.
+	 * Read data from server, when a result is read (reading up to next
+	 * newline char) the first function in the callback queue is called.
 	 * @private
 	 */
 	internal.readNext = function()
 	{
-    if (internal.resultCallbackQueue.length === 0)
-		{
-		  // No callback in queue.
-			return
-		}
-		
-		console.log('internal.readNext: ' + internal.receiveBuffer)
-		
-		var data = internal.receiveBuffer
-		
-		// Does in buffer contain a newline?
-		var pos = data.indexOf('\n')
-		
-		if (pos > -1)
-		{
-		  // Extract data up to newline.
-		  var result = data.substr(0, pos)
-		  
-		  // Remove data from input buffer.
-		  internal.receiveBuffer = internal.receiveBuffer.substring(pos + 1) 
-		  
-			// Call next callback in queue with the result.
-			var callback = internal.resultCallbackQueue.shift()
-			callback(result)
+		console.log('internal.readNext: ' + internal.resultData)
+		chrome.socket.read(
+			internal.socketId,
+			1,
+			function(readInfo)
+			{
+				if (1 == readInfo.resultCode)
+				{
+					var data = internal.bufferToString(readInfo.data)
+					if (data == '\n')
+					{
+						console.log('  end of data: ' + data)
+						// We have read all data, call next result callback with result.
+						var callback = internal.resultCallbackQueue.shift()
+						callback(internal.resultData)
 
-      // If there are callbacks waiting, continue reading
-      // the next result.
-      if (internal.resultCallbackQueue.length > 0)
-      {
-        internal.readNext()
-      }
-		}
+						// If there are callbacks waiting, continue reading
+						// the next result.
+						if (internal.resultCallbackQueue.length > 0)
+						{
+							internal.resultData = ''
+							internal.readNext()
+						}
+					}
+					else
+					{
+						console.log('  got data: ' + data)
+						// We got more data, continue to read.
+						internal.resultData += data
+						internal.readNext()
+					}
+				}
+				else
+				{
+					console.log('  no data')
+					// We did not get any data, read again.
+					internal.readNext()
+				}
+			}
+		)
 	}
 
 	/**

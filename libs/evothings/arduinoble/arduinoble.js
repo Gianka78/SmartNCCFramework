@@ -135,11 +135,11 @@ evothings.arduinoble = {};
 		 * @instance
 		 * @public
 		 */
-		device.writeDataArray = function(uint8array, uuid)
+		device.writeDataArray = function(uint8array)
 		{
-			uuid = uuid || '713d0003-503e-4c75-ba94-3148f18d941e';
 			device.writeCharacteristic(
-				uuid,
+				// TODO: Make this possible to set.
+				'713d0003-503e-4c75-ba94-3148f18d941e',
 				uint8array,
 				function()
 				{
