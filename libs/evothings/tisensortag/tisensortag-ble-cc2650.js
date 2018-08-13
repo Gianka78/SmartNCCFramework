@@ -305,6 +305,28 @@
 
 		/**
 		 * SensorTag CC2650.
+		 * Calculate humidity values from raw data.
+		 * @param data - an Uint8Array.
+		 * @return Object with fields: humidityTemperature, relativeHumidity.
+		 * @instance
+		 * @public
+		 */
+		instance.getHumidityValues = function(data)
+		{
+			// Calculate the humidity temperature (Celsius).
+			var tData = evothings.util.littleEndianToInt16(data, 0);
+			var tc = (tData / 65536.0) * 165 - 40;
+
+			// Calculate the relative humidity.
+			var hData = evothings.util.littleEndianToUint16(data, 2);
+			var h = hData * 100 / 65536.0;
+
+			// Return result.
+			return { humidityTemperature: tc, relativeHumidity: h }
+		}
+
+		/**
+		 * SensorTag CC2650.
 		 * Calculate accelerometer values from raw data.
 		 * @param data - an Uint8Array.
 		 * @return Object with fields: x, y, z.
@@ -351,19 +373,8 @@
 		 */
 		instance.getBarometerValues = function(data)
 		{
-			var p = evothings.util.littleEndianToUint16(data, 2)
-
-			// Extraction of pressure value, based on sfloatExp2ToDouble from
-			// BLEUtility.m in Texas Instruments TI BLE SensorTag iOS app
-			// source code.
-			// TODO: Move to util.js
-			var mantissa = p & 0x0FFF
-			var exponent = p >> 12
-
-			magnitude = Math.pow(2, exponent)
-			output = (mantissa * magnitude)
-
-			var pInterpreted = output / 10000.0
+			var rawP = (data[5] << 16) + (data[4] << 8) +  data[3];
+			var pInterpreted = rawP / 100.0;
 
 			return { pressure: pInterpreted }
 		}
