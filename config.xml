@@ -111,16 +111,18 @@
 	<gap:plugin name="de.appplant.cordova.plugin.local-notification" source="npm"/>
     <plugin name="cordova-plugin-geolocation" />
   
-    <gap:plugin name="cordova-plugin-background-mode" source="npm"/>
+    <!--<gap:plugin name="cordova-plugin-background-mode" source="npm"/>-->
     <!--<plugin name="cordova-background-geolocation-lt" source="npm" />-->
     <plugin name="cordova-plugin-mauron85-background-geolocation" spec="^2.2.4">
       <variable name="ALWAYS_USAGE_DESCRIPTION" value="This app requires background tracking enabled" />
     </plugin>
-    <gap:plugin name="cordova-plugin-ios-ble-permissions" source="npm" />
     <!--2017-06-16 <plugin name="com.evothings.ble" source="npm" spec="2.0.1">-->
-    <plugin name="cordova-plugin-ble" source="npm">
+	  
+    <!-- commentato perchè il cambio di plugin necessita modifica della myapy_cordova.js-->	  
+    <!--2018-08-13 <gap:plugin name="cordova-plugin-ios-ble-permissions" source="npm" />-->
+    <!--2018-08-13 <plugin name="cordova-plugin-ble" source="npm">
   	<variable name="BLUETOOTH_USAGE_DESCRIPTION" value="App would use BT Connetion to Bluetooth printers" />
-    </plugin>
+    </plugin>-->
     <!--<plugin name="cordova-plugin-calendar" source="npm">
     	<variable name="CALENDAR_USAGE_DESCRIPTION" value="App would use Calendars to alert user for scheduled customer bookings and driver own tasks" />
         <variable name="GOOGLE_PLAY_SERVICES_VERSION" value="11.0.1" />
