@@ -105,9 +105,12 @@
     <!--<preference name='phonegap-version' value='cli-7.0.1' /> rimosso 2018-08-15 -->
     <preference name='phonegap-version' value='cli-7.1.0' />
 	  
-    <plugin name="phonegap-plugin-push" source="npm" spec="1.10.5" >
+    <!-- 2018-08-15 <plugin name="phonegap-plugin-push" source="npm" spec="1.10.5" >
       <param name="SENDER_ID" value="236799555977" />
-    </plugin> 
+    </plugin>-->
+    <plugin name="phonegap-plugin-push" source="npm">
+	<param name="SENDER_ID" value="236799555977" />
+    </plugin>
     <!--<gap:plugin name="de.appplant.cordova.plugin.local-notification" version="0.8.4"  source="npm"/> 2017-07-31 per migrazione pg6.0.5-->
 	<gap:plugin name="de.appplant.cordova.plugin.local-notification" source="npm"/>
     <plugin name="cordova-plugin-geolocation" />
