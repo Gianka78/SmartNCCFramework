@@ -62,8 +62,8 @@
   
   <platform name="android">
     <!--<preference name="phonegap-version" value="cli-6.5.0" />-->
-    <preference name='phonegap-version' value='cli-7.0.1' />
-    <!--<preference name='phonegap-version' value='cli-8.0.0' />-->
+    <!--2018-08-15 <preference name='phonegap-version' value='cli-7.0.1' />-->
+    <preference name='phonegap-version' value='cli-8.0.0' />
     <!--<preference name='pgb-builder-version' value='1' />-->
 	  
     <!-- 2017-12-11 -->
@@ -84,7 +84,7 @@
 	  
 <!-- 2017-12-11 -->
 	  
-<plugin name="cordova-plugin-mauron85-background-geolocation" spec="2.2.5">
+<plugin name="cordova-plugin-mauron85-background-geolocation">
     <variable name="ALWAYS_USAGE_DESCRIPTION" value="This app requires background tracking enabled" />
     <variable name="GOOGLE_PLAY_SERVICES_VERSION" value="11.0.1" />
 </plugin>
