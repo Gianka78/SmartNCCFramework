@@ -102,8 +102,9 @@
   <platform name="ios">
     <!--<preference name="phonegap-version" value="cli-5.4.1" /> rimosso 31/07/2017 problema agg cordova-->
     <!--<preference name="phonegap-version" value="cli-6.5.0" /> rimosso 2017-07/04-->
-    <preference name='phonegap-version' value='cli-7.0.1' />
-    <!--<preference name='phonegap-version' value='cli-7.1.0' />-->
+    <!--<preference name='phonegap-version' value='cli-7.0.1' /> rimosso 2018-08-15 -->
+    <preference name='phonegap-version' value='cli-7.1.0' />
+	  
     <plugin name="phonegap-plugin-push" source="npm" spec="1.10.5" >
       <param name="SENDER_ID" value="236799555977" />
     </plugin> 
@@ -113,9 +114,15 @@
   
     <gap:plugin name="cordova-plugin-background-mode" source="npm"/>
     <!--<plugin name="cordova-background-geolocation-lt" source="npm" />-->
-    <plugin name="cordova-plugin-mauron85-background-geolocation" spec="^2.2.4">
+    <!-- 2018-08-15 <plugin name="cordova-plugin-mauron85-background-geolocation" spec="^2.2.4">
       <variable name="ALWAYS_USAGE_DESCRIPTION" value="This app requires background tracking enabled" />
+    </plugin>-->
+    <plugin name="cordova-plugin-mauron85-background-geolocation">
+	<variable name="GOOGLE_PLAY_SERVICES_VERSION" value="11+" />
+  	<variable name="ANDROID_SUPPORT_LIBRARY_VERSION" value="23+" />
+	<variable name="ALWAYS_USAGE_DESCRIPTION" value="This app requires background tracking enabled" />
     </plugin>
+	  
     <!--2017-06-16 vecchio plugin BLE sostituito per inserimento messaggio BLUETOOTH_USAGE_DESCRIPTION? -->
     <!--2017-06-16 <plugin name="com.evothings.ble" source="npm" spec="2.0.1">-->
 	  
