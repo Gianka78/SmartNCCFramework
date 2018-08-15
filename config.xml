@@ -87,7 +87,8 @@
 	  
 <plugin name="cordova-plugin-mauron85-background-geolocation">
     <variable name="ALWAYS_USAGE_DESCRIPTION" value="This app requires background tracking enabled" />
-    <variable name="GOOGLE_PLAY_SERVICES_VERSION" value="11.0.1" />
+    <variable name="GOOGLE_PLAY_SERVICES_VERSION" value="11+" />
+    <variable name="ANDROID_SUPPORT_LIBRARY_VERSION" value="23+" />
 </plugin>
 
 
