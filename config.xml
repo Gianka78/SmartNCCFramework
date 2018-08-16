@@ -87,7 +87,7 @@
 <!-- 2017-12-11 -->
 	  
 <plugin name="cordova-plugin-mauron85-background-geolocation">
-    <variable name="ALWAYS_USAGE_DESCRIPTION" value="This application may request GPS always-on tracking to count kilometers traveled during the trip (only after explicit request and only for driver profiles)" />
+    <variable name="ALWAYS_USAGE_DESCRIPTION" value="This application may ask for GPS always-on tracking to count kilometers traveled during the trip (only after explicit request and only for driver profiles)" />
     <variable name="GOOGLE_PLAY_SERVICES_VERSION" value="11+" />
     <variable name="ANDROID_SUPPORT_LIBRARY_VERSION" value="23+" />
 </plugin>
@@ -127,7 +127,7 @@
     <plugin name="cordova-plugin-mauron85-background-geolocation">
 	<variable name="GOOGLE_PLAY_SERVICES_VERSION" value="11+" />
   	<variable name="ANDROID_SUPPORT_LIBRARY_VERSION" value="23+" />
-	<variable name="ALWAYS_USAGE_DESCRIPTION" value="This application may request GPS always-on tracking to count kilometers traveled during the trip (only after explicit request and only for driver profiles)" />
+	<variable name="ALWAYS_USAGE_DESCRIPTION" value="This application may ask for GPS always-on tracking to count kilometers traveled during the trip (only after explicit request and only for driver profiles)" />
     </plugin>
 	  
     <!--2017-06-16 vecchio plugin BLE sostituito per inserimento messaggio BLUETOOTH_USAGE_DESCRIPTION? -->
