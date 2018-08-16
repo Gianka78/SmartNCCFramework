@@ -116,7 +116,7 @@
 		<param name="SENDER_ID" value="236799555977" />
     </plugin>
     <!--<gap:plugin name="de.appplant.cordova.plugin.local-notification" version="0.8.4"  source="npm"/> 2017-07-31 per migrazione pg6.0.5-->
-	<gap:plugin name="de.appplant.cordova.plugin.local-notification" source="npm"/>
+    <!-- 2018-08-16 <gap:plugin name="de.appplant.cordova.plugin.local-notification" source="npm"/>-->
     <plugin name="cordova-plugin-geolocation" />
   
     <gap:plugin name="cordova-plugin-background-mode" source="npm"/>
