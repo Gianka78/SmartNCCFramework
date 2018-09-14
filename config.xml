@@ -3,12 +3,20 @@
 
 <!-- Sezione customizzata per cliente --> 
   <widget xmlns = "http://www.w3.org/ns/widgets"  xmlns:gap = "http://phonegap.com/ns/1.0"
-          id = "com.SmartNCCMobile.MULTIUSER" version = "13.020" versionCode = "13020" > 
+          id = "com.SmartNCCMobile.MULTIUSER" version = "13.012" versionCode = "13012" > 
     
   <name>SmartNCC Mobile</name>
   <description>Piattaforma MOBILE SMARTNCC</description>
   <author href="http://www.gd-soft.it" email="info@gd-soft.it">GD-SOFT S.R.L.</author>
- 
+<!--
+
+  <widget id = "com.SmartNCCVIPCLASS" version = "12.002" versionCode = "VIPCLASS12002" xmlns = "http://www.w3.org/ns/widgets"  xmlns:gap = "http://phonegap.com/ns/1.0" >
+  <name>VIPCLASS Chauffeured limousine</name>
+  <description>Piattaforma SmartNCC Mobile - Vipclass Chauffeured Limousine s.c.a.r.l.</description>
+  <author href="http://www.gd-soft.it" email="info@gd-soft.it">GD-SOFT S.R.L.</author>
+-->
+<!-- Fine sezione customizzata per cliente -->
+  
   
 <!--
   cordova-background-geolocation-lt   	npm	*	n/a	n/a	winphone
@@ -62,21 +70,20 @@
   
   <platform name="android">
     <!--<preference name="phonegap-version" value="cli-6.5.0" />-->
-    <!--2018-08-15 <preference name='phonegap-version' value='cli-7.0.1' />-->
-    <!--<preference name='phonegap-version' value='cli-7.1.0' />-->
-    <preference name='phonegap-version' value='cli-8.0.0' />
+    <preference name='phonegap-version' value='cli-7.0.1' />
     <!--<preference name='pgb-builder-version' value='1' />-->
 	  
-    <!-- 2018-09-14<preference name="android-minSdkVersion" value="27" />
-    <preference name="android-build-tool" value="gradle" />-->
-
-    <!-- 2018-09-14<plugin name="phonegap-plugin-push" source="npm" spec="1.10.5" >
+    <!-- 2017-12-11 -->
+    
+	  
+    <preference name="android-build-tool" value="gradle" />
+    <plugin name="phonegap-plugin-push" source="npm" spec="1.10.5" >
       <param name="SENDER_ID" value="236799555977" />
-    </plugin>-->
+    </plugin>
 	  
     <!--<gap:plugin name="de.appplant.cordova.plugin.local-notification" version="0.8.4"  source="npm"/> 2017-07-31 per migrazione pg6.0.5-->
     
-    <!-- 2018-09-14<gap:plugin name="de.appplant.cordova.plugin.local-notification" source="npm"/>-->
+    <gap:plugin name="de.appplant.cordova.plugin.local-notification" source="npm"/>
 	
     <!--<plugin name="cordova-plugin-geolocation" />rimosso 21/02/2017 errore compilazione agg phonegap-->
     <!--<gap:plugin name="de.appplant.cordova.plugin.background-mode"/>-->
@@ -84,68 +91,151 @@
     <!-- <gap:plugin name="cordova-plugin-mauron85-background-geolocation" source="npm"/> -->
     <!-- <plugin name="cordova-background-geolocation-lt" source="npm" /> -->
 	  
-<!-- 2018-09-14
-  
-<plugin name="cordova-plugin-mauron85-background-geolocation">
-    <variable name="ALWAYS_USAGE_DESCRIPTION" value="This application may ask for GPS always-on tracking to count kilometers traveled during the trip (only after explicit request and only for driver profiles)" />
-    <variable name="GOOGLE_PLAY_SERVICES_VERSION" value="11+" />
-    <variable name="ANDROID_SUPPORT_LIBRARY_VERSION" value="23+" />
+<!-- 2017-12-11 -->
+	  
+<plugin name="cordova-plugin-mauron85-background-geolocation" spec="2.2.5">
+    <variable name="ALWAYS_USAGE_DESCRIPTION" value="This app requires background tracking enabled" />
+    <variable name="GOOGLE_PLAY_SERVICES_VERSION" value="11.0.1" />
 </plugin>
--->
 
-    <!-- 2018-09-14<plugin name="cordova-plugin-bluetooth-serial" source="npm">
+
+    <plugin name="cordova-plugin-bluetooth-serial" source="npm">
 		<variable name="BLUETOOTH_USAGE_DESCRIPTION" value="App would use BT Connetion to Bluetooth printers" />
     </plugin>
     <plugin name="cordova-plugin-calendar" source="npm">
     	<variable name="CALENDAR_USAGE_DESCRIPTION" value="App would use Calendars to alert user for scheduled customer bookings and driver own tasks" />
     </plugin>
-  	<plugin name="cordova-plugin-chrome-apps-socket" />-->
+  	<plugin name="cordova-plugin-chrome-apps-socket" />
   </platform>
   
   <platform name="ios">
-    <!--<preference name="phonegap-version" value="cli-5.4.1" /> rimosso 31/07/2017 problema agg cordova-->
+    <preference name='phonegap-version' value='cli-7.0.1' />	  
     <!--<preference name="phonegap-version" value="cli-6.5.0" /> rimosso 2017-07/04-->
-    <!--<preference name='phonegap-version' value='cli-7.0.1' /> rimosso 2018-08-15 -->
-    <!--<preference name='phonegap-version' value='cli-7.1.0' />-->
-	<preference name='phonegap-version' value='cli-8.0.0' />
-	  
-    <!-- 2018-08-15 <plugin name="phonegap-plugin-push" source="npm" spec="1.10.5" >
+    <!--<preference name="phonegap-version" value="cli-5.4.1" /> rimosso 31/07/2017 problema agg cordova-->
+    <plugin name="phonegap-plugin-push" source="npm" spec="1.10.5" >
       <param name="SENDER_ID" value="236799555977" />
-    </plugin>-->
-    <plugin name="phonegap-plugin-push" source="npm">
-	<param name="SENDER_ID" value="236799555977" />
-    </plugin>
+    </plugin> 
     <!--<gap:plugin name="de.appplant.cordova.plugin.local-notification" version="0.8.4"  source="npm"/> 2017-07-31 per migrazione pg6.0.5-->
-    <!-- 2018-08-16 <gap:plugin name="de.appplant.cordova.plugin.local-notification" source="npm"/>-->
-	  
-    <!-- 2018-08-16 <plugin name="cordova-plugin-geolocation" />
-    <gap:plugin name="cordova-plugin-background-mode" source="npm"/>-->
-	
-    <!-- 2018-08-15 <plugin name="cordova-plugin-mauron85-background-geolocation" spec="^2.2.4">
+	<gap:plugin name="de.appplant.cordova.plugin.local-notification" source="npm"/>
+    <plugin name="cordova-plugin-geolocation" />
+  
+    <gap:plugin name="cordova-plugin-background-mode" source="npm"/>
+    <!--<plugin name="cordova-background-geolocation-lt" source="npm" />-->
+    <plugin name="cordova-plugin-mauron85-background-geolocation" spec="^2.2.4">
       <variable name="ALWAYS_USAGE_DESCRIPTION" value="This app requires background tracking enabled" />
-    </plugin>-->
-
-    <!-- 2018-08-16 <plugin name="cordova-plugin-mauron85-background-geolocation">
-	<variable name="GOOGLE_PLAY_SERVICES_VERSION" value="11+" />
-  	<variable name="ANDROID_SUPPORT_LIBRARY_VERSION" value="23+" />
-	<variable name="ALWAYS_USAGE_DESCRIPTION" value="This application may ask for GPS always-on tracking to count kilometers traveled during the trip (only after explicit request and only for driver profiles)" />
-    </plugin> -->
-	  
-    <!--2017-06-16 vecchio plugin BLE sostituito per inserimento messaggio BLUETOOTH_USAGE_DESCRIPTION? -->
+    </plugin>
+    <gap:plugin name="cordova-plugin-ios-ble-permissions" source="npm" />
     <!--2017-06-16 <plugin name="com.evothings.ble" source="npm" spec="2.0.1">-->
-	  
-    <!-- commentato perchÃ¨ il cambio di plugin necessita modifica della myapy_cordova.js-->	  
-    <!--2018-08-13 <gap:plugin name="cordova-plugin-ios-ble-permissions" source="npm" />-->
-    <!--2018-08-13 <plugin name="cordova-plugin-ble" source="npm">
+    <plugin name="cordova-plugin-ble" source="npm">
   	<variable name="BLUETOOTH_USAGE_DESCRIPTION" value="App would use BT Connetion to Bluetooth printers" />
-    </plugin>-->
+    </plugin>
     <!--<plugin name="cordova-plugin-calendar" source="npm">
     	<variable name="CALENDAR_USAGE_DESCRIPTION" value="App would use Calendars to alert user for scheduled customer bookings and driver own tasks" />
         <variable name="GOOGLE_PLAY_SERVICES_VERSION" value="11.0.1" />
     </plugin>-->
     
   </platform>
+  
+<!--  2017-12-11
+   <platform name="winphone">
+	  
+    <preference name='phonegap-version' value='cli-6.3.0' />	
+	<author>A188DFBB</author>
+	<preference name="windows-identity-name" value="A188DFBB.SmartNCCMobile" />
+	<gap:plugin name="de.appplant.cordova.plugin.local-notification" source="npm"/>
+	  
+    <plugin name="cordova-background-geolocation-lt" source="npm" />
+    <plugin name="cordova-plugin-geolocation" />
+  </platform>
+-->
+  
 
+<plugin name="phonegap-plugin-barcodescanner" source="npm" spec="6.0.8">
+	<variable name="CAMERA_USAGE_DESCRIPTION" value="App would use camera to read QRCode" />
+	<variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="App would like to get QRCode reads from your library" />
+</plugin>
+
+	  
+
+<gap:config-file platform="ios" parent="NSCameraUsageDescription" overwrite="true">
+   <string>We are using the Camera for scanning QRCode coupons..</string>
+</gap:config-file>
+	  
+	  
+<config-file platform="ios" parent="NSPhotoLibraryUsageDescription" mode="replace">  
+      <string>App would like to access the library to take photo of vechicle damages.</string> 
+</config-file>
+   
+  <plugin name="cordova-plugin-splashscreen" source="npm" />
+  
+  <plugin name="cordova-plugin-statusbar" source="npm" />   
+  <plugin name="cordova-plugin-dialogs" source="npm" />
+  <plugin name="cordova-plugin-vibration" source="npm" />
+  <plugin name="cordova-plugin-device-orientation" source="npm" />	  
+  <plugin name="cordova-plugin-sqlite-2" source="npm" />
+  <plugin name="cordova-plugin-insomnia" source="npm" />	  
+  
+  <!--<plugin name="cordova-plugin-bluetooth-serial" source="npm" />-->
+  <!--<plugin name="com.evothings.ble" source="npm" spec="2.0.1" />-->
+
+  
+  <plugin name="cordova-plugin-device" source="npm" spec="1.0.1" />
+  
+  <plugin name="cordova-plugin-whitelist" spec="1.2.2" />
+  <plugin name="cordova-plugin-legacy-whitelist" /> 
+  <gap:plugin name="cordova-plugin-appinfo" source="npm"/>
+  <gap:plugin name="cordova-plugin-battery-status" source="npm"/>
+  <gap:plugin name="cordova-plugin-network-information" spec="1.0.1" source="npm"/>
+   	  
+	  
+  <!--<plugin name="cordova-background-geolocation-lt" source="npm" />-->
+  <!--2017-06-16 <gap:plugin name="cordova-plugin-badge" source="npm" />-->
+  
+	<gap:plugin name="cordova-plugin-badge" source="npm" spec="0.7.3" />
+	<gap:plugin name="cordova-plugin-file" source="npm" spec="4.3.3" />
+	  
+	<!-- 2017-12-11 errore compilazione-->
+	<gap:plugin name="cordova-plugin-file-transfer" source="npm" spec="1.6.3"/>
+
+	<gap:plugin name="cordova-plugin-file-hash" source="npm" />
+
+	<!-- 2017-12-11 errore compilazione-->
+	<gap:plugin name="cordova-open" source="npm" />
+
+  
+  
+  <plugin name="cordova-plugin-camera">
+        <variable name="CAMERA_USAGE_DESCRIPTION" value="APP would use camera to take photo of vehicle damages." />
+	<variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="App would like to access the library to take photo of vechicle damages." />
+  </plugin>
+ 
+  
+  <gap:plugin name="cordova-plugin-inappbrowser" source="npm" />
+ 
+  <preference name="iosExtraFilesystems" value="library,library-nosync,documents,documents-nosync,cache,bundle,root" />
+  <preference name="AndroidExtraFilesystems" value="files,files-external,documents,sdcard,cache,cache-external,assets,root" />
+	  
+  <!-- bluettoth standard da provare <gap:plugin name="com.megster.cordova.bluetoothserial" version="0.3.3" />-->
+  <!-- non compatibile cli-6.1.0 <gap:plugin name="org.apache.cordova.geolocation" />-->
+  <!-- non compatibile cli-6.1.0 <gap:plugin name="org.apache.cordova.device" spec="1.1.2" source="npm"/>-->  
+  <!--inutile <plugin name="fi.avaus.cordova.geolocation" spec="0.3.11" source="npm" />-->
+  
+  <!-- provato non funziona iOS <gap:plugin name="de.appplant.cordova.plugin.background-mode"  />-->
+  <!-- provato non funziona iOS <gap:plugin name="cordova-plugin-background-app" spec="^2.0.0" />-->
+  
+  
+  <gap:config-file platform="ios" parent="UIViewControllerBasedStatusBarAppearance" overwrite="true">
+    <false/>
+  </gap:config-file>
+  
+  <gap:config-file platform="ios" parent="ITSAppUsesNonExemptEncryption" mode="add">
+    <false/>
+  </gap:config-file>
+
+  <feature name="http://api.phonegap.com/1.0/device"/>
+  <feature name="http://api.phonegap.com/1.0/camera"/>
+  <feature name="http://api.phonegap.com/1.0/geolocation"/>
+  
   <!--<platform name="android">
     <icon src="res/icons/android/ic_launcher_ldpi.png" density="ldpi" />
     <icon src="res/icons/android/ic_launcher_mdpi.png" density="mdpi" />
@@ -218,7 +308,6 @@
     <icon src="icon_58x58.png" width="58" height="58" />
     <icon src="icon_50x50.png" width="50" height="50" />
     <icon src="icon_100x100.png" width="100" height="100" />
-    <icon src="icon.png" width="1024" height="1024" gap:platform="ios" />
   </platform>
   
 <!--
