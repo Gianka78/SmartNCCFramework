@@ -147,64 +147,6 @@
   </platform>
 
 
-<plugin name="phonegap-plugin-barcodescanner" source="npm">
-	<variable name="CAMERA_USAGE_DESCRIPTION" value="App would use camera to read QRCode" />
-	<variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="App would like to get QRCode reads from your library" />
-</plugin>
-
-	  
-
-<gap:config-file platform="ios" parent="NSCameraUsageDescription" overwrite="true">
-   <string>We are using the Camera for scanning QRCode coupons..</string>
-</gap:config-file>
-	  
-	  
-<config-file platform="ios" parent="NSPhotoLibraryUsageDescription" mode="replace">  
-      <string>App would like to access the library to take photo of vechicle damages.</string> 
-</config-file>
-   
-  <plugin name="cordova-plugin-splashscreen" source="npm" />
-  
-  <plugin name="cordova-plugin-statusbar" source="npm" />   
-  <plugin name="cordova-plugin-dialogs" source="npm" />
-  <plugin name="cordova-plugin-vibration" source="npm" />
-  <plugin name="cordova-plugin-device-orientation" source="npm" />	  
-  <plugin name="cordova-plugin-sqlite-2" source="npm" />
-  <plugin name="cordova-plugin-insomnia" source="npm" />	  
-  
-  <!--<plugin name="cordova-plugin-bluetooth-serial" source="npm" />-->
-  <!--<plugin name="com.evothings.ble" source="npm" spec="2.0.1" />-->
-
-  
-  <plugin name="cordova-plugin-device" source="npm"  />
-  
-  <plugin name="cordova-plugin-whitelist" />
-  <plugin name="cordova-plugin-legacy-whitelist" /> 
-  <gap:plugin name="cordova-plugin-appinfo" source="npm"/>
-  <gap:plugin name="cordova-plugin-battery-status" source="npm"/>
-  <gap:plugin name="cordova-plugin-network-information" source="npm"/>
-   	  
-	  
-  <!--<plugin name="cordova-background-geolocation-lt" source="npm" />-->
-  <!--2017-06-16 <gap:plugin name="cordova-plugin-badge" source="npm" />-->
-
-  <!-- bluettoth standard da provare <gap:plugin name="com.megster.cordova.bluetoothserial" version="0.3.3" />-->
-  <!-- non compatibile cli-6.1.0 <gap:plugin name="org.apache.cordova.geolocation" />-->
-  <!-- non compatibile cli-6.1.0 <gap:plugin name="org.apache.cordova.device" spec="1.1.2" source="npm"/>-->  
-  <!--inutile <plugin name="fi.avaus.cordova.geolocation" spec="0.3.11" source="npm" />-->
-  
-  <!-- provato non funziona iOS <gap:plugin name="de.appplant.cordova.plugin.background-mode"  />-->
-  <!-- provato non funziona iOS <gap:plugin name="cordova-plugin-background-app" spec="^2.0.0" />-->
-  
-  
-  <gap:config-file platform="ios" parent="UIViewControllerBasedStatusBarAppearance" overwrite="true">
-    <false/>
-  </gap:config-file>
-  
-  <gap:config-file platform="ios" parent="ITSAppUsesNonExemptEncryption" mode="add">
-    <false/>
-  </gap:config-file>
-
   <feature name="http://api.phonegap.com/1.0/device"/>
   <feature name="http://api.phonegap.com/1.0/camera"/>
   <feature name="http://api.phonegap.com/1.0/geolocation"/>
