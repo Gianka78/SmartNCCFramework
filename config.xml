@@ -58,7 +58,14 @@
   <!-- funzionante su cli-5.4.1 <gap:plugin namde="de.appplant.cordova.plugin.background-mode" version="0.65" source="npm"/>-->
   
   <platform name="android">
-    <preference name="phonegap-version" value="cli-6.4.0" />
+    <!--<preference name="phonegap-version" value="cli-6.5.0" />-->
+    <!--2018-08-15 <preference name='phonegap-version' value='cli-7.0.1' />-->
+	<preference name='phonegap-version' value='cli-7.1.0' />
+    <!--<preference name='phonegap-version' value='cli-8.0.0' />-->
+    <!--<preference name='pgb-builder-version' value='1' />-->
+	  
+    <!-- 2017-12-11 -->
+    <preference name="android-minSdkVersion" value="16" />
     <preference name="android-build-tool" value="gradle" />
     <plugin name="phonegap-plugin-push" source="npm" version="1.5.3">
       <param name="SENDER_ID" value="236799555977" />
@@ -171,8 +178,7 @@
  
   <preference name="iosExtraFilesystems" value="library,library-nosync,documents,documents-nosync,cache,bundle,root" />
   <preference name="AndroidExtraFilesystems" value="files,files-external,documents,sdcard,cache,cache-external,assets,root" />
-
-    
+	  
   <!-- bluettoth standard da provare <gap:plugin name="com.megster.cordova.bluetoothserial" version="0.3.3" />-->
   <!-- non compatibile cli-6.1.0 <gap:plugin name="org.apache.cordova.geolocation" />-->
   <!-- non compatibile cli-6.1.0 <gap:plugin name="org.apache.cordova.device" spec="1.1.2" source="npm"/>-->  
@@ -266,6 +272,7 @@
     <icon src="icon_58x58.png" width="58" height="58" />
     <icon src="icon_50x50.png" width="50" height="50" />
     <icon src="icon_100x100.png" width="100" height="100" />
+    <icon src="icon.png" width="1024" height="1024" gap:platform="ios" />
   </platform>
   
 <!--
@@ -310,17 +317,44 @@
     <gap:splash src="splash-portrait.png"                           gap:platform="android" gap:qualifier="port-hdpi" />
     <gap:splash src="splash-portrait.png"                           gap:platform="android" gap:qualifier="port-xhdpi" />
     <gap:splash src="splash-portrait.png"                           gap:platform="blackberry" />
+	  
+	 
+    <!-- 2017-10-03   
     <gap:splash src="splash-portrait_320x480.png"                   gap:platform="ios"     width="320" height="480" />
     <gap:splash src="splash-portrait_640x960.png"                   gap:platform="ios"     width="640" height="960" />
     <gap:splash src="splash-portrait_640x1136.png"                  gap:platform="ios"     width="640" height="1136" />
     <gap:splash src="splash-portrait_768x1024.png"                  gap:platform="ios"     width="768" height="1024" />
     <gap:splash src="splash_1024x768.png"                           gap:platform="ios"     width="1024" height="768" />
     <gap:splash src="splash-portrait.png"                           gap:platform="winphone" />
+    -->
+	  
+	<!-- iPhone and iPod touch -->
+	<splash src="splash_320x480.png" platform="ios" width="320" height="480" />
+	<splash src="splash_640x960.png" platform="ios" width="640" height="960" />
+
+	<!-- iPhone 5 / iPod Touch (5th Generation) -->
+	<splash src="splash_640x1136.png" platform="ios" width="640" height="1136" />
+
+	<!-- iPhone 6 -->
+	<splash src="splash_750x1334.png" platform="ios" width="750" height="1334" />
+	<splash src="splash_1242x2208.png" platform="ios" width="1242" height="2208" />
+	<splash src="splash_2208x1242.png" platform="ios" width="2208" height="1242" />
+
+	<!-- iPad -->
+	<splash src="splash_768x1024.png" platform="ios" width="768" height="1024" />
+	<splash src="splash_1024x768.png" platform="ios" width="1024" height="768" />
+
+	<!-- Retina iPad -->
+	<splash src="splash_1536x2048.png" platform="ios" width="1536" height="2048" />
+	<splash src="splash_2048x1536.png" platform="ios" width="2048" height="1536" />
+	  
+
+
     
     
-  <allow-navigation href="*" />
-  <allow-intent href="*" />
-  <access origin="*" />
+	  <allow-navigation href="*" />
+	  <allow-intent href="*" />
+	  <access origin="*" />
 
 
 </widget>
