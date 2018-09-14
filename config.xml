@@ -84,14 +84,14 @@
     <!-- <gap:plugin name="cordova-plugin-mauron85-background-geolocation" source="npm"/> -->
     <!-- <plugin name="cordova-background-geolocation-lt" source="npm" /> -->
 	  
-<!-- 2017-12-11 -->
+<!-- 2018-09-14
   
 <plugin name="cordova-plugin-mauron85-background-geolocation">
     <variable name="ALWAYS_USAGE_DESCRIPTION" value="This application may ask for GPS always-on tracking to count kilometers traveled during the trip (only after explicit request and only for driver profiles)" />
     <variable name="GOOGLE_PLAY_SERVICES_VERSION" value="11+" />
     <variable name="ANDROID_SUPPORT_LIBRARY_VERSION" value="23+" />
 </plugin>
-
+-->
 
     <plugin name="cordova-plugin-bluetooth-serial" source="npm">
 		<variable name="BLUETOOTH_USAGE_DESCRIPTION" value="App would use BT Connetion to Bluetooth printers" />
