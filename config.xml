@@ -146,11 +146,6 @@
     
   </platform>
 
-
-  <feature name="http://api.phonegap.com/1.0/device"/>
-  <feature name="http://api.phonegap.com/1.0/camera"/>
-  <feature name="http://api.phonegap.com/1.0/geolocation"/>
-  
   <!--<platform name="android">
     <icon src="res/icons/android/ic_launcher_ldpi.png" density="ldpi" />
     <icon src="res/icons/android/ic_launcher_mdpi.png" density="mdpi" />
