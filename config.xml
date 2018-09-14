@@ -55,7 +55,6 @@
   <preference name="SplashShowOnlyFirstTime" value="false" />
   <preference name="fullscreen" value="false" />
   <preference name="StatusBarBackgroundColor" value="#000000" />
-  <preference name="AndroidPersistentFileLocation" value="Compatibility" />	  
   <preference name="EnableViewportScale" value="true" />
   
   <platform name="android">
@@ -388,6 +387,6 @@
 	  <allow-navigation href="*" />
 	  <allow-intent href="*" />
 	  <access origin="*" />
-          <access origin="cdvfile://*" />
+          
 
 </widget>
