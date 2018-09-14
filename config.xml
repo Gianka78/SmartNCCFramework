@@ -70,9 +70,10 @@
     <!-- 2017-12-11 -->
     <preference name="android-minSdkVersion" value="16" />
     <preference name="android-build-tool" value="gradle" />
+	<!-- 2018-09-14
     <plugin name="phonegap-plugin-push" source="npm" spec="1.10.5" >
       <param name="SENDER_ID" value="236799555977" />
-    </plugin>
+    </plugin>-->
 	  
     <!--<gap:plugin name="de.appplant.cordova.plugin.local-notification" version="0.8.4"  source="npm"/> 2017-07-31 per migrazione pg6.0.5-->
     
