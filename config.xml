@@ -56,7 +56,7 @@
   <!--<preference name="orientation" value="portrait" />-->
   <preference name="fullscreen" value="false" />
   <preference name="StatusBarBackgroundColor" value="#000000" />
-	  
+  <preference name="AndroidPersistentFileLocation" value="Compatibility" />	  
   <preference name="EnableViewportScale" value="true" />
   <!-- funzionante su cli-5.4.1 <gap:plugin namde="de.appplant.cordova.plugin.background-mode" version="0.65" source="npm"/>-->
   
@@ -388,6 +388,6 @@
 	  <allow-navigation href="*" />
 	  <allow-intent href="*" />
 	  <access origin="*" />
-
+          <access origin="cdvfile://*" />
 
 </widget>
