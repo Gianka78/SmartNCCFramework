@@ -189,10 +189,10 @@
   <!--2017-06-16 <gap:plugin name="cordova-plugin-badge" source="npm" />-->
   
 	<gap:plugin name="cordova-plugin-badge" source="npm" spec="0.7.3" />
-	<gap:plugin name="cordova-plugin-file" source="npm" spec="4.3.3" />
+	<gap:plugin name="cordova-plugin-file" source="npm" />
 	  
 	<!-- 2017-12-11 errore compilazione-->
-	<gap:plugin name="cordova-plugin-file-transfer" source="npm" spec="1.6.3"/>
+	<gap:plugin name="cordova-plugin-file-transfer" source="npm" />
 
 	<gap:plugin name="cordova-plugin-file-hash" source="npm" />
 
