@@ -11,7 +11,10 @@
     <script src="libs/evothings/ui/ui.js"></script>
     <script src="libs/evothings/easyble/easyble.js"></script>
     <script src="libs/jquery/jquery.js"></script>
-    
+    <script type="text/javascript" src="libs/popper.min.js"></script>
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css"/>
+    <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="libs/fontawesome/css/all.css"/>
 </head>
 
 <body>
@@ -33,12 +36,15 @@
                 document.getElementsByTagName("head")[0].appendChild(fileref)
         }
         var rnd = Date.now();
-        //var host_prefix = "vipclass";
+        
+        //var host_prefix = "demo2010";
         var host_prefix = "auto_host_byid";
-        var framework_version = "Build 13.006 11-12-2017";
-        var application_type = "nccmobile";
+        var codice_vettore_default = "";
+        
+        var framework_version = "Build 13.020 16-08-2018";
+        var application_type = "nccmobile_custom";
         console.log("framework_version" + framework_version);
-        var remote_folder_url = "http://" + host_prefix + ".smartncc.it/repositorysmartticket_nccolAPP/SmartTicketMobile/";
+        var remote_folder_url = "https://" + host_prefix + ".smartncc.it/repositorysmartticket_nccolAPP/SmartTicketMobile/";
         var import_script = remote_folder_url + "mobileticket_incl.js?rnd=" + rnd;
         //loadjscssfile(import_script, "js");
         //loadjscssfile("http://" + host_prefix + ".smartncc.it/repository_gdsoft_app_framework/tmp.js?rnd=" + rnd, "js");
@@ -84,8 +90,9 @@
 
     <div class="app_loading_spalsh"></div>
 
+    <div id="ncc_app_header"></div>
     <div id="ncc_app_body"></div>
-
+    <div id="ncc_app_menu"></div>
     <div id="ncc_app_footer"></div>
 
     <div id="dialog_div" class="dialog_div">
