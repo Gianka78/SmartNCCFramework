@@ -77,7 +77,7 @@
 	  
     <!--<gap:plugin name="de.appplant.cordova.plugin.local-notification" version="0.8.4"  source="npm"/> 2017-07-31 per migrazione pg6.0.5-->
     
-    <gap:plugin name="de.appplant.cordova.plugin.local-notification" source="npm"/>
+    <!--<gap:plugin name="de.appplant.cordova.plugin.local-notification" source="npm"/> 2019-01-18 incompatibile con PG 8.0.0-->
 	
     <!--<plugin name="cordova-plugin-geolocation" />rimosso 21/02/2017 errore compilazione agg phonegap-->
     <!--<gap:plugin name="de.appplant.cordova.plugin.background-mode"/>-->
