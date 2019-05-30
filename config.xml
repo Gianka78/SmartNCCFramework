@@ -49,6 +49,22 @@
   <!-- problema android no GPS Background <preference name="phonegap-version" value="cli-5.4.1" /> -->
   <!-- problema iOS apre link fuori APP non firma WP8 <preference name="phonegap-version" value="cli-6.1.0" /> -->
   
+	  <plugin name="phonegap-plugin-barcodescanner" source="npm">
+	<variable name="CAMERA_USAGE_DESCRIPTION" value="App would use camera to read QRCode" />
+	<variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="App would like to get QRCode reads from your library" />
+</plugin>
+
+
+
+<gap:config-file platform="ios" parent="NSCameraUsageDescription" overwrite="true">
+   <string>We are using the Camera for scanning QRCode coupons..</string>
+</gap:config-file>
+
+
+<config-file platform="ios" parent="NSPhotoLibraryUsageDescription" mode="replace">  
+      <string>App would like to access the library to take photo of vechicle damages.</string> 
+</config-file>
+	  
   <preference name="SplashScreen" value="screen"/>
   <preference name="KeepRunning" value="true"/>
   <preference name="SplashScreen" value="splash" />
