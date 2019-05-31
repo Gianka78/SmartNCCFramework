@@ -111,10 +111,9 @@
     	<variable name="CALENDAR_USAGE_DESCRIPTION" value="App would use Calendars to alert user for scheduled customer bookings and driver own tasks" />
     </plugin>
   	<plugin name="cordova-plugin-chrome-apps-socket" />
-  </platform>
-
 -->
-  
+  </platform>
+	  
   <platform name="ios">
     <!--<preference name="phonegap-version" value="cli-5.4.1" /> rimosso 31/07/2017 problema agg cordova-->
     <!--<preference name="phonegap-version" value="cli-6.5.0" /> rimosso 2017-07/04-->
