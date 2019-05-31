@@ -192,7 +192,7 @@
   
   <plugin name="cordova-plugin-whitelist" spec="1.2.2" />
   <plugin name="cordova-plugin-legacy-whitelist" /> 
-  <gap:plugin name="cordova-plugin-appinfo" source="npm"/>
+  <!--<gap:plugin name="cordova-plugin-appinfo" source="npm"/>-->
   <gap:plugin name="cordova-plugin-battery-status" source="npm"/>
   <gap:plugin name="cordova-plugin-network-information" spec="1.0.1" source="npm"/>
    	  
