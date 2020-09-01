@@ -160,28 +160,28 @@
 </gap:config-file>
 	  
 	  
-<!--2020-09-01 <config-file platform="ios" parent="NSPhotoLibraryUsageDescription" mode="replace">  
+<config-file platform="ios" parent="NSPhotoLibraryUsageDescription" mode="replace">  
       <string>App would like to access the library to take photo of vechicle damages.</string> 
-</config-file>-->
+</config-file>
    
-  <!--2020-09-01 <plugin name="cordova-plugin-splashscreen" source="npm" />
+  <plugin name="cordova-plugin-splashscreen" source="npm" />
   <plugin name="cordova-plugin-statusbar" source="npm" />   
   <plugin name="cordova-plugin-dialogs" source="npm" />
   <plugin name="cordova-plugin-vibration" source="npm" />
   <plugin name="cordova-plugin-sqlite-2" source="npm" />
-  <plugin name="cordova-plugin-insomnia" source="npm" />-->
+  <plugin name="cordova-plugin-insomnia" source="npm" />
   
   <!--<plugin name="cordova-plugin-bluetooth-serial" source="npm" />-->
   <!--<plugin name="com.evothings.ble" source="npm" spec="2.0.1" />-->
 
   
-  <!--2020-09-01 <plugin name="cordova-plugin-device" source="npm" spec="1.0.1" />
+  <plugin name="cordova-plugin-device" source="npm" spec="1.0.1" />
   
   <plugin name="cordova-plugin-whitelist" spec="1.2.2" />
   <plugin name="cordova-plugin-legacy-whitelist" /> 
   <gap:plugin name="cordova-plugin-appinfo" source="npm"/>
   <gap:plugin name="cordova-plugin-battery-status" source="npm"/>
-  <gap:plugin name="cordova-plugin-network-information" spec="1.0.1" source="npm"/>-->
+  <gap:plugin name="cordova-plugin-network-information" spec="1.0.1" source="npm"/>
    	  
 	  
   <!--<plugin name="cordova-background-geolocation-lt" source="npm" />-->
