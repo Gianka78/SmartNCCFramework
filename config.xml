@@ -187,23 +187,23 @@
   <!--<plugin name="cordova-background-geolocation-lt" source="npm" />-->
   <!--2017-06-16 <gap:plugin name="cordova-plugin-badge" source="npm" />-->
   
-<!--2020-09-01 	<gap:plugin name="cordova-plugin-badge" source="npm" spec="0.7.3" />
-	<gap:plugin name="cordova-plugin-file" source="npm" />-->
+	<gap:plugin name="cordova-plugin-badge" source="npm" spec="0.7.3" />
+	<gap:plugin name="cordova-plugin-file" source="npm" />
 	  
 	<!-- 2017-12-11 errore compilazione-->
-	<!--2020-09-01 <gap:plugin name="cordova-plugin-file-transfer" source="npm" />-->
+	<gap:plugin name="cordova-plugin-file-transfer" source="npm" />
 
-	<!--2020-09-01 <gap:plugin name="cordova-plugin-file-hash" source="npm" />-->
+	<gap:plugin name="cordova-plugin-file-hash" source="npm" />
 
 	<!-- 2017-12-11 errore compilazione-->
-	<!--2020-09-01 <gap:plugin name="cordova-open" source="npm" />-->
+	<gap:plugin name="cordova-open" source="npm" />
 
   
-  <!--2020-09-01 
+  
   <plugin name="cordova-plugin-camera">
         <variable name="CAMERA_USAGE_DESCRIPTION" value="APP would use camera to take photo of vehicle damages." />
 	<variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="App would like to access the library to take photo of vechicle damages." />
-  </plugin>-->
+  </plugin>
  
   
   <gap:plugin name="cordova-plugin-inappbrowser" source="npm" />
