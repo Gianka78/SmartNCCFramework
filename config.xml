@@ -113,9 +113,9 @@
     <!-- 2018-08-15 <plugin name="phonegap-plugin-push" source="npm" spec="1.10.5" >
       <param name="SENDER_ID" value="236799555977" />
     </plugin>-->
-    <!--2020-09-01 <plugin name="phonegap-plugin-push" source="npm">
+    <plugin name="phonegap-plugin-push" source="npm">
 	<param name="SENDER_ID" value="236799555977" />
-    </plugin>-->
+    </plugin>
     <!--<gap:plugin name="de.appplant.cordova.plugin.local-notification" version="0.8.4"  source="npm"/> 2017-07-31 per migrazione pg6.0.5-->
     <!-- 2018-08-16 <gap:plugin name="de.appplant.cordova.plugin.local-notification" source="npm"/>-->
 	  
@@ -147,17 +147,17 @@
     
   </platform>
 
-<!--2020-09-01 
+
 <plugin name="phonegap-plugin-barcodescanner" source="npm">
 	<variable name="CAMERA_USAGE_DESCRIPTION" value="App would use camera to read QRCode" />
 	<variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="App would like to get QRCode reads from your library" />
-</plugin>-->
+</plugin>
 
 	  
 
-<!--2020-09-01 <gap:config-file platform="ios" parent="NSCameraUsageDescription" overwrite="true">
+<gap:config-file platform="ios" parent="NSCameraUsageDescription" overwrite="true">
    <string>We are using the Camera for scanning QRCode coupons..</string>
-</gap:config-file>-->
+</gap:config-file>
 	  
 	  
 <!--2020-09-01 <config-file platform="ios" parent="NSPhotoLibraryUsageDescription" mode="replace">  
