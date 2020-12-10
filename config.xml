@@ -3,10 +3,10 @@
 
 <!-- Sezione customizzata per cliente --> 
   <widget xmlns = "http://www.w3.org/ns/widgets"  xmlns:gap = "http://phonegap.com/ns/1.0"
-          id = "com.SmartNCCMobile.MULTIUSER2" version = "13.022" versionCode = "13022" > 
+          id = "com.SmartNCCMobile.NCCONLINESUPPLIER" version = "13.023" versionCode = "13023" > 
     
-  <name>SmartNCC by GD-Soft s.r.l.</name>
-  <description>Piattaforma SmartNCC Mobile</description>
+  <name>NCCONLINE Supplier by GD-Soft s.r.l.</name>
+  <description>NCCONLINE Supplier dispatch System</description>
   <author href="http://www.gd-soft.it" email="info@gd-soft.it">GD-SOFT S.R.L.</author>
  
   
