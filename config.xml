@@ -88,7 +88,7 @@
 <plugin name="cordova-plugin-mauron85-background-geolocation">
     <variable name="ALWAYS_USAGE_DESCRIPTION" value="This application may ask for GPS always-on tracking to count kilometers traveled during the trip (only after explicit request and only for driver profiles)" />
     <variable name="GOOGLE_PLAY_SERVICES_VERSION" value="11+" />
-    <variable name="ANDROID_SUPPORT_LIBRARY_VERSION" value="23+" />
+    <!--<variable name="ANDROID_SUPPORT_LIBRARY_VERSION" value="23+" />-->
 </plugin>
 
 
@@ -99,7 +99,7 @@
     	<variable name="CALENDAR_USAGE_DESCRIPTION" value="App would use Calendars to alert user for scheduled customer bookings and driver own tasks" />
     </plugin>
   	<plugin name="cordova-plugin-chrome-apps-socket" />
-
+	<plugin name="cordova-plugin-chrome-apps-sockets-tcp" />
   </platform>
   
   <platform name="ios">
@@ -165,9 +165,11 @@
 </config-file>
    
   <plugin name="cordova-plugin-splashscreen" source="npm" />
+  
   <plugin name="cordova-plugin-statusbar" source="npm" />   
   <plugin name="cordova-plugin-dialogs" source="npm" />
   <plugin name="cordova-plugin-vibration" source="npm" />
+  <plugin name="cordova-plugin-device-orientation" source="npm" />	  
   <plugin name="cordova-plugin-sqlite-2" source="npm" />
   <plugin name="cordova-plugin-insomnia" source="npm" />
   
@@ -181,7 +183,7 @@
   <plugin name="cordova-plugin-legacy-whitelist" /> 
   <gap:plugin name="cordova-plugin-appinfo" source="npm"/>
   <gap:plugin name="cordova-plugin-battery-status" source="npm"/>
-  <gap:plugin name="cordova-plugin-network-information" spec="1.0.1" source="npm"/> 
+  <gap:plugin name="cordova-plugin-network-information" spec="1.0.1" source="npm"/>
    	  
 	  
   <!--<plugin name="cordova-background-geolocation-lt" source="npm" />-->
