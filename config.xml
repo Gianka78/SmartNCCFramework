@@ -3,7 +3,7 @@
 
 <!-- Sezione customizzata per cliente --> 
   <widget xmlns = "http://www.w3.org/ns/widgets"  xmlns:gap = "http://phonegap.com/ns/1.0"
-          id = "com.SmartNCCMobile.NCCONLINESUPPLIER" version = "13.023" versionCode = "13023" > 
+          id = "com.SmartNCCMobile.NCCONLINESUPPLIER" version = "13.024" versionCode = "13024" > 
     
   <name>NCCONLINE Supplier by GD-Soft s.r.l.</name>
   <description>NCCONLINE Supplier dispatch System</description>
