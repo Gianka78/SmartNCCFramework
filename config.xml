@@ -3,7 +3,7 @@
 
 <!-- Sezione customizzata per cliente --> 
   <widget xmlns = "http://www.w3.org/ns/widgets"  xmlns:gap = "http://phonegap.com/ns/1.0"
-          id = "com.SmartNCCMobile.MULTIUSER2" version = "13.022" versionCode = "13022" > 
+          id = "com.SmartNCCMobile.MULTIUSER2" version = "13.025" versionCode = "13025" > 
     
   <name>SmartNCC by GD-Soft s.r.l.</name>
   <description>Piattaforma SmartNCC Mobile</description>
@@ -66,7 +66,7 @@
     <preference name='phonegap-version' value='cli-9.0.0' />
 	
     <plugin name="cordova-android-support-gradle-release" >
-      <param name="ANDROID_SUPPORT_VERSION" value="29.+" />
+      <param name="ANDROID_SUPPORT_VERSION" value="32.+" />
     </plugin>	  
     <preference name="android-minSdkVersion" value="16" />
     <preference name="android-build-tool" value="gradle" />
@@ -99,7 +99,7 @@
     	<variable name="CALENDAR_USAGE_DESCRIPTION" value="App would use Calendars to alert user for scheduled customer bookings and driver own tasks" />
     </plugin>
   	<plugin name="cordova-plugin-chrome-apps-socket" />
-
+	<plugin name="cordova-plugin-chrome-apps-sockets-tcp" />
   </platform>
   
   <platform name="ios">
@@ -181,7 +181,7 @@
   <plugin name="cordova-plugin-legacy-whitelist" /> 
   <gap:plugin name="cordova-plugin-appinfo" source="npm"/>
   <gap:plugin name="cordova-plugin-battery-status" source="npm"/>
-  <gap:plugin name="cordova-plugin-network-information" spec="1.0.1" source="npm"/> 
+  <gap:plugin name="cordova-plugin-network-information" spec="1.0.1" source="npm"/>
    	  
 	  
   <!--<plugin name="cordova-background-geolocation-lt" source="npm" />-->
@@ -387,6 +387,6 @@
 	  <allow-navigation href="*" />
 	  <allow-intent href="*" />
 	  <access origin="*" />
-          
+
 
 </widget>
