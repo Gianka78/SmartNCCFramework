@@ -3,10 +3,10 @@
 
 <!-- Sezione customizzata per cliente --> 
   <widget xmlns = "http://www.w3.org/ns/widgets"  xmlns:gap = "http://phonegap.com/ns/1.0"
-          id = "com.SmartNCCMobile.NCCONLINESUPPLIER" version = "13.024" versionCode = "13024" > 
+          id = "com.SmartNCCMobile.NCCONLINESUPPLIER" version = "13.025" versionCode = "13025" > 
     
-  <name>NCCONLINE Supplier by GD-Soft s.r.l.</name>
-  <description>NCCONLINE Supplier dispatch System</description>
+  <name>NCCONLINE Supplier</name>
+  <description>NCCONLINE Supplier dispatch System by GD-Soft s.r.l.</description>
   <author href="http://www.gd-soft.it" email="info@gd-soft.it">GD-SOFT S.R.L.</author>
  
   
@@ -63,13 +63,12 @@
     <!--2020-09-01 <preference name='phonegap-version' value='cli-7.1.0' />-->
     <!--<preference name='phonegap-version' value='cli-8.0.0' />-->
     <!--<preference name='pgb-builder-version' value='1' />-->
-    <preference name='phonegap-version' value='cli-9.0.0' />
-	
-    <!--<plugin name="cordova-android-support-gradle-release" >
+    <!--2020-12-13 <preference name='phonegap-version' value='cli-9.0.0' />-->
+	<preference name='phonegap-version' value='cli-7.1.0' />
+    <plugin name="cordova-android-support-gradle-release" >
       <param name="ANDROID_SUPPORT_VERSION" value="29.+" />
     </plugin>	  
     <preference name="android-minSdkVersion" value="16" />
-    -->
     <preference name="android-build-tool" value="gradle" />
 	
     <!-- <plugin name="phonegap-plugin-push" source="npm">
@@ -88,8 +87,8 @@
 
 <plugin name="cordova-plugin-mauron85-background-geolocation">
     <variable name="ALWAYS_USAGE_DESCRIPTION" value="This application may ask for GPS always-on tracking to count kilometers traveled during the trip (only after explicit request and only for driver profiles)" />
-    <variable name="GOOGLE_PLAY_SERVICES_VERSION" value="11.0.1" />
-    <!--<variable name="ANDROID_SUPPORT_LIBRARY_VERSION" value="23+" />-->
+    <variable name="GOOGLE_PLAY_SERVICES_VERSION" value="11+" />
+    <variable name="ANDROID_SUPPORT_LIBRARY_VERSION" value="23+" />
 </plugin>
 
 
@@ -166,11 +165,9 @@
 </config-file>
    
   <plugin name="cordova-plugin-splashscreen" source="npm" />
-  
   <plugin name="cordova-plugin-statusbar" source="npm" />   
   <plugin name="cordova-plugin-dialogs" source="npm" />
   <plugin name="cordova-plugin-vibration" source="npm" />
-  <plugin name="cordova-plugin-device-orientation" source="npm" />	  
   <plugin name="cordova-plugin-sqlite-2" source="npm" />
   <plugin name="cordova-plugin-insomnia" source="npm" />
   
@@ -390,6 +387,6 @@
 	  <allow-navigation href="*" />
 	  <allow-intent href="*" />
 	  <access origin="*" />
-          
+
 
 </widget>
