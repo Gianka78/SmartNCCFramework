@@ -5,7 +5,6 @@
   <widget xmlns = "http://www.w3.org/ns/widgets"  xmlns:gap = "http://phonegap.com/ns/1.0"
           id = "com.SmartNCCMobile.MULTIUSER2" version = "13.025" versionCode = "13025" xmlns:cdv="http://cordova.apache.org/ns/1.0"> 
     
-	    
   <name>SmartNCC by GD-Soft s.r.l.</name>
   <description>Piattaforma SmartNCC Mobile</description>
   <author href="http://www.gd-soft.it" email="info@gd-soft.it">GD-SOFT S.R.L.</author>
@@ -71,9 +70,8 @@
     </plugin>	  
     <preference name="android-minSdkVersion" value="16" />
     <preference name="android-build-tool" value="gradle" />
-	<preference name="android-targetSdkVersion" value="30" />
 	
-	  
+	
     <!-- <plugin name="phonegap-plugin-push" source="npm">
       <param name="SENDER_ID" value="236799555977" />
     </plugin> -->
@@ -184,7 +182,7 @@
   <plugin name="cordova-plugin-legacy-whitelist" /> 
   <gap:plugin name="cordova-plugin-appinfo" source="npm"/>
   <gap:plugin name="cordova-plugin-battery-status" source="npm"/>
-  <gap:plugin name="cordova-plugin-network-information" spec="1.0.1" source="npm"/>
+  <gap:plugin name="cordova-plugin-network-information" spec="1.0.1" source="npm"/> 
    	  
 	  
   <!--<plugin name="cordova-background-geolocation-lt" source="npm" />-->
@@ -390,6 +388,6 @@
 	  <allow-navigation href="*" />
 	  <allow-intent href="*" />
 	  <access origin="*" />
-
+          
 
 </widget>
