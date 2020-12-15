@@ -3,7 +3,7 @@
 
 <!-- Sezione customizzata per cliente --> 
   <widget xmlns = "http://www.w3.org/ns/widgets"  xmlns:gap = "http://phonegap.com/ns/1.0"
-          id = "com.SmartNCCMobile.SMARTTICKETMOBILE" version = "13.014" versionCode = "13014" > 
+          id = "com.SmartNCCMobile.SMARTTICKETMOBILE" version = "13.025" versionCode = "13025" > 
     
   <name>SmartTicket Mobile</name>
   <description>SmartTicket Mobile - biglietteria Bus/Autolinee</description>
