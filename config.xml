@@ -5,8 +5,8 @@
   <widget xmlns = "http://www.w3.org/ns/widgets"  xmlns:gap = "http://phonegap.com/ns/1.0"
           id = "com.SmartNCCMobile.NCCONLINESUPPLIER" version = "13.025" versionCode = "13025" > 
     
-  <name>NCCONLINE Supplier</name>
-  <description>NCCONLINE Supplier dispatch System by GD-Soft s.r.l.</description>
+  <name>NCCONLINE</name>
+  <description>NCCONLINE piattaforma di booking e dispatch</description>
   <author href="http://www.gd-soft.it" email="info@gd-soft.it">GD-SOFT S.R.L.</author>
  
   
@@ -66,11 +66,12 @@
     <preference name='phonegap-version' value='cli-9.0.0' />
 	
     <plugin name="cordova-android-support-gradle-release" >
-      <param name="ANDROID_SUPPORT_VERSION" value="32.+" />
+      <param name="ANDROID_SUPPORT_VERSION" value="29.+" />
     </plugin>	  
-    <preference name="android-minSdkVersion" value="17" />
+    <preference name="android-minSdkVersion" value="16" />
     <preference name="android-build-tool" value="gradle" />
-	<preference name="android-targetSdkVersion" value="28" />
+	<preference name="android-targetSdkVersion" value="29" />
+	
     <!-- <plugin name="phonegap-plugin-push" source="npm">
       <param name="SENDER_ID" value="236799555977" />
     </plugin> -->
@@ -181,7 +182,7 @@
   <plugin name="cordova-plugin-legacy-whitelist" /> 
   <gap:plugin name="cordova-plugin-appinfo" source="npm"/>
   <gap:plugin name="cordova-plugin-battery-status" source="npm"/>
-  <gap:plugin name="cordova-plugin-network-information" spec="1.0.1" source="npm"/>
+  <gap:plugin name="cordova-plugin-network-information" spec="1.0.1" source="npm"/> 
    	  
 	  
   <!--<plugin name="cordova-background-geolocation-lt" source="npm" />-->
@@ -206,7 +207,7 @@
   </plugin>
  
   
-  <gap:plugin name="cordova-plugin-inappbrowser" source="npm" />
+  <gap:plugin name="cordova-plugin-inappbrowser" source="npm" spec="4.0.0"/>
  
   <preference name="iosExtraFilesystems" value="library,library-nosync,documents,documents-nosync,cache,bundle,root" />
   <preference name="AndroidExtraFilesystems" value="files,files-external,documents,sdcard,cache,cache-external,assets,root" />
@@ -387,6 +388,6 @@
 	  <allow-navigation href="*" />
 	  <allow-intent href="*" />
 	  <access origin="*" />
-
+          
 
 </widget>
