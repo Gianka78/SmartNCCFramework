@@ -67,7 +67,7 @@
     <preference name='phonegap-version' value='cli-9.0.0' />
 	
     <plugin name="cordova-android-support-gradle-release" >
-      <param name="ANDROID_SUPPORT_VERSION" value="30.+" />
+      <param name="ANDROID_SUPPORT_VERSION" value="29.+" />
     </plugin>	  
     <preference name="android-minSdkVersion" value="16" />
     <preference name="android-build-tool" value="gradle" />
