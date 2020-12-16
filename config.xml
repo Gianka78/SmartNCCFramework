@@ -79,7 +79,9 @@
       <param name="SENDER_ID" value="236799555977" />
     </plugin>-->
 	
-	<plugin name="phonegap-plugin-push" spec="~1.9.1" source="npm" />
+	<plugin name="phonegap-plugin-push" spec="~1.9.1" source="npm" >
+	  <param name="SENDER_ID" value="236799555977" />
+    	</plugin>
 	  
 	<!--<plugin name="@hokify/cordova-plugin-push">
 		<param name="SENDER_ID" value="236799555977" />
