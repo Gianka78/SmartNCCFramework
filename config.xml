@@ -58,6 +58,8 @@
   <preference name="EnableViewportScale" value="true" />
   
   <platform name="android">
+	  <resource-file src="google-services.json" target="app/google-services.json" />
+	  
     <!--<preference name="phonegap-version" value="cli-6.5.0" />-->
     <!--2018-08-15 <preference name='phonegap-version' value='cli-7.0.1' />-->
     <!--2020-09-01 <preference name='phonegap-version' value='cli-7.1.0' />-->
