@@ -84,6 +84,8 @@
  		CLI 8.1.1 -> spec 1.10.7 V 
 		CLI 8.1.1 -> spec 1.11.0 V
 		CLI 8.1.1 -> spec 1.11.1 X
+
+		CLI 9.0.0 -> spec 1.10.6 X
 		CLI 9.0.0 -> spec 1.10.7 X
 		CLI 9.0.0 -> spec 1.11.0 X
 		CLI 9.0.0 -> spec 1.11.1 X
