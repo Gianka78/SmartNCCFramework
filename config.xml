@@ -79,7 +79,7 @@
 	
 	  
     <resource-file src="platforms/android/google-services.json" target="google-services.json" />
-    <plugin name="phonegap-plugin-push" spec="^2.0.0" />
+    <plugin name="phonegap-plugin-push" source="npm" spec="2.3.0" />
 	  
 	  
     <gap:plugin name="de.appplant.cordova.plugin.local-notification" source="npm"/>
