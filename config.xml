@@ -213,7 +213,7 @@
 
   
   
-  <plugin name="cordova-plugin-camera">
+  <plugin name="cordova-plugin-camera" spec="2.4.1">
         <variable name="CAMERA_USAGE_DESCRIPTION" value="APP would use camera to take photo of vehicle damages." />
 	<variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="App would like to access the library to take photo of vechicle damages." />
   </plugin>
