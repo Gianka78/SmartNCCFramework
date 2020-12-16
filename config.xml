@@ -72,10 +72,10 @@
     <preference name="android-build-tool" value="gradle" />
 	<preference name="android-targetSdkVersion" value="28" />
 	
-    <plugin name="phonegap-plugin-push" source="npm" spec="1.10.5">
+    <plugin name="phonegap-plugin-push" source="npm" spec="2.0.0">
       <param name="SENDER_ID" value="236799555977" />
-      <variable name="GOOGLE_PLAY_SERVICES_VERSION" value="11+" />
-      <variable name="ANDROID_SUPPORT_LIBRARY_VERSION" value="28" />
+      <param name="GOOGLE_PLAY_SERVICES_VERSION" value="11+" />
+      <param name="ANDROID_SUPPORT_LIBRARY_VERSION" value="28" />
     </plugin>
 
     <gap:plugin name="de.appplant.cordova.plugin.local-notification" source="npm"/>
