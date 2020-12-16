@@ -81,7 +81,7 @@
 	
 	<!--<plugin name="phonegap-plugin-push" spec="~1.9.1" source="npm" />-->
 	  
-	<plugin name="@havesource/cordova-plugin-push">
+	<plugin name="@hokify/cordova-plugin-push">
 		<param name="SENDER_ID" value="236799555977" />
     	</plugin>	  
     <!--<resource-file src="/google-services.json" target="/google-services.json" />
