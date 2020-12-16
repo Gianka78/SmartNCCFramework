@@ -61,10 +61,10 @@
 	  
     <!--<preference name="phonegap-version" value="cli-6.5.0" />-->
     <!--2018-08-15 <preference name='phonegap-version' value='cli-7.0.1' />-->
-    <!--2020-09-01 <preference name='phonegap-version' value='cli-7.1.0' />-->
+    <preference name='phonegap-version' value='cli-7.1.0' />-->
     <!--<preference name='phonegap-version' value='cli-8.0.0' />-->
     <!--<preference name='pgb-builder-version' value='1' />-->
-    <preference name='phonegap-version' value='cli-8.1.1' />
+    <!--<preference name='phonegap-version' value='cli-8.1.1' />-->
     <!--<preference name='phonegap-version' value='cli-9.0.0' />-->	
 	  
     <plugin name="cordova-android-support-gradle-release" >
