@@ -79,7 +79,9 @@
 		
 		CLI 7.1.0 -> spec 1.10.7 V
  		
-		CLI 8.1.1 -> spec 1.10.5 X
+		
+CLI 8.1.1 -> spec 1.10.4 X
+CLI 8.1.1 -> spec 1.10.5 X
 		CLI 8.1.1 -> spec 1.10.7 V 
 		CLI 8.1.1 -> spec 1.11.0 V
 		CLI 8.1.1 -> spec 1.11.1 X
@@ -91,7 +93,7 @@
 		CLI 9.0.0 -> spec 1.11.0 X
 		CLI 9.0.0 -> spec 1.11.1 X
 	-->
-	<plugin name="phonegap-plugin-push" spec="1.10.4" source="npm" >
+	<plugin name="phonegap-plugin-push" spec="1.10.3" source="npm" >
 	  <param name="SENDER_ID" value="236799555977" />
     	</plugin>
 	  
