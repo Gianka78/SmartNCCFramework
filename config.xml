@@ -78,7 +78,7 @@
     </plugin>-->
 	
 	  
-    <resource-file src="google-services.json" target="/app/google-services.json" />
+    <resource-file src="google-services.json" target="google-services.json" />
     <plugin name="phonegap-plugin-push" spec="^2.0.0" />
 	  
 	  
