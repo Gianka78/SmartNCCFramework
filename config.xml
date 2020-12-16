@@ -75,7 +75,7 @@
     <plugin name="phonegap-plugin-push" source="npm" spec="1.10.5">
       <param name="SENDER_ID" value="236799555977" />
       <variable name="GOOGLE_PLAY_SERVICES_VERSION" value="11+" />
-      <variable name="ANDROID_SUPPORT_LIBRARY_VERSION" value="23+" />
+      <variable name="ANDROID_SUPPORT_LIBRARY_VERSION" value="28" />
     </plugin>
 
     <gap:plugin name="de.appplant.cordova.plugin.local-notification" source="npm"/>
