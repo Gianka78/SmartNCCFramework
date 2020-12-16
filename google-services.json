@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "274997008741",
+    "project_id": "app-smartncc-firebase",
+    "storage_bucket": "app-smartncc-firebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:274997008741:android:b49d213305beba4aeca98c",
+        "android_client_info": {
+          "package_name": "com.SmartNCCMobile.MULTIUSER2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "274997008741-t50velnmc9g369s7a475nehv1vfkjhpr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXXFIk9nmYaKdKHPuEY4SHtJYatbZJ8Dc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "274997008741-t50velnmc9g369s7a475nehv1vfkjhpr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
