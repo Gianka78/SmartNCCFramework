@@ -64,8 +64,8 @@
     <!--<preference name='phonegap-version' value='cli-7.1.0' />-->
     <!--<preference name='phonegap-version' value='cli-8.0.0' />-->
     <!--<preference name='pgb-builder-version' value='1' />-->
-    <preference name='phonegap-version' value='cli-8.1.1' />
-    <!--<preference name='phonegap-version' value='cli-9.0.0' />-->	
+    <!--<preference name='phonegap-version' value='cli-8.1.1' />-->
+    <preference name='phonegap-version' value='cli-9.0.0' />	
 	  
     <plugin name="cordova-android-support-gradle-release" >
       <param name="ANDROID_SUPPORT_VERSION" value="29.+" />
@@ -82,7 +82,8 @@
 	<!-- Funzionanti 
 		CLI 7.1.0 -> spec 1.10.7 
  		CLI 8.1.1 -> spec 1.10.7  
-		CLI 8.1.1 -> spec 1.11.1
+		CLI 8.1.1 -> spec 1.11.1 X
+		CLI 9.0.0 -> spec 1.11.1 ?
 
 	-->
 	<plugin name="phonegap-plugin-push" spec="1.11.1" source="npm" >
