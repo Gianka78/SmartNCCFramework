@@ -58,7 +58,6 @@
   <preference name="EnableViewportScale" value="true" />
   
   <platform name="android">
-	  <resource-file src="google-services.json" target="app/google-services.json" />
 	  
     <!--<preference name="phonegap-version" value="cli-6.5.0" />-->
     <!--2018-08-15 <preference name='phonegap-version' value='cli-7.0.1' />-->
@@ -74,10 +73,15 @@
     <preference name="android-build-tool" value="gradle" />
     <preference name="android-targetSdkVersion" value="23" />
 	
-    <plugin name="phonegap-plugin-push" source="npm" spec="2.3.0">
+    <!--<plugin name="phonegap-plugin-push" source="npm" spec="2.3.0">
       <param name="SENDER_ID" value="236799555977" />
-    </plugin>
-
+    </plugin>-->
+	
+	  
+    <resource-file src="google-services.json" target="/app/google-services.json" />
+    <plugin name="phonegap-plugin-push" spec="^2.0.0" />
+	  
+	  
     <gap:plugin name="de.appplant.cordova.plugin.local-notification" source="npm"/>
 	
     <!--<plugin name="cordova-plugin-geolocation" />rimosso 21/02/2017 errore compilazione agg phonegap-->
