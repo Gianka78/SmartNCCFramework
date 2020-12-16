@@ -182,7 +182,7 @@
   <!--<plugin name="com.evothings.ble" source="npm" spec="2.0.1" />-->
 
   
-  <plugin name="cordova-plugin-device" source="npm" spec="1.0.1" />
+  <plugin name="cordova-plugin-device" source="npm" />
   
   <plugin name="cordova-plugin-whitelist" spec="1.2.2" />
   <plugin name="cordova-plugin-legacy-whitelist" /> 
