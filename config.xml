@@ -95,7 +95,7 @@ CLI 8.1.1 -> spec 1.10.5 X
 		CLI 9.0.0 -> spec 1.11.1 X
 	-->
 	  
-	<plugin name="cordova-plugin-background-push" source="npm" >
+	<plugin name="cordova-plugin-background-push" source="npm" />
 	<plugin name="phonegap-plugin-push" spec="1.10.6" source="npm" >
 	  <param name="SENDER_ID" value="236799555977" />
     	</plugin>
