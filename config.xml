@@ -74,11 +74,13 @@
     <preference name="android-targetSdkVersion" value="23" />
 	
     <resource-file src="google-services.json" target="/app/google-services.json" />
-    <plugin name="phonegap-plugin-push" source="npm" spec="2.3.0">
+    <!--<plugin name="phonegap-plugin-push" source="npm" spec="2.3.0">
       <param name="SENDER_ID" value="236799555977" />
-    </plugin>
-	
+    </plugin>-->
 	  
+	<plugin name="@havesource/cordova-plugin-push" spec="1.0.0">
+		<param name="SENDER_ID" value="236799555977" />
+    	</plugin>	  
     <!--<resource-file src="/google-services.json" target="/google-services.json" />
     <plugin name="phonegap-plugin-push" source="npm" spec="2.3.0" />-->
 	  
