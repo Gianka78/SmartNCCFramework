@@ -74,18 +74,18 @@
     <preference name="android-build-tool" value="gradle" />
     <preference name="android-targetSdkVersion" value="29" />
 	
-    <resource-file src="app/google-services.json" target="/app/google-services.json" />
+    <!--<resource-file src="app/google-services.json" target="/app/google-services.json" />-->
     <!--<plugin name="phonegap-plugin-push" source="npm" spec="2.3.0">
       <param name="SENDER_ID" value="236799555977" />
     </plugin>-->
 	
-	<!--<plugin name="phonegap-plugin-push" spec="~1.9.1" source="npm" />-->
+	<plugin name="phonegap-plugin-push" spec="~1.9.1" source="npm" />
 	  
-	<plugin name="@hokify/cordova-plugin-push">
+	<!--<plugin name="@hokify/cordova-plugin-push">
 		<param name="SENDER_ID" value="236799555977" />
-    	</plugin>	  
-    <!--<resource-file src="/google-services.json" target="/google-services.json" />
-    <plugin name="phonegap-plugin-push" source="npm" spec="2.3.0" />-->
+    	</plugin>-->
+    <!--<resource-file src="/google-services.json" target="/google-services.json" />-->
+    
 	  
 	  
     <gap:plugin name="de.appplant.cordova.plugin.local-notification" source="npm"/>
